@@ -1,0 +1,143 @@
+COMPANY: Apple Inc. | Fiscal year end: month 9 day 30 | Latest fiscal year in filing: FY2023
+TIME CONTEXT: periods named FY#### are ACTUALS reported in this 10-K. Text facts with role 'guidance' are FORWARD-LOOKING management estimates, not actuals.
+
+SERIES ShareholderReturns - Dividends + buybacks
+  VIEW: DERIVED ratio/metric = Dividends + Repurchases (already computed; do not recompute)
+  UNIT: USD (filing displayed in units; values below are normalised to base units)
+  FY2021             $100.44B  [F01446] 
+  FY2022             $104.24B  [F01447] 
+  FY2023              $92.58B  [F01448] 
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2022: +3.8% YoY ($100.44B -> $104.24B) [F01447]
+   - FY2023: -11.2% YoY ($104.24B -> $92.58B) [F01448]
+   - CAGR FY2021->FY2023: -4.0%
+   - TREND: stable (weak), -8% over the window
+
+SERIES PayoutOfFcfPct - Shareholder returns % of FCF
+  VIEW: DERIVED ratio/metric = Returns / FCF x 100 (already computed; do not recompute); unit is PERCENT - differences are percentage points, not %
+  UNIT: percent (filing displayed in units; values below are normalised to base units)
+  FY2021               108.1%  [F01449] 
+  FY2022                93.5%  [F01450] 
+  FY2023                93.0%  [F01451] 
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2022: 93.5% vs 108.1% (-1451 bps) [F01450]
+   - FY2023: 93.0% vs 93.5% (-58 bps) [F01451]
+
+SERIES PaymentsForRepurchaseOfCommonStock - us-gaap:PaymentsForRepurchaseOfCommonStock
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  FY2021              $85.97B  [F00253] XBRL-tagged outflow shown as magnitude
+  FY2022              $89.40B  [F00252] XBRL-tagged outflow shown as magnitude
+  FY2023              $77.55B  [F00251] XBRL-tagged outflow shown as magnitude
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2022: +4.0% YoY ($85.97B -> $89.40B) [F00252]
+   - FY2023: -13.3% YoY ($89.40B -> $77.55B) [F00251]
+   - CAGR FY2021->FY2023: -5.0%
+   - TREND: stable (weak), -10% over the window
+
+SERIES EarningsPerShareDiluted - us-gaap:EarningsPerShareDiluted
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD/share (filing displayed in units; values below are normalised to base units)
+  FY2021                $5.61  [F00057] XBRL-tagged
+  FY2022                $6.11  [F00056] XBRL-tagged
+  FY2023                $6.13  [F00055] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2022: +8.9% YoY ($5.61 -> $6.11) [F00056]
+   - FY2023: +0.3% YoY ($6.11 -> $6.13) [F00055]
+   - CAGR FY2021->FY2023: 4.5%
+   - TREND: stable (weak), +9% over the window
+
+SERIES EarningsPerShareBasic - us-gaap:EarningsPerShareBasic
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD/share (filing displayed in units; values below are normalised to base units)
+  FY2021                $5.67  [F00054] XBRL-tagged
+  FY2022                $6.15  [F00053] XBRL-tagged
+  FY2023                $6.16  [F00052] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2022: +8.5% YoY ($5.67 -> $6.15) [F00053]
+   - FY2023: +0.2% YoY ($6.15 -> $6.16) [F00052]
+   - CAGR FY2021->FY2023: 4.2%
+   - TREND: stable (weak), +9% over the window
+
+SERIES WeightedAverageNumberOfDilutedSharesOutstanding - us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: shares (filing displayed in thousands; values below are normalised to base units)
+  FY2021       16,864,919,000  [F00063] XBRL-tagged
+  FY2022       16,325,819,000  [F00062] XBRL-tagged
+  FY2023       15,812,547,000  [F00061] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2022: -3.2% YoY (16,864,919,000 -> 16,325,819,000) [F00062]
+   - FY2023: -3.1% YoY (16,325,819,000 -> 15,812,547,000) [F00061]
+   - CAGR FY2021->FY2023: -3.2%
+   - TREND: stable (weak), -6% over the window
+
+SERIES WeightedAverageNumberOfSharesOutstandingBasic - us-gaap:WeightedAverageNumberOfSharesOutstandingBasic
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: shares (filing displayed in thousands; values below are normalised to base units)
+  FY2021       16,701,272,000  [F00060] XBRL-tagged
+  FY2022       16,215,963,000  [F00059] XBRL-tagged
+  FY2023       15,744,231,000  [F00058] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2022: -2.9% YoY (16,701,272,000 -> 16,215,963,000) [F00059]
+   - FY2023: -2.9% YoY (16,215,963,000 -> 15,744,231,000) [F00058]
+   - CAGR FY2021->FY2023: -2.9%
+   - TREND: stable (weak), -6% over the window
+
+SERIES PaymentsOfDividends - us-gaap:PaymentsOfDividends
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  FY2021              $14.47B  [F00250] XBRL-tagged outflow shown as magnitude
+  FY2022              $14.84B  [F00249] XBRL-tagged outflow shown as magnitude
+  FY2023              $15.03B  [F00248] XBRL-tagged outflow shown as magnitude
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2022: +2.6% YoY ($14.47B -> $14.84B) [F00249]
+   - FY2023: +1.2% YoY ($14.84B -> $15.03B) [F00248]
+   - CAGR FY2021->FY2023: 1.9%
+   - TREND: stable (weak), +4% over the window
+
+SERIES FreeCashFlow - Free cash flow (derived)
+  VIEW: DERIVED ratio/metric = CFO - Capex (already computed; do not recompute)
+  UNIT: USD (filing displayed in units; values below are normalised to base units)
+  FY2021              $92.95B  [F01387] 
+  FY2022             $111.44B  [F01388] 
+  FY2023              $99.58B  [F01389] 
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2022: +19.9% YoY ($92.95B -> $111.44B) [F01388]
+   - FY2023: -10.6% YoY ($111.44B -> $99.58B) [F01389]
+   - CAGR FY2021->FY2023: 3.5%
+   - TREND: stable (weak), +7% over the window
+
+SERIES NetCashProvidedByUsedInOperatingActivities - us-gaap:NetCashProvidedByUsedInOperatingActivities
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a TOTAL line; its components (if listed under ATTRIBUTION) already roll up into it.
+  FY2021             $104.04B  [F00226] XBRL-tagged
+  FY2022             $122.15B  [F00225] XBRL-tagged
+  FY2023             $110.54B  [F00224] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2022: +17.4% YoY ($104.04B -> $122.15B) [F00225]
+   - FY2023: -9.5% YoY ($122.15B -> $110.54B) [F00224]
+   - CAGR FY2021->FY2023: 3.1%
+   - TREND: stable (weak), +6% over the window
+
+SERIES PaymentsToAcquirePropertyPlantAndEquipment - us-gaap:PaymentsToAcquirePropertyPlantAndEquipment
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  FY2021              $11.09B  [F00238] XBRL-tagged outflow shown as magnitude
+  FY2022              $10.71B  [F00237] XBRL-tagged outflow shown as magnitude
+  FY2023              $10.96B  [F00236] XBRL-tagged outflow shown as magnitude
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2022: -3.4% YoY ($11.09B -> $10.71B) [F00237]
+   - FY2023: +2.3% YoY ($10.71B -> $10.96B) [F00236]
+   - CAGR FY2021->FY2023: -0.6%
+   - TREND: stable (weak), -1% over the window
+
+NARRATIVE EVIDENCE (management text; numbers inside were machine-checked against the tables):
+  [T00458] (Item 8 Financial Statements; number checks: none) The following table shows the computation of basic and diluted earnings per share for 2023, 2022 and 2021 (net income in millions and shares in thousands):
+  [T00460] (Item 8 Financial Statements; number checks: none) Approximately 24 million restricted stock units (“RSUs”) were excluded from the computation of diluted earnings per share for 2023 because their effect would have been antidilutive.
+  [T00259] (Item 5 Market/Equity; number checks: none) Share repurchase activity during the three months ended September 30, 2023 was as follows (in millions, except number of shares, which are reflected in thousands, and per-share amounts):
+  [T00389] (Item 8 Financial Statements; number checks: none) (In millions, except number of shares, which are reflected in thousands, and per-share amounts)
+
+DATA QUALITY: 3 accounting identities passed, 0 failed for the numbers above.
+NOTE: for the metrics above, 9 duplicate facts with conflicting values were set aside during parsing (the primary-statement value was kept).
+TEXT-vs-TABLE CONFLICTS: 

@@ -1,0 +1,866 @@
+[
+ {
+  "q": "What was the company's total revenue for fiscal 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 344582000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "Revenues 2023-12-31",
+  "id": "xom-001",
+  "split": "dev"
+ },
+ {
+  "q": "What was the top line in fiscal 2022?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 413680000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "Revenues 2022-12-31",
+  "id": "xom-002",
+  "split": "dev"
+ },
+ {
+  "q": "How much was spent on research and development in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 879000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "ResearchAndDevelopmentExpense 2023-12-31",
+  "id": "xom-003",
+  "split": "dev"
+ },
+ {
+  "q": "What was R&D spending in 2022?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 824000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "ResearchAndDevelopmentExpense 2022-12-31",
+  "id": "xom-004",
+  "split": "dev"
+ },
+ {
+  "q": "What were selling, general and administrative costs in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 9919000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "SellingGeneralAndAdministrativeExpense 2023-12-31",
+  "id": "xom-005",
+  "split": "holdout"
+ },
+ {
+  "q": "How much interest expense did the company incur on its borrowings in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 849000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "InterestExpense 2023-12-31",
+  "id": "xom-006",
+  "split": "dev"
+ },
+ {
+  "q": "What was income before taxes in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 52783000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest 2023-12-31",
+  "id": "xom-007",
+  "split": "dev"
+ },
+ {
+  "q": "What was the income tax charge for 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 15429000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "IncomeTaxExpenseBenefit 2023-12-31",
+  "id": "xom-008",
+  "split": "dev"
+ },
+ {
+  "q": "What was the effective tax rate in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 33.0,
+    "kind": "percent"
+   }
+  ],
+  "source": "EffectiveIncomeTaxRateContinuingOperations 2023-12-31",
+  "id": "xom-009",
+  "split": "dev"
+ },
+ {
+  "q": "What tax rate did the company effectively pay in 2022?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 33.0,
+    "kind": "percent"
+   }
+  ],
+  "source": "EffectiveIncomeTaxRateContinuingOperations 2022-12-31",
+  "id": "xom-010",
+  "split": "holdout"
+ },
+ {
+  "q": "How much profit did the company make in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 36010000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "NetIncomeLoss 2023-12-31",
+  "id": "xom-011",
+  "split": "dev"
+ },
+ {
+  "q": "What was the bottom line in 2022?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 55740000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "NetIncomeLoss 2022-12-31",
+  "id": "xom-012",
+  "split": "dev"
+ },
+ {
+  "q": "What were diluted earnings per share for 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 8.89,
+    "kind": "per_share"
+   }
+  ],
+  "source": "EarningsPerShareDiluted 2023-12-31",
+  "id": "xom-013",
+  "split": "dev"
+ },
+ {
+  "q": "What was diluted EPS in 2022?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 13.26,
+    "kind": "per_share"
+   }
+  ],
+  "source": "EarningsPerShareDiluted 2022-12-31",
+  "id": "xom-014",
+  "split": "dev"
+ },
+ {
+  "q": "What were depreciation and amortization charges in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 20641000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "DepreciationDepletionAndAmortization 2023-12-31",
+  "id": "xom-015",
+  "split": "holdout"
+ },
+ {
+  "q": "How large were asset impairment charges in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 3300000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "ImpairmentOfLongLivedAssetsHeldForUse 2023-12-31",
+  "id": "xom-016",
+  "split": "dev"
+ },
+ {
+  "q": "How much cash and cash equivalents did the company hold at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 31539000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "CashAndCashEquivalentsAtCarryingValue 2023-12-31",
+  "id": "xom-017",
+  "split": "dev"
+ },
+ {
+  "q": "What was the cash balance at the end of 2022?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 29640000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "CashAndCashEquivalentsAtCarryingValue 2022-12-31",
+  "id": "xom-018",
+  "split": "dev"
+ },
+ {
+  "q": "What were trade receivables at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 30296000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "AccountsReceivableNetCurrent 2023-12-31",
+  "id": "xom-019",
+  "split": "dev"
+ },
+ {
+  "q": "What were total current assets at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 96609000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "AssetsCurrent 2023-12-31",
+  "id": "xom-020",
+  "split": "holdout"
+ },
+ {
+  "q": "What was the net book value of property, plant and equipment at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 214940000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "PropertyPlantAndEquipmentNet 2023-12-31",
+  "id": "xom-021",
+  "split": "dev"
+ },
+ {
+  "q": "How large was the balance sheet, i.e. total assets, at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 376317000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "Assets 2023-12-31",
+  "id": "xom-022",
+  "split": "dev"
+ },
+ {
+  "q": "What were total current liabilities at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 65316000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "LiabilitiesCurrent 2023-12-31",
+  "id": "xom-023",
+  "split": "dev"
+ },
+ {
+  "q": "How much debt matures within the next year as of the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 4009000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "LongTermDebtCurrent 2023-12-31",
+  "id": "xom-024",
+  "split": "dev"
+ },
+ {
+  "q": "What short-term borrowings were outstanding at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 75000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "CommercialPaper 2023-12-31",
+  "id": "xom-025",
+  "split": "holdout"
+ },
+ {
+  "q": "What were operating lease liabilities at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 6010000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "OperatingLeaseLiability 2023-12-31",
+  "id": "xom-026",
+  "split": "dev"
+ },
+ {
+  "q": "What were total liabilities at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 163779000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "Liabilities 2023-12-31",
+  "id": "xom-027",
+  "split": "dev"
+ },
+ {
+  "q": "What was shareholders' equity at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 204802000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "StockholdersEquity 2023-12-31",
+  "id": "xom-028",
+  "split": "dev"
+ },
+ {
+  "q": "How much book equity did shareholders have at the end of 2022?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 195049000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "StockholdersEquity 2022-12-31",
+  "id": "xom-029",
+  "split": "dev"
+ },
+ {
+  "q": "What were retained earnings at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 453927000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "RetainedEarningsAccumulatedDeficit 2023-12-31",
+  "id": "xom-030",
+  "split": "holdout"
+ },
+ {
+  "q": "How many common shares were outstanding at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 3971000000.0,
+    "kind": "shares"
+   }
+  ],
+  "source": "CommonStockSharesOutstanding 2023-12-31",
+  "id": "xom-031",
+  "split": "dev"
+ },
+ {
+  "q": "How much cash did operations generate in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 55369000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "NetCashProvidedByUsedInOperatingActivities 2023-12-31",
+  "id": "xom-032",
+  "split": "dev"
+ },
+ {
+  "q": "What was operating cash flow in 2022?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 76797000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "NetCashProvidedByUsedInOperatingActivities 2022-12-31",
+  "id": "xom-033",
+  "split": "dev"
+ },
+ {
+  "q": "How much was invested in capital expenditures in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 21919000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "PaymentsToAcquirePropertyPlantAndEquipment 2023-12-31",
+  "id": "xom-034",
+  "split": "dev"
+ },
+ {
+  "q": "What was capex in 2022?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 18407000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "PaymentsToAcquirePropertyPlantAndEquipment 2022-12-31",
+  "id": "xom-035",
+  "split": "holdout"
+ },
+ {
+  "q": "How much did the company spend buying back its own stock in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 17748000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "PaymentsForRepurchaseOfCommonStock 2023-12-31",
+  "id": "xom-036",
+  "split": "dev"
+ },
+ {
+  "q": "What were share buybacks in 2022?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 15155000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "PaymentsForRepurchaseOfCommonStock 2022-12-31",
+  "id": "xom-037",
+  "split": "dev"
+ },
+ {
+  "q": "How much was paid out in dividends in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 14941000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "PaymentsOfDividendsCommonStock 2023-12-31",
+  "id": "xom-038",
+  "split": "dev"
+ },
+ {
+  "q": "What was net cash used in investing activities in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": -19274000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "NetCashProvidedByUsedInInvestingActivities 2023-12-31",
+  "id": "xom-039",
+  "split": "dev"
+ },
+ {
+  "q": "What was net cash from financing activities in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": -34297000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "NetCashProvidedByUsedInFinancingActivities 2023-12-31",
+  "id": "xom-040",
+  "split": "holdout"
+ },
+ {
+  "q": "How much debt was repaid in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 15000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "RepaymentsOfLongTermDebt 2023-12-31",
+  "id": "xom-041",
+  "split": "dev"
+ },
+ {
+  "q": "How much new long-term debt was raised in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 939000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "ProceedsFromIssuanceOfLongTermDebt 2023-12-31",
+  "id": "xom-042",
+  "split": "dev"
+ },
+ {
+  "q": "How much cash was paid for income taxes in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 15473000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "IncomeTaxesPaidNet 2023-12-31",
+  "id": "xom-043",
+  "split": "dev"
+ },
+ {
+  "q": "What dividend per share was declared in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 3.68,
+    "kind": "per_share"
+   }
+  ],
+  "source": "CommonStockDividendsPerShareCashPaid 2023-12-31",
+  "id": "xom-044",
+  "split": "dev"
+ },
+ {
+  "q": "How large were unrecognized tax benefits at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 3935000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "UnrecognizedTaxBenefits 2023-12-31",
+  "id": "xom-045",
+  "split": "holdout"
+ },
+ {
+  "q": "How much income came from equity-method investments in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 6385000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "IncomeLossFromEquityMethodInvestments 2023-12-31",
+  "id": "xom-046",
+  "split": "dev"
+ },
+ {
+  "q": "What was accumulated other comprehensive income or loss at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": -11989000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "AccumulatedOtherComprehensiveIncomeLossNetOfTax 2023-12-31",
+  "id": "xom-047",
+  "split": "dev"
+ },
+ {
+  "q": "What was the value of treasury stock at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 254917000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "TreasuryStockCommonValue 2023-12-31",
+  "id": "xom-048",
+  "split": "dev"
+ },
+ {
+  "q": "What is the planned acquisition of Pioneer Natural Resources?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "merger agreement with Pioneer",
+     "acquire Pioneer"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "xom-049",
+  "split": "dev"
+ },
+ {
+  "q": "What did the Denbury acquisition add?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "acquired Denbury",
+     "Denbury Inc"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "xom-050",
+  "split": "holdout"
+ },
+ {
+  "q": "How much structural cost savings has the company achieved?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "structural cost savings"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "xom-051",
+  "split": "dev"
+ },
+ {
+  "q": "What happened to the Sakhalin-1 project in Russia?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "Sakhalin-1"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "xom-052",
+  "split": "dev"
+ },
+ {
+  "q": "What is the status of the Golden Pass LNG project?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "Golden Pass LNG"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "xom-053",
+  "split": "dev"
+ },
+ {
+  "q": "What is the company doing in the Permian Basin?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "Permian Basin"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "xom-054",
+  "split": "dev"
+ },
+ {
+  "q": "What carbon capture and storage activities does the company have?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "carbon capture and storage"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "xom-055",
+  "split": "holdout"
+ },
+ {
+  "q": "How does the company address greenhouse gas emissions?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "greenhouse gas emission"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "xom-056",
+  "split": "dev"
+ },
+ {
+  "q": "What is the share repurchase program?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "share repurchase program"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "xom-057",
+  "split": "dev"
+ },
+ {
+  "q": "What are Identified Items in the earnings discussion?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "Identified Items"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "xom-058",
+  "split": "dev"
+ },
+ {
+  "q": "How sensitive are earnings to the price of crude oil?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "price of crude oil"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "xom-059",
+  "split": "dev"
+ },
+ {
+  "q": "How did refining margins affect Energy Products?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "refining margins"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "xom-060",
+  "split": "holdout"
+ },
+ {
+  "q": "What were capital and exploration expenditures?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "capital and exploration expenditures"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "xom-061",
+  "split": "dev"
+ },
+ {
+  "q": "What does the Low Carbon Solutions business do?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "Low Carbon Solutions"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "xom-062",
+  "split": "dev"
+ },
+ {
+  "q": "What lithium plans does the company describe?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "lithium"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "xom-063",
+  "split": "dev"
+ },
+ {
+  "q": "What is happening at the Baytown facility?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "Baytown"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "xom-064",
+  "split": "dev"
+ },
+ {
+  "q": "How is production in Guyana developing?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "Guyana"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "xom-065",
+  "split": "holdout"
+ }
+]

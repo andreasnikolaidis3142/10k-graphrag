@@ -1,0 +1,136 @@
+{
+  "question": "What is JPMorgan's expected net income and net interest income guidance for next year, and its exact market share in U.S. deposits?",
+  "model": "apodex/apodex-1.1-mini:free",
+  "ungrounded": [],
+  "coverage_gaps": [],
+  "uncited_claims": [
+    "A data quality note reports 52 duplicate facts with conflicting values were set aside during parsing; this obs"
+  ],
+  "stripped_pseudo_citations": 0,
+  "answer": {
+    "summary": "JPMorgan's FY2023 net income was $49.55B [F00078], reported as $49.6 billion with EPS of $16.23, ROE of 17% and ROTCE of 21% [T00958]. Management guidance for next year covers net interest income of approximately $90 billion, market dependent [T01008], and net interest income excluding Markets of approximately $88 billion, market dependent [T01009]. However, no net income guidance for next year appears in the retrieved evidence. Likewise, no exact market share figure for U.S. deposits is present in the evidence.",
+    "status": "mixed",
+    "key_numbers": [
+      {
+        "metric": "FY2023 net income",
+        "period": "FY2023",
+        "value": "$49.55B",
+        "fact_id": "[F00078]"
+      },
+      {
+        "metric": "FY2023 net income (narrative)",
+        "period": "FY2023",
+        "value": "$49.6 billion",
+        "fact_id": "[T00958]"
+      },
+      {
+        "metric": "FY2023 net interest income",
+        "period": "FY2023",
+        "value": "$18.73B",
+        "fact_id": "[F03302]"
+      },
+      {
+        "metric": "Next-year net interest income guidance",
+        "period": "forward-looking",
+        "value": "approximately $90 billion",
+        "fact_id": "[T01008]"
+      },
+      {
+        "metric": "Next-year net interest income excluding Markets guidance",
+        "period": "forward-looking",
+        "value": "approximately $88 billion",
+        "fact_id": "[T01009]"
+      }
+    ],
+    "drivers": [
+      "Net interest income guidance of ~$90B is the only forward-looking income metric provided; it is described as market dependent [T01008].",
+      "Net interest income excluding Markets guidance of ~$88B provides a segment-level view of the NII outlook [T01009].",
+      "FY2023 net interest income of $18.73B [F03302] is the actual base against which the ~$90B guidance is framed."
+    ],
+    "risks_and_red_flags": [
+      "No net income guidance for next year is disclosed in the retrieved evidence; only net interest income guidance is provided.",
+      "No exact market share in U.S. deposits is disclosed in the retrieved evidence.",
+      "Net interest income guidance is explicitly 'market dependent', meaning it is sensitive to interest rate movements [T01008].",
+      "Data quality: 3 accounting identities failed for Net income = Pre-tax income - Taxes at @2021-12-31 (off by -$64.93B) [F08877], @2022-12-31 (off by -$47.14B) [F08876], and @2023-12-31 (off by -$60.92B) [F07786].",
+      "A data quality note reports 52 duplicate facts with conflicting values were set aside during parsing; this observation is not tied to a specific fact id in the retrieved evidence."
+    ],
+    "outlook": {
+      "actuals_view": "FY2023 net income of $49.55B [F00078] with ROE of 17% and ROTCE of 21% [T00958]; FY2023 net interest income of $18.73B [F03302].",
+      "forward_looking_guidance": "Management expects net interest income of approximately $90 billion, market dependent [T01008], and net interest income excluding Markets of approximately $88 billion, market dependent [T01009]. No net income guidance is provided in the evidence."
+    },
+    "follow_up_checks": [
+      "Verify whether net income guidance for next year exists elsewhere in the 10-K (e.g., MD&A or earnings release) and confirm the exact figure.",
+      "Locate JPMorgan's stated market share in U.S. deposits, which is not present in the retrieved evidence.",
+      "Confirm the FY2024 net interest income guidance is consistent with the $90B figure and understand the 'market dependent' assumptions.",
+      "Reconcile the failed accounting identities (Net income = Pre-tax income - Taxes) before relying on segment-level income figures."
+    ],
+    "sources": {
+      "F00078": {
+        "value": "$49.55B",
+        "concept": "NetIncomeLoss",
+        "period": "FY2023",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:NetIncomeLoss",
+        "also_displayed_in": [
+          "table #73 \"untitled\", row \"Net income\", column \"2023\"",
+          "table #99 \"The following summary table provides a reconciliation from the Firm’s reported U.S. GAAP results to managed basis.\", row \"Net income\", column \"2023\"",
+          "table #111 \"untitled\", row \"Net income/(loss)\", column \"2023\""
+        ]
+      },
+      "T00958": {
+        "source": "prose",
+        "where": "paragraph in Item 15 Exhibits: \"JPMorgan Chase reported net income of $49.6 billion for 2023, up 32%, earnings per share of $16.23, ROE of 17% and ROTCE of 21%.\""
+      },
+      "T01008": {
+        "source": "prose",
+        "where": "paragraph in Item 15 Exhibits: \"• Management expects net interest income to be approximately $90 billion, market dependent.\""
+      },
+      "T01009": {
+        "source": "prose",
+        "where": "paragraph in Item 15 Exhibits: \"• Management expects net interest income excluding Markets to be approximately $88 billion, market dependent.\""
+      },
+      "F03302": {
+        "value": "$18.73B",
+        "concept": "InvestmentIncomeInterest",
+        "period": "FY2023",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:InvestmentIncomeInterest",
+        "also_displayed_in": [
+          "table #442 \"The following table presents the components of interest income and interest expense:\", row \"Total investment securities\", column \"2023\""
+        ]
+      },
+      "F08877": {
+        "value": "-$3.71B",
+        "concept": "NetIncomeLoss",
+        "period": "@2021-12-31",
+        "source": "table",
+        "where": "table #167 \"IS\", row \"Net income/(loss)\", column \"2021\"",
+        "section": "Item 15 Exhibits",
+        "also_in": [
+          "table #167 \"untitled\", row \"Total net income/(loss)\"",
+          "table #638 \"untitled\", row \"Net income/(loss)\""
+        ]
+      },
+      "F08876": {
+        "value": "-$743.00M",
+        "concept": "NetIncomeLoss",
+        "period": "@2022-12-31",
+        "source": "table",
+        "where": "table #167 \"IS\", row \"Net income/(loss)\", column \"2022\"",
+        "section": "Item 15 Exhibits",
+        "also_in": [
+          "table #167 \"untitled\", row \"Total net income/(loss)\"",
+          "table #638 \"untitled\", row \"Net income/(loss)\""
+        ]
+      },
+      "F07786": {
+        "value": "$1.24B",
+        "concept": "NetIncomeLoss",
+        "period": "@2023-12-31",
+        "source": "table",
+        "where": "table #115 \"Segment information related to First Republic\", row \"Net income\", column \"As of or for the year ended December 31, 2023\"",
+        "section": "Item 15 Exhibits"
+      }
+    }
+  }
+}

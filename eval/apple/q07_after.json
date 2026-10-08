@@ -1,0 +1,394 @@
+{
+  "question": "What are the main risks Apple describes about its supply chain and foreign exchange?",
+  "model": "inclusionai/ling-3.1-flash",
+  "ungrounded": [],
+  "coverage_gaps": [],
+  "uncited_claims": [],
+  "stripped_pseudo_citations": 0,
+  "answer": {
+    "summary": "Apple's Item 1A Risk Factors identify foreign exchange and supply chain as primary exposures. FX exposure centers on non-U.S. dollar-denominated sales, cost of sales and operating expenses worldwide, with gross margins on foreign products and products using foreign-sourced components vulnerable to FX fluctuations [T00221]. The value of the U.S. dollar relative to local currencies also affects financial performance [T00220]. Supply chain risks include credit exposure on trade receivables, vendor non-trade receivables and prepayments tied to long-term supply agreements, heightened during economic downturns [T00228]. Broader business interruption risks from political events, trade disputes, war, natural disasters and public health issues could disrupt suppliers, contract manufacturers, logistics providers and channel partners [T00123]. These risks coincided with FY2023 revenue declining 2.8% to $383.29B [F00013], where Mac was the largest contributor to the product-level decline at -$10.82B (-26.9%), 98% of the total change [F00282] [F00283], partly offset by Services growth of $7.07B (+9.1%) [F00010] [F00011].",
+    "status": "mixed",
+    "key_numbers": [
+      {
+        "metric": "FY2023 revenue",
+        "period": "FY2023",
+        "value": "$383.29B",
+        "fact_id": "[F00013]"
+      },
+      {
+        "metric": "FY2023 Mac revenue (largest contributor to change)",
+        "period": "FY2023",
+        "value": "$29.36B (7.7% of total); change -$10.82B (-26.9%), 98% of total change",
+        "fact_id": "[F00282] [F00283]"
+      },
+      {
+        "metric": "FY2023 Services revenue (offset)",
+        "period": "FY2023",
+        "value": "$85.20B (22.2% of total); change +$7.07B (+9.1%), offsets 64% of total change",
+        "fact_id": "[F00010] [F00011]"
+      },
+      {
+        "metric": "FY2023 iPhone revenue",
+        "period": "FY2023",
+        "value": "$200.58B (52.3% of total); change -$4.91B (-2.4%), 44% of total change",
+        "fact_id": "[F00279] [F00280]"
+      },
+      {
+        "metric": "FY2023 operating income",
+        "period": "FY2023",
+        "value": "$114.30B",
+        "fact_id": "[F00037]"
+      },
+      {
+        "metric": "FY2023 operating cash flow",
+        "period": "FY2023",
+        "value": "$110.54B",
+        "fact_id": "[F00224]"
+      },
+      {
+        "metric": "FY2023 gross margin",
+        "period": "FY2023",
+        "value": "44.1%",
+        "fact_id": "[F01392]"
+      },
+      {
+        "metric": "FY2023 current ratio",
+        "period": "@2023-09-30",
+        "value": "0.99x",
+        "fact_id": "[F01421]"
+      },
+      {
+        "metric": "FY2023 inventory growth vs CostOfRevenue",
+        "period": "FY2023",
+        "value": "inventory +28% vs CostOfRevenue -4%",
+        "fact_id": "[F00099] [F00022]"
+      }
+    ],
+    "drivers": [
+      "Foreign exchange exposure on non-USD sales, cost of sales and operating expenses is the primary FX driver [T00221]",
+      "Gross margin vulnerability from FX on products with foreign components is a secondary FX driver [T00221]",
+      "Credit risk on receivables and supply-agreement prepayments is the primary supply chain credit driver [T00228]",
+      "Geopolitical and natural disruption risk across the full supplier-to-channel partner chain is the primary supply chain operational driver [T00123]",
+      "FY2023 revenue decline of 2.8%: Mac was the LARGEST CONTRIBUTOR TO THE CHANGE by ProductOrService at -$10.82B (-26.9%), 98% of the total change [F00282] [F00283]; iPhone contributed -$4.91B (-2.4%), 44% of the total change [F00279] [F00280]; Services moved AGAINST the total change, +$7.07B (+9.1%), offsetting 64% of it [F00010] [F00011]",
+      "By geography, the US was the largest contributor to the revenue decline at -$9.29B (-6.3%), 84% of the total change [F00877] [F00878], and Americas -$7.10B (-4.2%), 64% of the total change [F00838] [F00839]"
+    ],
+    "risks_and_red_flags": [
+      "FX exposure on non-U.S. dollar-denominated sales, cost of sales and operating expenses [T00221]",
+      "Gross margins on foreign products and products with foreign-sourced components could be materially adversely affected by FX fluctuations [T00221]",
+      "USD strength relative to local currencies affects financial performance [T00220]",
+      "Credit risk on trade receivables, vendor non-trade receivables and prepayments under long-term supply agreements, heightened in economic downturns [T00228]",
+      "Business interruption from political events, trade disputes, war, terrorism, natural disasters and public health issues affecting suppliers, contract manufacturers, logistics providers and channel partners [T00123]",
+      "FY2023 inventory grew 28% while CostOfRevenue fell 4%, indicating collection/build-up risk [F00099] [F00022]",
+      "Current ratio below 1 in both FY2022 (0.88x) and FY2023 (0.99x) [F01420] [F01421]",
+      "FY2023 operating cash flow fell 9.5% to $110.54B [F00224]"
+    ],
+    "data_quality_notes": [
+      "Text-vs-table conflict: text references '$8.2 billion' for a narrower revenue item while the statement line shows $383.29B; may describe a narrower item, verify before treating as error [F01111] [F00013]",
+      "4 duplicate facts with conflicting values were set aside during parsing; the primary-statement value was kept"
+    ],
+    "outlook": {
+      "actuals_view": "FY2023 revenue declined 2.8% to $383.29B [F00013], led by Mac at -$10.82B (-26.9%), 98% of the total change [F00282] [F00283], partly offset by Services +$7.07B (+9.1%) [F00010] [F00011]; operating income fell 4.3% to $114.30B [F00037], though gross margin improved to 44.1% [F01392] and operating cash flow remained $110.54B [F00224].",
+      "forward_looking_guidance": "not in the retrieved evidence"
+    },
+    "follow_up_checks": [
+      "Verify the $8.2B text item against the revenue table to confirm it describes a narrower item [F01111]",
+      "Review FX hedging program disclosures and sensitivity analysis for non-USD exposure [T00221]",
+      "Assess Mac's -26.9% decline [F00282] [F00283] for supply constraints vs demand, and whether Services growth [F00010] [F00011] continues to offset product weakness",
+      "Assess inventory turnover trends and whether the 28% inventory build-up is channel-related [F00099] [F00022]",
+      "Check supplier concentration and geographic concentration of contract manufacturers [T00123]",
+      "Confirm whether any forward-looking guidance exists outside the retrieved evidence"
+    ],
+    "sources": {
+      "T00221": {
+        "source": "prose",
+        "where": "paragraph in Item 1A Risk Factors: \"The Company’s primary exposure to movements in foreign exchange rates relates to non–U.S. dollar–denominated sales, cost of sales and operating expenses worldwi\""
+      },
+      "T00220": {
+        "source": "prose",
+        "where": "paragraph in Item 1A Risk Factors: \"The Company’s financial performance is subject to risks associated with changes in the value of the U.S. dollar relative to local currencies.\""
+      },
+      "T00228": {
+        "source": "prose",
+        "where": "paragraph in Item 1A Risk Factors: \"The Company is exposed to credit risk on its trade accounts receivable, vendor non-trade receivables and prepayments related to long-term supply agreements, and\""
+      },
+      "T00123": {
+        "source": "prose",
+        "where": "paragraph in Item 1A Risk Factors: \"Political events, trade and other international disputes, war, terrorism, natural disasters, public health issues, industrial accidents and other business inter\""
+      },
+      "F00013": {
+        "value": "$383.29B",
+        "concept": "Revenues",
+        "period": "FY2023",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "also_displayed_in": [
+          "table #7 \"The following table shows net sales by reportable segment for 2023, 2022 and 2021 (dollars in millions):\", row \"Total net sales\", column \"2023\"",
+          "table #8 \"The following table shows net sales by category for 2023, 2022 and 2021 (dollars in millions):\", row \"Total net sales\", column \"2023\"",
+          "table #15 \"CONSOLIDATED STATEMENTS OF OPERATIONS\", row \"Total net sales\", column \"September 30, 2023\""
+        ]
+      },
+      "F00282": {
+        "value": "$29.36B",
+        "concept": "Revenues",
+        "period": "FY2023",
+        "slice": "ProductOrService=Mac",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "also_displayed_in": [
+          "table #8 \"The following table shows net sales by category for 2023, 2022 and 2021 (dollars in millions):\", row \"Mac (1)\", column \"2023\"",
+          "table #20 \"untitled\", row \"Mac (1)\", column \"2023\""
+        ]
+      },
+      "F00283": {
+        "value": "$40.18B",
+        "concept": "Revenues",
+        "period": "FY2022",
+        "slice": "ProductOrService=Mac",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "also_displayed_in": [
+          "table #8 \"The following table shows net sales by category for 2023, 2022 and 2021 (dollars in millions):\", row \"Mac (1)\", column \"2022\"",
+          "table #20 \"untitled\", row \"Mac (1)\", column \"2022\""
+        ]
+      },
+      "F00010": {
+        "value": "$85.20B",
+        "concept": "Revenues",
+        "period": "FY2023",
+        "slice": "ProductOrService=Service",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "also_displayed_in": [
+          "table #8 \"The following table shows net sales by category for 2023, 2022 and 2021 (dollars in millions):\", row \"Services (2)\", column \"2023\"",
+          "table #20 \"untitled\", row \"Services (2)\", column \"2023\""
+        ]
+      },
+      "F00011": {
+        "value": "$78.13B",
+        "concept": "Revenues",
+        "period": "FY2022",
+        "slice": "ProductOrService=Service",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "also_displayed_in": [
+          "table #8 \"The following table shows net sales by category for 2023, 2022 and 2021 (dollars in millions):\", row \"Services (2)\", column \"2022\"",
+          "table #20 \"untitled\", row \"Services (2)\", column \"2022\""
+        ]
+      },
+      "F00279": {
+        "value": "$200.58B",
+        "concept": "Revenues",
+        "period": "FY2023",
+        "slice": "ProductOrService=IPhone",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "also_displayed_in": [
+          "table #8 \"The following table shows net sales by category for 2023, 2022 and 2021 (dollars in millions):\", row \"iPhone (1)\", column \"2023\"",
+          "table #20 \"untitled\", row \"iPhone (1)\", column \"2023\""
+        ]
+      },
+      "F00280": {
+        "value": "$205.49B",
+        "concept": "Revenues",
+        "period": "FY2022",
+        "slice": "ProductOrService=IPhone",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "also_displayed_in": [
+          "table #8 \"The following table shows net sales by category for 2023, 2022 and 2021 (dollars in millions):\", row \"iPhone (1)\", column \"2022\"",
+          "table #20 \"untitled\", row \"iPhone (1)\", column \"2022\""
+        ]
+      },
+      "F00037": {
+        "value": "$114.30B",
+        "concept": "OperatingIncomeLoss",
+        "period": "FY2023",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:OperatingIncomeLoss",
+        "also_displayed_in": [
+          "table #15 \"CONSOLIDATED STATEMENTS OF OPERATIONS\", row \"Operating income\", column \"September 30, 2023\"",
+          "table #47 \"untitled\", row \"Total operating income\", column \"2023\""
+        ]
+      },
+      "F00224": {
+        "value": "$110.54B",
+        "concept": "NetCashProvidedByUsedInOperatingActivities",
+        "period": "FY2023",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:NetCashProvidedByUsedInOperatingActivities",
+        "also_displayed_in": [
+          "table #19 \"CONSOLIDATED STATEMENTS OF CASH FLOWS\", row \"Cash generated by operating activities\", column \"September 30, 2023\""
+        ]
+      },
+      "F01392": {
+        "value": "44.1%",
+        "concept": "GrossMarginPct",
+        "period": "FY2023",
+        "source": "computed",
+        "where": "GrossProfit / Revenues x 100",
+        "inputs": [
+          "F00025",
+          "F00013"
+        ],
+        "input_sources": {
+          "F00025": {
+            "value": "$169.15B",
+            "concept": "GrossProfit",
+            "period": "FY2023",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:GrossProfit",
+            "also_displayed_in": [
+              "table #9 \"Gross Margin\", row \"Total gross margin\", column \"2023\"",
+              "table #15 \"CONSOLIDATED STATEMENTS OF OPERATIONS\", row \"Gross margin\", column \"September 30, 2023\""
+            ]
+          },
+          "F00013": {
+            "value": "$383.29B",
+            "concept": "Revenues",
+            "period": "FY2023",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+            "also_displayed_in": [
+              "table #7 \"The following table shows net sales by reportable segment for 2023, 2022 and 2021 (dollars in millions):\", row \"Total net sales\", column \"2023\"",
+              "table #8 \"The following table shows net sales by category for 2023, 2022 and 2021 (dollars in millions):\", row \"Total net sales\", column \"2023\"",
+              "table #15 \"CONSOLIDATED STATEMENTS OF OPERATIONS\", row \"Total net sales\", column \"September 30, 2023\""
+            ]
+          }
+        }
+      },
+      "F01421": {
+        "value": "0.99x",
+        "concept": "CurrentRatio",
+        "period": "@2023-09-30",
+        "source": "computed",
+        "where": "CurrentAssets / CurrentLiabilities",
+        "inputs": [
+          "F00103",
+          "F00125"
+        ],
+        "input_sources": {
+          "F00103": {
+            "value": "$143.57B",
+            "concept": "AssetsCurrent",
+            "period": "@2023-09-30",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:AssetsCurrent",
+            "also_displayed_in": [
+              "table #17 \"CONSOLIDATED BALANCE SHEETS\", row \"Total current assets\", column \"September 30, 2023\""
+            ]
+          },
+          "F00125": {
+            "value": "$145.31B",
+            "concept": "LiabilitiesCurrent",
+            "period": "@2023-09-30",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:LiabilitiesCurrent",
+            "also_displayed_in": [
+              "table #17 \"CONSOLIDATED BALANCE SHEETS\", row \"Total current liabilities\", column \"September 30, 2023\""
+            ]
+          }
+        }
+      },
+      "F00099": {
+        "value": "$6.33B",
+        "concept": "InventoryNet",
+        "period": "@2023-09-30",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:InventoryNet",
+        "also_displayed_in": [
+          "table #17 \"CONSOLIDATED BALANCE SHEETS\", row \"Inventories\", column \"September 30, 2023\""
+        ]
+      },
+      "F00022": {
+        "value": "$214.14B",
+        "concept": "CostOfRevenue",
+        "period": "FY2023",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:CostOfGoodsAndServicesSold",
+        "also_displayed_in": [
+          "table #15 \"CONSOLIDATED STATEMENTS OF OPERATIONS\", row \"Total cost of sales\", column \"September 30, 2023\""
+        ]
+      },
+      "F00877": {
+        "value": "$138.57B",
+        "concept": "Revenues",
+        "period": "FY2023",
+        "slice": "StatementGeographical=US",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      "F00878": {
+        "value": "$147.86B",
+        "concept": "Revenues",
+        "period": "FY2022",
+        "slice": "StatementGeographical=US",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      "F00838": {
+        "value": "$162.56B",
+        "concept": "Revenues",
+        "period": "FY2023",
+        "slice": "StatementBusinessSegments=AmericasSegment",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "also_displayed_in": [
+          "table #7 \"The following table shows net sales by reportable segment for 2023, 2022 and 2021 (dollars in millions):\", row \"Americas\", column \"2023\"",
+          "table #46 \"Note 13 – Segment Information and Geographic Data\", row \"Net sales\", column \"2023\""
+        ]
+      },
+      "F00839": {
+        "value": "$169.66B",
+        "concept": "Revenues",
+        "period": "FY2022",
+        "slice": "StatementBusinessSegments=AmericasSegment",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "also_displayed_in": [
+          "table #7 \"The following table shows net sales by reportable segment for 2023, 2022 and 2021 (dollars in millions):\", row \"Americas\", column \"2022\"",
+          "table #46 \"Note 13 – Segment Information and Geographic Data\", row \"Net sales\", column \"2022\""
+        ]
+      },
+      "F01420": {
+        "value": "0.88x",
+        "concept": "CurrentRatio",
+        "period": "@2022-09-24",
+        "source": "computed",
+        "where": "CurrentAssets / CurrentLiabilities",
+        "inputs": [
+          "F00104",
+          "F00126"
+        ],
+        "input_sources": {
+          "F00104": {
+            "value": "$135.41B",
+            "concept": "AssetsCurrent",
+            "period": "@2022-09-24",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:AssetsCurrent",
+            "also_displayed_in": [
+              "table #17 \"CONSOLIDATED BALANCE SHEETS\", row \"Total current assets\", column \"September 24, 2022\""
+            ]
+          },
+          "F00126": {
+            "value": "$153.98B",
+            "concept": "LiabilitiesCurrent",
+            "period": "@2022-09-24",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:LiabilitiesCurrent",
+            "also_displayed_in": [
+              "table #17 \"CONSOLIDATED BALANCE SHEETS\", row \"Total current liabilities\", column \"September 24, 2022\""
+            ]
+          }
+        }
+      },
+      "F01111": {
+        "value": "$8.20B",
+        "concept": "Revenues",
+        "period": "FY2023",
+        "source": "prose",
+        "where": "sentence in Item 8 Financial Statements: \"Total net sales include $ 8.2 billion of revenue recognized in 2023 that was included in deferred revenue as of September 24, 2022, $ 7.5 billion of revenue rec\""
+      }
+    }
+  }
+}

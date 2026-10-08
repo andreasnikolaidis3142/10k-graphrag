@@ -1,0 +1,958 @@
+[
+ {
+  "q": "What was the company's total revenue for fiscal 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 158104000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "Revenues 2023-12-31",
+  "id": "jpm-001",
+  "split": "dev"
+ },
+ {
+  "q": "What was the top line in fiscal 2022?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 128695000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "Revenues 2022-12-31",
+  "id": "jpm-002",
+  "split": "dev"
+ },
+ {
+  "q": "How much interest expense did the company incur on its borrowings in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 81321000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "InterestExpense 2023-12-31",
+  "id": "jpm-003",
+  "split": "dev"
+ },
+ {
+  "q": "What was income before taxes in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 61612000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest 2023-12-31",
+  "id": "jpm-004",
+  "split": "dev"
+ },
+ {
+  "q": "What was the income tax charge for 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 12060000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "IncomeTaxExpenseBenefit 2023-12-31",
+  "id": "jpm-005",
+  "split": "holdout"
+ },
+ {
+  "q": "What was the effective tax rate in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 19.6,
+    "kind": "percent"
+   }
+  ],
+  "source": "EffectiveIncomeTaxRateContinuingOperations 2023-12-31",
+  "id": "jpm-006",
+  "split": "dev"
+ },
+ {
+  "q": "What tax rate did the company effectively pay in 2022?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 18.4,
+    "kind": "percent"
+   }
+  ],
+  "source": "EffectiveIncomeTaxRateContinuingOperations 2022-12-31",
+  "id": "jpm-007",
+  "split": "dev"
+ },
+ {
+  "q": "How much profit did the company make in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 49552000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "NetIncomeLoss 2023-12-31",
+  "id": "jpm-008",
+  "split": "dev"
+ },
+ {
+  "q": "What was the bottom line in 2022?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 37676000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "NetIncomeLoss 2022-12-31",
+  "id": "jpm-009",
+  "split": "dev"
+ },
+ {
+  "q": "What were diluted earnings per share for 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 16.23,
+    "kind": "per_share"
+   }
+  ],
+  "source": "EarningsPerShareDiluted 2023-12-31",
+  "id": "jpm-010",
+  "split": "holdout"
+ },
+ {
+  "q": "What was diluted EPS in 2022?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 12.09,
+    "kind": "per_share"
+   }
+  ],
+  "source": "EarningsPerShareDiluted 2022-12-31",
+  "id": "jpm-011",
+  "split": "dev"
+ },
+ {
+  "q": "How many diluted shares were used to compute EPS in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 2943100000.0,
+    "kind": "shares"
+   }
+  ],
+  "source": "WeightedAverageNumberOfDilutedSharesOutstanding 2023-12-31",
+  "id": "jpm-012",
+  "split": "dev"
+ },
+ {
+  "q": "How much stock-based compensation was expensed in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 3117000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "ShareBasedCompensation 2023-12-31",
+  "id": "jpm-013",
+  "split": "dev"
+ },
+ {
+  "q": "What were depreciation and amortization charges in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 7512000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "DepreciationAmortizationAndAccretionNet 2023-12-31",
+  "id": "jpm-014",
+  "split": "dev"
+ },
+ {
+  "q": "What was net interest income in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 89267000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "InterestIncomeExpenseNet 2023-12-31",
+  "id": "jpm-015",
+  "split": "holdout"
+ },
+ {
+  "q": "How much did net interest income come to in 2022?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 66710000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "InterestIncomeExpenseNet 2022-12-31",
+  "id": "jpm-016",
+  "split": "dev"
+ },
+ {
+  "q": "How much fee and other non-interest revenue was earned in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 68837000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "NoninterestIncome 2023-12-31",
+  "id": "jpm-017",
+  "split": "dev"
+ },
+ {
+  "q": "What were total non-interest expenses in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 87172000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "NoninterestExpense 2023-12-31",
+  "id": "jpm-018",
+  "split": "dev"
+ },
+ {
+  "q": "How much did employee compensation cost in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 46465000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "LaborAndRelatedExpense 2023-12-31",
+  "id": "jpm-019",
+  "split": "dev"
+ },
+ {
+  "q": "How much was set aside for expected credit losses in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 9320000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "ProvisionForLoanLeaseAndOtherLosses 2023-12-31",
+  "id": "jpm-020",
+  "split": "holdout"
+ },
+ {
+  "q": "How much goodwill was carried on the balance sheet at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 52634000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "Goodwill 2023-12-31",
+  "id": "jpm-021",
+  "split": "dev"
+ },
+ {
+  "q": "What were intangible assets other than goodwill at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 2000000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "FiniteLivedIntangibleAssetsNet 2023-12-31",
+  "id": "jpm-022",
+  "split": "dev"
+ },
+ {
+  "q": "How large was the balance sheet, i.e. total assets, at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 3875393000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "Assets 2023-12-31",
+  "id": "jpm-023",
+  "split": "dev"
+ },
+ {
+  "q": "What short-term borrowings were outstanding at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 44712000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "ShortTermBorrowings 2023-12-31",
+  "id": "jpm-024",
+  "split": "dev"
+ },
+ {
+  "q": "What were operating lease liabilities at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 8833000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "OperatingLeaseLiability 2023-12-31",
+  "id": "jpm-025",
+  "split": "holdout"
+ },
+ {
+  "q": "What were total liabilities at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 3547515000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "Liabilities 2023-12-31",
+  "id": "jpm-026",
+  "split": "dev"
+ },
+ {
+  "q": "What was shareholders' equity at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 327878000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "StockholdersEquity 2023-12-31",
+  "id": "jpm-027",
+  "split": "dev"
+ },
+ {
+  "q": "How much book equity did shareholders have at the end of 2022?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 292332000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "StockholdersEquity 2022-12-31",
+  "id": "jpm-028",
+  "split": "dev"
+ },
+ {
+  "q": "What were retained earnings at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 332901000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "RetainedEarningsAccumulatedDeficit 2023-12-31",
+  "id": "jpm-029",
+  "split": "dev"
+ },
+ {
+  "q": "How much in customer deposits did the company hold at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 2400688000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "Deposits 2023-12-31",
+  "id": "jpm-030",
+  "split": "holdout"
+ },
+ {
+  "q": "What were total deposits at the end of 2022?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 2340179000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "Deposits 2022-12-31",
+  "id": "jpm-031",
+  "split": "dev"
+ },
+ {
+  "q": "How large was the loan book at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 1280870000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "FinancingReceivableExcludingAccruedInterestBeforeAllowanceForCreditLoss 2023-12-31",
+  "id": "jpm-032",
+  "split": "dev"
+ },
+ {
+  "q": "What reserves were held against loan losses at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 22420000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "FinancingReceivableAllowanceForCreditLossExcludingAccruedInterest 2023-12-31",
+  "id": "jpm-033",
+  "split": "dev"
+ },
+ {
+  "q": "How many common shares were outstanding at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 2876600000.0,
+    "kind": "shares"
+   }
+  ],
+  "source": "CommonStockSharesOutstanding 2023-12-31",
+  "id": "jpm-034",
+  "split": "dev"
+ },
+ {
+  "q": "How much cash did operations generate in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 12974000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "NetCashProvidedByUsedInOperatingActivities 2023-12-31",
+  "id": "jpm-035",
+  "split": "holdout"
+ },
+ {
+  "q": "What was operating cash flow in 2022?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 107119000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "NetCashProvidedByUsedInOperatingActivities 2022-12-31",
+  "id": "jpm-036",
+  "split": "dev"
+ },
+ {
+  "q": "How much did the company spend buying back its own stock in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 9824000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "PaymentsForRepurchaseOfCommonStock 2023-12-31",
+  "id": "jpm-037",
+  "split": "dev"
+ },
+ {
+  "q": "What were share buybacks in 2022?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 3162000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "PaymentsForRepurchaseOfCommonStock 2022-12-31",
+  "id": "jpm-038",
+  "split": "dev"
+ },
+ {
+  "q": "How much was paid out in dividends in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 13463000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "PaymentsOfDividends 2023-12-31",
+  "id": "jpm-039",
+  "split": "dev"
+ },
+ {
+  "q": "What was net cash used in investing activities in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 67643000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "NetCashProvidedByUsedInInvestingActivities 2023-12-31",
+  "id": "jpm-040",
+  "split": "holdout"
+ },
+ {
+  "q": "What was net cash from financing activities in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": -25571000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "NetCashProvidedByUsedInFinancingActivities 2023-12-31",
+  "id": "jpm-041",
+  "split": "dev"
+ },
+ {
+  "q": "How much cash was spent on acquisitions in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 9920000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "PaymentsToAcquireBusinessesNetOfCashAcquired 2023-12-31",
+  "id": "jpm-042",
+  "split": "dev"
+ },
+ {
+  "q": "How much cash was paid for income taxes in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 9908000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "IncomeTaxesPaidNet 2023-12-31",
+  "id": "jpm-043",
+  "split": "dev"
+ },
+ {
+  "q": "What dividend per share was declared in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 4.1,
+    "kind": "per_share"
+   }
+  ],
+  "source": "CommonStockDividendsPerShareDeclared 2023-12-31",
+  "id": "jpm-044",
+  "split": "dev"
+ },
+ {
+  "q": "How large were unrecognized tax benefits at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 5400000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "UnrecognizedTaxBenefits 2023-12-31",
+  "id": "jpm-045",
+  "split": "holdout"
+ },
+ {
+  "q": "What were total future operating lease payments as of the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 10530000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "LesseeOperatingLeaseLiabilityPaymentsDue 2023-12-31",
+  "id": "jpm-046",
+  "split": "dev"
+ },
+ {
+  "q": "What was accumulated other comprehensive income or loss at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": -10443000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "AccumulatedOtherComprehensiveIncomeLossNetOfTax 2023-12-31",
+  "id": "jpm-047",
+  "split": "dev"
+ },
+ {
+  "q": "What was the value of treasury stock at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 116217000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "TreasuryStockCommonValue 2023-12-31",
+  "id": "jpm-048",
+  "split": "dev"
+ },
+ {
+  "q": "How much revenue did the Asset and Wealth Management segment report in 2023?",
+  "group": "segment",
+  "keys": [
+   {
+    "value": 19827000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "RevenuesNetOfInterestExpense AssetandWealthManagementSegmentMember 2023-12-31",
+  "id": "jpm-049",
+  "split": "dev"
+ },
+ {
+  "q": "How much revenue did the Commercial Banking segment report in 2023?",
+  "group": "segment",
+  "keys": [
+   {
+    "value": 15546000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "RevenuesNetOfInterestExpense CommercialBankingMember 2023-12-31",
+  "id": "jpm-050",
+  "split": "holdout"
+ },
+ {
+  "q": "How much revenue did the Consumer Community Banking segment report in 2023?",
+  "group": "segment",
+  "keys": [
+   {
+    "value": 70148000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "RevenuesNetOfInterestExpense ConsumerCommunityBankingMember 2023-12-31",
+  "id": "jpm-051",
+  "split": "dev"
+ },
+ {
+  "q": "How much revenue did the Corporate and Investment Bank segment report in 2023?",
+  "group": "segment",
+  "keys": [
+   {
+    "value": 48807000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "RevenuesNetOfInterestExpense CorporateAndInvestmentBankMember 2023-12-31",
+  "id": "jpm-052",
+  "split": "dev"
+ },
+ {
+  "q": "What was the net interest margin (net yield) and how did it change?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "net yield on these assets"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "jpm-053",
+  "split": "dev"
+ },
+ {
+  "q": "What net interest income does management expect next year?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "approximately $90 billion"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "jpm-054",
+  "split": "dev"
+ },
+ {
+  "q": "What was the impact of the First Republic acquisition?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "bargain purchase gain"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "jpm-055",
+  "split": "holdout"
+ },
+ {
+  "q": "What was the FDIC special assessment?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "special assessment"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "jpm-056",
+  "split": "dev"
+ },
+ {
+  "q": "What net charge-off rate is expected in Card Services?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "Card Services to be less than 3.50%"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "jpm-057",
+  "split": "dev"
+ },
+ {
+  "q": "Where did the CET1 ratio end the year?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "CET1 ratios were both 15.0%"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "jpm-058",
+  "split": "dev"
+ },
+ {
+  "q": "What is the loans-to-deposits ratio?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "Loans-to-deposits ratio"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "jpm-059",
+  "split": "dev"
+ },
+ {
+  "q": "How did Consumer & Community Banking net revenue change?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "Net revenue was $70.1 billion"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "jpm-060",
+  "split": "holdout"
+ },
+ {
+  "q": "How did Corporate & Investment Bank net revenue change?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "Net revenue was $48.8 billion"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "jpm-061",
+  "split": "dev"
+ },
+ {
+  "q": "How did Commercial Banking net revenue change?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "Net revenue was $15.5 billion"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "jpm-062",
+  "split": "dev"
+ },
+ {
+  "q": "How did Asset & Wealth Management net revenue change?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "Net revenue was $19.8 billion"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "jpm-063",
+  "split": "dev"
+ },
+ {
+  "q": "How many employees does the firm have?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "309,926 employees"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "jpm-064",
+  "split": "dev"
+ },
+ {
+  "q": "What is the current quarterly dividend?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "quarterly common stock dividend is currently $1.05"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "jpm-065",
+  "split": "holdout"
+ },
+ {
+  "q": "How large is the share repurchase authorization?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "authorized to purchase up to $30 billion"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "jpm-066",
+  "split": "dev"
+ },
+ {
+  "q": "How does the firm measure market risk with VaR?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "Value-at-risk"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "jpm-067",
+  "split": "dev"
+ },
+ {
+  "q": "What is the liquidity coverage ratio?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "liquidity coverage ratio"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "jpm-068",
+  "split": "dev"
+ },
+ {
+  "q": "What does the firm say about uninsured deposits?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "uninsured deposits"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "jpm-069",
+  "split": "dev"
+ },
+ {
+  "q": "What is the overhead (efficiency) ratio?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "overhead ratio"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "jpm-070",
+  "split": "holdout"
+ },
+ {
+  "q": "What is the exposure to commercial real estate?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "commercial real estate"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "jpm-071",
+  "split": "dev"
+ },
+ {
+  "q": "How are climate risks managed?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "climate"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "jpm-072",
+  "split": "dev"
+ }
+]

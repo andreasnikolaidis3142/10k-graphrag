@@ -1,0 +1,106 @@
+{
+  "question": "What risks does Walmart highlight about tariffs, supply chain, foreign currency and international operations?",
+  "model": "apodex/apodex-1.1-mini:free",
+  "ungrounded": [],
+  "coverage_gaps": [],
+  "uncited_claims": [],
+  "stripped_pseudo_citations": 0,
+  "answer": {
+    "summary": "Walmart discloses that significant changes in tax and trade policies, including tariffs and government regulations affecting trade between the U.S. and other countries where it sources products, could adversely affect its business and financial performance, noting a significant portion of general merchandise sold in U.S. stores and clubs is manufactured in other countries [T00284]. In fiscal 2024, Walmart U.S. and Sam's Club operating segments generated approximately 82% of consolidated net sales, meaning international operations account for the remaining share [T00284]. Foreign currency impacts on cash were -$140.00M in FY2022 [F00373], -$73.00M in FY2023 [F00372], and flipped to +$69.00M in FY2024 [F00371], with FY2024 showing a -194.5% YoY change [F00371]. International operations face legislative, judicial, accounting, legal, regulatory, tax, political and economic risks specific to the countries or regions in which Walmart operates [T00277]. Changes in operations to comply with new or changed trade restrictions or newly imposed sanctions can be expensive, time-consuming and disruptive, with little or no advance notice [T00280].",
+    "status": "mixed",
+    "key_numbers": [
+      {
+        "metric": "Effect of exchange rate on cash",
+        "period": "FY2022",
+        "value": "-$140.00M",
+        "fact_id": "F00373"
+      },
+      {
+        "metric": "Effect of exchange rate on cash",
+        "period": "FY2023",
+        "value": "-$73.00M",
+        "fact_id": "F00372"
+      },
+      {
+        "metric": "Effect of exchange rate on cash",
+        "period": "FY2024",
+        "value": "$69.00M",
+        "fact_id": "F00371"
+      },
+      {
+        "metric": "Walmart U.S. and Sam's Club share of consolidated net sales",
+        "period": "FY2024",
+        "value": "approximately 82%",
+        "fact_id": "T00284"
+      }
+    ],
+    "drivers": [
+      "U.S. and Sam's Club segments are the largest revenue component at approximately 82% of consolidated net sales, with a significant portion of general merchandise sourced from other countries, concentrating tariff exposure on cross-border trade [T00284]",
+      "FX impact on cash moved from negative in FY2022 and FY2023 to positive in FY2024, a sign flip with a -194.5% YoY change [F00371]"
+    ],
+    "risks_and_red_flags": [
+      "Tariffs and government trade regulations affecting sourcing countries could have an adverse effect on business and financial performance [T00284]",
+      "International operations subject to legislative, judicial, accounting, legal, regulatory, tax, political and economic risks specific to each country or region [T00277]",
+      "New or changed trade restrictions and sanctions can be expensive, time-consuming and disruptive, announced with little or no advance notice [T00280]",
+      "Tensions between nation-state governments and conflicts of laws may lead to operational challenges, with potential for more severe government actions if disputes escalate [T00280]",
+      "Foreign currency fluctuations materially affected cash, swinging from -$140.00M in FY2022 to +$69.00M in FY2024 [F00373][F00371]"
+    ],
+    "data_quality_notes": [
+      "2 accounting identities passed, 0 failed for the numbers above"
+    ],
+    "outlook": {
+      "actuals_view": "FX impact on cash improved to a positive $69.00M in FY2024 after negative impacts of -$73.00M in FY2023 and -$140.00M in FY2022 [F00371][F00372][F00373]",
+      "forward_looking_guidance": "The tariff, trade restriction and international operation risk disclosures are forward-looking risk statements rather than financial guidance; no management guidance figures are present in the retrieved evidence"
+    },
+    "follow_up_checks": [
+      "Verify the approximately 82% U.S. and Sam's Club net sales share against the segment reporting table in the 10-K",
+      "Check whether the filing discloses tariff exposure by sourcing country or product category",
+      "Review whether management discusses hedging strategies or mitigation for foreign currency exposure",
+      "Confirm whether any actual tariff impacts were recorded in FY2024 financial results"
+    ],
+    "sources": {
+      "T00284": {
+        "source": "prose",
+        "where": "paragraph in the filing: \"In fiscal 2024, our Walmart U.S. and Sam's Club operating segments generated approximately 82% of our consolidated net sales. Significant changes in tax and tra\""
+      },
+      "F00373": {
+        "value": "-$140.00M",
+        "concept": "EffectOfExchangeRateOnCash",
+        "period": "FY2022",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:EffectOfExchangeRateOnCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents",
+        "also_displayed_in": [
+          "table #54 \"Consolidated Statements of Cash Flows\", row \"Effect of exchange rates on cash, cash equivalents and restricted cash\", column \"2022\""
+        ]
+      },
+      "F00372": {
+        "value": "-$73.00M",
+        "concept": "EffectOfExchangeRateOnCash",
+        "period": "FY2023",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:EffectOfExchangeRateOnCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents",
+        "also_displayed_in": [
+          "table #54 \"Consolidated Statements of Cash Flows\", row \"Effect of exchange rates on cash, cash equivalents and restricted cash\", column \"2023\""
+        ]
+      },
+      "F00371": {
+        "value": "$69.00M",
+        "concept": "EffectOfExchangeRateOnCash",
+        "period": "FY2024",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:EffectOfExchangeRateOnCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents",
+        "also_displayed_in": [
+          "table #54 \"Consolidated Statements of Cash Flows\", row \"Effect of exchange rates on cash, cash equivalents and restricted cash\", column \"2024\""
+        ]
+      },
+      "T00277": {
+        "source": "prose",
+        "where": "paragraph in the filing: \"Our international operations subject us to legislative, judicial, accounting, legal, regulatory, tax, political and economic risks and conditions specific to th\""
+      },
+      "T00280": {
+        "source": "prose",
+        "where": "paragraph in the filing: \"Changing our operations in accordance with new or changed restrictions on international trade or newly imposed sanctions can be expensive, time-consuming and di\""
+      }
+    }
+  }
+}

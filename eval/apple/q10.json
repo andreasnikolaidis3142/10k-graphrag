@@ -1,0 +1,233 @@
+{
+  "question": "How many iPhones did Apple sell in FY2023, and what is its revenue guidance for next year?",
+  "model": "apodex/apodex-1.1-mini:free",
+  "ungrounded": [],
+  "coverage_gaps": [],
+  "uncited_claims": [],
+  "stripped_pseudo_citations": 0,
+  "answer": {
+    "summary": "Apple's FY2023 iPhone revenue was $200.58B [F00279], down from $205.49B in FY2022 [F00280], a decline of -$4.91B (-2.4%) [F00279/F00280]. iPhone accounted for 52.3% of total FY2023 revenues of $383.29B [F00013/F00279]. The retrieved evidence does not contain iPhone unit sales (number of iPhones sold) for FY2023. The retrieved evidence also does not contain any forward-looking revenue guidance for the next fiscal year. iPhone revenue decline contributed 44% of the total revenue change of -$11.04B (-2.8%) [F00014/F00279].",
+    "status": "neutral",
+    "key_numbers": [
+      {
+        "metric": "iPhone revenue FY2023",
+        "period": "FY2023",
+        "value": "$200.58B",
+        "fact_id": "[F00279]"
+      },
+      {
+        "metric": "Total revenues FY2023",
+        "period": "FY2023",
+        "value": "$383.29B",
+        "fact_id": "[F00013]"
+      },
+      {
+        "metric": "iPhone revenue FY2022",
+        "period": "FY2022",
+        "value": "$205.49B",
+        "fact_id": "[F00280]"
+      },
+      {
+        "metric": "Total revenue change FY2023 vs FY2022",
+        "period": "FY2023",
+        "value": "-$11.04B (-2.8%)",
+        "fact_id": "[F00014]"
+      },
+      {
+        "metric": "Americas revenue FY2023",
+        "period": "FY2023",
+        "value": "$162.56B",
+        "fact_id": "[F00838]"
+      },
+      {
+        "metric": "Americas revenue change FY2023 vs FY2022",
+        "period": "FY2023",
+        "value": "-$7.10B (-4.2%)",
+        "fact_id": "[F00838]"
+      }
+    ],
+    "drivers": [
+      "Americas was the largest contributor to the total revenue change at -$7.10B (-4.2%), representing 64% of the -$11.04B (-2.8%) total decline [F00838/F00839/F00014]",
+      "Mac was the largest contributor to the total revenue change by product at -$10.82B (-26.9%), representing 98% of the total change [F00282/F00283/F00014]",
+      "iPhone revenue decline of -$4.91B (-2.4%) was the second-largest product contributor, accounting for 44% of the total change [F00279/F00280/F00014]",
+      "Services offset the decline with +$7.07B (+9.1%), moving against the total change [F00010/F00011]"
+    ],
+    "risks_and_red_flags": [
+      "iPhone concentration: iPhone revenue represented 52.3% of total FY2023 revenues, so iPhone performance drives over half of company revenue [F00279/F00013]",
+      "iPhone revenue declined 2.4% year-over-year in FY2023 [F00279/F00280]",
+      "Americas revenue declined 4.2% year-over-year in FY2023, contributing 64% of the total revenue decline [F00838/F00839]",
+      "Greater China iPhone revenue represented a moderately higher proportion of net sales in 2023, indicating regional concentration [T00455]"
+    ],
+    "data_quality_notes": [
+      "iPhone unit sales (number of iPhones sold) for FY2023 are not in the retrieved evidence; only iPhone revenue of $200.58B is available [F00279]",
+      "Forward-looking revenue guidance for the next fiscal year is not in the retrieved evidence; the filing contains only FY2023 actuals",
+      "Text fact [T00454] is marked MISMATCH and unchecked; deferred revenue reconciliation figures should be verified against the tables before use"
+    ],
+    "outlook": {
+      "actuals_view": "FY2023 iPhone revenue declined 2.4% to $200.58B [F00279], while total revenues fell 2.8% to $383.29B [F00013]",
+      "forward_looking_guidance": "not in the retrieved evidence"
+    },
+    "follow_up_checks": [
+      "Locate iPhone unit sales in Note 13 'Segment Information and Geographic Data' of the 10-K, referenced in [T00455]",
+      "Search the 10-K for a management outlook or guidance section for FY2024 revenue",
+      "Verify the MISMATCH-marked deferred revenue reconciliation in [T00454] against the financial statement tables",
+      "Confirm whether unit sales are disclosed in the earnings release or investor presentation rather than the 10-K"
+    ],
+    "sources": {
+      "F00279": {
+        "value": "$200.58B",
+        "concept": "Revenues",
+        "period": "FY2023",
+        "slice": "ProductOrService=IPhone",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "also_displayed_in": [
+          "table #8 \"The following table shows net sales by category for 2023, 2022 and 2021 (dollars in millions):\", row \"iPhone (1)\", column \"2023\"",
+          "table #20 \"untitled\", row \"iPhone (1)\", column \"2023\""
+        ]
+      },
+      "F00280": {
+        "value": "$205.49B",
+        "concept": "Revenues",
+        "period": "FY2022",
+        "slice": "ProductOrService=IPhone",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "also_displayed_in": [
+          "table #8 \"The following table shows net sales by category for 2023, 2022 and 2021 (dollars in millions):\", row \"iPhone (1)\", column \"2022\"",
+          "table #20 \"untitled\", row \"iPhone (1)\", column \"2022\""
+        ]
+      },
+      "F00013": {
+        "value": "$383.29B",
+        "concept": "Revenues",
+        "period": "FY2023",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "also_displayed_in": [
+          "table #7 \"The following table shows net sales by reportable segment for 2023, 2022 and 2021 (dollars in millions):\", row \"Total net sales\", column \"2023\"",
+          "table #8 \"The following table shows net sales by category for 2023, 2022 and 2021 (dollars in millions):\", row \"Total net sales\", column \"2023\"",
+          "table #15 \"CONSOLIDATED STATEMENTS OF OPERATIONS\", row \"Total net sales\", column \"September 30, 2023\""
+        ]
+      },
+      "F00014": {
+        "value": "$394.33B",
+        "concept": "Revenues",
+        "period": "FY2022",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "also_displayed_in": [
+          "table #7 \"The following table shows net sales by reportable segment for 2023, 2022 and 2021 (dollars in millions):\", row \"Total net sales\", column \"2022\"",
+          "table #8 \"The following table shows net sales by category for 2023, 2022 and 2021 (dollars in millions):\", row \"Total net sales\", column \"2022\"",
+          "table #15 \"CONSOLIDATED STATEMENTS OF OPERATIONS\", row \"Total net sales\", column \"September 24, 2022\""
+        ]
+      },
+      "F00838": {
+        "value": "$162.56B",
+        "concept": "Revenues",
+        "period": "FY2023",
+        "slice": "StatementBusinessSegments=AmericasSegment",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "also_displayed_in": [
+          "table #7 \"The following table shows net sales by reportable segment for 2023, 2022 and 2021 (dollars in millions):\", row \"Americas\", column \"2023\"",
+          "table #46 \"Note 13 – Segment Information and Geographic Data\", row \"Net sales\", column \"2023\""
+        ]
+      },
+      "F00839": {
+        "value": "$169.66B",
+        "concept": "Revenues",
+        "period": "FY2022",
+        "slice": "StatementBusinessSegments=AmericasSegment",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "also_displayed_in": [
+          "table #7 \"The following table shows net sales by reportable segment for 2023, 2022 and 2021 (dollars in millions):\", row \"Americas\", column \"2022\"",
+          "table #46 \"Note 13 – Segment Information and Geographic Data\", row \"Net sales\", column \"2022\""
+        ]
+      },
+      "F00282": {
+        "value": "$29.36B",
+        "concept": "Revenues",
+        "period": "FY2023",
+        "slice": "ProductOrService=Mac",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "also_displayed_in": [
+          "table #8 \"The following table shows net sales by category for 2023, 2022 and 2021 (dollars in millions):\", row \"Mac (1)\", column \"2023\"",
+          "table #20 \"untitled\", row \"Mac (1)\", column \"2023\""
+        ]
+      },
+      "F00283": {
+        "value": "$40.18B",
+        "concept": "Revenues",
+        "period": "FY2022",
+        "slice": "ProductOrService=Mac",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "also_displayed_in": [
+          "table #8 \"The following table shows net sales by category for 2023, 2022 and 2021 (dollars in millions):\", row \"Mac (1)\", column \"2022\"",
+          "table #20 \"untitled\", row \"Mac (1)\", column \"2022\""
+        ]
+      },
+      "F00010": {
+        "value": "$85.20B",
+        "concept": "Revenues",
+        "period": "FY2023",
+        "slice": "ProductOrService=Service",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "also_displayed_in": [
+          "table #8 \"The following table shows net sales by category for 2023, 2022 and 2021 (dollars in millions):\", row \"Services (2)\", column \"2023\"",
+          "table #20 \"untitled\", row \"Services (2)\", column \"2023\""
+        ]
+      },
+      "F00011": {
+        "value": "$78.13B",
+        "concept": "Revenues",
+        "period": "FY2022",
+        "slice": "ProductOrService=Service",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "also_displayed_in": [
+          "table #8 \"The following table shows net sales by category for 2023, 2022 and 2021 (dollars in millions):\", row \"Services (2)\", column \"2022\"",
+          "table #20 \"untitled\", row \"Services (2)\", column \"2022\""
+        ]
+      },
+      "T00455": {
+        "source": "prose",
+        "where": "paragraph in Item 8 Financial Statements: \"The Company’s proportion of net sales by disaggregated revenue source was generally consistent for each reportable segment in Note 13, “Segment Information and \""
+      },
+      "T00454": {
+        "source": "prose",
+        "where": "paragraph in Item 8 Financial Statements: \"Total net sales include $ 8.2 billion of revenue recognized in 2023 that was included in deferred revenue as of September 24, 2022, $ 7.5 billion of revenue rec\""
+      },
+      "F00850": {
+        "value": "$72.56B",
+        "concept": "Revenues",
+        "period": "FY2023",
+        "slice": "StatementBusinessSegments=GreaterChinaSegment",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "also_displayed_in": [
+          "table #7 \"The following table shows net sales by reportable segment for 2023, 2022 and 2021 (dollars in millions):\", row \"Greater China\", column \"2023\"",
+          "table #46 \"Note 13 – Segment Information and Geographic Data\", row \"Net sales\", column \"2023\""
+        ],
+        "note": "not cited by the answer; included because its name appears in the text"
+      },
+      "F00851": {
+        "value": "$74.20B",
+        "concept": "Revenues",
+        "period": "FY2022",
+        "slice": "StatementBusinessSegments=GreaterChinaSegment",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "also_displayed_in": [
+          "table #7 \"The following table shows net sales by reportable segment for 2023, 2022 and 2021 (dollars in millions):\", row \"Greater China\", column \"2022\"",
+          "table #46 \"Note 13 – Segment Information and Geographic Data\", row \"Net sales\", column \"2022\""
+        ],
+        "note": "prior-year value behind the change shown"
+      }
+    }
+  }
+}

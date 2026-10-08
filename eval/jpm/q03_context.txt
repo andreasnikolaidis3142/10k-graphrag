@@ -1,0 +1,43 @@
+COMPANY: JPMORGAN CHASE & CO | Fiscal year end: month 12 day 31 | Latest fiscal year in filing: FY2023
+TIME CONTEXT: periods named FY#### are ACTUALS reported in this 10-K. Text facts with role 'guidance' are FORWARD-LOOKING management estimates, not actuals.
+
+SERIES ShortTermBorrowings - Short-term borrowings
+  VIEW: STOCK (point-in-time balance; do NOT sum across dates)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  @2021-01-01         -$1.39B  [F10644] (table 374: BS)
+  @2021-12-31          $2.42B  [F10643] (table 374: BS)
+  @2022-01-01       -$358.00M  [F10532] (table 372: Notes to consolidated financial statemen)
+  @2022-12-31         $44.03B  [F00182] XBRL-tagged
+  @2023-01-01        $201.00M  [F10429] (table 370: BS)
+  @2023-12-31         $44.71B  [F00181] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2021-12-31: -274.0% YoY (-$1.39B -> $2.42B) [F10643]
+   - SIGN FLIP in @2021-12-31: -$1.39B -> $2.42B [F10643]
+   - @2022-01-01: -114.8% YoY ($2.42B -> -$358.00M) [F10532]
+   - SIGN FLIP in @2022-01-01: $2.42B -> -$358.00M [F10532]
+   - @2022-12-31: -12398.0% YoY (-$358.00M -> $44.03B) [F00182]
+   - SIGN FLIP in @2022-12-31: -$358.00M -> $44.03B [F00182]
+   - @2023-01-01: -99.5% YoY ($44.03B -> $201.00M) [F10429]
+   - @2023-12-31: +22144.8% YoY ($201.00M -> $44.71B) [F00181]
+
+SERIES AccumulatedOtherComprehensiveIncomeLossNetOfTax - us-gaap:AccumulatedOtherComprehensiveIncomeLossNetOfTax
+  VIEW: STOCK (point-in-time balance; do NOT sum across dates)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  @2022-12-31        -$17.34B  [F00220] XBRL-tagged
+  @2023-12-31        -$10.44B  [F00219] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2023-12-31: -39.8% YoY (-$17.34B -> -$10.44B) [F00219]
+   - TREND: increasing (moderate), +40% over the window
+
+NARRATIVE EVIDENCE (management text; numbers inside were machine-checked against the tables):
+  [T01074] (Item 15 Exhibits; number checks: unchecked, unchecked, unchecked) The provision for credit losses was $9.3 billion, reflecting $6.2 billion of net charge-offs and a net addition of $3.1 billion to the allowance for credit losses.
+  [T00963] (Item 15 Exhibits; number checks: unchecked, unchecked, unchecked, unchecked) • The provision for credit losses was $9.3 billion, reflecting $6.2 billion of net charge-offs and a net addition to the allowance for credit losses of $3.1 billion. Net charge-offs increased $3.3 billion, predominantly driven by Card Services, and to a lesser extent single name exposures in wholesale. The net addition to the allowance for credit losses included:
+  [T01363] (Item 15 Exhibits; number checks: unchecked, unchecked, unchecked, unchecked) The provision for credit losses was $121 million, driven by net charge-offs of $272 million, up $190 million, driven by single name exposures, largely offset by a $151 million net reduction in the allowance for credit losses.
+  [T01466] (Item 15 Exhibits; number checks: unchecked, unchecked) The provision for credit losses was $159 million, predominantly driven by a $146 million addition to the allowance for credit losses to establish the allowance for the First Republic loans and lending-related commitments in the second quarter of 2023.
+  [T01518] (Item 15 Exhibits; number checks: unchecked) The provision for credit losses was $171 million, reflecting a net addition to the allowance for credit losses related to a single name exposure, which was subsequently charged off upon the restructuring of a loan.
+  [T01182] (Item 15 Exhibits; number checks: none) • In 2023, cash used reflected lower deposits, which included the impact of the repayment of the deposits provided to First Republic Bank by the consortium of large U.S. banks that the Firm assumed as part of the First Republic acquisition, partially offset by higher securities loaned under repurchase agreements and net proceeds from long- and short-term borrowings.
+  [T03478] (Item 15 Exhibits; number checks: unchecked, unchecked) At December 31, 2023 and 2022, the Firm held $ 505 million and $ 692 million, respectively, of financial assets for which the rights have been transferred to third parties; however, the transfers did not qualify as a sale in accordance with U.S. GAAP. These transfers have been recognized as collateralized financing transactions. The transferred assets are recorded in trading assets and loans, and the corresponding liabilities are recorded primarily in short-term borrowings and long-term debt on the Consolidated balance sheets.
+  [T01183] (Item 15 Exhibits; number checks: none) • In 2022, cash used reflected lower deposits, partially offset by net proceeds from long- and short-term borrowings.
+
+DATA QUALITY: 0 accounting identities passed, 0 failed for the numbers above.
+NOTE: for the metrics above, 8 duplicate facts with conflicting values were set aside during parsing (the primary-statement value was kept).

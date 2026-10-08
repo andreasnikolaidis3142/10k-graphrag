@@ -1,0 +1,125 @@
+COMPANY: Walmart Inc. | Fiscal year end: month 1 day 31 | Latest fiscal year in filing: FY2024
+TIME CONTEXT: periods named FY#### are ACTUALS reported in this 10-K. Text facts with role 'guidance' are FORWARD-LOOKING management estimates, not actuals.
+
+SERIES FreeCashFlow - Free cash flow
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  FY2022              $11.07B  [F01264] (table 31: Free Cash Flow)
+  FY2023              $11.98B  [F01263] (table 31: Free Cash Flow)
+  FY2024              $15.12B  [F01262] (table 31: Free Cash Flow)
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: +8.2% YoY ($11.07B -> $11.98B) [F01263]
+   - FY2024: +26.2% YoY ($11.98B -> $15.12B) [F01262]
+   - INFLECTION FY2024: spike of 31% vs prior-2-period average [F01262]
+   - CAGR FY2022->FY2024: 16.8%
+   - TREND: increasing (moderate), +37% over the window
+
+SERIES NetCashProvidedByUsedInOperatingActivities - us-gaap:NetCashProvidedByUsedInOperatingActivities
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a TOTAL line; its components (if listed under ATTRIBUTION) already roll up into it.
+  FY2022              $24.18B  [F00319] XBRL-tagged
+  FY2023              $28.84B  [F00318] XBRL-tagged
+  FY2024              $35.73B  [F00317] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: +19.3% YoY ($24.18B -> $28.84B) [F00318]
+   - FY2024: +23.9% YoY ($28.84B -> $35.73B) [F00317]
+   - INFLECTION FY2024: spike of 35% vs prior-2-period average [F00317]
+   - CAGR FY2022->FY2024: 21.6%
+   - TREND: increasing (moderate), +48% over the window
+
+SERIES CashConversion - Cash conversion (CFO / Net income)
+  VIEW: DERIVED ratio/metric = CFO / NetIncome (already computed; do not recompute)
+  UNIT: multiple (filing displayed in units; values below are normalised to base units)
+  FY2022                1.73x  [F01851] 
+  FY2023                2.55x  [F01852] 
+  FY2024                2.20x  [F01853] 
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: +47.2% YoY (1.73x -> 2.55x) [F01852]
+   - FY2024: -14.0% YoY (2.55x -> 2.20x) [F01853]
+   - CAGR FY2022->FY2024: 12.5%
+   - TREND: increasing (moderate), +27% over the window
+
+SERIES ShareholderReturns - Dividends + buybacks
+  VIEW: DERIVED ratio/metric = Dividends + Repurchases (already computed; do not recompute)
+  UNIT: USD (filing displayed in units; values below are normalised to base units)
+  FY2022              $15.94B  [F01887] 
+  FY2023              $16.03B  [F01888] 
+  FY2024               $8.92B  [F01889] 
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: +0.6% YoY ($15.94B -> $16.03B) [F01888]
+   - FY2024: -44.4% YoY ($16.03B -> $8.92B) [F01889]
+   - INFLECTION FY2024: drop of 44% vs prior-2-period average [F01889]
+   - CAGR FY2022->FY2024: -25.2%
+   - TREND: decreasing (moderate), -44% over the window
+
+SERIES PayoutOfFcfPct - Shareholder returns % of FCF
+  VIEW: DERIVED ratio/metric = Returns / FCF x 100 (already computed; do not recompute); unit is PERCENT - differences are percentage points, not %
+  UNIT: percent (filing displayed in units; values below are normalised to base units)
+  FY2022               143.9%  [F01890] 
+  FY2023               133.8%  [F01891] 
+  FY2024                59.0%  [F01892] 
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: 133.8% vs 143.9% (-1012 bps) [F01891]
+   - FY2024: 59.0% vs 133.8% (-7481 bps) [F01892]
+
+SERIES PaymentsForRepurchaseOfCommonStock - us-gaap:PaymentsForRepurchaseOfCommonStock
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  FY2022               $9.79B  [F00355] XBRL-tagged
+  FY2023               $9.92B  [F00354] XBRL-tagged
+  FY2024               $2.78B  [F00353] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: +1.4% YoY ($9.79B -> $9.92B) [F00354]
+   - FY2024: -72.0% YoY ($9.92B -> $2.78B) [F00353]
+   - INFLECTION FY2024: drop of 72% vs prior-2-period average [F00353]
+   - CAGR FY2022->FY2024: -46.7%
+   - TREND: decreasing (strong), -72% over the window
+
+SERIES PaymentsToAcquirePropertyPlantAndEquipment - us-gaap:PaymentsToAcquirePropertyPlantAndEquipment
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a TOTAL line; its components (if listed under ATTRIBUTION) already roll up into it.
+  FY2022              $13.11B  [F00322] XBRL-tagged
+  FY2023              $16.86B  [F00321] verified XBRL-tagged
+  FY2024              $20.61B  [F00320] verified XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: +28.6% YoY ($13.11B -> $16.86B) [F00321]
+   - FY2024: +22.2% YoY ($16.86B -> $20.61B) [F00320]
+   - INFLECTION FY2024: spike of 38% vs prior-2-period average [F00320]
+   - CAGR FY2022->FY2024: 25.4%
+   - TREND: increasing (strong), +57% over the window
+
+SERIES NetIncomeLoss - us-gaap:ProfitLoss
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  FY2022              $13.94B  [F00047] verified XBRL-tagged
+  FY2023              $11.29B  [F00046] verified XBRL-tagged
+  FY2024              $16.27B  [F00045] verified XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: -19.0% YoY ($13.94B -> $11.29B) [F00046]
+   - FY2024: +44.1% YoY ($11.29B -> $16.27B) [F00045]
+   - INFLECTION FY2024: spike of 29% vs prior-2-period average [F00045]
+   - CAGR FY2022->FY2024: 8.0%
+   - TREND: increasing (weak), +17% over the window
+
+SERIES PaymentsOfDividends - us-gaap:PaymentsOfDividendsCommonStock
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  FY2022               $6.15B  [F00352] XBRL-tagged outflow shown as magnitude
+  FY2023               $6.11B  [F00351] XBRL-tagged outflow shown as magnitude
+  FY2024               $6.14B  [F00350] XBRL-tagged outflow shown as magnitude
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: -0.6% YoY ($6.15B -> $6.11B) [F00351]
+   - FY2024: +0.4% YoY ($6.11B -> $6.14B) [F00350]
+   - CAGR FY2022->FY2024: -0.1%
+   - TREND: stable (weak), -0% over the window
+
+NARRATIVE EVIDENCE (management text; numbers inside were machine-checked against the tables):
+  [T00443] (n/a; number checks: unchecked, unchecked, unchecked, unchecked, unchecked, unchecked, unchecked, unchecked) We define free cash flow as net cash provided by operating activities in a period minus payments for property and equipment made in that period. We had net cash provided by operating activities of $35.7 billion, $28.8 billion and $24.2 billion for fiscal 2024, 2023 and 2022, respectively. We generated free cash flow of $15.1 billion, $12.0 billion and $11.1 billion for fiscal 2024, 2023 and 2022, respectively. The increase in net cash provided by operating activities in fiscal 2024 is primarily due to higher cash provided by operating income, as well as timing of certain payments and strategic
+  [T00444] (n/a; number checks: none) Walmart's definition of free cash flow is limited in that it does not represent residual cash flows available for discretionary expenditures due to the fact that the measure does not deduct the payments required for debt service and other contractual obligations or payments made for business acquisitions. Therefore, we believe it is important to view free cash flow as a measure that provides supplemental information to our Consolidated Statements of Cash Flows .
+  [T00442] (n/a; number checks: none) Free cash flow is considered a non-GAAP financial measure. Management believes, however, that free cash flow, which measures our ability to generate additional cash from our business operations, is an important financial measure for use in evaluating the Company's financial performance. Free cash flow should be considered in addition to, rather than as a substitute for, consolidated net income as a measure of our performance and net cash provided by operating activities as a measure of our liquidity. See " Liquidity and Capital Resources " for discussions of GAAP metrics including net cash pro
+  [T00445] (n/a; number checks: none) Although other companies report their free cash flow, numerous methods may exist for calculating a company's free cash flow. As a result, the method used by management to calculate our free cash flow may differ from the methods used by other companies to calculate their free cash flow.
+
+DATA QUALITY: 5 accounting identities passed, 0 failed for the numbers above.
+NOTE: for the metrics above, 1 duplicate facts with conflicting values were set aside during parsing (the primary-statement value was kept).

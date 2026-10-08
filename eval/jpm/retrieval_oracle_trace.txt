@@ -1,0 +1,60 @@
+
+## Q1: How did total net revenue, net income and return on equity change over the last three years?
+   reranked top10: ['T01406', 'T04463', 'T00959', 'T04679', 'T01455', 'T01498', 'T01355', 'T01399', 'T01392', 'T04678']
+   T00958 bm25#139   MISSED by BM25 (rank 139) | JPMorgan Chase reported net income of $49.6 billion for 2023, up 32%, earnings per share of $16.23, ROE of 17%
+   T00959 bm25#11    RETRIEVED (top10) (<=80 chars: no search score in final stage) | • Total net revenue was $158.1 billion, up 23%, reflecting:
+   T04463 bm25#1     RETRIEVED (top10) | (f) The ratio of average stockholders’ equity to average assets was 8.1%, 7.4% and 7.6% for the years ended De
+
+## Q2: What are net interest income and the net interest margin, and how did they change?
+   reranked top10: ['T04479', 'T00960', 'T01239', 'T04535', 'T01391', 'T01068', 'T00955', 'T01411', 'T01281', 'T01463']
+   T00960 bm25#14    RETRIEVED (top10) | – Net interest income (“NII”) of $89.3 billion, up 34%, driven by higher rates, the impact of First Republic, 
+   T01068 bm25#6     RETRIEVED (top10) | Net interest income increased driven by higher rates, the impact of First Republic, and higher revolving balan
+   T01069 bm25#79    MISSED by BM25 (rank 79) | The Firm’s average interest-earning assets were $3.3 trillion, down $23 billion, and the yield was 5.14%, up 2
+   T01070 bm25#78    MISSED by BM25 (rank 78) | Refer to the Consolidated average balance sheets, interest and rates schedule on pages 310-314 for further inf
+   T01198 bm25#3     in BM25 top-50, reranked #22 (<=80 chars: no search score in final stage) | Net interest income, net yield, and noninterest revenue excluding Markets
+   T01199 bm25#75    MISSED by BM25 (rank 75) | In addition to reviewing net interest income, net yield, and noninterest revenue on a managed basis, managemen
+   T04655 bm25#47    in BM25 top-50, reranked #39 | Net yield on interest-earning assets: The average rate for interest-earning assets less the average rate paid 
+
+## Q3: How large is the allowance for credit losses and the provision for credit losses, and how did they trend relative to loans?
+   reranked top10: ['T01074', 'T00963', 'T01363', 'T01466', 'T01518', 'T03792', 'T02242', 'T01300', 'T01422', 'T00968']
+   T01074 bm25#5     RETRIEVED (top10) | The provision for credit losses was $9.3 billion, reflecting $6.2 billion of net charge-offs and a net additio
+   T00963 bm25#9     RETRIEVED (top10) | • The provision for credit losses was $9.3 billion, reflecting $6.2 billion of net charge-offs and a net addit
+   T00968 bm25#36    RETRIEVED (top10) | • The total allowance for credit losses was $24.8 billion at December 31, 2023. The Firm had an allowance for 
+   T02090 bm25#1489  MISSED by BM25 (rank 1489) | As of December 31, 2023, retained loans increased $68.8 billion predominantly driven by the impact of First Re
+   T02704 bm25#74    MISSED by BM25 (rank 74) | As described in Note 13 to the consolidated financial statements, the allowance for loan losses for the portfo
+
+## Q5: How big are total loans and total deposits, and what is the loan-to-deposit ratio?
+   reranked top10: ['T01897', 'T01436', 'T02055', 'T02935', 'T02947', 'T02957', 'T00968', 'T02953', 'T00101', 'T02080']
+   T00971 bm25#780   MISSED by BM25 (rank 780) | • Firmwide average loans of $1.2 trillion were up 13%, predominantly driven by higher loans in CCB and CB, pri
+   T00972 bm25#489   MISSED by BM25 (rank 489) (<=80 chars: no search score in final stage) | • Firmwide average deposits of $2.4 trillion were down 4%, driven by
+   T01876 bm25#386   MISSED by BM25 (rank 386) | Average deposits were lower for the year ended December 31, 2023 compared to the year ended December 31, 2022,
+   T01897 bm25#1     RETRIEVED (top10) | The table below shows the loan and deposit balances, the loans-to-deposits ratios, and deposits as a percentag
+   T02090 bm25#1000  MISSED by BM25 (rank 1000) | As of December 31, 2023, retained loans increased $68.8 billion predominantly driven by the impact of First Re
+
+## Q6: Break down revenue by business segment (Consumer & Community Banking, Corporate & Investment Bank, Commercial Banking, Asset & Wealth Management).
+   reranked top10: ['T00038', 'T01218', 'T04361', 'T00946', 'T04371', 'T04369', 'T04374', 'T04364', 'T01029', 'T04366']
+   T01455 bm25#438   MISSED by BM25 (rank 438) | Net revenue was $19.8 billion, up 12%. Net interest income was $6.3 billion, up 20%. Noninterest revenue was $
+   T01218 bm25#1     RETRIEVED (top10) | The Firm is managed on an LOB basis. There are four major reportable business segments – Consumer & Community 
+   T00038 bm25#2     RETRIEVED (top10) | For management reporting purposes, JPMorgan Chase’s activities are organized into four major reportable busine
+
+## Q7: What happened to noninterest expense, the efficiency (overhead) ratio and compensation expense?
+   reranked top10: ['T00962', 'T01421', 'T01362', 'T03192', 'T01465', 'T03118', 'T04668', 'T01092', 'T02388', 'T01088']
+   T00962 bm25#6     RETRIEVED (top10) | • Noninterest expense was $87.2 billion, up 14%, predominantly driven by higher compensation expense, reflecti
+   T01088 bm25#12    RETRIEVED (top10) (<=80 chars: no search score in final stage) | Compensation expense increased driven by:
+   T01089 bm25#2862  MISSED by BM25 (rank 2862) | • an increase in employees, primarily in technology and front office, as well as wage inflation,
+   T01092 bm25#40    RETRIEVED (top10) (<=80 chars: no search score in final stage) | Noncompensation expense increased as a result of:
+   T01093 bm25#48    in BM25 top-50, reranked #40 | • higher FDIC-related expense, which included the $2.9 billion special assessment recognized in Corporate,
+   T01086 bm25#1592  MISSED by BM25 (rank 1592) | (c) Reflected the impact of First Republic of $1.5 billion, which included expenses recorded in the second qua
+   T00047 bm25#1200  MISSED by BM25 (rank 1200) | As of December 31, 2023 , JPMorgan Chase had 309,926 employees globally, an increase of 16,203 employees from 
+   T01191 bm25#73    MISSED by BM25 (rank 73) | In addition to analyzing the Firm’s results on a reported basis, management reviews Firmwide results, includin
+   T04668 bm25#1     RETRIEVED (top10) (<=80 chars: no search score in final stage) | Overhead ratio: Noninterest expense as a percentage of total net revenue.
+
+## Q9: How much did JPMorgan return to shareholders through dividends and buybacks, and what happened to the share count and EPS?
+   reranked top10: ['T04100', 'T04065', 'T00660', 'T01742', 'T00837', 'T04087', 'T04076', 'T04102', 'T00935', 'T02619']
+   T00958 bm25#53    MISSED by BM25 (rank 53) | JPMorgan Chase reported net income of $49.6 billion for 2023, up 32%, earnings per share of $16.23, ROE of 17%
+   T01742 bm25#11    RETRIEVED (top10) | The Firm’s quarterly common stock dividend is currently $1.05 per share. The Firm’s dividends are subject to a
+   T00841 bm25#138   MISSED by BM25 (rank 138) | Effective May 1, 2022, the Firm is authorized to purchase up to $30 billion under its common share repurchase 
+   T01751 bm25#122   MISSED by BM25 (rank 122) | (b) In the second half of 2022, the Firm temporarily suspended share repurchases, which it resumed under its c
+   T00842 bm25#83    MISSED by BM25 (rank 83) | Shares repurchased pursuant to the common share repurchase program during 2023 were as follows.
+   T01753 bm25#126   MISSED by BM25 (rank 126) | The Board of Directors’ authorization to repurchase common shares is utilized at management’s discretion, and 
+   T04100 bm25#1     RETRIEVED (top10) | Basic earnings per share (“EPS”) is calculated using the two-class method. Under the two-class method, all ear

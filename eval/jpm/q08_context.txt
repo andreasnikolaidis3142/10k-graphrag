@@ -1,0 +1,99 @@
+COMPANY: JPMORGAN CHASE & CO | Fiscal year end: month 12 day 31 | Latest fiscal year in filing: FY2023
+TIME CONTEXT: periods named FY#### are ACTUALS reported in this 10-K. Text facts with role 'guidance' are FORWARD-LOOKING management estimates, not actuals.
+
+SERIES AssetsCurrent - Total client assets (a)
+  VIEW: STOCK (point-in-time balance; do NOT sum across dates)
+  UNIT: USD (filing displayed in billions; values below are normalised to base units)
+  CONTEXT: this is a TOTAL line; its components (if listed under ATTRIBUTION) already roll up into it.
+  @2021-12-31          $4.29T  [F08740] verified (table 161: 2023 compared with 2022)
+  @2022-12-31          $4.05T  [F08739] verified (table 161: 2023 compared with 2022)
+  @2023-12-31          $5.01T  [F08738] verified (table 161: 2023 compared with 2022)
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2022-12-31: -5.8% YoY ($4.29T -> $4.05T) [F08739]
+   - @2023-12-31: +23.8% YoY ($4.05T -> $5.01T) [F08738]
+   - CAGR @2021-12-31->@2023-12-31: 8.0%
+   - TREND: increasing (weak), +17% over the window
+
+SERIES TotalDebt - Total debt (derived)
+  VIEW: DERIVED ratio/metric = LT debt + current debt + short-term borrowings + commercial paper (already computed; do not recompute)
+  UNIT: USD (filing displayed in units; values below are normalised to base units)
+  @2021-12-31        $303.43B  [F13525] 
+  @2022-12-31        $284.20B  [F13526] 
+  @2023-12-31        $363.35B  [F13527] 
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2022-12-31: -6.3% YoY ($303.43B -> $284.20B) [F13526]
+   - @2023-12-31: +27.8% YoY ($284.20B -> $363.35B) [F13527]
+   - CAGR @2021-12-31->@2023-12-31: 9.4%
+   - TREND: increasing (weak), +20% over the window
+
+SERIES LongTermDebtNoncurrent - Long-term debt
+  VIEW: STOCK (point-in-time balance; do NOT sum across dates)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  @2021-01-01        $369.00M  [F10655] (table 374: BS)
+  @2021-12-31        $301.00B  [F07436] (table 66: THREE-YEAR SUMMARY OF CONSOLIDATED FINAN)
+  @2022-01-01         -$3.87B  [F10542] (table 372: Notes to consolidated financial statemen)
+  @2022-12-31        $227.62B  [F13103] (table 641: BS)
+  @2023-01-01          $3.01B  [F10437] (table 370: BS)
+  @2023-12-31        $303.90B  [F10720] (table 386: Certain financial instruments that are n)
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2021-12-31: +81473.2% YoY ($369.00M -> $301.00B) [F07436]
+   - @2022-01-01: -101.3% YoY ($301.00B -> -$3.87B) [F10542]
+   - SIGN FLIP in @2022-01-01: $301.00B -> -$3.87B [F10542]
+   - @2022-12-31: -5983.2% YoY (-$3.87B -> $227.62B) [F13103]
+   - SIGN FLIP in @2022-12-31: -$3.87B -> $227.62B [F13103]
+   - @2023-01-01: -98.7% YoY ($227.62B -> $3.01B) [F10437]
+   - @2023-12-31: +9996.3% YoY ($3.01B -> $303.90B) [F10720]
+   - INFLECTION @2022-01-01: drop of 103% vs prior-2-period average [F10542]
+
+SERIES ShortTermBorrowings - Short-term borrowings
+  VIEW: STOCK (point-in-time balance; do NOT sum across dates)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  @2021-01-01         -$1.39B  [F10644] (table 374: BS)
+  @2021-12-31          $2.42B  [F10643] (table 374: BS)
+  @2022-01-01       -$358.00M  [F10532] (table 372: Notes to consolidated financial statemen)
+  @2022-12-31         $44.03B  [F00182] XBRL-tagged
+  @2023-01-01        $201.00M  [F10429] (table 370: BS)
+  @2023-12-31         $44.71B  [F00181] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2021-12-31: -274.0% YoY (-$1.39B -> $2.42B) [F10643]
+   - SIGN FLIP in @2021-12-31: -$1.39B -> $2.42B [F10643]
+   - @2022-01-01: -114.8% YoY ($2.42B -> -$358.00M) [F10532]
+   - SIGN FLIP in @2022-01-01: $2.42B -> -$358.00M [F10532]
+   - @2022-12-31: -12398.0% YoY (-$358.00M -> $44.03B) [F00182]
+   - SIGN FLIP in @2022-12-31: -$358.00M -> $44.03B [F00182]
+   - @2023-01-01: -99.5% YoY ($44.03B -> $201.00M) [F10429]
+   - @2023-12-31: +22144.8% YoY ($201.00M -> $44.71B) [F00181]
+
+SERIES CommercialPaper - Commercial paper
+  VIEW: STOCK (point-in-time balance; do NOT sum across dates)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  @2022-12-31         $12.56B  [F09269] (table 216: BS)
+  @2023-12-31         $14.74B  [F09268] (table 216: BS)
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2023-12-31: +17.4% YoY ($12.56B -> $14.74B) [F09268]
+   - TREND: increasing (weak), +17% over the window
+
+NARRATIVE EVIDENCE (management text; numbers inside were machine-checked against the tables):
+  [T00627] (Item 1A Risk Factors; number checks: none) JPMorgan Chase has developed and uses a variety of models and other analytical and judgment-based estimations to measure, monitor and implement controls over its market, credit, capital, liquidity, operational and other risks. JPMorgan Chase also uses internal models and estimations as a basis for its stress testing and in connection with the preparation of its financial statements under U.S. generally accepted accounting principles (“U.S. GAAP”).
+  [T00389] (Item 1A Risk Factors; number checks: none) For example, a significant deterioration in the credit quality of a counterparty, borrower or other obligor could lead to concerns about the creditworthiness of other counterparties, borrowers or obligors in similar, related or dependent industries. This type of interrelationship could exacerbate JPMorgan Chase’s credit, liquidity and market risk exposure and potentially cause it to incur losses,
+  [T00144] (Item 1A Risk Factors; number checks: none) • Liquidity risks, including the risk that JPMorgan Chase’s liquidity could be impaired by market-wide illiquidity or disruption, unforeseen liquidity or capital requirements, the inability to sell assets, default by a significant market participant, unanticipated outflows of cash or collateral, or lack of market or customer confidence in JPMorgan Chase; the dependence of JPMorgan Chase & Co. on the cash flows of its subsidiaries; and the potential adverse effects that any downgrade in any of JPMorgan Chase’s credit ratings may have on its liquidity and cost of funding.
+  [T01800] (Item 15 Exhibits; number checks: none) Liquidity risk is the risk that the Firm will be unable to meet its cash and collateral needs as they arise or that it does not have the appropriate amount, composition and tenor of funding and liquidity to support its assets and liabilities.
+
+RED-FLAG SCREEN (pre-computed across statements; MUST be considered):
+  - [HIGH] Operating cash flow decline: FY2023: operating cash flow fell 87.9% ($107.12B -> $12.97B). [F00341]
+  - [HIGH] Accounting identity check: @2022-12-31: 'Net income = Pre-tax income - Taxes' fails by -$47.14B (tolerance $1.51M). Possible parsing error or non-standard presentation. [F08876]
+  - [HIGH] Accounting identity check: @2023-12-31: 'Net income = Pre-tax income - Taxes' fails by -$60.92B (tolerance $1.51M). Possible parsing error or non-standard presentation. [F07786]
+  - [HIGH] Accounting identity check: @2021-12-31: 'Net income = Pre-tax income - Taxes' fails by -$64.93B (tolerance $1.51M). Possible parsing error or non-standard presentation. [F08877]
+  - [MEDIUM] Earnings quality: FY2023: operating cash flow is only 0.26x net income (accrual-heavy earnings). [F13521]
+  - [LOW] Text differs from table: Text says '$100 billion' for LongTermDebtNoncurrent FY2023 (In August 2023, the Federal Reserve, the FDIC and the OCC released a proposal to expand th...). The table shows $1.00 [F08294]. It may describe a narrower item than the statement line; verify before treating it as an error. [F08950] [F08294]
+  - [LOW] Text differs from table: Text says '$ 793 million' for LongTermDebtNoncurrent FY2023 (• $ 793 million of long-term debt driven by a decrease in observability and an increase in...). The table shows $1.00 [F08294]. It may describe a narrower item than the statement line; verify before treating it as an error. [F10669] [F08294]
+  - [LOW] Text differs from table: Text says '$ 1.0 billion' for LongTermDebtNoncurrent FY2023 (• $ 1.0 billion of long-term debt driven by an increase in observability and a decrease in...). The table shows $1.00 [F08294]. It may describe a narrower item than the statement line; verify before treating it as an error. [F10672] [F08294]
+  - [LOW] Text differs from table: Text says '$ 809 million' for LongTermDebtNoncurrent FY2023 (• $ 809 million of long-term debt driven by an increase in observability and a decrease in...). The table shows $1.00 [F08294]. It may describe a narrower item than the statement line; verify before treating it as an error. [F10674] [F08294]
+  - [LOW] Text differs from table: Text says '$ 3.3 billion' for LongTermDebtNoncurrent FY2023 (• $ 3.3 billion of net losses on liabilities, predominantly driven by losses in long-term ...). The table shows $1.00 [F08294]. It may describe a narrower item than the statement line; verify before treating it as an error. [F10675] [F08294]
+  - [LOW] Text differs from table: Text says '$ 4.6 billion' for LongTermDebtNoncurrent FY2023 (• $ 4.6 billion of net gains on liabilities, predominantly driven by a decline in the fair...). The table shows $1.00 [F08294]. It may describe a narrower item than the statement line; verify before treating it as an error. [F10677] [F08294]
+  - [LOW] Text differs from table: Text says '$ 19.3 billion' for LongTermDebtNoncurrent FY2022 (At December 31, 2023 and 2022, the carrying amount excluded for AFS securities is $ 19.3 b...). The table shows $10.90 [F08295]. It may describe a narrower item than the statement line; verify before treating it as an error. [F10992] [F08295]
+  - [LOW] Text differs from table: Text says '$ 20.3 billion' for LongTermDebtNoncurrent FY2023 (At December 31, 2023 and 2022, the carrying amount excluded for AFS securities is $ 19.3 b...). The table shows $1.00 [F08294]. It may describe a narrower item than the statement line; verify before treating it as an error. [F10993] [F08294]
+  - [LOW] Text differs from table: Text says '$ 221 million' for LongTermDebtNoncurrent FY2023 (At December 31, 2023 and 2022, the carrying amount excluded for AFS securities is $ 19.3 b...). The table shows $1.00 [F08294]. It may describe a narrower item than the statement line; verify before treating it as an error. [F10994] [F08294]
+
+DATA QUALITY: 0 accounting identities passed, 0 failed for the numbers above.
+NOTE: for the metrics above, 21 duplicate facts with conflicting values were set aside during parsing (the primary-statement value was kept).

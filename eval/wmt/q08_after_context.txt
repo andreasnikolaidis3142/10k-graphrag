@@ -1,0 +1,103 @@
+COMPANY: Walmart Inc. | Fiscal year end: month 1 day 31 | Latest fiscal year in filing: FY2024
+TIME CONTEXT: periods named FY#### are ACTUALS reported in this 10-K. Text facts with role 'guidance' are FORWARD-LOOKING management estimates, not actuals.
+
+SERIES Revenues - us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  FY2022             $567.76B  [F00005] verified XBRL-tagged
+  FY2023             $605.88B  [F00004] verified XBRL-tagged
+  FY2024             $642.64B  [F00003] verified XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: +6.7% YoY ($567.76B -> $605.88B) [F00004]
+   - FY2024: +6.1% YoY ($605.88B -> $642.64B) [F00003]
+   - CAGR FY2022->FY2024: 6.4%
+   - TREND: increasing (weak), +13% over the window
+
+SERIES Revenues - us-gaap:Revenues
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a TOTAL line; its components (if listed under ATTRIBUTION) already roll up into it.
+  FY2022             $572.75B  [F00011] verified XBRL-tagged
+  FY2023             $611.29B  [F00010] verified XBRL-tagged
+  FY2024             $648.12B  [F00009] verified XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: +6.7% YoY ($572.75B -> $611.29B) [F00010]
+   - FY2024: +6.0% YoY ($611.29B -> $648.12B) [F00009]
+   - CAGR FY2022->FY2024: 6.4%
+   - TREND: increasing (weak), +13% over the window
+
+SERIES Revenues {'StatementBusinessSegments': 'WalmartInternational', 'StatementGeographical': 'Other'} - us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a STATEMENTBUSINESSSEGMENTS slice, one component of the consolidated total - not the company total.
+  FY2022              $25.56B  [F01066] XBRL-tagged
+  FY2023              $23.48B  [F01065] XBRL-tagged
+  FY2024              $25.27B  [F01064] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: -8.1% YoY ($25.56B -> $23.48B) [F01065]
+   - FY2024: +7.6% YoY ($23.48B -> $25.27B) [F01064]
+   - CAGR FY2022->FY2024: -0.6%
+   - TREND: stable (weak), -1% over the window
+
+SERIES Revenues {'MajorCustomers': 'ECommerce', 'StatementBusinessSegments': 'WalmartUS'} - us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in billions; values below are normalised to base units)
+  CONTEXT: this is a MAJORCUSTOMERS slice, one component of the consolidated total - not the company total.
+  FY2022              $47.80B  [F01051] XBRL-tagged
+  FY2023              $53.40B  [F01050] XBRL-tagged
+  FY2024              $65.40B  [F01049] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: +11.7% YoY ($47.80B -> $53.40B) [F01050]
+   - FY2024: +22.5% YoY ($53.40B -> $65.40B) [F01049]
+   - INFLECTION FY2024: spike of 29% vs prior-2-period average [F01049]
+   - CAGR FY2022->FY2024: 17.0%
+   - TREND: increasing (moderate), +37% over the window
+
+SERIES Revenues {'MajorCustomers': 'ECommerce', 'StatementBusinessSegments': 'WalmartInternational'} - us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in billions; values below are normalised to base units)
+  CONTEXT: this is a MAJORCUSTOMERS slice, one component of the consolidated total - not the company total.
+  FY2022              $18.50B  [F01069] XBRL-tagged
+  FY2023              $20.30B  [F01068] XBRL-tagged
+  FY2024              $24.80B  [F01067] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: +9.7% YoY ($18.50B -> $20.30B) [F01068]
+   - FY2024: +22.2% YoY ($20.30B -> $24.80B) [F01067]
+   - INFLECTION FY2024: spike of 28% vs prior-2-period average [F01067]
+   - CAGR FY2022->FY2024: 15.8%
+   - TREND: increasing (moderate), +34% over the window
+
+SERIES Revenues {'MajorCustomers': 'ECommerce', 'StatementBusinessSegments': 'SamsClub'} - us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in billions; values below are normalised to base units)
+  CONTEXT: this is a MAJORCUSTOMERS slice, one component of the consolidated total - not the company total.
+  FY2022               $6.90B  [F01087] XBRL-tagged
+  FY2023               $8.40B  [F01086] XBRL-tagged
+  FY2024               $9.90B  [F01085] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: +21.7% YoY ($6.90B -> $8.40B) [F01086]
+   - FY2024: +17.9% YoY ($8.40B -> $9.90B) [F01085]
+   - INFLECTION FY2024: spike of 29% vs prior-2-period average [F01085]
+   - CAGR FY2022->FY2024: 19.8%
+   - TREND: increasing (moderate), +43% over the window
+
+SERIES OtherIncome - us-gaap:OtherIncome
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  FY2022               $4.99B  [F00008] XBRL-tagged
+  FY2023               $5.41B  [F00007] XBRL-tagged
+  FY2024               $5.49B  [F00006] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: +8.3% YoY ($4.99B -> $5.41B) [F00007]
+   - FY2024: +1.5% YoY ($5.41B -> $5.49B) [F00006]
+   - CAGR FY2022->FY2024: 4.9%
+   - TREND: stable (weak), +10% over the window
+
+NARRATIVE EVIDENCE (management text; numbers inside were machine-checked against the tables):
+  [T00454] (n/a; number checks: unchecked, unchecked, unchecked, unchecked, unchecked, unchecked, unchecked, unchecked, unchecked) Our total revenues, which includes net sales and membership and other income, increased $36.8 billion or 6.0% and $38.5 billion or 6.7% for fiscal 2024 and 2023, respectively, when compared to the previous fiscal year. These increases in revenues were primarily due to increases in net sales, which increased $36.8 billion or 6.1% and $38.1 billion or 6.7% for fiscal 2024 and 2023, respectively, when compared to the previous fiscal year. For fiscal 2024, the increase was primarily due to positive comparable sales for the Walmart U.S. and Sam's Club segments, which were driven by growth in transa
+  [T00252] (n/a; number checks: none) Our reputation with our customers and members is important to the success of our enterprise strategy, which combines traditional retail, membership models, marketplaces, financial services, healthcare, and other customer and business services into a series of interconnected assets to make it seamless for customers to interact with us. Security-related events could be widely publicized and could materially adversely affect our reputation with our customers, members, associates, vendors and shareholders, could harm our competitive position particularly with respect to our eCommerce operations, a
+  [T00269] (n/a; number checks: none) We believe that the price of our stock generally reflects high market expectations for our future operating results. Any failure to meet or delay in meeting these expectations, including our consolidated net sales, consolidated operating income, growth rates, eCommerce growth rates, advertising and other higher-margin initiatives (which is expected to help drive our operating income growth at a rate faster than net sales over the long term), capital expenditures, comparable store and club sales growth rates or earnings and adjusted earnings per share could cause the market price of our stock t
+  [T00058] (n/a; number checks: none) • the amount, number, growth, increase, reduction or decrease in or over certain periods, of or in certain financial items or measures or operating measures, including our earnings per share, net sales, growth rates, comparable store and club sales, our eCommerce sales, liabilities, expenses of certain categories, expense leverage, operating income, returns, capital and operating investments or expenditures of particular types and new store and club openings, inventory levels and associated costs, product mix and demand for certain merchandise, consumer confidence, disposable income, credit av
+
+DATA QUALITY: 0 accounting identities passed, 0 failed for the numbers above.
+NOTE: for the metrics above, 10 duplicate facts with conflicting values were set aside during parsing (the primary-statement value was kept).

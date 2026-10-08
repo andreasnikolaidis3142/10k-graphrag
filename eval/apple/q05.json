@@ -1,0 +1,203 @@
+{
+  "question": "What did Apple spend on R&D and SG&A, and how did that change relative to revenue?",
+  "model": "apodex/apodex-1.1-mini:free",
+  "ungrounded": [],
+  "coverage_gaps": [],
+  "uncited_claims": [],
+  "stripped_pseudo_citations": 0,
+  "answer": {
+    "summary": "The retrieved evidence does not contain Apple's R&D or SG&A spending figures for FY2023 or any prior period; these expense lines are not in the retrieved evidence, so the question cannot be answered from this material. What is available is revenue context: total net sales were $383.29B in FY2023 [F00013], down 2.8% YoY from $394.33B in FY2022 [F00014], after rising 7.8% in FY2022 [F00014]. The FY2023 revenue decline was driven primarily by Mac (-$10.82B, 98% of the total change) [F00282] and by the Americas business segment (-$7.10B, 64% of the total change) [F00838], partially offset by Services (+$7.07B) [F00010]. Management text attributes the full-year decrease to foreign currency weakness and lower Mac and iPhone sales, partially offset by higher Services [T00275].",
+    "status": "neutral",
+    "key_numbers": [
+      {
+        "metric": "Total net sales FY2023",
+        "period": "FY2023",
+        "value": "$383.29B",
+        "fact_id": "[F00013]"
+      },
+      {
+        "metric": "Total net sales FY2022",
+        "period": "FY2022",
+        "value": "$394.33B",
+        "fact_id": "[F00014]"
+      },
+      {
+        "metric": "Revenue YoY change FY2023",
+        "period": "FY2023",
+        "value": "-2.8%",
+        "fact_id": "[F00013]"
+      },
+      {
+        "metric": "Mac revenue change FY2023",
+        "period": "FY2023",
+        "value": "-$10.82B (-26.9%)",
+        "fact_id": "[F00282]"
+      },
+      {
+        "metric": "Americas segment revenue change FY2023",
+        "period": "FY2023",
+        "value": "-$7.10B (-4.2%)",
+        "fact_id": "[F00838]"
+      },
+      {
+        "metric": "Services revenue change FY2023",
+        "period": "FY2023",
+        "value": "+$7.07B (+9.1%)",
+        "fact_id": "[F00010]"
+      }
+    ],
+    "drivers": [
+      "Not answerable - R&D and SG&A expense lines are not present in the retrieved evidence; no attribution is possible.",
+      "Revenue decline FY2023: Americas segment was the largest contributor at 64% of the total change (-$7.10B) [F00838], followed by Mac (-$10.82B, 98% of total change) [F00282], partially offset by Services (+$7.07B, offsets 64% of the total change) [F00010]."
+    ],
+    "risks_and_red_flags": [
+      "Critical data gap: R&D and SG&A spending amounts and their YoY changes are not in the retrieved evidence, so expense-to-revenue ratios cannot be computed.",
+      "Without expense data, it is impossible to assess whether operating leverage improved or deteriorated in FY2023 relative to the -2.8% revenue decline [F00013]."
+    ],
+    "data_quality_notes": [
+      "R&D expense and SG&A expense are not tagged in the retrieved evidence; no fact IDs exist for these line items.",
+      "Revenue figures are verified XBRL-tagged [F00013][F00014]; the expense-side data needed to answer the question is simply absent from the retrieved set."
+    ],
+    "outlook": {
+      "actuals_view": "Not in the retrieved evidence - no R&D or SG&A actuals are available.",
+      "forward_looking_guidance": "Not in the retrieved evidence - no management guidance on R&D or SG&A is present."
+    },
+    "follow_up_checks": [
+      "Retrieve the Consolidated Statements of Operations (Income Statement) from the 10-K to extract Research and Development expense and Selling, General and Administrative expense for FY2021-FY2023.",
+      "Verify whether R&D and SG&A are presented as separate line items or combined, and confirm the units (millions vs. base USD).",
+      "Compute R&D/revenue and SG&A/revenue ratios once the expense figures are retrieved, and compare YoY changes against the -2.8% revenue change [F00013].",
+      "Check MD&A for any discussion of operating expense trends or headcount-driven cost changes that explain expense movements."
+    ],
+    "sources": {
+      "F00013": {
+        "value": "$383.29B",
+        "concept": "Revenues",
+        "period": "FY2023",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "also_displayed_in": [
+          "table #7 \"The following table shows net sales by reportable segment for 2023, 2022 and 2021 (dollars in millions):\", row \"Total net sales\", column \"2023\"",
+          "table #8 \"The following table shows net sales by category for 2023, 2022 and 2021 (dollars in millions):\", row \"Total net sales\", column \"2023\"",
+          "table #15 \"CONSOLIDATED STATEMENTS OF OPERATIONS\", row \"Total net sales\", column \"September 30, 2023\""
+        ]
+      },
+      "F00014": {
+        "value": "$394.33B",
+        "concept": "Revenues",
+        "period": "FY2022",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "also_displayed_in": [
+          "table #7 \"The following table shows net sales by reportable segment for 2023, 2022 and 2021 (dollars in millions):\", row \"Total net sales\", column \"2022\"",
+          "table #8 \"The following table shows net sales by category for 2023, 2022 and 2021 (dollars in millions):\", row \"Total net sales\", column \"2022\"",
+          "table #15 \"CONSOLIDATED STATEMENTS OF OPERATIONS\", row \"Total net sales\", column \"September 24, 2022\""
+        ]
+      },
+      "F00282": {
+        "value": "$29.36B",
+        "concept": "Revenues",
+        "period": "FY2023",
+        "slice": "ProductOrService=Mac",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "also_displayed_in": [
+          "table #8 \"The following table shows net sales by category for 2023, 2022 and 2021 (dollars in millions):\", row \"Mac (1)\", column \"2023\"",
+          "table #20 \"untitled\", row \"Mac (1)\", column \"2023\""
+        ]
+      },
+      "F00838": {
+        "value": "$162.56B",
+        "concept": "Revenues",
+        "period": "FY2023",
+        "slice": "StatementBusinessSegments=AmericasSegment",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "also_displayed_in": [
+          "table #7 \"The following table shows net sales by reportable segment for 2023, 2022 and 2021 (dollars in millions):\", row \"Americas\", column \"2023\"",
+          "table #46 \"Note 13 – Segment Information and Geographic Data\", row \"Net sales\", column \"2023\""
+        ]
+      },
+      "F00010": {
+        "value": "$85.20B",
+        "concept": "Revenues",
+        "period": "FY2023",
+        "slice": "ProductOrService=Service",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "also_displayed_in": [
+          "table #8 \"The following table shows net sales by category for 2023, 2022 and 2021 (dollars in millions):\", row \"Services (2)\", column \"2023\"",
+          "table #20 \"untitled\", row \"Services (2)\", column \"2023\""
+        ]
+      },
+      "T00275": {
+        "source": "prose",
+        "where": "paragraph in Item 7 MD&A: \"The Company’s total net sales decreased 3% or $11.0 billion during 2023 compared to 2022. The weakness in foreign currencies relative to the U.S. dollar account\""
+      },
+      "F00283": {
+        "value": "$40.18B",
+        "concept": "Revenues",
+        "period": "FY2022",
+        "slice": "ProductOrService=Mac",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "also_displayed_in": [
+          "table #8 \"The following table shows net sales by category for 2023, 2022 and 2021 (dollars in millions):\", row \"Mac (1)\", column \"2022\"",
+          "table #20 \"untitled\", row \"Mac (1)\", column \"2022\""
+        ],
+        "note": "prior-year value behind the change shown"
+      },
+      "F00011": {
+        "value": "$78.13B",
+        "concept": "Revenues",
+        "period": "FY2022",
+        "slice": "ProductOrService=Service",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "also_displayed_in": [
+          "table #8 \"The following table shows net sales by category for 2023, 2022 and 2021 (dollars in millions):\", row \"Services (2)\", column \"2022\"",
+          "table #20 \"untitled\", row \"Services (2)\", column \"2022\""
+        ],
+        "note": "prior-year value behind the change shown"
+      },
+      "F00279": {
+        "value": "$200.58B",
+        "concept": "Revenues",
+        "period": "FY2023",
+        "slice": "ProductOrService=IPhone",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "also_displayed_in": [
+          "table #8 \"The following table shows net sales by category for 2023, 2022 and 2021 (dollars in millions):\", row \"iPhone (1)\", column \"2023\"",
+          "table #20 \"untitled\", row \"iPhone (1)\", column \"2023\""
+        ],
+        "note": "not cited by the answer; included because its name appears in the text"
+      },
+      "F00280": {
+        "value": "$205.49B",
+        "concept": "Revenues",
+        "period": "FY2022",
+        "slice": "ProductOrService=IPhone",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "also_displayed_in": [
+          "table #8 \"The following table shows net sales by category for 2023, 2022 and 2021 (dollars in millions):\", row \"iPhone (1)\", column \"2022\"",
+          "table #20 \"untitled\", row \"iPhone (1)\", column \"2022\""
+        ],
+        "note": "prior-year value behind the change shown"
+      },
+      "F00839": {
+        "value": "$169.66B",
+        "concept": "Revenues",
+        "period": "FY2022",
+        "slice": "StatementBusinessSegments=AmericasSegment",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "also_displayed_in": [
+          "table #7 \"The following table shows net sales by reportable segment for 2023, 2022 and 2021 (dollars in millions):\", row \"Americas\", column \"2022\"",
+          "table #46 \"Note 13 – Segment Information and Geographic Data\", row \"Net sales\", column \"2022\""
+        ],
+        "note": "prior-year value behind the change shown"
+      }
+    }
+  }
+}

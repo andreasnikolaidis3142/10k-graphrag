@@ -1,0 +1,351 @@
+{
+  "question": "How did total net revenue, net income and return on equity change over the last three years?",
+  "model": "apodex/apodex-1.1-mini:free",
+  "ungrounded": [],
+  "coverage_gaps": [],
+  "uncited_claims": [],
+  "stripped_pseudo_citations": 0,
+  "answer": {
+    "summary": "Total net revenue grew steadily over the three-year window, rising from $121.65B in FY2021 [F06823] to $128.69B in FY2022 [F06796] and reaching $158.10B in FY2023 [F06769]. Net income moved in the opposite direction in FY2022, declining from $48.33B in FY2021 [F00080] to $37.68B in FY2022 [F00079], before recovering to $49.55B in FY2023 [F00078], exceeding the FY2021 level. Return on equity followed the net income pattern, falling from 16.4% in FY2021 [F13531] to 12.8% in FY2022 [F13532] (-358 bps) and rebounding to 16.0% in FY2023 [F13533] (+313 bps). The FY2022 compression in net income and ROE coincides with a period of only modest revenue growth. FY2023 delivered the strongest revenue growth and a net income recovery that restored ROE to near FY2021 levels.",
+    "status": "mixed",
+    "key_numbers": [
+      {
+        "metric": "Total net revenue",
+        "period": "FY2021",
+        "value": "$121.65B",
+        "fact_id": "F06823"
+      },
+      {
+        "metric": "Total net revenue",
+        "period": "FY2022",
+        "value": "$128.69B",
+        "fact_id": "F06796"
+      },
+      {
+        "metric": "Total net revenue",
+        "period": "FY2023",
+        "value": "$158.10B",
+        "fact_id": "F06769"
+      },
+      {
+        "metric": "Net income",
+        "period": "FY2021",
+        "value": "$48.33B",
+        "fact_id": "F00080"
+      },
+      {
+        "metric": "Net income",
+        "period": "FY2022",
+        "value": "$37.68B",
+        "fact_id": "F00079"
+      },
+      {
+        "metric": "Net income",
+        "period": "FY2023",
+        "value": "$49.55B",
+        "fact_id": "F00078"
+      },
+      {
+        "metric": "Return on equity",
+        "period": "FY2021",
+        "value": "16.4%",
+        "fact_id": "F13531"
+      },
+      {
+        "metric": "Return on equity",
+        "period": "FY2022",
+        "value": "12.8%",
+        "fact_id": "F13532"
+      },
+      {
+        "metric": "Return on equity",
+        "period": "FY2023",
+        "value": "16.0%",
+        "fact_id": "F13533"
+      }
+    ],
+    "drivers": [
+      "The evidence does not contain an ATTRIBUTION block decomposing total net revenue or net income change by segment; no component-level % of total change is available for the company total.",
+      "Net income declined from $48.33B in FY2021 [F00080] to $37.68B in FY2022 [F00079] then recovered to $49.55B in FY2023 [F00078], driving the ROE trough-and-rebound pattern, as ROE is a function of net income relative to average equity.",
+      "Stockholders' equity grew +12.2% YoY to $327.88B at @2023-12-31 [F00225], providing a larger equity base that ROE recovered against in FY2023."
+    ],
+    "risks_and_red_flags": [
+      "Net income accounting identity (Net income = Pre-tax income - Taxes) failed at all three quarterly points, with off-by amounts of -$64.93B, -$47.14B and -$60.92B; the quarterly net income facts @2021-12-31, @2022-12-31 and @2023-12-31 are all marked CHECK-FAILED [F08877][F08876][F07786].",
+      "Quarterly net income values (@2021-12-31 -$3.71B, @2022-12-31 -$743.00M, @2023-12-31 $1.24B) are all marked CHECK-FAILED and should not be relied upon [F08877][F08876][F07786].",
+      "ROE narrative values in management text (17.0%, 13.2%, 16.0% for 2021, 2022, 2023) [T04463] conflict with the SERIES ROE values (16.4%, 12.8%, 16.0%) [F13531][F13532][F13533].",
+      "Duplicate facts with conflicting values were set aside during parsing for these metrics."
+    ],
+    "data_quality_notes": [
+      "3 accounting identities failed for Net income = Pre-tax income - Taxes at @2021-12-31 (off by -$64.93B), @2022-12-31 (off by -$47.14B), and @2023-12-31 (off by -$60.92B).",
+      "Quarterly net income facts @2021-12-31, @2022-12-31, @2023-12-31 are CHECK-FAILED and excluded from analysis.",
+      "ROE figures differ between the SERIES (16.4%/12.8%/16.0%) and narrative management text (17.0%/13.2%/16.0%) for FY2021/FY2022/FY2023.",
+      "Duplicate facts with conflicting values were set aside during parsing; the primary-statement value was kept."
+    ],
+    "outlook": {
+      "actuals_view": "FY2023 actuals show a full recovery: net income of $49.55B [F00078] exceeded FY2021's $48.33B [F00080], ROE returned to 16.0% [F13533] from the FY2022 trough of 12.8% [F13532], and revenue reached $158.10B [F06769].",
+      "forward_looking_guidance": "not in the retrieved evidence"
+    },
+    "follow_up_checks": [
+      "Reconcile the ROE discrepancy between the SERIES values (16.4%/12.8%/16.0%) and the narrative management text (17.0%/13.2%/16.0%) [T04463].",
+      "Investigate the failed net income = pre-tax income - taxes identity at the quarterly points, with off-by amounts of -$64.93B, -$47.14B, and -$60.92B.",
+      "Review the duplicate facts with conflicting values that were set aside during parsing to confirm the primary-statement values are correct.",
+      "Obtain segment-level attribution for the FY2022-FY2023 revenue and net income changes, since no ATTRIBUTION block is present for the company total."
+    ],
+    "sources": {
+      "F06823": {
+        "value": "$121.65B",
+        "concept": "Revenues",
+        "period": "FY2021",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:Revenues",
+        "also_displayed_in": [
+          "table #82 \"untitled\", row \"Total net revenue\", column \"2021\"",
+          "table #336 \"Consolidated statements of income\", row \"Total net revenue\", column \"2021\""
+        ]
+      },
+      "F06796": {
+        "value": "$128.69B",
+        "concept": "Revenues",
+        "period": "FY2022",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:Revenues",
+        "also_displayed_in": [
+          "table #73 \"untitled\", row \"Total net revenue\", column \"2022\"",
+          "table #82 \"untitled\", row \"Total net revenue\", column \"2022\"",
+          "table #336 \"Consolidated statements of income\", row \"Total net revenue\", column \"2022\""
+        ]
+      },
+      "F06769": {
+        "value": "$158.10B",
+        "concept": "Revenues",
+        "period": "FY2023",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:Revenues",
+        "also_displayed_in": [
+          "table #73 \"untitled\", row \"Total net revenue\", column \"2023\"",
+          "table #82 \"untitled\", row \"Total net revenue\", column \"2023\"",
+          "table #99 \"The following summary table provides a reconciliation from the Firm’s reported U.S. GAAP results to managed basis.\", row \"Total net revenue\", column \"2023\""
+        ]
+      },
+      "F00080": {
+        "value": "$48.33B",
+        "concept": "NetIncomeLoss",
+        "period": "FY2021",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:NetIncomeLoss",
+        "also_displayed_in": [
+          "table #111 \"untitled\", row \"Net income/(loss)\", column \"2021\"",
+          "table #336 \"Consolidated statements of income\", row \"Net income\", column \"2021\"",
+          "table #338 \"Consolidated statements of comprehensive income\", row \"Net income\", column \"2021\""
+        ]
+      },
+      "F00079": {
+        "value": "$37.68B",
+        "concept": "NetIncomeLoss",
+        "period": "FY2022",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:NetIncomeLoss",
+        "also_displayed_in": [
+          "table #73 \"untitled\", row \"Net income\", column \"2022\"",
+          "table #111 \"untitled\", row \"Net income/(loss)\", column \"2022\"",
+          "table #336 \"Consolidated statements of income\", row \"Net income\", column \"2022\""
+        ]
+      },
+      "F00078": {
+        "value": "$49.55B",
+        "concept": "NetIncomeLoss",
+        "period": "FY2023",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:NetIncomeLoss",
+        "also_displayed_in": [
+          "table #73 \"untitled\", row \"Net income\", column \"2023\"",
+          "table #99 \"The following summary table provides a reconciliation from the Firm’s reported U.S. GAAP results to managed basis.\", row \"Net income\", column \"2023\"",
+          "table #111 \"untitled\", row \"Net income/(loss)\", column \"2023\""
+        ]
+      },
+      "F13531": {
+        "value": "16.4%",
+        "concept": "RoePct",
+        "period": "FY2021",
+        "source": "computed",
+        "where": "NetIncome / avg(Equity) x 100",
+        "inputs": [
+          "F00080",
+          "F00301"
+        ],
+        "input_sources": {
+          "F00080": {
+            "value": "$48.33B",
+            "concept": "NetIncomeLoss",
+            "period": "FY2021",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:NetIncomeLoss",
+            "also_displayed_in": [
+              "table #111 \"untitled\", row \"Net income/(loss)\", column \"2021\"",
+              "table #336 \"Consolidated statements of income\", row \"Net income\", column \"2021\"",
+              "table #338 \"Consolidated statements of comprehensive income\", row \"Net income\", column \"2021\""
+            ]
+          },
+          "F00301": {
+            "value": "$294.13B",
+            "concept": "StockholdersEquity",
+            "period": "@2021-12-31",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:StockholdersEquity",
+            "also_displayed_in": [
+              "table #66 \"THREE-YEAR SUMMARY OF CONSOLIDATED FINANCIAL HIGHLIGHTS (unaudited)\", row \"Total stockholders’ equity\", column \"2021\"",
+              "table #343 \"Consolidated statements of changes in stockholders’ equity\", row \"Total stockholders’ equity\", column \"2021\""
+            ]
+          }
+        }
+      },
+      "F13532": {
+        "value": "12.8%",
+        "concept": "RoePct",
+        "period": "FY2022",
+        "source": "computed",
+        "where": "NetIncome / avg(Equity) x 100",
+        "inputs": [
+          "F00079",
+          "F00301",
+          "F00226"
+        ],
+        "input_sources": {
+          "F00079": {
+            "value": "$37.68B",
+            "concept": "NetIncomeLoss",
+            "period": "FY2022",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:NetIncomeLoss",
+            "also_displayed_in": [
+              "table #73 \"untitled\", row \"Net income\", column \"2022\"",
+              "table #111 \"untitled\", row \"Net income/(loss)\", column \"2022\"",
+              "table #336 \"Consolidated statements of income\", row \"Net income\", column \"2022\""
+            ]
+          },
+          "F00301": {
+            "value": "$294.13B",
+            "concept": "StockholdersEquity",
+            "period": "@2021-12-31",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:StockholdersEquity",
+            "also_displayed_in": [
+              "table #66 \"THREE-YEAR SUMMARY OF CONSOLIDATED FINANCIAL HIGHLIGHTS (unaudited)\", row \"Total stockholders’ equity\", column \"2021\"",
+              "table #343 \"Consolidated statements of changes in stockholders’ equity\", row \"Total stockholders’ equity\", column \"2021\""
+            ]
+          },
+          "F00226": {
+            "value": "$292.33B",
+            "concept": "StockholdersEquity",
+            "period": "@2022-12-31",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:StockholdersEquity",
+            "also_displayed_in": [
+              "table #66 \"THREE-YEAR SUMMARY OF CONSOLIDATED FINANCIAL HIGHLIGHTS (unaudited)\", row \"Total stockholders’ equity\", column \"2022\"",
+              "table #93 \"Refer to Note 15 and 34 for additional information.\", row \"Stockholders’ equity\", column \"2022\"",
+              "table #189 \"Capital components\", row \"Total stockholders’ equity\", column \"December 31, 2022\""
+            ]
+          }
+        }
+      },
+      "F13533": {
+        "value": "16.0%",
+        "concept": "RoePct",
+        "period": "FY2023",
+        "source": "computed",
+        "where": "NetIncome / avg(Equity) x 100",
+        "inputs": [
+          "F00078",
+          "F00226",
+          "F00225"
+        ],
+        "input_sources": {
+          "F00078": {
+            "value": "$49.55B",
+            "concept": "NetIncomeLoss",
+            "period": "FY2023",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:NetIncomeLoss",
+            "also_displayed_in": [
+              "table #73 \"untitled\", row \"Net income\", column \"2023\"",
+              "table #99 \"The following summary table provides a reconciliation from the Firm’s reported U.S. GAAP results to managed basis.\", row \"Net income\", column \"2023\"",
+              "table #111 \"untitled\", row \"Net income/(loss)\", column \"2023\""
+            ]
+          },
+          "F00226": {
+            "value": "$292.33B",
+            "concept": "StockholdersEquity",
+            "period": "@2022-12-31",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:StockholdersEquity",
+            "also_displayed_in": [
+              "table #66 \"THREE-YEAR SUMMARY OF CONSOLIDATED FINANCIAL HIGHLIGHTS (unaudited)\", row \"Total stockholders’ equity\", column \"2022\"",
+              "table #93 \"Refer to Note 15 and 34 for additional information.\", row \"Stockholders’ equity\", column \"2022\"",
+              "table #189 \"Capital components\", row \"Total stockholders’ equity\", column \"December 31, 2022\""
+            ]
+          },
+          "F00225": {
+            "value": "$327.88B",
+            "concept": "StockholdersEquity",
+            "period": "@2023-12-31",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:StockholdersEquity",
+            "also_displayed_in": [
+              "table #66 \"THREE-YEAR SUMMARY OF CONSOLIDATED FINANCIAL HIGHLIGHTS (unaudited)\", row \"Total stockholders’ equity\", column \"2023\"",
+              "table #93 \"Refer to Note 15 and 34 for additional information.\", row \"Stockholders’ equity\", column \"2023\"",
+              "table #189 \"Capital components\", row \"Total stockholders’ equity\", column \"December 31, 2023\""
+            ]
+          }
+        }
+      },
+      "F00225": {
+        "value": "$327.88B",
+        "concept": "StockholdersEquity",
+        "period": "@2023-12-31",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:StockholdersEquity",
+        "also_displayed_in": [
+          "table #66 \"THREE-YEAR SUMMARY OF CONSOLIDATED FINANCIAL HIGHLIGHTS (unaudited)\", row \"Total stockholders’ equity\", column \"2023\"",
+          "table #93 \"Refer to Note 15 and 34 for additional information.\", row \"Stockholders’ equity\", column \"2023\"",
+          "table #189 \"Capital components\", row \"Total stockholders’ equity\", column \"December 31, 2023\""
+        ]
+      },
+      "F08877": {
+        "value": "-$3.71B",
+        "concept": "NetIncomeLoss",
+        "period": "@2021-12-31",
+        "source": "table",
+        "where": "table #167 \"IS\", row \"Net income/(loss)\", column \"2021\"",
+        "section": "Item 15 Exhibits",
+        "also_in": [
+          "table #167 \"untitled\", row \"Total net income/(loss)\"",
+          "table #638 \"untitled\", row \"Net income/(loss)\""
+        ]
+      },
+      "F08876": {
+        "value": "-$743.00M",
+        "concept": "NetIncomeLoss",
+        "period": "@2022-12-31",
+        "source": "table",
+        "where": "table #167 \"IS\", row \"Net income/(loss)\", column \"2022\"",
+        "section": "Item 15 Exhibits",
+        "also_in": [
+          "table #167 \"untitled\", row \"Total net income/(loss)\"",
+          "table #638 \"untitled\", row \"Net income/(loss)\""
+        ]
+      },
+      "F07786": {
+        "value": "$1.24B",
+        "concept": "NetIncomeLoss",
+        "period": "@2023-12-31",
+        "source": "table",
+        "where": "table #115 \"Segment information related to First Republic\", row \"Net income\", column \"As of or for the year ended December 31, 2023\"",
+        "section": "Item 15 Exhibits"
+      },
+      "T04463": {
+        "source": "prose",
+        "where": "paragraph in Item 15 Exhibits: \"(f) The ratio of average stockholders’ equity to average assets was 8.1%, 7.4% and 7.6% for the years ended December 31, 2023, 2022 and 2021, respectively. The \""
+      }
+    }
+  }
+}

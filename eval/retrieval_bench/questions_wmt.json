@@ -1,0 +1,1007 @@
+[
+ {
+  "q": "What was the company's total revenue for fiscal 2024?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 648125000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "Revenues 2024-01-31",
+  "id": "wmt-001",
+  "split": "dev"
+ },
+ {
+  "q": "What was the top line in fiscal 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 611289000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "Revenues 2023-01-31",
+  "id": "wmt-002",
+  "split": "dev"
+ },
+ {
+  "q": "How much did it cost to produce the goods and services sold in 2024?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 490142000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "CostOfRevenue 2024-01-31",
+  "id": "wmt-003",
+  "split": "dev"
+ },
+ {
+  "q": "What were selling, general and administrative costs in 2024?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 130971000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "SellingGeneralAndAdministrativeExpense 2024-01-31",
+  "id": "wmt-004",
+  "split": "dev"
+ },
+ {
+  "q": "What was operating profit in 2024?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 27012000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "OperatingIncomeLoss 2024-01-31",
+  "id": "wmt-005",
+  "split": "holdout"
+ },
+ {
+  "q": "How much interest expense did the company incur on its borrowings in 2024?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 2259000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "InterestExpenseDebt 2024-01-31",
+  "id": "wmt-006",
+  "split": "dev"
+ },
+ {
+  "q": "What was income before taxes in 2024?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 21848000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest 2024-01-31",
+  "id": "wmt-007",
+  "split": "dev"
+ },
+ {
+  "q": "What was the income tax charge for 2024?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 5578000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "IncomeTaxExpenseBenefit 2024-01-31",
+  "id": "wmt-008",
+  "split": "dev"
+ },
+ {
+  "q": "What was the effective tax rate in 2024?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 25.5,
+    "kind": "percent"
+   }
+  ],
+  "source": "EffectiveIncomeTaxRateContinuingOperations 2024-01-31",
+  "id": "wmt-009",
+  "split": "dev"
+ },
+ {
+  "q": "What tax rate did the company effectively pay in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 33.6,
+    "kind": "percent"
+   }
+  ],
+  "source": "EffectiveIncomeTaxRateContinuingOperations 2023-01-31",
+  "id": "wmt-010",
+  "split": "holdout"
+ },
+ {
+  "q": "How much profit did the company make in 2024?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 15511000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "NetIncomeLoss 2024-01-31",
+  "id": "wmt-011",
+  "split": "dev"
+ },
+ {
+  "q": "What was the bottom line in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 11680000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "NetIncomeLoss 2023-01-31",
+  "id": "wmt-012",
+  "split": "dev"
+ },
+ {
+  "q": "What were diluted earnings per share for 2024?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 1.91,
+    "kind": "per_share"
+   }
+  ],
+  "source": "EarningsPerShareDiluted 2024-01-31",
+  "id": "wmt-013",
+  "split": "dev"
+ },
+ {
+  "q": "What was diluted EPS in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 1.42,
+    "kind": "per_share"
+   }
+  ],
+  "source": "EarningsPerShareDiluted 2023-01-31",
+  "id": "wmt-014",
+  "split": "dev"
+ },
+ {
+  "q": "How many diluted shares were used to compute EPS in 2024?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 8108000000.0,
+    "kind": "shares"
+   }
+  ],
+  "source": "WeightedAverageNumberOfDilutedSharesOutstanding 2024-01-31",
+  "id": "wmt-015",
+  "split": "holdout"
+ },
+ {
+  "q": "How much stock-based compensation was expensed in 2024?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 2100000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "AllocatedShareBasedCompensationExpense 2024-01-31",
+  "id": "wmt-016",
+  "split": "dev"
+ },
+ {
+  "q": "What were depreciation and amortization charges in 2024?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 11853000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "DepreciationAmortizationAndAccretionNet 2024-01-31",
+  "id": "wmt-017",
+  "split": "dev"
+ },
+ {
+  "q": "What was net interest income in 2024?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": -2137000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "InterestIncomeExpenseNet 2024-01-31",
+  "id": "wmt-018",
+  "split": "dev"
+ },
+ {
+  "q": "How much did net interest income come to in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": -1874000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "InterestIncomeExpenseNet 2023-01-31",
+  "id": "wmt-019",
+  "split": "dev"
+ },
+ {
+  "q": "How much cash and cash equivalents did the company hold at the end of 2024?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 9867000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "CashAndCashEquivalentsAtCarryingValue 2024-01-31",
+  "id": "wmt-020",
+  "split": "holdout"
+ },
+ {
+  "q": "What was the cash balance at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 8625000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "CashAndCashEquivalentsAtCarryingValue 2023-01-31",
+  "id": "wmt-021",
+  "split": "dev"
+ },
+ {
+  "q": "How much inventory was on the balance sheet at the end of 2024?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 54892000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "InventoryNet 2024-01-31",
+  "id": "wmt-022",
+  "split": "dev"
+ },
+ {
+  "q": "What were inventories at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 56576000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "InventoryNet 2023-01-31",
+  "id": "wmt-023",
+  "split": "dev"
+ },
+ {
+  "q": "What were total current assets at the end of 2024?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 76877000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "AssetsCurrent 2024-01-31",
+  "id": "wmt-024",
+  "split": "dev"
+ },
+ {
+  "q": "What was the net book value of property, plant and equipment at the end of 2024?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 110810000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "PropertyPlantAndEquipmentNet 2024-01-31",
+  "id": "wmt-025",
+  "split": "holdout"
+ },
+ {
+  "q": "How much goodwill was carried on the balance sheet at the end of 2024?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 28113000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "Goodwill 2024-01-31",
+  "id": "wmt-026",
+  "split": "dev"
+ },
+ {
+  "q": "How large was the balance sheet, i.e. total assets, at the end of 2024?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 252399000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "Assets 2024-01-31",
+  "id": "wmt-027",
+  "split": "dev"
+ },
+ {
+  "q": "How much did the company owe its suppliers at the end of 2024?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 56812000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "AccountsPayableCurrent 2024-01-31",
+  "id": "wmt-028",
+  "split": "dev"
+ },
+ {
+  "q": "What were total current liabilities at the end of 2024?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 92415000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "LiabilitiesCurrent 2024-01-31",
+  "id": "wmt-029",
+  "split": "dev"
+ },
+ {
+  "q": "How much long-term debt was outstanding at the end of 2024?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 36132000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "LongTermDebtNoncurrent 2024-01-31",
+  "id": "wmt-030",
+  "split": "holdout"
+ },
+ {
+  "q": "What was long-term borrowing at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 34649000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "LongTermDebtNoncurrent 2023-01-31",
+  "id": "wmt-031",
+  "split": "dev"
+ },
+ {
+  "q": "How much debt matures within the next year as of the end of 2024?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 3447000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "LongTermDebtCurrent 2024-01-31",
+  "id": "wmt-032",
+  "split": "dev"
+ },
+ {
+  "q": "What short-term borrowings were outstanding at the end of 2024?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 878000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "ShortTermBorrowings 2024-01-31",
+  "id": "wmt-033",
+  "split": "dev"
+ },
+ {
+  "q": "What were operating lease liabilities at the end of 2024?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 14430000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "OperatingLeaseLiability 2024-01-31",
+  "id": "wmt-034",
+  "split": "dev"
+ },
+ {
+  "q": "What was shareholders' equity at the end of 2024?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 83861000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "StockholdersEquity 2024-01-31",
+  "id": "wmt-035",
+  "split": "holdout"
+ },
+ {
+  "q": "How much book equity did shareholders have at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 76693000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "StockholdersEquity 2023-01-31",
+  "id": "wmt-036",
+  "split": "dev"
+ },
+ {
+  "q": "What were retained earnings at the end of 2024?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 89814000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "RetainedEarningsAccumulatedDeficit 2024-01-31",
+  "id": "wmt-037",
+  "split": "dev"
+ },
+ {
+  "q": "How much cash did operations generate in 2024?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 35726000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "NetCashProvidedByUsedInOperatingActivities 2024-01-31",
+  "id": "wmt-038",
+  "split": "dev"
+ },
+ {
+  "q": "What was operating cash flow in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 28841000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "NetCashProvidedByUsedInOperatingActivities 2023-01-31",
+  "id": "wmt-039",
+  "split": "dev"
+ },
+ {
+  "q": "How much was invested in capital expenditures in 2024?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 20606000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "PaymentsToAcquirePropertyPlantAndEquipment 2024-01-31",
+  "id": "wmt-040",
+  "split": "holdout"
+ },
+ {
+  "q": "What was capex in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 16857000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "PaymentsToAcquirePropertyPlantAndEquipment 2023-01-31",
+  "id": "wmt-041",
+  "split": "dev"
+ },
+ {
+  "q": "How much did the company spend buying back its own stock in 2024?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 2779000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "PaymentsForRepurchaseOfCommonStock 2024-01-31",
+  "id": "wmt-042",
+  "split": "dev"
+ },
+ {
+  "q": "What were share buybacks in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 9920000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "PaymentsForRepurchaseOfCommonStock 2023-01-31",
+  "id": "wmt-043",
+  "split": "dev"
+ },
+ {
+  "q": "How much was paid out in dividends in 2024?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 6140000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "PaymentsOfDividendsCommonStock 2024-01-31",
+  "id": "wmt-044",
+  "split": "dev"
+ },
+ {
+  "q": "What was net cash used in investing activities in 2024?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": -21287000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "NetCashProvidedByUsedInInvestingActivities 2024-01-31",
+  "id": "wmt-045",
+  "split": "holdout"
+ },
+ {
+  "q": "What was net cash from financing activities in 2024?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": -13414000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "NetCashProvidedByUsedInFinancingActivities 2024-01-31",
+  "id": "wmt-046",
+  "split": "dev"
+ },
+ {
+  "q": "How much cash was spent on acquisitions in 2024?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 9000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "PaymentsToAcquireBusinessesNetOfCashAcquired 2024-01-31",
+  "id": "wmt-047",
+  "split": "dev"
+ },
+ {
+  "q": "How much debt was repaid in 2024?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 4217000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "RepaymentsOfLongTermDebt 2024-01-31",
+  "id": "wmt-048",
+  "split": "dev"
+ },
+ {
+  "q": "How much new long-term debt was raised in 2024?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 4967000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "ProceedsFromIssuanceOfLongTermDebt 2024-01-31",
+  "id": "wmt-049",
+  "split": "dev"
+ },
+ {
+  "q": "How much cash was paid for income taxes in 2024?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 5879000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "IncomeTaxesPaid 2024-01-31",
+  "id": "wmt-050",
+  "split": "holdout"
+ },
+ {
+  "q": "What dividend per share was declared in 2024?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 0.76,
+    "kind": "per_share"
+   }
+  ],
+  "source": "CommonStockDividendsPerShareDeclared 2024-01-31",
+  "id": "wmt-051",
+  "split": "dev"
+ },
+ {
+  "q": "How large were unrecognized tax benefits at the end of 2024?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 3500000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "UnrecognizedTaxBenefits 2024-01-31",
+  "id": "wmt-052",
+  "split": "dev"
+ },
+ {
+  "q": "What were total future operating lease payments as of the end of 2024?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 21013000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "LesseeOperatingLeaseLiabilityPaymentsDue 2024-01-31",
+  "id": "wmt-053",
+  "split": "dev"
+ },
+ {
+  "q": "What was accumulated other comprehensive income or loss at the end of 2024?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": -11302000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "AccumulatedOtherComprehensiveIncomeLossNetOfTax 2024-01-31",
+  "id": "wmt-054",
+  "split": "dev"
+ },
+ {
+  "q": "How much revenue did the Sams Club segment report in 2024?",
+  "group": "segment",
+  "keys": [
+   {
+    "value": 86179000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "RevenueFromContractWithCustomerExcludingAssessedTax SamsClubMember 2024-01-31",
+  "id": "wmt-055",
+  "split": "holdout"
+ },
+ {
+  "q": "How much revenue did the Walmart International segment report in 2024?",
+  "group": "segment",
+  "keys": [
+   {
+    "value": 114641000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "RevenueFromContractWithCustomerExcludingAssessedTax WalmartInternationalMember 2024-01-31",
+  "id": "wmt-056",
+  "split": "dev"
+ },
+ {
+  "q": "How much revenue did the Walmart US segment report in 2024?",
+  "group": "segment",
+  "keys": [
+   {
+    "value": 441817000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "RevenueFromContractWithCustomerExcludingAssessedTax WalmartUSMember 2024-01-31",
+  "id": "wmt-057",
+  "split": "dev"
+ },
+ {
+  "q": "How much operating income did the Corporate and Support segment report in 2024?",
+  "group": "segment",
+  "keys": [
+   {
+    "value": -2243000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "OperatingIncomeLoss CorporateAndSupportMember 2024-01-31",
+  "id": "wmt-058",
+  "split": "dev"
+ },
+ {
+  "q": "How much operating income did the Sams Club segment report in 2024?",
+  "group": "segment",
+  "keys": [
+   {
+    "value": 2192000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "OperatingIncomeLoss SamsClubMember 2024-01-31",
+  "id": "wmt-059",
+  "split": "dev"
+ },
+ {
+  "q": "How much operating income did the Walmart International segment report in 2024?",
+  "group": "segment",
+  "keys": [
+   {
+    "value": 4909000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "OperatingIncomeLoss WalmartInternationalMember 2024-01-31",
+  "id": "wmt-060",
+  "split": "holdout"
+ },
+ {
+  "q": "How much operating income did the Walmart US segment report in 2024?",
+  "group": "segment",
+  "keys": [
+   {
+    "value": 22154000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "OperatingIncomeLoss WalmartUSMember 2024-01-31",
+  "id": "wmt-061",
+  "split": "dev"
+ },
+ {
+  "q": "What is the capital expenditure outlook for fiscal 2025?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "approximately $20 billion to $24 billion"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "wmt-062",
+  "split": "dev"
+ },
+ {
+  "q": "Why was the effective tax rate so high in fiscal 2023?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "PhonePe"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "wmt-063",
+  "split": "dev"
+ },
+ {
+  "q": "What are the opioid litigation matters and settlements?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "opioid"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "wmt-064",
+  "split": "dev"
+ },
+ {
+  "q": "How could tariffs and trade policy affect results?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "tariffs"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "wmt-065",
+  "split": "holdout"
+ },
+ {
+  "q": "How did comparable sales perform?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "comparable sales"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "wmt-066",
+  "split": "dev"
+ },
+ {
+  "q": "How many associates does the company employ?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "approximately 2.1 million associates"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "wmt-067",
+  "split": "dev"
+ },
+ {
+  "q": "How are inventories valued (LIFO or other methods)?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "LIFO"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "wmt-068",
+  "split": "dev"
+ },
+ {
+  "q": "How do fuel prices affect Sam's Club results?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "fuel"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "wmt-069",
+  "split": "dev"
+ },
+ {
+  "q": "What happened with Massmart?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "Massmart"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "wmt-070",
+  "split": "holdout"
+ },
+ {
+  "q": "What foreign currency risks does the company face?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "currency exchange rate fluctuations",
+     "fluctuations in currency exchange rates"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "wmt-071",
+  "split": "dev"
+ },
+ {
+  "q": "What is the share repurchase program authorization?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "share repurchase program"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "wmt-072",
+  "split": "dev"
+ },
+ {
+  "q": "What is the role of the advertising business?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "advertising"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "wmt-073",
+  "split": "dev"
+ },
+ {
+  "q": "What is Walmart+ and how is membership income growing?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "Walmart+",
+     "membership"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "wmt-074",
+  "split": "dev"
+ },
+ {
+  "q": "What does the company say about Walmart Health?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "Walmart Health"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "wmt-075",
+  "split": "holdout"
+ },
+ {
+  "q": "What supply chain risks does the company highlight?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "supply chain"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "wmt-076",
+  "split": "dev"
+ }
+]

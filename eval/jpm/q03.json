@@ -1,0 +1,111 @@
+{
+  "question": "How large is the allowance for credit losses and the provision for credit losses, and how did they trend relative to loans?",
+  "model": "inclusionai/ling-3.1-flash",
+  "ungrounded": [],
+  "coverage_gaps": [],
+  "uncited_claims": [],
+  "stripped_pseudo_citations": 0,
+  "answer": {
+    "summary": "For FY2023, the provision for credit losses was $9.3 billion, reflecting $6.2 billion of net charge-offs and a net addition of $3.1 billion to the allowance for credit losses [T01074][T00963]. Net charge-offs increased $3.3 billion, predominantly driven by Card Services and to a lesser extent single name exposures in wholesale [T00963]. However, the total allowance for credit losses balance is not stated in the retrieved evidence, and no total loan balance is provided, so an allowance-to-loans ratio or trend relative to loans cannot be determined from this evidence. Quarterly provision activity included a $121 million provision driven by $272 million of net charge-offs (up $190 million, single name exposures) offset by a $151 million net reduction in the allowance [T01363], a $159 million provision including a $146 million addition to establish the allowance for First Republic loans and lending-related commitments in Q2 2023 [T01466], and a $171 million provision for a single name exposure subsequently charged off [T01518].",
+    "status": "mixed",
+    "key_numbers": [
+      {
+        "metric": "Provision for credit losses (FY2023)",
+        "period": "FY2023",
+        "value": "$9.3 billion",
+        "fact_id": "[T01074]"
+      },
+      {
+        "metric": "Net charge-offs (FY2023)",
+        "period": "FY2023",
+        "value": "$6.2 billion",
+        "fact_id": "[T01074]"
+      },
+      {
+        "metric": "Net addition to allowance for credit losses (FY2023)",
+        "period": "FY2023",
+        "value": "$3.1 billion",
+        "fact_id": "[T01074]"
+      },
+      {
+        "metric": "Increase in net charge-offs (FY2023)",
+        "period": "FY2023",
+        "value": "$3.3 billion",
+        "fact_id": "[T00963]"
+      },
+      {
+        "metric": "Provision for credit losses (quarterly, single name)",
+        "period": "Quarterly",
+        "value": "$121 million",
+        "fact_id": "[T01363]"
+      },
+      {
+        "metric": "Net charge-offs (quarterly, single name)",
+        "period": "Quarterly",
+        "value": "$272 million",
+        "fact_id": "[T01363]"
+      },
+      {
+        "metric": "Provision for credit losses (First Republic)",
+        "period": "Q2 2023",
+        "value": "$159 million",
+        "fact_id": "[T01466]"
+      },
+      {
+        "metric": "Addition to allowance for First Republic loans and commitments",
+        "period": "Q2 2023",
+        "value": "$146 million",
+        "fact_id": "[T01466]"
+      }
+    ],
+    "drivers": [
+      "Net charge-offs increased $3.3 billion, predominantly driven by Card Services, and to a lesser extent single name exposures in wholesale [T00963]",
+      "First Republic loans and lending-related commitments: $146 million addition to the allowance established in Q2 2023 [T01466]",
+      "Single name exposures: $272 million net charge-offs, up $190 million, driving the $121 million quarterly provision [T01363]"
+    ],
+    "risks_and_red_flags": [
+      "Total allowance for credit losses balance is not disclosed in the retrieved evidence; only the net addition of $3.1 billion is stated [T01074]",
+      "No total loan balance is provided in the evidence, so allowance-to-loans ratio and trend relative to loans cannot be computed",
+      "Narrative facts [T01074], [T00963], [T01363], [T01466], [T01518] have number checks marked 'unchecked' and were not machine-verified against the tables",
+      "Duplicate facts with conflicting values were set aside during parsing for the metrics above (the primary-statement value was kept)"
+    ],
+    "data_quality_notes": [
+      "Narrative provision figures [T01074], [T00963], [T01363], [T01466], [T01518] are unchecked and should be verified against the allowance roll-forward table",
+      "The total allowance for credit losses balance and total loans balance are absent from the retrieved evidence; the question's allowance-to-loans trend cannot be answered from this evidence",
+      "Duplicate facts with conflicting values were set aside during parsing (the primary-statement value was kept)"
+    ],
+    "outlook": {
+      "actuals_view": "FY2023 provision of $9.3 billion with $6.2 billion net charge-offs and a $3.1 billion net addition to the allowance [T01074]",
+      "forward_looking_guidance": "No forward-looking credit loss guidance is present in the retrieved evidence"
+    },
+    "follow_up_checks": [
+      "Locate the allowance for credit losses roll-forward table to obtain the total allowance balance at FY2023 and FY2022",
+      "Obtain total loans and lending-related commitments balances to compute the allowance-to-loans ratio and its trend",
+      "Verify the unchecked narrative provision figures against the consolidated financial statements tables",
+      "Confirm whether the $9.3 billion provision is the consolidated total and reconcile with quarterly provision figures ($121 million, $159 million, $171 million)",
+      "Check whether the $3.1 billion net addition to the allowance was sufficient relative to the $6.2 billion net charge-offs given the increase in charge-offs"
+    ],
+    "sources": {
+      "T01074": {
+        "source": "prose",
+        "where": "paragraph in Item 15 Exhibits: \"The provision for credit losses was $9.3 billion, reflecting $6.2 billion of net charge-offs and a net addition of $3.1 billion to the allowance for credit loss\""
+      },
+      "T00963": {
+        "source": "prose",
+        "where": "paragraph in Item 15 Exhibits: \"• The provision for credit losses was $9.3 billion, reflecting $6.2 billion of net charge-offs and a net addition to the allowance for credit losses of $3.1 bil\""
+      },
+      "T01363": {
+        "source": "prose",
+        "where": "paragraph in Item 15 Exhibits: \"The provision for credit losses was $121 million, driven by net charge-offs of $272 million, up $190 million, driven by single name exposures, largely offset by\""
+      },
+      "T01466": {
+        "source": "prose",
+        "where": "paragraph in Item 15 Exhibits: \"The provision for credit losses was $159 million, predominantly driven by a $146 million addition to the allowance for credit losses to establish the allowance \""
+      },
+      "T01518": {
+        "source": "prose",
+        "where": "paragraph in Item 15 Exhibits: \"The provision for credit losses was $171 million, reflecting a net addition to the allowance for credit losses related to a single name exposure, which was subs\""
+      }
+    }
+  }
+}

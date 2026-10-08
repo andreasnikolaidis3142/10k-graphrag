@@ -1,0 +1,314 @@
+COMPANY: Walmart Inc. | Fiscal year end: month 1 day 31 | Latest fiscal year in filing: FY2024
+TIME CONTEXT: periods named FY#### are ACTUALS reported in this 10-K. Text facts with role 'guidance' are FORWARD-LOOKING management estimates, not actuals.
+
+SERIES Revenues - us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  FY2022             $567.76B  [F00005] verified XBRL-tagged
+  FY2023             $605.88B  [F00004] verified XBRL-tagged
+  FY2024             $642.64B  [F00003] verified XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: +6.7% YoY ($567.76B -> $605.88B) [F00004]
+   - FY2024: +6.1% YoY ($605.88B -> $642.64B) [F00003]
+   - CAGR FY2022->FY2024: 6.4%
+   - TREND: increasing (weak), +13% over the window
+
+SERIES Revenues - us-gaap:Revenues
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a TOTAL line; its components (if listed under ATTRIBUTION) already roll up into it.
+  FY2022             $572.75B  [F00011] verified XBRL-tagged
+  FY2023             $611.29B  [F00010] verified XBRL-tagged
+  FY2024             $648.12B  [F00009] verified XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: +6.7% YoY ($572.75B -> $611.29B) [F00010]
+   - FY2024: +6.0% YoY ($611.29B -> $648.12B) [F00009]
+   - CAGR FY2022->FY2024: 6.4%
+   - TREND: increasing (weak), +13% over the window
+
+SERIES OperatingMarginPct - Operating margin %
+  VIEW: DERIVED ratio/metric = OperatingIncome / Revenues x 100 (already computed; do not recompute); unit is PERCENT - differences are percentage points, not %
+  UNIT: percent (filing displayed in units; values below are normalised to base units)
+  FY2022                 4.6%  [F01836] 
+  FY2023                 3.4%  [F01837] 
+  FY2024                 4.2%  [F01838] 
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: 3.4% vs 4.6% (-120 bps) [F01837]
+   - FY2024: 4.2% vs 3.4% (+83 bps) [F01838]
+
+SERIES GrossMarginPct - Gross margin %
+  VIEW: DERIVED ratio/metric = GrossProfit / Revenues x 100 (already computed; do not recompute); unit is PERCENT - differences are percentage points, not %
+  UNIT: percent (filing displayed in units; values below are normalised to base units)
+  FY2022                24.4%  [F01833] 
+  FY2023                23.5%  [F01834] 
+  FY2024                23.7%  [F01835] 
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: 23.5% vs 24.4% (-98 bps) [F01834]
+   - FY2024: 23.7% vs 23.5% (+27 bps) [F01835]
+
+SERIES NetMarginPct - Net margin %
+  VIEW: DERIVED ratio/metric = NetIncome / Revenues x 100 (already computed; do not recompute); unit is PERCENT - differences are percentage points, not %
+  UNIT: percent (filing displayed in units; values below are normalised to base units)
+  FY2022                 2.5%  [F01839] 
+  FY2023                 1.9%  [F01840] 
+  FY2024                 2.5%  [F01841] 
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: 1.9% vs 2.5% (-59 bps) [F01840]
+   - FY2024: 2.5% vs 1.9% (+67 bps) [F01841]
+
+SERIES EbitdaMarginPct - EBITDA margin %
+  VIEW: DERIVED ratio/metric = EBITDA / Revenues x 100 (already computed; do not recompute); unit is PERCENT - differences are percentage points, not %
+  UNIT: percent (filing displayed in units; values below are normalised to base units)
+  FY2022                 6.4%  [F01842] 
+  FY2023                 5.2%  [F01843] 
+  FY2024                 6.0%  [F01844] 
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: 5.2% vs 6.4% (-127 bps) [F01843]
+   - FY2024: 6.0% vs 5.2% (+87 bps) [F01844]
+
+SERIES GrossProfit - Gross profit (derived)
+  VIEW: DERIVED ratio/metric = Revenues - CostOfRevenue (already computed; do not recompute)
+  UNIT: USD (filing displayed in units; values below are normalised to base units)
+  FY2022             $138.76B  [F01827] 
+  FY2023             $142.16B  [F01828] 
+  FY2024             $152.50B  [F01829] 
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: +2.4% YoY ($138.76B -> $142.16B) [F01828]
+   - FY2024: +7.3% YoY ($142.16B -> $152.50B) [F01829]
+   - CAGR FY2022->FY2024: 4.8%
+   - TREND: stable (weak), +10% over the window
+
+SERIES SellingGeneralAndAdministrativeExpense - us-gaap:SellingGeneralAndAdministrativeExpense
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  FY2022             $117.81B  [F00017] XBRL-tagged
+  FY2023             $127.14B  [F00016] XBRL-tagged
+  FY2024             $130.97B  [F00015] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: +7.9% YoY ($117.81B -> $127.14B) [F00016]
+   - FY2024: +3.0% YoY ($127.14B -> $130.97B) [F00015]
+   - CAGR FY2022->FY2024: 5.4%
+   - TREND: increasing (weak), +11% over the window
+
+SERIES OperatingIncomeLoss - us-gaap:OperatingIncomeLoss
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a TOTAL line; its components (if listed under ATTRIBUTION) already roll up into it.
+  FY2022              $25.94B  [F00020] verified XBRL-tagged
+  FY2023              $20.43B  [F00019] verified XBRL-tagged
+  FY2024              $27.01B  [F00018] verified XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: -21.3% YoY ($25.94B -> $20.43B) [F00019]
+   - FY2024: +32.2% YoY ($20.43B -> $27.01B) [F00018]
+   - CAGR FY2022->FY2024: 2.0%
+   - TREND: stable (weak), +4% over the window
+
+SERIES NetIncomeLoss - us-gaap:ProfitLoss
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  FY2022              $13.94B  [F00047] verified XBRL-tagged
+  FY2023              $11.29B  [F00046] verified XBRL-tagged
+  FY2024              $16.27B  [F00045] verified XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: -19.0% YoY ($13.94B -> $11.29B) [F00046]
+   - FY2024: +44.1% YoY ($11.29B -> $16.27B) [F00045]
+   - INFLECTION FY2024: spike of 29% vs prior-2-period average [F00045]
+   - CAGR FY2022->FY2024: 8.0%
+   - TREND: increasing (weak), +17% over the window
+
+SERIES NetIncomeLoss - us-gaap:NetIncomeLoss
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  FY2022              $13.67B  [F00053] XBRL-tagged
+  FY2023              $11.68B  [F00052] XBRL-tagged
+  FY2024              $15.51B  [F00051] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: -14.6% YoY ($13.67B -> $11.68B) [F00052]
+   - FY2024: +32.8% YoY ($11.68B -> $15.51B) [F00051]
+   - CAGR FY2022->FY2024: 6.5%
+   - TREND: increasing (weak), +13% over the window
+
+SERIES Ebitda - EBITDA (derived)
+  VIEW: DERIVED ratio/metric = OperatingIncome + D&A (already computed; do not recompute)
+  UNIT: USD (filing displayed in units; values below are normalised to base units)
+  FY2022              $36.60B  [F01830] 
+  FY2023              $31.37B  [F01831] 
+  FY2024              $38.87B  [F01832] 
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: -14.3% YoY ($36.60B -> $31.37B) [F01831]
+   - FY2024: +23.9% YoY ($31.37B -> $38.87B) [F01832]
+   - CAGR FY2022->FY2024: 3.0%
+   - TREND: stable (weak), +6% over the window
+
+SERIES Revenues {'StatementBusinessSegments': 'CorporateAndSupport'} - us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a STATEMENTBUSINESSSEGMENTS slice, one component of the consolidated total - not the company total.
+  FY2022                $0.00  [F01003] verified XBRL-tagged
+  FY2023                $0.00  [F00982] verified XBRL-tagged
+  FY2024                $0.00  [F00961] verified XBRL-tagged
+
+SERIES Revenues {'StatementBusinessSegments': 'SamsClub'} - us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a STATEMENTBUSINESSSEGMENTS slice, one component of the consolidated total - not the company total.
+  FY2022              $73.56B  [F01002] verified XBRL-tagged
+  FY2023              $84.34B  [F00981] verified XBRL-tagged
+  FY2024              $86.18B  [F00960] verified XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: +14.7% YoY ($73.56B -> $84.34B) [F00981]
+   - FY2024: +2.2% YoY ($84.34B -> $86.18B) [F00960]
+   - CAGR FY2022->FY2024: 8.2%
+   - TREND: increasing (weak), +17% over the window
+
+SERIES Revenues {'StatementBusinessSegments': 'WalmartInternational'} - us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a STATEMENTBUSINESSSEGMENTS slice, one component of the consolidated total - not the company total.
+  FY2022             $100.96B  [F01001] verified XBRL-tagged
+  FY2023             $100.98B  [F00980] verified XBRL-tagged
+  FY2024             $114.64B  [F00959] verified XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: +0.0% YoY ($100.96B -> $100.98B) [F00980]
+   - FY2024: +13.5% YoY ($100.98B -> $114.64B) [F00959]
+   - CAGR FY2022->FY2024: 6.6%
+   - TREND: increasing (weak), +14% over the window
+
+SERIES Revenues {'StatementBusinessSegments': 'WalmartUS'} - us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a STATEMENTBUSINESSSEGMENTS slice, one component of the consolidated total - not the company total.
+  FY2022             $393.25B  [F01000] verified XBRL-tagged
+  FY2023             $420.55B  [F00979] verified XBRL-tagged
+  FY2024             $441.82B  [F00958] verified XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: +6.9% YoY ($393.25B -> $420.55B) [F00979]
+   - FY2024: +5.1% YoY ($420.55B -> $441.82B) [F00958]
+   - CAGR FY2022->FY2024: 6.0%
+   - TREND: increasing (weak), +12% over the window
+
+SERIES Revenues {'StatementGeographical': 'US'} - us-gaap:Revenues
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a STATEMENTGEOGRAPHICAL slice, one component of the consolidated total - not the company total.
+  FY2022             $470.30B  [F01024] verified XBRL-tagged
+  FY2023             $508.69B  [F01023] verified XBRL-tagged
+  FY2024             $532.08B  [F01022] verified XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: +8.2% YoY ($470.30B -> $508.69B) [F01023]
+   - FY2024: +4.6% YoY ($508.69B -> $532.08B) [F01022]
+   - CAGR FY2022->FY2024: 6.4%
+   - TREND: increasing (weak), +13% over the window
+
+SERIES Revenues {'StatementGeographical': 'WalmartInternational'} - us-gaap:Revenues
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a STATEMENTGEOGRAPHICAL slice, one component of the consolidated total - not the company total.
+  FY2022             $102.46B  [F01027] verified XBRL-tagged
+  FY2023             $102.60B  [F01026] verified XBRL-tagged
+  FY2024             $116.05B  [F01025] verified XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: +0.1% YoY ($102.46B -> $102.60B) [F01026]
+   - FY2024: +13.1% YoY ($102.60B -> $116.05B) [F01025]
+   - CAGR FY2022->FY2024: 6.4%
+   - TREND: increasing (weak), +13% over the window
+
+SERIES OperatingIncomeLoss {'StatementBusinessSegments': 'CorporateAndSupport'} - us-gaap:OperatingIncomeLoss
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a STATEMENTBUSINESSSEGMENTS slice, one component of the consolidated total - not the company total.
+  FY2022              -$1.66B  [F01007] verified XBRL-tagged
+  FY2023              -$5.12B  [F00986] verified XBRL-tagged
+  FY2024              -$2.24B  [F00965] verified XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: +208.1% YoY (-$1.66B -> -$5.12B) [F00986]
+   - FY2024: -56.2% YoY (-$5.12B -> -$2.24B) [F00965]
+   - INFLECTION FY2024: spike of 34% vs prior-2-period average [F00965]
+   - TREND: decreasing (moderate), -35% over the window
+
+SERIES OperatingIncomeLoss {'StatementBusinessSegments': 'SamsClub'} - us-gaap:OperatingIncomeLoss
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a STATEMENTBUSINESSSEGMENTS slice, one component of the consolidated total - not the company total.
+  FY2022               $2.26B  [F01006] verified XBRL-tagged
+  FY2023               $1.96B  [F00985] verified XBRL-tagged
+  FY2024               $2.19B  [F00964] verified XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: -13.1% YoY ($2.26B -> $1.96B) [F00985]
+   - FY2024: +11.6% YoY ($1.96B -> $2.19B) [F00964]
+   - CAGR FY2022->FY2024: -1.5%
+   - TREND: stable (weak), -3% over the window
+
+SERIES OperatingIncomeLoss {'StatementBusinessSegments': 'WalmartInternational'} - us-gaap:OperatingIncomeLoss
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a STATEMENTBUSINESSSEGMENTS slice, one component of the consolidated total - not the company total.
+  FY2022               $3.76B  [F01005] verified XBRL-tagged
+  FY2023               $2.96B  [F00984] verified XBRL-tagged
+  FY2024               $4.91B  [F00963] verified XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: -21.1% YoY ($3.76B -> $2.96B) [F00984]
+   - FY2024: +65.6% YoY ($2.96B -> $4.91B) [F00963]
+   - INFLECTION FY2024: spike of 46% vs prior-2-period average [F00963]
+   - CAGR FY2022->FY2024: 14.3%
+   - TREND: increasing (moderate), +31% over the window
+
+SERIES OperatingIncomeLoss {'StatementBusinessSegments': 'WalmartUS'} - us-gaap:OperatingIncomeLoss
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a STATEMENTBUSINESSSEGMENTS slice, one component of the consolidated total - not the company total.
+  FY2022              $21.59B  [F01004] verified XBRL-tagged
+  FY2023              $20.62B  [F00983] verified XBRL-tagged
+  FY2024              $22.15B  [F00962] verified XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: -4.5% YoY ($21.59B -> $20.62B) [F00983]
+   - FY2024: +7.4% YoY ($20.62B -> $22.15B) [F00962]
+   - CAGR FY2022->FY2024: 1.3%
+   - TREND: stable (weak), +3% over the window
+
+SERIES NetIncomeLoss {'StatementEquityComponents': 'NoncontrollingInterest'} - us-gaap:ProfitLoss
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a STATEMENTEQUITYCOMPONENTS slice, one component of the consolidated total - not the company total.
+  FY2022             $267.00M  [F00173] XBRL-tagged
+  FY2023            -$388.00M  [F00209] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: -245.3% YoY ($267.00M -> -$388.00M) [F00209]
+   - SIGN FLIP in FY2023: $267.00M -> -$388.00M [F00209]
+   - TREND: decreasing (strong), -245% over the window
+
+SERIES NetIncomeLoss {'StatementEquityComponents': 'Parent'} - us-gaap:ProfitLoss
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a STATEMENTEQUITYCOMPONENTS slice, one component of the consolidated total - not the company total.
+  FY2022              $13.67B  [F00172] XBRL-tagged
+  FY2023              $11.68B  [F00208] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: -14.6% YoY ($13.67B -> $11.68B) [F00208]
+   - TREND: decreasing (weak), -15% over the window
+
+SERIES NetIncomeLoss {'StatementEquityComponents': 'RetainedEarnings'} - us-gaap:ProfitLoss
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a STATEMENTEQUITYCOMPONENTS slice, one component of the consolidated total - not the company total.
+  FY2022              $13.67B  [F00171] XBRL-tagged
+  FY2023              $11.68B  [F00207] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: -14.6% YoY ($13.67B -> $11.68B) [F00207]
+   - TREND: decreasing (weak), -15% over the window
+
+ATTRIBUTION of Revenues FY2024 BY STATEMENTBUSINESSSEGMENTS, total $642.64B [F00003]; change vs prior year $36.76B (+6.1%) [F00004] (components sorted by size of their CHANGE vs prior year, biggest mover first):
+  - Walmart US: $441.82B = 68.8% of total [F00958]; prior year $420.55B [F00979], change $21.26B (+5.1%), 58% of the total change  <- LARGEST CONTRIBUTOR TO THE CHANGE
+  - Walmart International: $114.64B = 17.8% of total [F00959]; prior year $100.98B [F00980], change $13.66B (+13.5%), 37% of the total change
+  - Sams Club: $86.18B = 13.4% of total [F00960]; prior year $84.34B [F00981], change $1.83B (+2.2%), 5% of the total change
+  - Corporate And Support: $0.00 = 0.0% of total [F00961]; prior year $0.00 [F00982], change $0.00, 0% of the total change
+  (A component's share of the total change can exceed 100% or be negative when other components offset it.)
+
+NARRATIVE EVIDENCE (management text; numbers inside were machine-checked against the tables):
+  [T00090] (n/a; number checks: unchecked, unchecked, unchecked, unchecked, unchecked) Walmart U.S. is our largest segment and operates in the U.S., including in all 50 states, Washington D.C. and Puerto Rico. Walmart U.S. is a mass merchandiser of consumer products, operating under the "Walmart" and "Walmart Neighborhood Market" brands, including walmart.com. Walmart U.S. had net sales of $441.8 billion for fiscal 2024, representing 69% of our fiscal 2024 consolidated net sales, and had net sales of $420.6 billion and $393.2 billion for fiscal 2023 and 2022, respectively. Of our three segments, Walmart U.S. has historically had the highest gross profit as a percentage of net sa
+  [T00135] (n/a; number checks: unchecked, unchecked, unchecked, unchecked) Sam's Club operates in 44 states in the U.S. and in Puerto Rico. Sam's Club is a membership-only warehouse club that also operates samsclub.com. Sam's Club had net sales of $86.2 billion for fiscal 2024, representing 13% of our consolidated fiscal 2024 net sales, and had net sales of $84.3 billion and $73.6 billion for fiscal 2023 and 2022, respectively. As a membership-only warehouse club, membership income is a significant component of the segment's operating income. Sam's Club operates with a lower gross profit rate and lower operating expenses as a percentage of net sales than our other se
+  [T00478] (n/a; number checks: unchecked, unchecked, unchecked, unchecked, unchecked, unchecked, unchecked, unchecked) Net sales for the Sam's Club segment increased $1.8 billion or 2.2% and $10.8 billion or 14.7% for fiscal 2024 and 2023, respectively, when compared to the previous fiscal year. The increases in net sales were primarily due to increases in comparable sales, including fuel, of 2.3% and 14.6% for fiscal 2024 and 2023, respectively. Comparable sales benefited from growth in transactions and average ticket, including strong sales in grocery and health and wellness. Additionally, fiscal 2024 growth was partially offset by lower fuel sales due to deflation in this category. Sam's Club eCommerce sale
+  [T00119] (n/a; number checks: unchecked, unchecked, unchecked) Walmart International includes numerous formats divided into two major categories: retail and wholesale. These categories consist of many formats, including: supercenters, supermarkets, hypermarkets, warehouse clubs (including Sam's Clubs) and cash & carry, as well as eCommerce through websites and mobile applications, including walmart.com.mx, walmart.ca, flipkart.com, PhonePe and other sites. Walmart International had net sales of $114.6 billion for fiscal 2024, representing 18% of our fiscal 2024 consolidated net sales, and had net sales of $101.0 billion for both fiscal 2023 and 2022. The 
+
+DATA QUALITY: 3 accounting identities passed, 0 failed for the numbers above.
+NOTE: for the metrics above, 19 duplicate facts with conflicting values were set aside during parsing (the primary-statement value was kept).

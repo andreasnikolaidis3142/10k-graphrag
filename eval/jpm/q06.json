@@ -1,0 +1,150 @@
+{
+  "question": "Break down revenue by business segment (Consumer & Community Banking, Corporate & Investment Bank, Commercial Banking, Asset & Wealth Management).",
+  "model": "inclusionai/ling-3.1-flash",
+  "ungrounded": [],
+  "coverage_gaps": [],
+  "uncited_claims": [],
+  "stripped_pseudo_citations": 0,
+  "answer": {
+    "summary": "JPMorgan Chase organizes its activities into four major reportable business segments plus a Corporate segment [T00038]. For FY2024, the Corporate & Investment Bank generated the largest revenue at $102.00B [F09082], followed by Consumer & Community Banking at $54.50B [F09080], Commercial Banking at $30.00B [F09083], and Asset & Wealth Management at $15.50B [F09085]. Consumer & Community Banking declined 1.8% YoY to $54.50B [F09080], while Asset & Wealth Management declined 8.8% YoY to $15.50B [F09085]; Commercial Banking was flat at $30.00B (+0.0% YoY) [F09083]. The Corporate segment added $98.50B in FY2024 [F09087]. The consolidated total reported in the filing is FY2023 at $158.10B [F06769], so the FY2024 segment values cannot be reconciled to it within the retrieved evidence.",
+    "status": "mixed",
+    "key_numbers": [
+      {
+        "metric": "Corporate & Investment Bank revenue",
+        "period": "FY2024",
+        "value": "$102.00B",
+        "fact_id": "F09082"
+      },
+      {
+        "metric": "Consumer & Community Banking revenue",
+        "period": "FY2024",
+        "value": "$54.50B",
+        "fact_id": "F09080"
+      },
+      {
+        "metric": "Commercial Banking revenue",
+        "period": "FY2024",
+        "value": "$30.00B",
+        "fact_id": "F09083"
+      },
+      {
+        "metric": "Asset & Wealth Management revenue",
+        "period": "FY2024",
+        "value": "$15.50B",
+        "fact_id": "F09085"
+      },
+      {
+        "metric": "Corporate segment revenue",
+        "period": "FY2024",
+        "value": "$98.50B",
+        "fact_id": "F09087"
+      },
+      {
+        "metric": "Consolidated total revenue",
+        "period": "FY2023",
+        "value": "$158.10B",
+        "fact_id": "F06769"
+      }
+    ],
+    "drivers": [
+      "Corporate & Investment Bank is the largest of the four reportable segments at $102.00B in FY2024 [F09082]",
+      "Consumer & Community Banking declined 1.8% YoY to $54.50B in FY2024 [F09080]",
+      "Asset & Wealth Management declined 8.8% YoY to $15.50B in FY2024 [F09085]",
+      "Commercial Banking was flat at $30.00B (+0.0% YoY) in FY2024 [F09083]",
+      "Corporate segment revenue was $98.50B in FY2024 [F09087]"
+    ],
+    "risks_and_red_flags": [
+      "FY2024 segment values are not reconcilable to the FY2023 consolidated total of $158.10B [F06769] because the periods differ",
+      "CIB FY2023 comparative value is not in the retrieved evidence, limiting YoY analysis for the largest segment [F09082]",
+      "Segment results are presented on a managed basis [T04361], which may differ from GAAP reporting",
+      "Revenue-sharing agreements between segments affect how revenue is recognized in each segment [T01225]"
+    ],
+    "data_quality_notes": [
+      "87 duplicate facts with conflicting values were set aside during parsing (the primary-statement value was kept)",
+      "Segment revenue data is FY2024 while the consolidated Revenues line is FY2023 - periods are mismatched and cannot be summed",
+      "CIB FY2023 value is missing, so a full FY2023 four-segment comparison cannot be computed",
+      "The Corporate segment ($98.50B FY2024 [F09087]) is large relative to the FY2023 consolidated total of $158.10B [F06769], indicating the segment tables use a different basis than the consolidated Revenues line"
+    ],
+    "outlook": {
+      "actuals_view": "FY2024 segment revenue is mixed: CIB largest at $102.00B [F09082], CCB down 1.8% to $54.50B [F09080], AWM down 8.8% to $15.50B [F09085], CB flat at $30.00B [F09083]",
+      "forward_looking_guidance": "No forward-looking management guidance on segment revenue is present in the retrieved evidence"
+    },
+    "follow_up_checks": [
+      "Verify the FY2024 consolidated total revenue and reconcile it against the sum of the five segments",
+      "Obtain CIB FY2023 revenue to compute full YoY segment comparisons",
+      "Confirm whether segment 'Revenues' are on a managed basis and reconcile to GAAP revenue",
+      "Check the segment table (table 194) for revenue-sharing allocation disclosures [T01225]"
+    ],
+    "sources": {
+      "T00038": {
+        "source": "prose",
+        "where": "paragraph in Item 1 Business: \"For management reporting purposes, JPMorgan Chase’s activities are organized into four major reportable business segments, as well as a Corporate segment. The F\""
+      },
+      "F09082": {
+        "value": "$102.00B",
+        "concept": "Revenues",
+        "period": "FY2024",
+        "slice": "segment=Corporate & Investment Bank",
+        "source": "table",
+        "where": "table #194 \"The following table presents the capital allocated to each business segment.\", row \"Corporate & Investment Bank\", column \"January 1, 2024\"",
+        "section": "Item 15 Exhibits"
+      },
+      "F09080": {
+        "value": "$54.50B",
+        "concept": "Revenues",
+        "period": "FY2024",
+        "slice": "segment=Consumer & Community Banking",
+        "source": "table",
+        "where": "table #194 \"The following table presents the capital allocated to each business segment.\", row \"Consumer & Community Banking\", column \"January 1, 2024\"",
+        "section": "Item 15 Exhibits"
+      },
+      "F09083": {
+        "value": "$30.00B",
+        "concept": "Revenues",
+        "period": "FY2024",
+        "slice": "segment=Commercial Banking",
+        "source": "table",
+        "where": "table #194 \"The following table presents the capital allocated to each business segment.\", row \"Commercial Banking\", column \"January 1, 2024\"",
+        "section": "Item 15 Exhibits"
+      },
+      "F09085": {
+        "value": "$15.50B",
+        "concept": "Revenues",
+        "period": "FY2024",
+        "slice": "segment=Asset & Wealth Management",
+        "source": "table",
+        "where": "table #194 \"The following table presents the capital allocated to each business segment.\", row \"Asset & Wealth Management\", column \"January 1, 2024\"",
+        "section": "Item 15 Exhibits"
+      },
+      "F09087": {
+        "value": "$98.50B",
+        "concept": "Revenues",
+        "period": "FY2024",
+        "slice": "segment=Corporate",
+        "source": "table",
+        "where": "table #194 \"The following table presents the capital allocated to each business segment.\", row \"Corporate\", column \"January 1, 2024\"",
+        "section": "Item 15 Exhibits"
+      },
+      "F06769": {
+        "value": "$158.10B",
+        "concept": "Revenues",
+        "period": "FY2023",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:Revenues",
+        "also_displayed_in": [
+          "table #73 \"untitled\", row \"Total net revenue\", column \"2023\"",
+          "table #82 \"untitled\", row \"Total net revenue\", column \"2023\"",
+          "table #99 \"The following summary table provides a reconciliation from the Firm’s reported U.S. GAAP results to managed basis.\", row \"Total net revenue\", column \"2023\""
+        ]
+      },
+      "T04361": {
+        "source": "prose",
+        "where": "paragraph in Item 15 Exhibits: \"The Firm is managed on an LOB basis. There are four major reportable business segments – Consumer & Community Banking, Corporate & Investment Bank, Commercial B\""
+      },
+      "T01225": {
+        "source": "prose",
+        "where": "paragraph in Item 15 Exhibits: \"When business segments join efforts to sell products and services to the Firm’s clients and customers, the participating business segments may agree to share re\""
+      }
+    }
+  }
+}

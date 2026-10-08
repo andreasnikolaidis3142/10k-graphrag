@@ -1,0 +1,25 @@
+COMPANY: JPMORGAN CHASE & CO | Fiscal year end: month 12 day 31 | Latest fiscal year in filing: FY2023
+TIME CONTEXT: periods named FY#### are ACTUALS reported in this 10-K. Text facts with role 'guidance' are FORWARD-LOOKING management estimates, not actuals.
+
+SERIES AdditionalPaidInCapital - Other
+  VIEW: STOCK (point-in-time balance; do NOT sum across dates)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  @2021-12-31       -$131.00M  [F10136] (table 343: Consolidated statements of changes in st)
+  @2022-12-31           $0.00  [F10135] (table 343: Consolidated statements of changes in st)
+  @2023-12-31           $0.00  [F10134] (table 343: Consolidated statements of changes in st)
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2022-12-31: -100.0% YoY (-$131.00M -> $0.00) [F10135]
+   - INFLECTION @2023-12-31: spike of 100% vs prior-2-period average [F10134]
+   - TREND: increasing (strong), +100% over the window
+
+NARRATIVE EVIDENCE (management text; numbers inside were machine-checked against the tables):
+  [T04183] (Item 15 Exhibits; number checks: unchecked, unchecked, unchecked, unchecked) (a) Represents the regulatory capital ratio requirements applicable to the Firm. The CET1, Tier 1 and Total capital ratio requirements each include a respective minimum requirement plus a GSIB surcharge of 4.0 % as calculated under Method 2; plus a 2.9 % SCB for Basel III Standardized ratios and a fixed 2.5 % capital conservation buffer for Basel III Advanced ratios. The countercyclical buffer is currently set to 0 % by the federal banking agencies.
+  [T00978] (Item 15 Exhibits; number checks: unchecked, unchecked) • CET1 capital was $251 billion, and the Standardized and Advanced CET1 ratios were both 15.0%.
+  [T01790] (Item 15 Exhibits; number checks: unchecked) (b) At least 75% of the Tier 1 leverage ratio minimum must be met with CET1 capital.
+  [T01693] (Item 15 Exhibits; number checks: unchecked, unchecked, unchecked, unchecked, unchecked) (b) Represents minimum requirements and regulatory buffers applicable to the Firm for the period ended December 31, 2023. For the period ended December 31, 2022, the Basel III Standardized CET1, Tier 1, and Total capital ratio requirements applicable to the Firm were 12.0%, 13.5%, and 15.5%, respectively; the Basel III Advanced CET1, Tier 1, and Total capital ratio requirements applicable to the Firm were 10.5%, 12.0%, and 14.0%, respectively. Refer to Note 27 for additional information.
+  [T04185] (Item 15 Exhibits; number checks: unchecked) (c) Represents requirements for JPMorgan Chase Bank, N.A. The CET1, Tier 1 and Total capital ratio requirements include a fixed capital conservation buffer requirement of 2.5 % that is applicable to JPMorgan Chase Bank, N.A. JPMorgan Chase Bank, N.A. is not subject to the GSIB surcharge.
+  [T04179] (Item 15 Exhibits; number checks: none) Under the risk-based capital and leverage-based guidelines of the Federal Reserve, JPMorgan Chase is required to maintain minimum ratios for CET1 capital, Tier 1 capital, Total capital, Tier 1 leverage and the SLR. Failure to meet these minimum requirements could cause the Federal Reserve to take action. JPMorgan Chase Bank, N.A. is also subject to these capital requirements established by its primary regulators .
+  [T04184] (Item 15 Exhibits; number checks: unchecked, unchecked, unchecked, unchecked, unchecked, unchecked) (b) For the period ended December 31, 2022, the CET1, Tier 1, and Total capital ratio requirements under Basel III Standardized applicable to the Firm were 12.0 %, 13.5 % and 15.5 %, respectively; the Basel III Advanced CET1, Tier 1, and Total capital ratio requirements applicable to the Firm were 10.5 %, 12.0 %, and 14.0 %, respectively. SCB for Basel III Standardized ratio for 2022 was 4.0 %.
+  [T01637] (Item 15 Exhibits; number checks: unchecked, unchecked) The Firm's current SCB requirement is 2.9%, and will remain in effect until September 30, 2024. The Firm’s Standardized CET1 capital ratio requirement, including regulatory buffers, was 11.4% as of December 31, 2023.
+
+DATA QUALITY: 0 accounting identities passed, 0 failed for the numbers above.

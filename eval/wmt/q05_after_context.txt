@@ -1,0 +1,117 @@
+COMPANY: Walmart Inc. | Fiscal year end: month 1 day 31 | Latest fiscal year in filing: FY2024
+TIME CONTEXT: periods named FY#### are ACTUALS reported in this 10-K. Text facts with role 'guidance' are FORWARD-LOOKING management estimates, not actuals.
+
+SERIES InterestExpense - us-gaap:InterestExpenseDebt
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  FY2022               $1.67B  [F00023] XBRL-tagged
+  FY2023               $1.79B  [F00022] XBRL-tagged
+  FY2024               $2.26B  [F00021] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: +6.8% YoY ($1.67B -> $1.79B) [F00022]
+   - FY2024: +26.4% YoY ($1.79B -> $2.26B) [F00021]
+   - INFLECTION FY2024: spike of 31% vs prior-2-period average [F00021]
+   - CAGR FY2022->FY2024: 16.2%
+   - TREND: increasing (moderate), +35% over the window
+
+SERIES NetDebt - Net debt (derived; NEGATIVE = net cash)
+  VIEW: DERIVED ratio/metric = TotalDebt - Cash - ShortTermInvestments - NonCurrentMarketableSecurities (already computed; do not recompute)
+  UNIT: USD (filing displayed in units; values below are normalised to base units)
+  @2023-01-31         $30.59B  [F01864] 
+  @2024-01-31         $30.59B  [F01865] 
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2024-01-31: +0.0% YoY ($30.59B -> $30.59B) [F01865]
+   - TREND: stable (weak), +0% over the window
+
+SERIES InterestCoverage - Interest coverage (EBIT / interest)
+  VIEW: DERIVED ratio/metric = OperatingIncome / InterestExpense (already computed; do not recompute)
+  UNIT: multiple (filing displayed in units; values below are normalised to base units)
+  FY2022               15.50x  [F01870] 
+  FY2023               11.43x  [F01871] 
+  FY2024               11.96x  [F01872] 
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: -26.2% YoY (15.50x -> 11.43x) [F01871]
+   - FY2024: +4.6% YoY (11.43x -> 11.96x) [F01872]
+   - CAGR FY2022->FY2024: -12.2%
+   - TREND: decreasing (moderate), -23% over the window
+
+SERIES TotalDebt - Total debt (derived)
+  VIEW: DERIVED ratio/metric = LT debt + current debt + short-term borrowings + commercial paper (already computed; do not recompute)
+  UNIT: USD (filing displayed in units; values below are normalised to base units)
+  @2023-01-31         $39.21B  [F01862] 
+  @2024-01-31         $40.46B  [F01863] 
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2024-01-31: +3.2% YoY ($39.21B -> $40.46B) [F01863]
+   - TREND: stable (weak), +3% over the window
+
+SERIES DebtToEquity - Debt / equity
+  VIEW: DERIVED ratio/metric = TotalDebt / Equity (already computed; do not recompute)
+  UNIT: multiple (filing displayed in units; values below are normalised to base units)
+  @2023-01-31           0.51x  [F01866] 
+  @2024-01-31           0.48x  [F01867] 
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2024-01-31: -5.6% YoY (0.51x -> 0.48x) [F01867]
+   - TREND: stable (weak), -6% over the window
+
+SERIES OperatingLeaseLiability - us-gaap:OperatingLeaseLiability
+  VIEW: STOCK (point-in-time balance; do NOT sum across dates)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  @2024-01-31         $14.43B  [F00788] XBRL-tagged
+
+SERIES FinanceLeaseLiability - us-gaap:FinanceLeaseLiability
+  VIEW: STOCK (point-in-time balance; do NOT sum across dates)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  @2024-01-31          $6.43B  [F00789] XBRL-tagged
+
+SERIES OperatingLeaseLiabilityCurrent - us-gaap:OperatingLeaseLiabilityCurrent
+  VIEW: STOCK (point-in-time balance; do NOT sum across dates)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  @2023-01-31          $1.47B  [F00132] XBRL-tagged
+  @2024-01-31          $1.49B  [F00131] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2024-01-31: +1.0% YoY ($1.47B -> $1.49B) [F00131]
+   - TREND: stable (weak), +1% over the window
+
+SERIES OperatingLeaseLiabilityNoncurrent - us-gaap:OperatingLeaseLiabilityNoncurrent
+  VIEW: STOCK (point-in-time balance; do NOT sum across dates)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  @2023-01-31         $12.83B  [F00140] XBRL-tagged
+  @2024-01-31         $12.94B  [F00139] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2024-01-31: +0.9% YoY ($12.83B -> $12.94B) [F00139]
+   - TREND: stable (weak), +1% over the window
+
+SERIES FinanceLeaseLiabilityCurrent - us-gaap:FinanceLeaseLiabilityCurrent
+  VIEW: STOCK (point-in-time balance; do NOT sum across dates)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  @2023-01-31        $567.00M  [F00134] XBRL-tagged
+  @2024-01-31        $725.00M  [F00133] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2024-01-31: +27.9% YoY ($567.00M -> $725.00M) [F00133]
+   - TREND: increasing (moderate), +28% over the window
+
+SERIES FinanceLeaseLiabilityNoncurrent - us-gaap:FinanceLeaseLiabilityNoncurrent
+  VIEW: STOCK (point-in-time balance; do NOT sum across dates)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  @2023-01-31          $4.84B  [F00142] XBRL-tagged
+  @2024-01-31          $5.71B  [F00141] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2024-01-31: +17.9% YoY ($4.84B -> $5.71B) [F00141]
+   - TREND: increasing (weak), +18% over the window
+
+SERIES OperatingLeaseRightOfUseAsset - us-gaap:OperatingLeaseRightOfUseAsset
+  VIEW: STOCK (point-in-time balance; do NOT sum across dates)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  @2023-01-31         $13.55B  [F00112] XBRL-tagged
+  @2024-01-31         $13.67B  [F00111] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2024-01-31: +0.9% YoY ($13.55B -> $13.67B) [F00111]
+   - TREND: stable (weak), +1% over the window
+
+NARRATIVE EVIDENCE (management text; numbers inside were machine-checked against the tables):
+  [T00856] (n/a; number checks: none) The Company classifies interest and penalties related to uncertain tax benefits as interest expense and as operating, selling, general and administrative expenses, respectively. Interest expense and penalties related to these positions were immaterial for fiscal 2024, 2023 and 2022. During the next twelve months, it is reasonably possible that tax audit resolutions could reduce unrecognized tax benefits by an immaterial amount, either because the tax positions are sustained on audit or because the Company agrees to their disallowance. The Company does not expect any change to have a material i
+  [T00502] (n/a; number checks: unchecked, unchecked) Net cash from financing activities generally consists of debt transactions, dividends paid, repurchases of Company stock and transactions with noncontrolling interest shareholders. Fiscal 2024 net cash used in financing activities decreased $3.6 billion when compared to the previous fiscal year. The decrease is primarily due to fewer repurchases of Company stock, partially offset by the purchase of certain noncontrolling interests. Fiscal 2023 net cash used in financing activities decreased $5.8 billion when compared to the previous fiscal year. The decrease was primarily due to repayments of 
+  [T00510] (n/a; number checks: unchecked, unchecked, unchecked, unchecked, unchecked) Short-term borrowings as of January 31, 2024 and 2023 were $0.9 billion and $0.4 billion, respectively, with weighted-average interest rates of 7.7% and 6.6%, respectively. We also have $15.0 billion of various undrawn committed lines of credit in the U.S. as of January 31, 2024 that provide additional liquidity, if needed. Additionally, we maintain access to various credit facilities outside of the U.S. to further support our Walmart International segment operations, as needed.
+  [T00916] (n/a; number checks: unchecked, unchecked, unchecked) Of Walmart U.S.'s total net sales, approximately $ 65.4 billion, $ 53.4 billion and $ 47.8 billion related to eCommerce for fiscal 2024, 2023 and 2022, respectively.
+
+DATA QUALITY: 0 accounting identities passed, 0 failed for the numbers above.

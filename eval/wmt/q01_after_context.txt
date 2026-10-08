@@ -1,0 +1,177 @@
+COMPANY: Walmart Inc. | Fiscal year end: month 1 day 31 | Latest fiscal year in filing: FY2024
+TIME CONTEXT: periods named FY#### are ACTUALS reported in this 10-K. Text facts with role 'guidance' are FORWARD-LOOKING management estimates, not actuals.
+
+SERIES Revenues - us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  FY2022             $567.76B  [F00005] verified XBRL-tagged
+  FY2023             $605.88B  [F00004] verified XBRL-tagged
+  FY2024             $642.64B  [F00003] verified XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: +6.7% YoY ($567.76B -> $605.88B) [F00004]
+   - FY2024: +6.1% YoY ($605.88B -> $642.64B) [F00003]
+   - CAGR FY2022->FY2024: 6.4%
+   - TREND: increasing (weak), +13% over the window
+
+SERIES Revenues - us-gaap:Revenues
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a TOTAL line; its components (if listed under ATTRIBUTION) already roll up into it.
+  FY2022             $572.75B  [F00011] verified XBRL-tagged
+  FY2023             $611.29B  [F00010] verified XBRL-tagged
+  FY2024             $648.12B  [F00009] verified XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: +6.7% YoY ($572.75B -> $611.29B) [F00010]
+   - FY2024: +6.0% YoY ($611.29B -> $648.12B) [F00009]
+   - CAGR FY2022->FY2024: 6.4%
+   - TREND: increasing (weak), +13% over the window
+
+SERIES Revenues {'StatementBusinessSegments': 'WalmartInternational', 'StatementGeographical': 'CA'} - us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a STATEMENTBUSINESSSEGMENTS slice, one component of the consolidated total - not the company total.
+  FY2022              $21.77B  [F01057] XBRL-tagged
+  FY2023              $22.30B  [F01056] XBRL-tagged
+  FY2024              $22.64B  [F01055] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: +2.4% YoY ($21.77B -> $22.30B) [F01056]
+   - FY2024: +1.5% YoY ($22.30B -> $22.64B) [F01055]
+   - CAGR FY2022->FY2024: 2.0%
+   - TREND: stable (weak), +4% over the window
+
+SERIES OperatingIncomeLoss - us-gaap:OperatingIncomeLoss
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a TOTAL line; its components (if listed under ATTRIBUTION) already roll up into it.
+  FY2022              $25.94B  [F00020] verified XBRL-tagged
+  FY2023              $20.43B  [F00019] verified XBRL-tagged
+  FY2024              $27.01B  [F00018] verified XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: -21.3% YoY ($25.94B -> $20.43B) [F00019]
+   - FY2024: +32.2% YoY ($20.43B -> $27.01B) [F00018]
+   - CAGR FY2022->FY2024: 2.0%
+   - TREND: stable (weak), +4% over the window
+
+SERIES OperatingMarginPct - Operating margin %
+  VIEW: DERIVED ratio/metric = OperatingIncome / Revenues x 100 (already computed; do not recompute); unit is PERCENT - differences are percentage points, not %
+  UNIT: percent (filing displayed in units; values below are normalised to base units)
+  FY2022                 4.6%  [F01836] 
+  FY2023                 3.4%  [F01837] 
+  FY2024                 4.2%  [F01838] 
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: 3.4% vs 4.6% (-120 bps) [F01837]
+   - FY2024: 4.2% vs 3.4% (+83 bps) [F01838]
+
+SERIES GrossMarginPct - Gross margin %
+  VIEW: DERIVED ratio/metric = GrossProfit / Revenues x 100 (already computed; do not recompute); unit is PERCENT - differences are percentage points, not %
+  UNIT: percent (filing displayed in units; values below are normalised to base units)
+  FY2022                24.4%  [F01833] 
+  FY2023                23.5%  [F01834] 
+  FY2024                23.7%  [F01835] 
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: 23.5% vs 24.4% (-98 bps) [F01834]
+   - FY2024: 23.7% vs 23.5% (+27 bps) [F01835]
+
+SERIES NetMarginPct - Net margin %
+  VIEW: DERIVED ratio/metric = NetIncome / Revenues x 100 (already computed; do not recompute); unit is PERCENT - differences are percentage points, not %
+  UNIT: percent (filing displayed in units; values below are normalised to base units)
+  FY2022                 2.5%  [F01839] 
+  FY2023                 1.9%  [F01840] 
+  FY2024                 2.5%  [F01841] 
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: 1.9% vs 2.5% (-59 bps) [F01840]
+   - FY2024: 2.5% vs 1.9% (+67 bps) [F01841]
+
+SERIES EbitdaMarginPct - EBITDA margin %
+  VIEW: DERIVED ratio/metric = EBITDA / Revenues x 100 (already computed; do not recompute); unit is PERCENT - differences are percentage points, not %
+  UNIT: percent (filing displayed in units; values below are normalised to base units)
+  FY2022                 6.4%  [F01842] 
+  FY2023                 5.2%  [F01843] 
+  FY2024                 6.0%  [F01844] 
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: 5.2% vs 6.4% (-127 bps) [F01843]
+   - FY2024: 6.0% vs 5.2% (+87 bps) [F01844]
+
+SERIES GrossProfit - Gross profit (derived)
+  VIEW: DERIVED ratio/metric = Revenues - CostOfRevenue (already computed; do not recompute)
+  UNIT: USD (filing displayed in units; values below are normalised to base units)
+  FY2022             $138.76B  [F01827] 
+  FY2023             $142.16B  [F01828] 
+  FY2024             $152.50B  [F01829] 
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: +2.4% YoY ($138.76B -> $142.16B) [F01828]
+   - FY2024: +7.3% YoY ($142.16B -> $152.50B) [F01829]
+   - CAGR FY2022->FY2024: 4.8%
+   - TREND: stable (weak), +10% over the window
+
+SERIES SellingGeneralAndAdministrativeExpense - us-gaap:SellingGeneralAndAdministrativeExpense
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  FY2022             $117.81B  [F00017] XBRL-tagged
+  FY2023             $127.14B  [F00016] XBRL-tagged
+  FY2024             $130.97B  [F00015] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: +7.9% YoY ($117.81B -> $127.14B) [F00016]
+   - FY2024: +3.0% YoY ($127.14B -> $130.97B) [F00015]
+   - CAGR FY2022->FY2024: 5.4%
+   - TREND: increasing (weak), +11% over the window
+
+SERIES NetIncomeLoss - us-gaap:ProfitLoss
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  FY2022              $13.94B  [F00047] verified XBRL-tagged
+  FY2023              $11.29B  [F00046] verified XBRL-tagged
+  FY2024              $16.27B  [F00045] verified XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: -19.0% YoY ($13.94B -> $11.29B) [F00046]
+   - FY2024: +44.1% YoY ($11.29B -> $16.27B) [F00045]
+   - INFLECTION FY2024: spike of 29% vs prior-2-period average [F00045]
+   - CAGR FY2022->FY2024: 8.0%
+   - TREND: increasing (weak), +17% over the window
+
+SERIES NetIncomeLoss - us-gaap:NetIncomeLoss
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  FY2022              $13.67B  [F00053] XBRL-tagged
+  FY2023              $11.68B  [F00052] XBRL-tagged
+  FY2024              $15.51B  [F00051] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: -14.6% YoY ($13.67B -> $11.68B) [F00052]
+   - FY2024: +32.8% YoY ($11.68B -> $15.51B) [F00051]
+   - CAGR FY2022->FY2024: 6.5%
+   - TREND: increasing (weak), +13% over the window
+
+SERIES Ebitda - EBITDA (derived)
+  VIEW: DERIVED ratio/metric = OperatingIncome + D&A (already computed; do not recompute)
+  UNIT: USD (filing displayed in units; values below are normalised to base units)
+  FY2022              $36.60B  [F01830] 
+  FY2023              $31.37B  [F01831] 
+  FY2024              $38.87B  [F01832] 
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: -14.3% YoY ($36.60B -> $31.37B) [F01831]
+   - FY2024: +23.9% YoY ($31.37B -> $38.87B) [F01832]
+   - CAGR FY2022->FY2024: 3.0%
+   - TREND: stable (weak), +6% over the window
+
+ATTRIBUTION of Revenues FY2024 BY STATEMENTBUSINESSSEGMENTS, total $642.64B [F00003]; change vs prior year $36.76B (+6.1%) [F00004] (components sorted by size of their CHANGE vs prior year, biggest mover first):
+  - Walmart US: $441.82B = 68.8% of total [F00958]; prior year $420.55B [F00979], change $21.26B (+5.1%), 58% of the total change  <- LARGEST CONTRIBUTOR TO THE CHANGE
+  - Walmart International: $114.64B = 17.8% of total [F00959]; prior year $100.98B [F00980], change $13.66B (+13.5%), 37% of the total change
+  - Sams Club: $86.18B = 13.4% of total [F00960]; prior year $84.34B [F00981], change $1.83B (+2.2%), 5% of the total change
+  - Corporate And Support: $0.00 = 0.0% of total [F00961]; prior year $0.00 [F00982], change $0.00, 0% of the total change
+  (A component's share of the total change can exceed 100% or be negative when other components offset it.)
+
+ATTRIBUTION of OperatingIncomeLoss FY2024 BY STATEMENTBUSINESSSEGMENTS, total $27.01B [F00018]; change vs prior year $6.58B (+32.2%) [F00019] (components sorted by size of their CHANGE vs prior year, biggest mover first):
+  - Corporate And Support: -$2.24B = -8.3% of total [F00965]; prior year -$5.12B [F00986], change $2.88B (-56.2%), 44% of the total change  <- LARGEST CONTRIBUTOR TO THE CHANGE
+  - Walmart International: $4.91B = 18.2% of total [F00963]; prior year $2.96B [F00984], change $1.94B (+65.6%), 30% of the total change
+  - Walmart US: $22.15B = 82.0% of total [F00962]; prior year $20.62B [F00983], change $1.53B (+7.4%), 23% of the total change
+  - Sams Club: $2.19B = 8.1% of total [F00964]; prior year $1.96B [F00985], change $228.00M (+11.6%), 3% of the total change
+  (A component's share of the total change can exceed 100% or be negative when other components offset it.)
+
+NARRATIVE EVIDENCE (management text; numbers inside were machine-checked against the tables):
+  [T00425] (n/a; number checks: unchecked, unchecked) Operating income as a percentage of net sales increased 83 basis points and decreased 120 basis points for fiscal 2024 and 2023, respectively, due to the factors described above.
+  [T00474] (n/a; number checks: unchecked, unchecked) As a result of the factors discussed above, segment operating income increased $1.9 billion and decreased $0.8 billion for fiscal 2024 and 2023, respectively, when compared to the previous fiscal year.
+  [T00483] (n/a; number checks: unchecked, unchecked) As a result of the factors discussed above, segment operating income increased $0.2 billion and decreased $0.3 billion for fiscal 2024 and 2023, respectively, when compared to the previous fiscal year.
+  [T00467] (n/a; number checks: unchecked, unchecked) As a result of the factors discussed above, segment operating income increased $1.5 billion and decreased $1.0 billion for fiscal 2024 and 2023, respectively, when compared to the previous fiscal year.
+
+DATA QUALITY: 3 accounting identities passed, 0 failed for the numbers above.
+NOTE: for the metrics above, 19 duplicate facts with conflicting values were set aside during parsing (the primary-statement value was kept).

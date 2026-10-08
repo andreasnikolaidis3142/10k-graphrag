@@ -1,0 +1,186 @@
+{
+  "question": "What was Apple's effective tax rate, and why was it below the US statutory rate?",
+  "model": "apodex/apodex-1.1-mini:free",
+  "ungrounded": [],
+  "coverage_gaps": [],
+  "uncited_claims": [],
+  "stripped_pseudo_citations": 0,
+  "answer": {
+    "summary": "Apple's effective tax rate for FY2023 was 14.7%, down 150 bps from 16.2% in FY2022 and up from 13.3% in FY2021 [F00608][F00609][F00610]. The rate was below the US federal statutory rate primarily because of a lower effective tax rate on foreign earnings, the US federal R&D credit, and tax benefits from share-based compensation, partially offset by state income taxes [T00347]. The FY2023 decline versus FY2022 was driven mainly by a lower effective tax rate on foreign earnings and the impact of US foreign tax credit regulations issued by the Treasury in 2022, partially offset by lower tax benefits from share-based compensation [T00348]. Income tax expense was $16.74B on pre-tax income of $113.74B in FY2023 [F00046][F00043]. The statutory federal rate itself is referenced in the filing's rate-reconciliation table but its numeric value is not in the retrieved evidence [T00345]. Gross unrecognized tax benefits were $19.5B as of September 30, 2023, of which $9.5B would impact the effective rate if recognized [T00527].",
+    "status": "neutral",
+    "key_numbers": [
+      {
+        "metric": "Effective income tax rate",
+        "period": "FY2023",
+        "value": "14.7%",
+        "fact_id": "F00608"
+      },
+      {
+        "metric": "Effective income tax rate",
+        "period": "FY2022",
+        "value": "16.2%",
+        "fact_id": "F00609"
+      },
+      {
+        "metric": "Effective income tax rate",
+        "period": "FY2021",
+        "value": "13.3%",
+        "fact_id": "F00610"
+      },
+      {
+        "metric": "Effective tax rate change YoY",
+        "period": "FY2023 vs FY2022",
+        "value": "-150 bps",
+        "fact_id": "F00608"
+      },
+      {
+        "metric": "Income tax expense",
+        "period": "FY2023",
+        "value": "$16.74B",
+        "fact_id": "F00046"
+      },
+      {
+        "metric": "Pre-tax income",
+        "period": "FY2023",
+        "value": "$113.74B",
+        "fact_id": "F00043"
+      },
+      {
+        "metric": "Gross unrecognized tax benefits",
+        "period": "As of September 30, 2023",
+        "value": "$19.5B ($9.5B would impact ETR)",
+        "fact_id": "T00527"
+      }
+    ],
+    "drivers": [
+      "Below-statutory rate in FY2023: lower effective tax rate on foreign earnings, US federal R&D credit, and tax benefits from share-based compensation, partially offset by state income taxes [T00347]",
+      "FY2023 vs FY2022 decline of 150 bps: lower effective tax rate on foreign earnings and impact of 2022 US foreign tax credit regulations, partially offset by lower tax benefits from share-based compensation [T00348][F00608]"
+    ],
+    "risks_and_red_flags": [
+      "Gross unrecognized tax benefits rose to $19.5B (from $16.8B a year earlier), with $9.5B (vs $8.0B) that would impact the effective tax rate if recognized — a potential future rate volatility source [T00527]",
+      "Reliance on foreign-earnings mix and R&D credits means the rate is sensitive to changes in foreign tax regulations and credit eligibility [T00347][T00348]"
+    ],
+    "data_quality_notes": [
+      "The unrecognized-tax-benefit figures in [T00527] are marked unchecked against the tables; verify against the income tax footnote before use",
+      "The numeric statutory federal income tax rate is referenced in the rate-reconciliation table but is not present in the retrieved evidence [T00345]",
+      "The two derived series show a 1 bp rounding difference for the FY2023 change (-150 bps [F00608] vs -149 bps [F01407]); both round to a ~1.5 pp decline"
+    ],
+    "outlook": {
+      "actuals_view": "FY2023 effective tax rate of 14.7% on $113.74B pre-tax income, producing $16.74B of tax expense; the rate fell 150 bps from FY2022's 16.2% [F00608][F00046][F00043]",
+      "forward_looking_guidance": "No forward-looking tax-rate guidance is in the retrieved evidence"
+    },
+    "follow_up_checks": [
+      "Pull the full statutory-rate reconciliation table (referenced in Item 7 MD&A) to confirm the statutory rate and quantify each reconciling item in dollars [T00345]",
+      "Verify the $19.5B / $9.5B unrecognized tax benefit figures against the income tax footnote, since they are currently unchecked [T00527]",
+      "Track the foreign-earnings mix and any changes to US foreign tax credit regulations, the two named drivers of the FY2023 rate decline [T00348]"
+    ],
+    "sources": {
+      "F00608": {
+        "value": "14.7%",
+        "concept": "EffectiveIncomeTaxRate",
+        "period": "FY2023",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:EffectiveIncomeTaxRateContinuingOperations",
+        "also_displayed_in": [
+          "table #12 \"Provision for Income Taxes\", row \"Effective tax rate\", column \"2023\"",
+          "table #34 \"untitled\", row \"Effective tax rate\", column \"2023\""
+        ]
+      },
+      "F00609": {
+        "value": "16.2%",
+        "concept": "EffectiveIncomeTaxRate",
+        "period": "FY2022",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:EffectiveIncomeTaxRateContinuingOperations",
+        "also_displayed_in": [
+          "table #12 \"Provision for Income Taxes\", row \"Effective tax rate\", column \"2022\"",
+          "table #34 \"untitled\", row \"Effective tax rate\", column \"2022\""
+        ]
+      },
+      "F00610": {
+        "value": "13.3%",
+        "concept": "EffectiveIncomeTaxRate",
+        "period": "FY2021",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:EffectiveIncomeTaxRateContinuingOperations",
+        "also_displayed_in": [
+          "table #12 \"Provision for Income Taxes\", row \"Effective tax rate\", column \"2021\"",
+          "table #34 \"untitled\", row \"Effective tax rate\", column \"2021\""
+        ]
+      },
+      "T00347": {
+        "source": "prose",
+        "where": "paragraph in Item 7 MD&A: \"The Company’s effective tax rate for 2023 and 2022 was lower than the statutory federal income tax rate due primarily to a lower effective tax rate on foreign e\""
+      },
+      "T00348": {
+        "source": "prose",
+        "where": "paragraph in Item 7 MD&A: \"The Company’s effective tax rate for 2023 was lower compared to 2022 due primarily to a lower effective tax rate on foreign earnings and the impact of U.S. fore\""
+      },
+      "F00046": {
+        "value": "$16.74B",
+        "concept": "IncomeTaxExpenseBenefit",
+        "period": "FY2023",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:IncomeTaxExpenseBenefit",
+        "also_displayed_in": [
+          "table #12 \"Provision for Income Taxes\", row \"Provision for income taxes\", column \"2023\"",
+          "table #15 \"CONSOLIDATED STATEMENTS OF OPERATIONS\", row \"Provision for income taxes\", column \"September 30, 2023\"",
+          "table #33 \"Provision for Income Taxes and Effective Tax Rate\", row \"Provision for income taxes\", column \"2023\""
+        ]
+      },
+      "F00043": {
+        "value": "$113.74B",
+        "concept": "IncomeLossBeforeIncomeTaxes",
+        "period": "FY2023",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+        "also_displayed_in": [
+          "table #15 \"CONSOLIDATED STATEMENTS OF OPERATIONS\", row \"Income before provision for income taxes\", column \"September 30, 2023\""
+        ]
+      },
+      "T00345": {
+        "source": "prose",
+        "where": "paragraph in Item 7 MD&A: \"Provision for income taxes, effective tax rate and statutory federal income tax rate for 2023, 2022 and 2021 were as follows (dollars in millions):\""
+      },
+      "T00527": {
+        "source": "prose",
+        "where": "paragraph in Item 8 Financial Statements: \"As of September 30, 2023, the total amount of gross unrecognized tax benefits was $ 19.5 billion, of which $ 9.5 billion, if recognized, would impact the Compan\""
+      },
+      "F01407": {
+        "value": "14.7%",
+        "concept": "EffectiveTaxRatePct",
+        "period": "FY2023",
+        "source": "computed",
+        "where": "IncomeTax / PreTaxIncome x 100",
+        "inputs": [
+          "F00046",
+          "F00043"
+        ],
+        "input_sources": {
+          "F00046": {
+            "value": "$16.74B",
+            "concept": "IncomeTaxExpenseBenefit",
+            "period": "FY2023",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:IncomeTaxExpenseBenefit",
+            "also_displayed_in": [
+              "table #12 \"Provision for Income Taxes\", row \"Provision for income taxes\", column \"2023\"",
+              "table #15 \"CONSOLIDATED STATEMENTS OF OPERATIONS\", row \"Provision for income taxes\", column \"September 30, 2023\"",
+              "table #33 \"Provision for Income Taxes and Effective Tax Rate\", row \"Provision for income taxes\", column \"2023\""
+            ]
+          },
+          "F00043": {
+            "value": "$113.74B",
+            "concept": "IncomeLossBeforeIncomeTaxes",
+            "period": "FY2023",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+            "also_displayed_in": [
+              "table #15 \"CONSOLIDATED STATEMENTS OF OPERATIONS\", row \"Income before provision for income taxes\", column \"September 30, 2023\""
+            ]
+          }
+        }
+      }
+    }
+  }
+}

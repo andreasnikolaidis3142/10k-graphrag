@@ -1,0 +1,108 @@
+COMPANY: JPMORGAN CHASE & CO | Fiscal year end: month 12 day 31 | Latest fiscal year in filing: FY2023
+TIME CONTEXT: periods named FY#### are ACTUALS reported in this 10-K. Text facts with role 'guidance' are FORWARD-LOOKING management estimates, not actuals.
+
+SERIES Revenues - us-gaap:Revenues
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a TOTAL line; its components (if listed under ATTRIBUTION) already roll up into it.
+  FY2021             $121.65B  [F06823] verified XBRL-tagged
+  @2021-12-31         $23.34B  [F08356] verified (table 142: IS)
+  FY2022             $128.69B  [F06796] verified XBRL-tagged
+  @2022-12-31         $25.39B  [F08355] verified (table 142: IS)
+  FY2023             $158.10B  [F06769] verified XBRL-tagged
+  @2023-12-31          $3.28B  [F07783] (table 115: Segment information related to First Rep)
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2021-12-31: -80.8% YoY ($121.65B -> $23.34B) [F08356]
+   - FY2022: +451.3% YoY ($23.34B -> $128.69B) [F06796]
+   - @2022-12-31: -80.3% YoY ($128.69B -> $25.39B) [F08355]
+   - FY2023: +522.8% YoY ($25.39B -> $158.10B) [F06769]
+   - @2023-12-31: -97.9% YoY ($158.10B -> $3.28B) [F07783]
+   - INFLECTION FY2022: spike of 78% vs prior-2-period average [F06796]
+   - INFLECTION @2022-12-31: drop of 67% vs prior-2-period average [F08355]
+   - INFLECTION FY2023: spike of 105% vs prior-2-period average [F06769]
+
+SERIES NetIncomeLoss - us-gaap:NetIncomeLoss
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  FY2021              $48.33B  [F00080] verified XBRL-tagged
+  @2021-12-31         -$3.71B  [F08877] CHECK-FAILED (table 167: IS)
+  FY2022              $37.68B  [F00079] verified XBRL-tagged
+  @2022-12-31       -$743.00M  [F08876] CHECK-FAILED (table 167: IS)
+  FY2023              $49.55B  [F00078] verified XBRL-tagged
+  @2023-12-31          $1.24B  [F07786] CHECK-FAILED (table 115: Segment information related to First Rep)
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2021-12-31: -107.7% YoY ($48.33B -> -$3.71B) [F08877]
+   - SIGN FLIP in @2021-12-31: $48.33B -> -$3.71B [F08877]
+   - FY2022: -1114.7% YoY (-$3.71B -> $37.68B) [F00079]
+   - SIGN FLIP in FY2022: -$3.71B -> $37.68B [F00079]
+   - @2022-12-31: -102.0% YoY ($37.68B -> -$743.00M) [F08876]
+   - SIGN FLIP in @2022-12-31: $37.68B -> -$743.00M [F08876]
+   - FY2023: -6769.2% YoY (-$743.00M -> $49.55B) [F00078]
+   - SIGN FLIP in FY2023: -$743.00M -> $49.55B [F00078]
+
+SERIES RoePct - ROE % (avg equity)
+  VIEW: DERIVED ratio/metric = NetIncome / avg(Equity) x 100 (already computed; do not recompute); unit is PERCENT - differences are percentage points, not %
+  UNIT: percent (filing displayed in units; values below are normalised to base units)
+  FY2021                16.4%  [F13531] 
+  FY2022                12.8%  [F13532] 
+  FY2023                16.0%  [F13533] 
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2022: 12.8% vs 16.4% (-358 bps) [F13532]
+   - FY2023: 16.0% vs 12.8% (+313 bps) [F13533]
+
+SERIES RoaPct - ROA % (avg assets)
+  VIEW: DERIVED ratio/metric = NetIncome / avg(Assets) x 100 (already computed; do not recompute); unit is PERCENT - differences are percentage points, not %
+  UNIT: percent (filing displayed in units; values below are normalised to base units)
+  FY2021                 1.3%  [F13534] 
+  FY2022                 1.0%  [F13535] 
+  FY2023                 1.3%  [F13536] 
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2022: 1.0% vs 1.3% (-27 bps) [F13535]
+   - FY2023: 1.3% vs 1.0% (+30 bps) [F13536]
+
+SERIES AssetTurnover - Asset turnover
+  VIEW: DERIVED ratio/metric = Revenues / avg(Assets) (already computed; do not recompute)
+  UNIT: multiple (filing displayed in units; values below are normalised to base units)
+  FY2021                0.03x  [F13537] 
+  FY2022                0.03x  [F13538] 
+  FY2023                0.04x  [F13539] 
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2022: +6.9% YoY (0.03x -> 0.03x) [F13538]
+   - FY2023: +20.7% YoY (0.03x -> 0.04x) [F13539]
+   - CAGR FY2021->FY2023: 13.6%
+   - TREND: increasing (moderate), +29% over the window
+
+SERIES StockholdersEquity - us-gaap:StockholdersEquity
+  VIEW: STOCK (point-in-time balance; do NOT sum across dates)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a TOTAL line; its components (if listed under ATTRIBUTION) already roll up into it.
+  @2021-12-31        $294.13B  [F00301] XBRL-tagged
+  @2022-12-31        $292.33B  [F00226] XBRL-tagged
+  @2023-12-31        $327.88B  [F00225] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2022-12-31: -0.6% YoY ($294.13B -> $292.33B) [F00226]
+   - @2023-12-31: +12.2% YoY ($292.33B -> $327.88B) [F00225]
+   - CAGR @2021-12-31->@2023-12-31: 5.6%
+   - TREND: increasing (weak), +11% over the window
+
+SERIES Assets - us-gaap:Assets
+  VIEW: STOCK (point-in-time balance; do NOT sum across dates)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a TOTAL line; its components (if listed under ATTRIBUTION) already roll up into it.
+  @2021-12-31          $3.74T  [F06825] XBRL-tagged
+  @2022-12-31          $3.67T  [F00170] verified XBRL-tagged
+  @2023-12-31          $3.88T  [F00169] verified XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2022-12-31: -2.1% YoY ($3.74T -> $3.67T) [F00170]
+   - @2023-12-31: +5.7% YoY ($3.67T -> $3.88T) [F00169]
+   - CAGR @2021-12-31->@2023-12-31: 1.7%
+   - TREND: stable (weak), +4% over the window
+
+NARRATIVE EVIDENCE (management text; numbers inside were machine-checked against the tables):
+  [T01406] (Item 15 Exhibits; number checks: unchecked, unchecked, unchecked) (a) Total net revenue included tax-equivalent adjustments from income tax credits related to equity investments in designated community development entities and in entities established for rehabilitation of historic properties, as well as tax-exempt income related to municipal financing activities of $382 million, $322 million and $330 million for the years ended December 31, 2023, 2022 and 2021, respectively.
+  [T04463] (Item 15 Exhibits; number checks: unchecked, unchecked, unchecked, unchecked, unchecked, unchecked) (f) The ratio of average stockholders’ equity to average assets was 8.1%, 7.4% and 7.6% for the years ended December 31, 2023, 2022 and 2021, respectively. The return on average stockholders’ equity, based on net income, was 16.0%, 13.2% and 17.0% for the years ended December 31, 2023, 2022 and 2021, respectively.
+  [T01455] (Item 15 Exhibits; number checks: unchecked, unchecked, unchecked, unchecked, unchecked, unchecked) Net revenue was $19.8 billion, up 12%. Net interest income was $6.3 billion, up 20%. Noninterest revenue was $13.6 billion, up 8%.
+  [T01355] (Item 15 Exhibits; number checks: unchecked, unchecked) • Payments revenue was $9.3 billion, up 22%, driven by deposit margin expansion on higher rates and fees, partially offset by the higher level of client credits that reduce such fees and lower average deposits. The net impact of equity investments was flat reflecting net markdowns in both periods, including the impact of an impairment in the current year.
+
+DATA QUALITY: 7 accounting identities passed, 3 failed for the numbers above. Failed: Net income = Pre-tax income - Taxes @2022-12-31 (off by -$47.14B); Net income = Pre-tax income - Taxes @2023-12-31 (off by -$60.92B); Net income = Pre-tax income - Taxes @2021-12-31 (off by -$64.93B)
+NOTE: for the metrics above, 148 duplicate facts with conflicting values were set aside during parsing (the primary-statement value was kept).

@@ -1,0 +1,1084 @@
+[
+ {
+  "q": "What was the company's total revenue for fiscal 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 383285000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "RevenueFromContractWithCustomerExcludingAssessedTax 2023-09-30",
+  "id": "aapl-001",
+  "split": "dev"
+ },
+ {
+  "q": "What was the top line in fiscal 2022?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 394328000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "RevenueFromContractWithCustomerExcludingAssessedTax 2022-09-24",
+  "id": "aapl-002",
+  "split": "dev"
+ },
+ {
+  "q": "How much did it cost to produce the goods and services sold in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 214137000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "CostOfGoodsAndServicesSold 2023-09-30",
+  "id": "aapl-003",
+  "split": "dev"
+ },
+ {
+  "q": "What gross profit did the company earn in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 169148000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "GrossProfit 2023-09-30",
+  "id": "aapl-004",
+  "split": "dev"
+ },
+ {
+  "q": "How much was spent on research and development in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 29915000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "ResearchAndDevelopmentExpense 2023-09-30",
+  "id": "aapl-005",
+  "split": "holdout"
+ },
+ {
+  "q": "What was R&D spending in 2022?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 26251000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "ResearchAndDevelopmentExpense 2022-09-24",
+  "id": "aapl-006",
+  "split": "dev"
+ },
+ {
+  "q": "What were selling, general and administrative costs in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 24932000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "SellingGeneralAndAdministrativeExpense 2023-09-30",
+  "id": "aapl-007",
+  "split": "dev"
+ },
+ {
+  "q": "What was operating profit in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 114301000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "OperatingIncomeLoss 2023-09-30",
+  "id": "aapl-008",
+  "split": "dev"
+ },
+ {
+  "q": "How much interest expense did the company incur on its borrowings in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 3933000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "InterestExpense 2023-09-30",
+  "id": "aapl-009",
+  "split": "dev"
+ },
+ {
+  "q": "What was income before taxes in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 113736000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest 2023-09-30",
+  "id": "aapl-010",
+  "split": "holdout"
+ },
+ {
+  "q": "What was the income tax charge for 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 16741000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "IncomeTaxExpenseBenefit 2023-09-30",
+  "id": "aapl-011",
+  "split": "dev"
+ },
+ {
+  "q": "What was the effective tax rate in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 14.7,
+    "kind": "percent"
+   }
+  ],
+  "source": "EffectiveIncomeTaxRateContinuingOperations 2023-09-30",
+  "id": "aapl-012",
+  "split": "dev"
+ },
+ {
+  "q": "What tax rate did the company effectively pay in 2022?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 16.2,
+    "kind": "percent"
+   }
+  ],
+  "source": "EffectiveIncomeTaxRateContinuingOperations 2022-09-24",
+  "id": "aapl-013",
+  "split": "dev"
+ },
+ {
+  "q": "How much profit did the company make in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 96995000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "NetIncomeLoss 2023-09-30",
+  "id": "aapl-014",
+  "split": "dev"
+ },
+ {
+  "q": "What was the bottom line in 2022?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 99803000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "NetIncomeLoss 2022-09-24",
+  "id": "aapl-015",
+  "split": "holdout"
+ },
+ {
+  "q": "What were diluted earnings per share for 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 6.13,
+    "kind": "per_share"
+   }
+  ],
+  "source": "EarningsPerShareDiluted 2023-09-30",
+  "id": "aapl-016",
+  "split": "dev"
+ },
+ {
+  "q": "What was diluted EPS in 2022?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 6.11,
+    "kind": "per_share"
+   }
+  ],
+  "source": "EarningsPerShareDiluted 2022-09-24",
+  "id": "aapl-017",
+  "split": "dev"
+ },
+ {
+  "q": "How many diluted shares were used to compute EPS in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 15812547000.0,
+    "kind": "shares"
+   }
+  ],
+  "source": "WeightedAverageNumberOfDilutedSharesOutstanding 2023-09-30",
+  "id": "aapl-018",
+  "split": "dev"
+ },
+ {
+  "q": "How much stock-based compensation was expensed in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 10833000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "ShareBasedCompensation 2023-09-30",
+  "id": "aapl-019",
+  "split": "dev"
+ },
+ {
+  "q": "What were depreciation and amortization charges in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 11519000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "DepreciationDepletionAndAmortization 2023-09-30",
+  "id": "aapl-020",
+  "split": "holdout"
+ },
+ {
+  "q": "How much cash and cash equivalents did the company hold at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 29965000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "CashAndCashEquivalentsAtCarryingValue 2023-09-30",
+  "id": "aapl-021",
+  "split": "dev"
+ },
+ {
+  "q": "What was the cash balance at the end of 2022?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 23646000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "CashAndCashEquivalentsAtCarryingValue 2022-09-24",
+  "id": "aapl-022",
+  "split": "dev"
+ },
+ {
+  "q": "What were trade receivables at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 29508000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "AccountsReceivableNetCurrent 2023-09-30",
+  "id": "aapl-023",
+  "split": "dev"
+ },
+ {
+  "q": "How much inventory was on the balance sheet at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 6331000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "InventoryNet 2023-09-30",
+  "id": "aapl-024",
+  "split": "dev"
+ },
+ {
+  "q": "What were inventories at the end of 2022?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 4946000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "InventoryNet 2022-09-24",
+  "id": "aapl-025",
+  "split": "holdout"
+ },
+ {
+  "q": "What were total current assets at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 143566000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "AssetsCurrent 2023-09-30",
+  "id": "aapl-026",
+  "split": "dev"
+ },
+ {
+  "q": "What was the net book value of property, plant and equipment at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 43715000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "PropertyPlantAndEquipmentNet 2023-09-30",
+  "id": "aapl-027",
+  "split": "dev"
+ },
+ {
+  "q": "How large was the balance sheet, i.e. total assets, at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 352583000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "Assets 2023-09-30",
+  "id": "aapl-028",
+  "split": "dev"
+ },
+ {
+  "q": "How much did the company owe its suppliers at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 62611000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "AccountsPayableCurrent 2023-09-30",
+  "id": "aapl-029",
+  "split": "dev"
+ },
+ {
+  "q": "What were total current liabilities at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 145308000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "LiabilitiesCurrent 2023-09-30",
+  "id": "aapl-030",
+  "split": "holdout"
+ },
+ {
+  "q": "How much long-term debt was outstanding at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 95281000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "LongTermDebtNoncurrent 2023-09-30",
+  "id": "aapl-031",
+  "split": "dev"
+ },
+ {
+  "q": "What was long-term borrowing at the end of 2022?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 98959000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "LongTermDebtNoncurrent 2022-09-24",
+  "id": "aapl-032",
+  "split": "dev"
+ },
+ {
+  "q": "How much debt matures within the next year as of the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 9822000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "LongTermDebtCurrent 2023-09-30",
+  "id": "aapl-033",
+  "split": "dev"
+ },
+ {
+  "q": "What short-term borrowings were outstanding at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 5985000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "CommercialPaper 2023-09-30",
+  "id": "aapl-034",
+  "split": "dev"
+ },
+ {
+  "q": "What were operating lease liabilities at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 11818000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "OperatingLeaseLiability 2023-09-30",
+  "id": "aapl-035",
+  "split": "holdout"
+ },
+ {
+  "q": "What were total liabilities at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 290437000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "Liabilities 2023-09-30",
+  "id": "aapl-036",
+  "split": "dev"
+ },
+ {
+  "q": "What was shareholders' equity at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 62146000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "StockholdersEquity 2023-09-30",
+  "id": "aapl-037",
+  "split": "dev"
+ },
+ {
+  "q": "How much book equity did shareholders have at the end of 2022?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 50672000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "StockholdersEquity 2022-09-24",
+  "id": "aapl-038",
+  "split": "dev"
+ },
+ {
+  "q": "What were retained earnings at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": -214000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "RetainedEarningsAccumulatedDeficit 2023-09-30",
+  "id": "aapl-039",
+  "split": "dev"
+ },
+ {
+  "q": "How many common shares were outstanding at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 15550061000.0,
+    "kind": "shares"
+   }
+  ],
+  "source": "CommonStockSharesOutstanding 2023-09-30",
+  "id": "aapl-040",
+  "split": "holdout"
+ },
+ {
+  "q": "How much cash did operations generate in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 110543000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "NetCashProvidedByUsedInOperatingActivities 2023-09-30",
+  "id": "aapl-041",
+  "split": "dev"
+ },
+ {
+  "q": "What was operating cash flow in 2022?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 122151000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "NetCashProvidedByUsedInOperatingActivities 2022-09-24",
+  "id": "aapl-042",
+  "split": "dev"
+ },
+ {
+  "q": "How much was invested in capital expenditures in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 10959000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "PaymentsToAcquirePropertyPlantAndEquipment 2023-09-30",
+  "id": "aapl-043",
+  "split": "dev"
+ },
+ {
+  "q": "What was capex in 2022?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 10708000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "PaymentsToAcquirePropertyPlantAndEquipment 2022-09-24",
+  "id": "aapl-044",
+  "split": "dev"
+ },
+ {
+  "q": "How much did the company spend buying back its own stock in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 77550000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "PaymentsForRepurchaseOfCommonStock 2023-09-30",
+  "id": "aapl-045",
+  "split": "holdout"
+ },
+ {
+  "q": "What were share buybacks in 2022?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 89402000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "PaymentsForRepurchaseOfCommonStock 2022-09-24",
+  "id": "aapl-046",
+  "split": "dev"
+ },
+ {
+  "q": "How much was paid out in dividends in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 15025000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "PaymentsOfDividends 2023-09-30",
+  "id": "aapl-047",
+  "split": "dev"
+ },
+ {
+  "q": "What was net cash used in investing activities in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 3705000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "NetCashProvidedByUsedInInvestingActivities 2023-09-30",
+  "id": "aapl-048",
+  "split": "dev"
+ },
+ {
+  "q": "What was net cash from financing activities in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": -108488000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "NetCashProvidedByUsedInFinancingActivities 2023-09-30",
+  "id": "aapl-049",
+  "split": "dev"
+ },
+ {
+  "q": "How much debt was repaid in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 11151000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "RepaymentsOfLongTermDebt 2023-09-30",
+  "id": "aapl-050",
+  "split": "holdout"
+ },
+ {
+  "q": "How much new long-term debt was raised in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 5228000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "ProceedsFromIssuanceOfLongTermDebt 2023-09-30",
+  "id": "aapl-051",
+  "split": "dev"
+ },
+ {
+  "q": "How much cash was paid for income taxes in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 18679000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "IncomeTaxesPaidNet 2023-09-30",
+  "id": "aapl-052",
+  "split": "dev"
+ },
+ {
+  "q": "What dividend per share was declared in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 0.94,
+    "kind": "per_share"
+   }
+  ],
+  "source": "CommonStockDividendsPerShareDeclared 2023-09-30",
+  "id": "aapl-053",
+  "split": "dev"
+ },
+ {
+  "q": "How large were unrecognized tax benefits at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 19500000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "UnrecognizedTaxBenefits 2023-09-30",
+  "id": "aapl-054",
+  "split": "dev"
+ },
+ {
+  "q": "What were total future operating lease payments as of the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 13841000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "LesseeOperatingLeaseLiabilityPaymentsDue 2023-09-30",
+  "id": "aapl-055",
+  "split": "holdout"
+ },
+ {
+  "q": "How much deferred revenue was recorded at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 8061000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "ContractWithCustomerLiabilityCurrent 2023-09-30",
+  "id": "aapl-056",
+  "split": "dev"
+ },
+ {
+  "q": "What was accumulated other comprehensive income or loss at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": -11452000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "AccumulatedOtherComprehensiveIncomeLossNetOfTax 2023-09-30",
+  "id": "aapl-057",
+  "split": "dev"
+ },
+ {
+  "q": "How much revenue did the Americas segment report in 2023?",
+  "group": "segment",
+  "keys": [
+   {
+    "value": 162560000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "RevenueFromContractWithCustomerExcludingAssessedTax AmericasSegmentMember 2023-09-30",
+  "id": "aapl-058",
+  "split": "dev"
+ },
+ {
+  "q": "How much revenue did the Europe segment report in 2023?",
+  "group": "segment",
+  "keys": [
+   {
+    "value": 94294000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "RevenueFromContractWithCustomerExcludingAssessedTax EuropeSegmentMember 2023-09-30",
+  "id": "aapl-059",
+  "split": "dev"
+ },
+ {
+  "q": "How much revenue did the Greater China segment report in 2023?",
+  "group": "segment",
+  "keys": [
+   {
+    "value": 72559000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "RevenueFromContractWithCustomerExcludingAssessedTax GreaterChinaSegmentMember 2023-09-30",
+  "id": "aapl-060",
+  "split": "holdout"
+ },
+ {
+  "q": "How much revenue did the Japan segment report in 2023?",
+  "group": "segment",
+  "keys": [
+   {
+    "value": 24257000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "RevenueFromContractWithCustomerExcludingAssessedTax JapanSegmentMember 2023-09-30",
+  "id": "aapl-061",
+  "split": "dev"
+ },
+ {
+  "q": "How much revenue did the Rest Of Asia Pacific segment report in 2023?",
+  "group": "segment",
+  "keys": [
+   {
+    "value": 29615000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "RevenueFromContractWithCustomerExcludingAssessedTax RestOfAsiaPacificSegmentMember 2023-09-30",
+  "id": "aapl-062",
+  "split": "dev"
+ },
+ {
+  "q": "How much operating income did the Americas segment report in 2023?",
+  "group": "segment",
+  "keys": [
+   {
+    "value": 60508000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "OperatingIncomeLoss AmericasSegmentMember 2023-09-30",
+  "id": "aapl-063",
+  "split": "dev"
+ },
+ {
+  "q": "How much operating income did the Europe segment report in 2023?",
+  "group": "segment",
+  "keys": [
+   {
+    "value": 36098000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "OperatingIncomeLoss EuropeSegmentMember 2023-09-30",
+  "id": "aapl-064",
+  "split": "dev"
+ },
+ {
+  "q": "How much operating income did the Greater China segment report in 2023?",
+  "group": "segment",
+  "keys": [
+   {
+    "value": 30328000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "OperatingIncomeLoss GreaterChinaSegmentMember 2023-09-30",
+  "id": "aapl-065",
+  "split": "holdout"
+ },
+ {
+  "q": "How much operating income did the Japan segment report in 2023?",
+  "group": "segment",
+  "keys": [
+   {
+    "value": 11888000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "OperatingIncomeLoss JapanSegmentMember 2023-09-30",
+  "id": "aapl-066",
+  "split": "dev"
+ },
+ {
+  "q": "How much operating income did the Rest Of Asia Pacific segment report in 2023?",
+  "group": "segment",
+  "keys": [
+   {
+    "value": 12066000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "OperatingIncomeLoss RestOfAsiaPacificSegmentMember 2023-09-30",
+  "id": "aapl-067",
+  "split": "dev"
+ },
+ {
+  "q": "What supply chain risks does the company describe?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "single or limited sources",
+     "outsourcing partners"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "aapl-068",
+  "split": "dev"
+ },
+ {
+  "q": "How do currency movements affect gross margins on products?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "components obtained from foreign suppliers"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "aapl-069",
+  "split": "dev"
+ },
+ {
+  "q": "Why did the Products gross margin percentage go up in 2023?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "cost savings and a different Products mix"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "aapl-070",
+  "split": "holdout"
+ },
+ {
+  "q": "Why was the effective tax rate below the statutory federal rate?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "lower effective tax rate on foreign earnings"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "aapl-071",
+  "split": "dev"
+ },
+ {
+  "q": "What explains the decline in total net sales in 2023?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "accounted for more than the entire year-over-year decrease"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "aapl-072",
+  "split": "dev"
+ },
+ {
+  "q": "Is the company dependent on one product for much of its sales?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "significant portion of its net sales from a single product"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "aapl-073",
+  "split": "dev"
+ },
+ {
+  "q": "How much cash and unrestricted securities does management think covers its needs?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "148.3 billion"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "aapl-074",
+  "split": "dev"
+ },
+ {
+  "q": "What is the European Commission tax case about?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "State Aid Decision"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "aapl-075",
+  "split": "holdout"
+ },
+ {
+  "q": "How many people does the company employ?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "approximately 161,000"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "aapl-076",
+  "split": "dev"
+ },
+ {
+  "q": "What are the company's reportable segments?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "Americas, Europe, Greater China, Japan and Rest of Asia Pacific"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "aapl-077",
+  "split": "dev"
+ },
+ {
+  "q": "What is the dispute with Epic Games?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "Epic Games"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "aapl-078",
+  "split": "dev"
+ },
+ {
+  "q": "How could the EU Digital Markets Act affect the business?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "Digital Markets Act"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "aapl-079",
+  "split": "dev"
+ },
+ {
+  "q": "Why are first-quarter sales usually the highest?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "seasonal holiday demand"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "aapl-080",
+  "split": "holdout"
+ },
+ {
+  "q": "Why did the Services gross margin percentage decrease?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "higher Services costs"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "aapl-081",
+  "split": "dev"
+ },
+ {
+  "q": "What does the company say about its capital return program?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "capital return program"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "aapl-082",
+  "split": "dev"
+ }
+]

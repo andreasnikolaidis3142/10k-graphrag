@@ -1,0 +1,273 @@
+TOP_K_CANDIDATES=50 embedder=sentence-transformers:BAAI/bge-large-en-v1.5 reranker_real=True
+
+######## Q1: How did total net revenue, net income and return on equity change over the last three years?
+plan: source=keyword intent=lookup concepts=['Revenues', 'NetIncomeLoss', 'RoePct', 'RoaPct', 'AssetTurnover', 'StockholdersEquity']
+-- RERANKER TOP 10
+  R01 T01406 [Item 15 Exhibits] (a) Total net revenue included tax-equivalent adjustments from income tax credits related to equity investments in designated community development entities and in entities established for rehabilitation of historic properties, as well as tax-exempt income rel
+  R02 T04479 [Item 15 Exhibits] Changes in net interest income, volume and rate analysis
+  R03 T04463 [Item 15 Exhibits] (f) The ratio of average stockholders’ equity to average assets was 8.1%, 7.4% and 7.6% for the years ended December 31, 2023, 2022 and 2021, respectively. The return on average stockholders’ equity, based on net income, was 16.0%, 13.2% and 17.0% for the year
+  R04 T00959 [Item 15 Exhibits] • Total net revenue was $158.1 billion, up 23%, reflecting:
+  R05 T01455 [Item 15 Exhibits] Net revenue was $19.8 billion, up 12%. Net interest income was $6.3 billion, up 20%. Noninterest revenue was $13.6 billion, up 8%.
+  R06 T01355 [Item 15 Exhibits] • Payments revenue was $9.3 billion, up 22%, driven by deposit margin expansion on higher rates and fees, partially offset by the higher level of client credits that reduce such fees and lower average deposits. The net impact of equity investments was flat ref
+  R07 T01399 [Item 15 Exhibits] (a) Total net revenue and loans retained (excluding loans held-for-sale and loans at fair value) are based on the location of the trading desk, booking location, or domicile of the client, as applicable.
+  R08 T01359 [Item 15 Exhibits] • Equity Markets revenue was $9.0 billion, down 13%, driven by lower revenue in Equity Derivatives and Cash Equities, compared with a stronger performance in the prior year.
+  R09 T01392 [Item 15 Exhibits] (b) Loss days represent the number of days for which Markets, which consists of Fixed Income Markets and Equity Markets, posted losses to total net revenue. The loss days determined under this measure differ from the measure used to determine backtesting gains
+  R10 T04678 [Item 15 Exhibits] Pre-provision profit/(loss): Represents total net revenue less noninterest expense. The Firm believes that this financial measure is useful in assessing the ability of a lending institution to generate income in excess of its provision for credit losses.
+-- HYBRID FINAL
+  F1 T01406 [Item 15 Exhibits] (a) Total net revenue included tax-equivalent adjustments from income tax credits related to equity investments in designated community development entities and in entities established for rehabilitation of historic properties, as well as tax-exempt income rel
+  F2 T04463 [Item 15 Exhibits] (f) The ratio of average stockholders’ equity to average assets was 8.1%, 7.4% and 7.6% for the years ended December 31, 2023, 2022 and 2021, respectively. The return on average stockholders’ equity, based on net income, was 16.0%, 13.2% and 17.0% for the year
+  F3 T01455 [Item 15 Exhibits] Net revenue was $19.8 billion, up 12%. Net interest income was $6.3 billion, up 20%. Noninterest revenue was $13.6 billion, up 8%.
+  F4 T01355 [Item 15 Exhibits] • Payments revenue was $9.3 billion, up 22%, driven by deposit margin expansion on higher rates and fees, partially offset by the higher level of client credits that reduce such fees and lower average deposits. The net impact of equity investments was flat ref
+-- BM25 FINAL
+  F1 T04463 [Item 15 Exhibits] (f) The ratio of average stockholders’ equity to average assets was 8.1%, 7.4% and 7.6% for the years ended December 31, 2023, 2022 and 2021, respectively. The return on average stockholders’ equity, based on net income, was 16.0%, 13.2% and 17.0% for the year
+  F2 T01043 [Item 15 Exhibits] Principal transactions revenue in CIB generally has offsets across other revenue lines, including net interest income. The Firm assesses the performance of its Markets business on a total net revenue basis.
+  F3 T01406 [Item 15 Exhibits] (a) Total net revenue included tax-equivalent adjustments from income tax credits related to equity investments in designated community development entities and in entities established for rehabilitation of historic properties, as well as tax-exempt income rel
+  F4 T01385 [Item 15 Exhibits] The following table summarizes selected income statement data for the Markets businesses. Markets includes both Fixed Income Markets and Equity Markets. Markets revenue consists of principal transactions, fees, commissions and other income, as well as net inte
+
+######## Q2: What are net interest income and the net interest margin, and how did they change?
+plan: source=keyword intent=lookup concepts=['InvestmentIncomeInterest', 'GrossMarginPct', 'OperatingMarginPct', 'NetMarginPct', 'EbitdaMarginPct', 'GrossProfit']
+-- RERANKER TOP 10
+  R01 T04479 [Item 15 Exhibits] Changes in net interest income, volume and rate analysis
+  R02 T00960 [Item 15 Exhibits] – Net interest income (“NII”) of $89.3 billion, up 34%, driven by higher rates, the impact of First Republic, and higher revolving balances in Card Services, partially offset by lower Markets net interest income and lower average deposit balances. NII excludin
+  R03 T01239 [Item 15 Exhibits] The allocated cost of unsecured long-term debt is included in a business segment’s net interest income, and net income is reduced by preferred stock dividends, to arrive at a business segment’s net income applicable to common equity.
+  R04 T04535 [Item 15 Exhibits] Deposit margin: Represents net interest income expressed as a percentage of average deposits.
+  R05 T03173 [Item 15 Exhibits] (c) Primarily consists of hedges of the foreign currency risk of long-term debt and AFS securities for changes in spot foreign currency rates. Gains and losses related to the derivatives and the hedged items due to changes in foreign currency rates and the inc
+  R06 T01391 [Item 15 Exhibits] (a) The decline in Markets net interest income was driven by higher funding costs.
+  R07 T01068 [Item 15 Exhibits] Net interest income increased driven by higher rates, the impact of First Republic, and higher revolving balances in Card Services, partially offset by lower Markets net interest income and lower average deposit balances.
+  R08 T00955 [Item 15 Exhibits] (c) NII and NIR refer to net interest income and noninterest revenue, respectively. Markets consists of CIB's Fixed Income Markets and Equity Markets businesses.
+  R09 T01411 [Item 15 Exhibits] Net interest income was $12.1 billion, up 47%, driven by:
+  R10 T01281 [Item 15 Exhibits] Net interest income was $55.0 billion, up 38%, driven by:
+-- HYBRID FINAL
+  F1 T00960 [Item 15 Exhibits] – Net interest income (“NII”) of $89.3 billion, up 34%, driven by higher rates, the impact of First Republic, and higher revolving balances in Card Services, partially offset by lower Markets net interest income and lower average deposit balances. NII excludin
+  F2 T01239 [Item 15 Exhibits] The allocated cost of unsecured long-term debt is included in a business segment’s net interest income, and net income is reduced by preferred stock dividends, to arrive at a business segment’s net income applicable to common equity.
+  F3 T04535 [Item 15 Exhibits] Deposit margin: Represents net interest income expressed as a percentage of average deposits.
+  F4 T03173 [Item 15 Exhibits] (c) Primarily consists of hedges of the foreign currency risk of long-term debt and AFS securities for changes in spot foreign currency rates. Gains and losses related to the derivatives and the hedged items due to changes in foreign currency rates and the inc
+-- BM25 FINAL
+  F1 T04535 [Item 15 Exhibits] Deposit margin: Represents net interest income expressed as a percentage of average deposits.
+  F2 T01463 [Item 15 Exhibits] • higher net interest income on higher average loans associated with First Republic, and from deposit margin expansion on higher rates, largely offset by lower average deposits, and
+  F3 T04469 [Item 15 Exhibits] Interest rates and interest differential analysis of net interest income – U.S. and non-U.S.
+  F4 T01068 [Item 15 Exhibits] Net interest income increased driven by higher rates, the impact of First Republic, and higher revolving balances in Card Services, partially offset by lower Markets net interest income and lower average deposit balances.
+
+######## Q3: How large is the allowance for credit losses and the provision for credit losses, and how did they trend relative to loans?
+plan: source=semantic intent=lookup concepts=['ShortTermBorrowings', 'AccumulatedOtherComprehensiveIncomeLossNetOfTax']
+-- RERANKER TOP 10
+  R01 T01074 [Item 15 Exhibits] The provision for credit losses was $9.3 billion, reflecting $6.2 billion of net charge-offs and a net addition of $3.1 billion to the allowance for credit losses.
+  R02 T00963 [Item 15 Exhibits] • The provision for credit losses was $9.3 billion, reflecting $6.2 billion of net charge-offs and a net addition to the allowance for credit losses of $3.1 billion. Net charge-offs increased $3.3 billion, predominantly driven by Card Services, and to a lesser
+  R03 T01363 [Item 15 Exhibits] The provision for credit losses was $121 million, driven by net charge-offs of $272 million, up $190 million, driven by single name exposures, largely offset by a $151 million net reduction in the allowance for credit losses.
+  R04 T01466 [Item 15 Exhibits] The provision for credit losses was $159 million, predominantly driven by a $146 million addition to the allowance for credit losses to establish the allowance for the First Republic loans and lending-related commitments in the second quarter of 2023.
+  R05 T01518 [Item 15 Exhibits] The provision for credit losses was $171 million, reflecting a net addition to the allowance for credit losses related to a single name exposure, which was subsequently charged off upon the restructuring of a loan.
+  R06 T03792 [Item 15 Exhibits] (b) At December 31, 2023 and 2022, in addition to the allowance for credit losses in the table above, the Firm also had an allowance for credit losses of $ 243 million and $ 21 million, respectively, associated with certain accounts receivable in CIB.
+  R07 T02242 [Item 15 Exhibits] (c) At December 31, 2023 and 2022, in addition to the allowance for credit losses in the table above, the Firm also had an allowance for credit losses of $243 million and $21 million, respectively, associated with certain accounts receivable in CIB.
+  R08 T00968 [Item 15 Exhibits] • The total allowance for credit losses was $24.8 billion at December 31, 2023. The Firm had an allowance for loan losses to retained loans coverage ratio of 1.75%, compared with 1.81% in the prior year.
+  R09 T03788 [Item 15 Exhibits] Allowance for credit losses and related information
+  R10 T01706 [Item 15 Exhibits] (d) Represents the allowance for credit losses eligible for inclusion in Tier 2 capital up to 1.25% of credit risk RWA, including the impact of the CECL capital transition provision with any excess deducted from RWA. Refer to Note 27 for additional information
+-- HYBRID FINAL
+  F1 T01074 [Item 15 Exhibits] The provision for credit losses was $9.3 billion, reflecting $6.2 billion of net charge-offs and a net addition of $3.1 billion to the allowance for credit losses.
+  F2 T00963 [Item 15 Exhibits] • The provision for credit losses was $9.3 billion, reflecting $6.2 billion of net charge-offs and a net addition to the allowance for credit losses of $3.1 billion. Net charge-offs increased $3.3 billion, predominantly driven by Card Services, and to a lesser
+  F3 T01363 [Item 15 Exhibits] The provision for credit losses was $121 million, driven by net charge-offs of $272 million, up $190 million, driven by single name exposures, largely offset by a $151 million net reduction in the allowance for credit losses.
+  F4 T01466 [Item 15 Exhibits] The provision for credit losses was $159 million, predominantly driven by a $146 million addition to the allowance for credit losses to establish the allowance for the First Republic loans and lending-related commitments in the second quarter of 2023.
+  F5 T01518 [Item 15 Exhibits] The provision for credit losses was $171 million, reflecting a net addition to the allowance for credit losses related to a single name exposure, which was subsequently charged off upon the restructuring of a loan.
+  F6 T03014 [Item 15 Exhibits] amounts that approximate fair value, due to their short-term nature and generally negligible credit risk. These instruments include cash and due from banks, deposits with banks, federal funds sold, securities purchased under resale agreements and securities bo
+  F7 T04439 [Item 15 Exhibits] The FHLB advances assumed in the acquisition are recorded in short-term borrowings and in long-term debt. The fair values of the FHLB advances were based on a discounted cash flow methodology and considered the observed FHLB advance issuance rates.
+  F8 T04106 [Item 15 Exhibits] Note 24 – Accumulated other comprehensive income/(loss)
+-- BM25 FINAL
+  F1 T03750 [Item 15 Exhibits] The income statement effect of all changes in the allowance for credit losses is recognized in the provision for credit losses.
+  F2 T01466 [Item 15 Exhibits] The provision for credit losses was $159 million, predominantly driven by a $146 million addition to the allowance for credit losses to establish the allowance for the First Republic loans and lending-related commitments in the second quarter of 2023.
+  F3 T03491 [Item 15 Exhibits] The Firm classifies accrued interest on loans, including accrued but unbilled interest on credit card loans, in accrued interest and accounts receivables on the Consolidated balance sheets. For credit card loans, accrued interest once billed is then recognized
+  F4 T03048 [Item 15 Exhibits] The following describes how the gains and losses that are attributable to changes in instrument-specific credit risk, were determined.
+  F5 T01074 [Item 15 Exhibits] The provision for credit losses was $9.3 billion, reflecting $6.2 billion of net charge-offs and a net addition of $3.1 billion to the allowance for credit losses.
+  F6 T03014 [Item 15 Exhibits] amounts that approximate fair value, due to their short-term nature and generally negligible credit risk. These instruments include cash and due from banks, deposits with banks, federal funds sold, securities purchased under resale agreements and securities bo
+  F7 T04439 [Item 15 Exhibits] The FHLB advances assumed in the acquisition are recorded in short-term borrowings and in long-term debt. The fair values of the FHLB advances were based on a discounted cash flow methodology and considered the observed FHLB advance issuance rates.
+  F8 T04106 [Item 15 Exhibits] Note 24 – Accumulated other comprehensive income/(loss)
+
+######## Q4: What are the CET1 capital ratio and the other regulatory capital ratios, and are they above the required minimums?
+plan: source=semantic intent=lookup concepts=['AdditionalPaidInCapital']
+-- RERANKER TOP 10
+  R01 T04183 [Item 15 Exhibits] (a) Represents the regulatory capital ratio requirements applicable to the Firm. The CET1, Tier 1 and Total capital ratio requirements each include a respective minimum requirement plus a GSIB surcharge of 4.0 % as calculated under Method 2; plus a 2.9 % SCB f
+  R02 T00978 [Item 15 Exhibits] • CET1 capital was $251 billion, and the Standardized and Advanced CET1 ratios were both 15.0%.
+  R03 T01790 [Item 15 Exhibits] (b) At least 75% of the Tier 1 leverage ratio minimum must be met with CET1 capital.
+  R04 T01693 [Item 15 Exhibits] (b) Represents minimum requirements and regulatory buffers applicable to the Firm for the period ended December 31, 2023. For the period ended December 31, 2022, the Basel III Standardized CET1, Tier 1, and Total capital ratio requirements applicable to the Fi
+  R05 T04185 [Item 15 Exhibits] (c) Represents requirements for JPMorgan Chase Bank, N.A. The CET1, Tier 1 and Total capital ratio requirements include a fixed capital conservation buffer requirement of 2.5 % that is applicable to JPMorgan Chase Bank, N.A. JPMorgan Chase Bank, N.A. is not su
+  R06 T04179 [Item 15 Exhibits] Under the risk-based capital and leverage-based guidelines of the Federal Reserve, JPMorgan Chase is required to maintain minimum ratios for CET1 capital, Tier 1 capital, Total capital, Tier 1 leverage and the SLR. Failure to meet these minimum requirements co
+  R07 T04184 [Item 15 Exhibits] (b) For the period ended December 31, 2022, the CET1, Tier 1, and Total capital ratio requirements under Basel III Standardized applicable to the Firm were 12.0 %, 13.5 % and 15.5 %, respectively; the Basel III Advanced CET1, Tier 1, and Total capital ratio re
+  R08 T01637 [Item 15 Exhibits] The Firm's current SCB requirement is 2.9%, and will remain in effect until September 30, 2024. The Firm’s Standardized CET1 capital ratio requirement, including regulatory buffers, was 11.4% as of December 31, 2023.
+  R09 T01668 [Item 15 Exhibits] All banking institutions are currently required to have a minimum CET1 capital ratio of 4.5% of risk-weighted assets.
+  R10 T01651 [Item 15 Exhibits] In July 2023, the Federal Reserve, the OCC and the FDIC released a proposal to amend the risk-based capital framework, entitled "Regulatory capital rule: Amendments applicable to large banking organizations and to banking organizations with significant trading
+-- HYBRID FINAL
+  F1 T04183 [Item 15 Exhibits] (a) Represents the regulatory capital ratio requirements applicable to the Firm. The CET1, Tier 1 and Total capital ratio requirements each include a respective minimum requirement plus a GSIB surcharge of 4.0 % as calculated under Method 2; plus a 2.9 % SCB f
+  F2 T00978 [Item 15 Exhibits] • CET1 capital was $251 billion, and the Standardized and Advanced CET1 ratios were both 15.0%.
+  F3 T01790 [Item 15 Exhibits] (b) At least 75% of the Tier 1 leverage ratio minimum must be met with CET1 capital.
+  F4 T01693 [Item 15 Exhibits] (b) Represents minimum requirements and regulatory buffers applicable to the Firm for the period ended December 31, 2023. For the period ended December 31, 2022, the Basel III Standardized CET1, Tier 1, and Total capital ratio requirements applicable to the Fi
+  F5 T04185 [Item 15 Exhibits] (c) Represents requirements for JPMorgan Chase Bank, N.A. The CET1, Tier 1 and Total capital ratio requirements include a fixed capital conservation buffer requirement of 2.5 % that is applicable to JPMorgan Chase Bank, N.A. JPMorgan Chase Bank, N.A. is not su
+  F6 T04179 [Item 15 Exhibits] Under the risk-based capital and leverage-based guidelines of the Federal Reserve, JPMorgan Chase is required to maintain minimum ratios for CET1 capital, Tier 1 capital, Total capital, Tier 1 leverage and the SLR. Failure to meet these minimum requirements co
+  F7 T04184 [Item 15 Exhibits] (b) For the period ended December 31, 2022, the CET1, Tier 1, and Total capital ratio requirements under Basel III Standardized applicable to the Firm were 12.0 %, 13.5 % and 15.5 %, respectively; the Basel III Advanced CET1, Tier 1, and Total capital ratio re
+  F8 T01637 [Item 15 Exhibits] The Firm's current SCB requirement is 2.9%, and will remain in effect until September 30, 2024. The Firm’s Standardized CET1 capital ratio requirement, including regulatory buffers, was 11.4% as of December 31, 2023.
+-- BM25 FINAL
+  F1 T01668 [Item 15 Exhibits] All banking institutions are currently required to have a minimum CET1 capital ratio of 4.5% of risk-weighted assets.
+  F2 T01656 [Item 15 Exhibits] As of December 31, 2023, the Advanced Total Capital ratio became the most binding constraint for the Firm’s Basel III risk-based ratios, primarily reflecting the reduction in the Stress Capital Buffer requirement. However, as of December 31, 2023, with respect
+  F3 T04183 [Item 15 Exhibits] (a) Represents the regulatory capital ratio requirements applicable to the Firm. The CET1, Tier 1 and Total capital ratio requirements each include a respective minimum requirement plus a GSIB surcharge of 4.0 % as calculated under Method 2; plus a 2.9 % SCB f
+  F4 T00978 [Item 15 Exhibits] • CET1 capital was $251 billion, and the Standardized and Advanced CET1 ratios were both 15.0%.
+  F5 T01650 [Item 15 Exhibits] For each of these risk-based capital ratios, the capital adequacy of the Firm is evaluated against the lower of the Standardized or Advanced approaches compared to their respective regulatory capital ratio requirements.
+  F6 T04177 [Item 15 Exhibits] The capital rules under Basel III establish minimum capital ratios and overall capital adequacy standards for large and internationally active U.S. bank holding companies and banks, including the Firm and JPMorgan Chase Bank, N.A. Two comprehensive approaches 
+  F7 T04179 [Item 15 Exhibits] Under the risk-based capital and leverage-based guidelines of the Federal Reserve, JPMorgan Chase is required to maintain minimum ratios for CET1 capital, Tier 1 capital, Total capital, Tier 1 leverage and the SLR. Failure to meet these minimum requirements co
+  F8 T04180 [Item 15 Exhibits] The following table presents the risk-based regulatory capital ratio requirements and well-capitalized ratios to which the Firm and JPMorgan Chase Bank, N.A. were subject as of December 31, 2023 and 2022.
+
+######## Q5: How big are total loans and total deposits, and what is the loan-to-deposit ratio?
+plan: source=semantic intent=lookup concepts=['Assets', 'TotalDebt', 'LongTermDebtNoncurrent', 'LongTermDebtCurrent', 'ShortTermBorrowings', 'CommercialPaper']
+-- RERANKER TOP 10
+  R01 T01897 [Item 15 Exhibits] The table below shows the loan and deposit balances, the loans-to-deposits ratios, and deposits as a percentage of total liabilities, as of December 31, 2023 and 2022.
+  R02 T01436 [Item 15 Exhibits] (a) As of December 31, 2023, 2022 and 2021, total loans included $36 million, $132 million, and $1.2 billion of loans, respectively, under the PPP, of which $32 million, $123 million and $1.1 billion were in Middle Market Banking, respectively.
+  R03 T04165 [Item 15 Exhibits] (a) Comprises $ 18.2 billion and $ 25.4 billion in deposits with banks, and $ 1.4 billion and $ 1.4 billion in cash and due from banks on the Consolidated balance sheets as of December 31, 2023 and 2022, respectively.
+  R04 T03267 [Item 15 Exhibits] The following table presents the components of lending- and deposit-related fees.
+  R05 T02935 [Item 15 Exhibits] • $ 1.1 billion of total debt and equity instruments, partially due to trading loans, driven by an increase in observability.
+  R06 T02947 [Item 15 Exhibits] • $ 1.2 billion of total debt and equity instruments, largely due to trading loans, driven by an increase in observability.
+  R07 T02957 [Item 15 Exhibits] • $ 1.4 billion of total debt and equity instruments, largely due to trading loans, driven by an increase in observability.
+  R08 T00968 [Item 15 Exhibits] • The total allowance for credit losses was $24.8 billion at December 31, 2023. The Firm had an allowance for loan losses to retained loans coverage ratio of 1.75%, compared with 1.81% in the prior year.
+  R09 T02953 [Item 15 Exhibits] • $ 1.0 billion of total debt and equity instruments, largely due to trading loans, driven by a decrease in observability.
+  R10 T01310 [Item 15 Exhibits] (c) Average Home Lending loans held-for sale and loans at fair value were $4.8 billion, $7.3 billion and $15.4 billion for the years ended December 31, 2023, 2022 and 2021, respectively.
+-- HYBRID FINAL
+  F1 T01897 [Item 15 Exhibits] The table below shows the loan and deposit balances, the loans-to-deposits ratios, and deposits as a percentage of total liabilities, as of December 31, 2023 and 2022.
+  F2 T01436 [Item 15 Exhibits] (a) As of December 31, 2023, 2022 and 2021, total loans included $36 million, $132 million, and $1.2 billion of loans, respectively, under the PPP, of which $32 million, $123 million and $1.1 billion were in Middle Market Banking, respectively.
+  F3 T04165 [Item 15 Exhibits] (a) Comprises $ 18.2 billion and $ 25.4 billion in deposits with banks, and $ 1.4 billion and $ 1.4 billion in cash and due from banks on the Consolidated balance sheets as of December 31, 2023 and 2022, respectively.
+  F4 T03267 [Item 15 Exhibits] The following table presents the components of lending- and deposit-related fees.
+  F5 T02935 [Item 15 Exhibits] • $ 1.1 billion of total debt and equity instruments, partially due to trading loans, driven by an increase in observability.
+  F6 T04358 [Item 15 Exhibits] (e) Total assets for the U.K. were approximately $ 352 billion, $ 357 billion and $ 365 billion at December 31, 2023, 2022 and 2021, respectively.
+  F7 T04352 [Item 15 Exhibits] The Firm’s long-lived assets for the periods presented are not considered by management to be significant in relation to total assets. The majority of the Firm’s long-lived assets are located in the U.S.
+  F8 T00090 [Item 1 Business] In August 2023, the FDIC released a proposal to revise the IDI Resolution Rule. For FDIC-insured depository institutions with $100 billion or more in total assets, such as JPMorgan Chase Bank, N.A., the proposal would revise the content requirements for resolu
+-- BM25 FINAL
+  F1 T01897 [Item 15 Exhibits] The table below shows the loan and deposit balances, the loans-to-deposits ratios, and deposits as a percentage of total liabilities, as of December 31, 2023 and 2022.
+  F2 T00968 [Item 15 Exhibits] • The total allowance for credit losses was $24.8 billion at December 31, 2023. The Firm had an allowance for loan losses to retained loans coverage ratio of 1.75%, compared with 1.81% in the prior year.
+  F3 T00101 [Item 1 Business] FDIC deposit insurance. The FDIC deposit insurance fund provides insurance coverage for certain deposits and is funded through assessments on banks, including JPMorgan Chase Bank, N.A. The FDIC is required to maintain a minimum reserve ratio, which measures th
+  F4 T04184 [Item 15 Exhibits] (b) For the period ended December 31, 2022, the CET1, Tier 1, and Total capital ratio requirements under Basel III Standardized applicable to the Firm were 12.0 %, 13.5 % and 15.5 %, respectively; the Basel III Advanced CET1, Tier 1, and Total capital ratio re
+  F5 T04358 [Item 15 Exhibits] (e) Total assets for the U.K. were approximately $ 352 billion, $ 357 billion and $ 365 billion at December 31, 2023, 2022 and 2021, respectively.
+  F6 T04352 [Item 15 Exhibits] The Firm’s long-lived assets for the periods presented are not considered by management to be significant in relation to total assets. The majority of the Firm’s long-lived assets are located in the U.S.
+  F7 T00090 [Item 1 Business] In August 2023, the FDIC released a proposal to revise the IDI Resolution Rule. For FDIC-insured depository institutions with $100 billion or more in total assets, such as JPMorgan Chase Bank, N.A., the proposal would revise the content requirements for resolu
+  F8 T04416 [Item 15 Exhibits] assets, which represent the fair value of the CSLA and SFSLA on the acquisition date, are reflected in the total assets acquired.
+
+######## Q6: Break down revenue by business segment (Consumer & Community Banking, Corporate & Investment Bank, Commercial Banking, Asset & Wealth Management).
+plan: source=keyword intent=attribution concepts=['Revenues']
+-- RERANKER TOP 10
+  R01 T00038 [Item 1 Business] For management reporting purposes, JPMorgan Chase’s activities are organized into four major reportable business segments, as well as a Corporate segment. The Firm’s consumer business is the Consumer & Community Banking (“CCB”) segment. The Firm’s wholesale bu
+  R02 T01218 [Item 15 Exhibits] The Firm is managed on an LOB basis. There are four major reportable business segments – Consumer & Community Banking, Corporate & Investment Bank, Commercial Banking and Asset & Wealth Management. In addition, there is a Corporate segment.
+  R03 T04361 [Item 15 Exhibits] The Firm is managed on an LOB basis. There are four major reportable business segments – Consumer & Community Banking, Corporate & Investment Bank, Commercial Banking and Asset & Wealth Management. In addition, there is a Corporate segment. The business segmen
+  R04 T00946 [Item 15 Exhibits] For management reporting purposes, the Firm’s activities are organized into four major reportable business segments, as well as a Corporate segment. The Firm’s consumer business is the Consumer & Community Banking (“CCB”) segment. The Firm’s wholesale business
+  R05 T01735 [Item 15 Exhibits] The following table presents the capital allocated to each business segment.
+  R06 T01245 [Item 15 Exhibits] The following tables summarize the Firm’s results by segment for the periods indicated.
+  R07 T04369 [Item 15 Exhibits] Commercial Banking provides comprehensive financial solutions, including lending, payments, investment banking and asset management products across three primary client segments: Middle Market Banking, Corporate Client Banking and Commercial Real Estate Bankin
+  R08 T01225 [Item 15 Exhibits] When business segments join efforts to sell products and services to the Firm’s clients and customers, the participating business segments may agree to share revenue from those transactions. Revenue is generally recognized in the segment responsible for the re
+  R09 T01222 [Item 15 Exhibits] Description of business segment reporting methodology
+  R10 T04374 [Item 15 Exhibits] Asset & Wealth Management, with client assets of $ 5.0 trillion, is a global leader in investment and wealth management.
+-- HYBRID FINAL
+  F1 T00038 [Item 1 Business] For management reporting purposes, JPMorgan Chase’s activities are organized into four major reportable business segments, as well as a Corporate segment. The Firm’s consumer business is the Consumer & Community Banking (“CCB”) segment. The Firm’s wholesale bu
+  F2 T01218 [Item 15 Exhibits] The Firm is managed on an LOB basis. There are four major reportable business segments – Consumer & Community Banking, Corporate & Investment Bank, Commercial Banking and Asset & Wealth Management. In addition, there is a Corporate segment.
+  F3 T04361 [Item 15 Exhibits] The Firm is managed on an LOB basis. There are four major reportable business segments – Consumer & Community Banking, Corporate & Investment Bank, Commercial Banking and Asset & Wealth Management. In addition, there is a Corporate segment. The business segmen
+  F4 T01225 [Item 15 Exhibits] When business segments join efforts to sell products and services to the Firm’s clients and customers, the participating business segments may agree to share revenue from those transactions. Revenue is generally recognized in the segment responsible for the re
+-- BM25 FINAL
+  F1 T01218 [Item 15 Exhibits] The Firm is managed on an LOB basis. There are four major reportable business segments – Consumer & Community Banking, Corporate & Investment Bank, Commercial Banking and Asset & Wealth Management. In addition, there is a Corporate segment.
+  F2 T00038 [Item 1 Business] For management reporting purposes, JPMorgan Chase’s activities are organized into four major reportable business segments, as well as a Corporate segment. The Firm’s consumer business is the Consumer & Community Banking (“CCB”) segment. The Firm’s wholesale bu
+  F3 T01351 [Item 15 Exhibits] • Investment Banking revenue was $6.2 billion, down 4%. Excluding $257 million of markdowns on held-for-sale positions, primarily unfunded commitments, in the bridge financing portfolio recorded in the second quarter of 2022, Investment Banking revenue was dow
+  F4 T04361 [Item 15 Exhibits] The Firm is managed on an LOB basis. There are four major reportable business segments – Consumer & Community Banking, Corporate & Investment Bank, Commercial Banking and Asset & Wealth Management. In addition, there is a Corporate segment. The business segmen
+
+######## Q7: What happened to noninterest expense, the efficiency (overhead) ratio and compensation expense?
+plan: source=semantic intent=lookup concepts=['ShareBasedCompensation', 'Depreciation']
+-- RERANKER TOP 10
+  R01 T00962 [Item 15 Exhibits] • Noninterest expense was $87.2 billion, up 14%, predominantly driven by higher compensation expense, reflecting an increase in employees, primarily in technology and front office, as well as wage inflation. The increase in expense also includes the $2.9 billi
+  R02 T01421 [Item 15 Exhibits] Noninterest expense was $5.4 billion, up 14%, driven by higher compensation expense, reflecting an increase in employees including front office and technology, as well as higher volume-related expense, including the impact of new client acquisitions.
+  R03 T01362 [Item 15 Exhibits] Noninterest expense was $28.6 billion, up 5%, driven by higher legal expense, compensation expense, including the impact of wage inflation, and higher indirect tax expense.
+  R04 T03192 [Item 15 Exhibits] (b) Primarily consists of hedges of the foreign currency risk of non-U.S. dollar-denominated revenue and expense. The income statement classification of gains and losses follows the hedged item – primarily noninterest revenue and compensation expense.
+  R05 T01465 [Item 15 Exhibits] Noninterest expense was $12.8 billion, up 8%, predominantly driven by higher compensation, including continued growth in private banking advisor teams, revenue-related compensation and the impacts of closing the Global Shares and J.P. Morgan Asset Management C
+  R06 T03118 [Item 15 Exhibits] JPMorgan Chase uses cash flow hedges primarily to hedge the exposure to variability in forecasted cash flows from floating-rate assets and liabilities and foreign currency–denominated revenue and expense. For qualifying cash flow hedges, changes in the fair va
+  R07 T04668 [Item 15 Exhibits] Overhead ratio: Noninterest expense as a percentage of total net revenue.
+  R08 T01092 [Item 15 Exhibits] Noncompensation expense increased as a result of:
+  R09 T02388 [Item 15 Exhibits] (d) Impact recognized through noninterest expense.
+  R10 T01088 [Item 15 Exhibits] Compensation expense increased driven by:
+-- HYBRID FINAL
+  F1 T00962 [Item 15 Exhibits] • Noninterest expense was $87.2 billion, up 14%, predominantly driven by higher compensation expense, reflecting an increase in employees, primarily in technology and front office, as well as wage inflation. The increase in expense also includes the $2.9 billi
+  F2 T01421 [Item 15 Exhibits] Noninterest expense was $5.4 billion, up 14%, driven by higher compensation expense, reflecting an increase in employees including front office and technology, as well as higher volume-related expense, including the impact of new client acquisitions.
+  F3 T01362 [Item 15 Exhibits] Noninterest expense was $28.6 billion, up 5%, driven by higher legal expense, compensation expense, including the impact of wage inflation, and higher indirect tax expense.
+  F4 T03192 [Item 15 Exhibits] (b) Primarily consists of hedges of the foreign currency risk of non-U.S. dollar-denominated revenue and expense. The income statement classification of gains and losses follows the hedged item – primarily noninterest revenue and compensation expense.
+  F5 T01465 [Item 15 Exhibits] Noninterest expense was $12.8 billion, up 8%, predominantly driven by higher compensation, including continued growth in private banking advisor teams, revenue-related compensation and the impacts of closing the Global Shares and J.P. Morgan Asset Management C
+  F6 T04027 [Item 15 Exhibits] The Firm provides auto and equipment lease financing to its customers through lease arrangements with lease terms that may contain renewal, termination and/or purchase options. The Firm’s lease financings are predominantly auto operating leases. These assets s
+  F7 T04670 [Item 15 Exhibits] Participating securities: Represents unvested share-based compensation awards containing nonforfeitable rights to dividends or dividend equivalents (collectively, “dividends”), which are included in the earnings per share calculation using the two-class method
+  F8 T04032 [Item 15 Exhibits] The following table presents the Firm’s operating lease income and the related depreciation expense on the Consolidated statements of income:
+-- BM25 FINAL
+  F1 T01362 [Item 15 Exhibits] Noninterest expense was $28.6 billion, up 5%, driven by higher legal expense, compensation expense, including the impact of wage inflation, and higher indirect tax expense.
+  F2 T01421 [Item 15 Exhibits] Noninterest expense was $5.4 billion, up 14%, driven by higher compensation expense, reflecting an increase in employees including front office and technology, as well as higher volume-related expense, including the impact of new client acquisitions.
+  F3 T04115 [Item 15 Exhibits] (d) The pre-tax amounts are primarily recorded in noninterest revenue, net interest income and compensation expense in the Consolidated statements of income.
+  F4 T03192 [Item 15 Exhibits] (b) Primarily consists of hedges of the foreign currency risk of non-U.S. dollar-denominated revenue and expense. The income statement classification of gains and losses follows the hedged item – primarily noninterest revenue and compensation expense.
+  F5 T04027 [Item 15 Exhibits] The Firm provides auto and equipment lease financing to its customers through lease arrangements with lease terms that may contain renewal, termination and/or purchase options. The Firm’s lease financings are predominantly auto operating leases. These assets s
+  F6 T04670 [Item 15 Exhibits] Participating securities: Represents unvested share-based compensation awards containing nonforfeitable rights to dividends or dividend equivalents (collectively, “dividends”), which are included in the earnings per share calculation using the two-class method
+  F7 T04032 [Item 15 Exhibits] The following table presents the Firm’s operating lease income and the related depreciation expense on the Consolidated statements of income:
+  F8 T03394 [Item 15 Exhibits] At December 31, 2023, approximately $ 1.0 billion (pretax) of compensation expense related to unvested awards had not yet been charged to net income. That cost is expected to be amortized into compensation expense over a weighted-average period of 1.7 years. T
+
+######## Q8: What are the main credit, market and liquidity risks the filing highlights?
+plan: source=keyword intent=screen concepts=['CurrentRatio', 'CashAndCashEquivalentsAtCarryingValue', 'NetDebt', 'AssetsCurrent', 'LiabilitiesCurrent', 'TotalDebt']
+-- RERANKER TOP 10
+  R01 T03154 [Item 15 Exhibits] Liquidity risk and credit-related contingent features
+  R02 T00627 [Item 1A Risk Factors] JPMorgan Chase has developed and uses a variety of models and other analytical and judgment-based estimations to measure, monitor and implement controls over its market, credit, capital, liquidity, operational and other risks. JPMorgan Chase also uses internal
+  R03 T00389 [Item 1A Risk Factors] For example, a significant deterioration in the credit quality of a counterparty, borrower or other obligor could lead to concerns about the creditworthiness of other counterparties, borrowers or obligors in similar, related or dependent industries. This type 
+  R04 T00144 [Item 1A Risk Factors] • Liquidity risks, including the risk that JPMorgan Chase’s liquidity could be impaired by market-wide illiquidity or disruption, unforeseen liquidity or capital requirements, the inability to sell assets, default by a significant market participant, unanticip
+  R05 T01800 [Item 15 Exhibits] Liquidity risk is the risk that the Firm will be unable to meet its cash and collateral needs as they arise or that it does not have the appropriate amount, composition and tenor of funding and liquidity to support its assets and liabilities.
+  R06 T00142 [Item 1A Risk Factors] • Market risks, including the effects that economic and market events and conditions, governmental policies, changes in interest rates and credit spreads, and market fluctuations can have on JPMorgan Chase’s consumer and wholesale businesses and its investment
+  R07 T00307 [Item 1A Risk Factors] • the availability and cost of capital, liquidity and credit
+  R08 T01550 [Item 15 Exhibits] • Market risk is the risk associated with the effect of changes in market factors, such as interest and foreign exchange rates, equity and commodity prices, credit spreads or implied volatilities, on the value of assets and liabilities held for both the short 
+  R09 T00143 [Item 1A Risk Factors] • Credit risks, including potential negative effects from adverse changes in the financial condition of clients, customers, counterparties, custodians and central counterparties; the potential for losses due to declines in the value of collateral in stressed m
+  R10 T01803 [Item 15 Exhibits] • Defining, monitoring and reporting liquidity risk metrics;
+-- HYBRID FINAL
+  F1 T00627 [Item 1A Risk Factors] JPMorgan Chase has developed and uses a variety of models and other analytical and judgment-based estimations to measure, monitor and implement controls over its market, credit, capital, liquidity, operational and other risks. JPMorgan Chase also uses internal
+  F2 T00389 [Item 1A Risk Factors] For example, a significant deterioration in the credit quality of a counterparty, borrower or other obligor could lead to concerns about the creditworthiness of other counterparties, borrowers or obligors in similar, related or dependent industries. This type 
+  F3 T00144 [Item 1A Risk Factors] • Liquidity risks, including the risk that JPMorgan Chase’s liquidity could be impaired by market-wide illiquidity or disruption, unforeseen liquidity or capital requirements, the inability to sell assets, default by a significant market participant, unanticip
+  F4 T01800 [Item 15 Exhibits] Liquidity risk is the risk that the Firm will be unable to meet its cash and collateral needs as they arise or that it does not have the appropriate amount, composition and tenor of funding and liquidity to support its assets and liabilities.
+-- BM25 FINAL
+  F1 T00142 [Item 1A Risk Factors] • Market risks, including the effects that economic and market events and conditions, governmental policies, changes in interest rates and credit spreads, and market fluctuations can have on JPMorgan Chase’s consumer and wholesale businesses and its investment
+  F2 T00144 [Item 1A Risk Factors] • Liquidity risks, including the risk that JPMorgan Chase’s liquidity could be impaired by market-wide illiquidity or disruption, unforeseen liquidity or capital requirements, the inability to sell assets, default by a significant market participant, unanticip
+  F3 T03097 [Item 15 Exhibits] The Firm manages certain market and credit risk exposures using derivative instruments, including derivatives in hedge accounting relationships and other derivatives that are used to manage risks associated with specified assets and liabilities.
+  F4 T00950 [Item 15 Exhibits] This executive overview of the MD&A highlights selected information and does not contain all of the information that is important to readers of the Firm’s 2023 Form 10-K. For a complete description of the trends and uncertainties, as well as the risks and crit
+
+######## Q9: How much did JPMorgan return to shareholders through dividends and buybacks, and what happened to the share count and EPS?
+plan: source=keyword intent=lookup concepts=['ShareholderReturns', 'PayoutOfFcfPct', 'PaymentsForRepurchaseOfCommonStock', 'EarningsPerShareDiluted', 'EarningsPerShareBasic', 'WeightedAverageNumberOfDilutedSharesOutstanding']
+-- RERANKER TOP 10
+  R01 T00034 [Item 1 Business] JPMorgan Chase & Co. (“JPMorgan Chase” or the “Firm”, NYSE: JPM), a financial holding company incorporated under Delaware law in 1968, is a leading financial services firm based in the United States of America (“U.S.”), with operations worldwide. JPMorgan Chas
+  R02 T00944 [Item 15 Exhibits] JPMorgan Chase & Co. (NYSE: JPM), a financial holding company incorporated under Delaware law in 1968, is a leading financial services firm based in the United States of America (“U.S.”), with operations worldwide. JPMorgan Chase had $3.9 trillion in assets an
+  R03 T04100 [Item 15 Exhibits] Basic earnings per share (“EPS”) is calculated using the two-class method. Under the two-class method, all earnings (distributed and undistributed) are allocated to common stock and participating securities. JPMorgan Chase grants RSUs under its share-based com
+  R04 T04065 [Item 15 Exhibits] At December 31, 2023 and 2022, JPMorgan Chase was authorized to issue 200 million shares of preferred stock, in one or more series, with a par value of $ 1 per share. In the event of a liquidation or dissolution of the Firm, JPMorgan Chase’s preferred stock th
+  R05 T00660 [Item 1A Risk Factors] JPMorgan Chase’s growth prospects also depend on management’s ability to develop and execute effective business plans to address these strategic priorities, both in the near term and over longer time horizons. Management’s effectiveness in this regard will aff
+  R06 T01742 [Item 15 Exhibits] The Firm’s quarterly common stock dividend is currently $1.05 per share. The Firm’s dividends are subject to approval by the Board of Directors on a quarterly basis.
+  R07 T04060 [Item 15 Exhibits] JPMorgan Chase & Co. has guaranteed certain long-term debt of its subsidiaries, including structured notes. These guarantees rank pari passu with the Firm’s other unsecured and unsubordinated indebtedness. The amount of such guaranteed long-term debt and struc
+  R08 T00837 [Item 5 Market/Equity] JPMorgan Chase’s common stock is listed and traded on the New York Stock Exchange. Refer to “Five-year stock performance,” on page 47 for a comparison of the cumulative total return for JPMorgan Chase common stock with the comparable total return of the S&P 50
+  R09 T04076 [Item 15 Exhibits] Each series of preferred stock has a liquidation value and redemption price per share of $ 10,000 , plus accrued but unpaid dividends. The aggregate liquidation value was $ 27.7 billion at December 31, 2023.
+  R10 T04102 [Item 15 Exhibits] The following table presents the calculation of net income applicable to common stockholders and basic and diluted EPS for the years ended December 31, 2023, 2022 and 2021.
+-- HYBRID FINAL
+  F1 T04100 [Item 15 Exhibits] Basic earnings per share (“EPS”) is calculated using the two-class method. Under the two-class method, all earnings (distributed and undistributed) are allocated to common stock and participating securities. JPMorgan Chase grants RSUs under its share-based com
+  F2 T00034 [Item 1 Business] JPMorgan Chase & Co. (“JPMorgan Chase” or the “Firm”, NYSE: JPM), a financial holding company incorporated under Delaware law in 1968, is a leading financial services firm based in the United States of America (“U.S.”), with operations worldwide. JPMorgan Chas
+  F3 T00944 [Item 15 Exhibits] JPMorgan Chase & Co. (NYSE: JPM), a financial holding company incorporated under Delaware law in 1968, is a leading financial services firm based in the United States of America (“U.S.”), with operations worldwide. JPMorgan Chase had $3.9 trillion in assets an
+  F4 T04065 [Item 15 Exhibits] At December 31, 2023 and 2022, JPMorgan Chase was authorized to issue 200 million shares of preferred stock, in one or more series, with a par value of $ 1 per share. In the event of a liquidation or dissolution of the Firm, JPMorgan Chase’s preferred stock th
+-- BM25 FINAL
+  F1 T04100 [Item 15 Exhibits] Basic earnings per share (“EPS”) is calculated using the two-class method. Under the two-class method, all earnings (distributed and undistributed) are allocated to common stock and participating securities. JPMorgan Chase grants RSUs under its share-based com
+  F2 T01683 [Item 15 Exhibits] Failure to maintain an SLR equal to or greater than the regulatory requirement will result in limitations on the amount of capital that the Firm may distribute such as through dividends and common share repurchases, as well as on discretionary bonus payments f
+  F3 T01768 [Item 15 Exhibits] Failure to maintain TLAC equal to or in excess of the regulatory minimum plus applicable buffers will result in limitations on the amount of capital that the Firm may distribute, such as through dividends and common share repurchases, as well as on discretiona
+  F4 T04670 [Item 15 Exhibits] Participating securities: Represents unvested share-based compensation awards containing nonforfeitable rights to dividends or dividend equivalents (collectively, “dividends”), which are included in the earnings per share calculation using the two-class method
+
+######## Q10: What is JPMorgan's expected net income and net interest income guidance for next year, and its exact market share in U.S. deposits?
+plan: source=keyword intent=lookup concepts=['NetIncomeLoss', 'InvestmentIncomeInterest']
+-- RERANKER TOP 10
+  R01 T00958 [Item 15 Exhibits] JPMorgan Chase reported net income of $49.6 billion for 2023, up 32%, earnings per share of $16.23, ROE of 17% and ROTCE of 21%.
+  R02 T01008 [Item 15 Exhibits] • Management expects net interest income to be approximately $90 billion, market dependent.
+  R03 T00347 [Item 1A Risk Factors] When interest rates are high or increasing, JPMorgan Chase can generally be expected to earn higher net interest income. However, higher interest rates can also lead to:
+  R04 T01009 [Item 15 Exhibits] • Management expects net interest income excluding Markets to be approximately $88 billion, market dependent.
+  R05 T04445 [Item 15 Exhibits] Included in the Firm's Consolidated statements of income are noninterest revenue, net interest income and net income contributed by First Republic of $ 4.4 billion, $ 3.7 billion and $ 4.1 billion, respectively, for the year ended December 31, 2023.
+  R06 T00944 [Item 15 Exhibits] JPMorgan Chase & Co. (NYSE: JPM), a financial holding company incorporated under Delaware law in 1968, is a leading financial services firm based in the United States of America (“U.S.”), with operations worldwide. JPMorgan Chase had $3.9 trillion in assets an
+  R07 T00401 [Item 1A Risk Factors] deposits held by JPMorgan Chase and other financial institutions
+  R08 T00034 [Item 1 Business] JPMorgan Chase & Co. (“JPMorgan Chase” or the “Firm”, NYSE: JPM), a financial holding company incorporated under Delaware law in 1968, is a leading financial services firm based in the United States of America (“U.S.”), with operations worldwide. JPMorgan Chas
+  R09 T04535 [Item 15 Exhibits] Deposit margin: Represents net interest income expressed as a percentage of average deposits.
+  R10 T01498 [Item 15 Exhibits] Net revenue was $8.0 billion, compared with $80 million in the prior year, predominantly driven by higher net interest income due to higher rates, partially offset by the impact of lower Firmwide average deposit balances.
+-- HYBRID FINAL
+  F1 T00958 [Item 15 Exhibits] JPMorgan Chase reported net income of $49.6 billion for 2023, up 32%, earnings per share of $16.23, ROE of 17% and ROTCE of 21%.
+  F2 T01008 [Item 15 Exhibits] • Management expects net interest income to be approximately $90 billion, market dependent.
+  F3 T00347 [Item 1A Risk Factors] When interest rates are high or increasing, JPMorgan Chase can generally be expected to earn higher net interest income. However, higher interest rates can also lead to:
+  F4 T01009 [Item 15 Exhibits] • Management expects net interest income excluding Markets to be approximately $88 billion, market dependent.
+-- BM25 FINAL
+  F1 T04469 [Item 15 Exhibits] Interest rates and interest differential analysis of net interest income – U.S. and non-U.S.
+  F2 T04445 [Item 15 Exhibits] Included in the Firm's Consolidated statements of income are noninterest revenue, net interest income and net income contributed by First Republic of $ 4.4 billion, $ 3.7 billion and $ 4.1 billion, respectively, for the year ended December 31, 2023.
+  F3 T01239 [Item 15 Exhibits] The allocated cost of unsecured long-term debt is included in a business segment’s net interest income, and net income is reduced by preferred stock dividends, to arrive at a business segment’s net income applicable to common equity.
+  F4 T04535 [Item 15 Exhibits] Deposit margin: Represents net interest income expressed as a percentage of average deposits.

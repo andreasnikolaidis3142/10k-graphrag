@@ -1,0 +1,181 @@
+COMPANY: Apple Inc. | Fiscal year end: month 9 day 30 | Latest fiscal year in filing: FY2023
+TIME CONTEXT: periods named FY#### are ACTUALS reported in this 10-K. Text facts with role 'guidance' are FORWARD-LOOKING management estimates, not actuals.
+
+SERIES Revenues - us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a TOTAL line; its components (if listed under ATTRIBUTION) already roll up into it.
+  FY2021             $365.82B  [F00015] verified XBRL-tagged
+  FY2022             $394.33B  [F00014] verified XBRL-tagged
+  FY2023             $383.29B  [F00013] verified XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2022: +7.8% YoY ($365.82B -> $394.33B) [F00014]
+   - FY2023: -2.8% YoY ($394.33B -> $383.29B) [F00013]
+   - CAGR FY2021->FY2023: 2.4%
+   - TREND: stable (weak), +5% over the window
+
+SERIES GrossMarginPct - Gross margin %
+  VIEW: DERIVED ratio/metric = GrossProfit / Revenues x 100 (already computed; do not recompute); unit is PERCENT - differences are percentage points, not %
+  UNIT: percent (filing displayed in units; values below are normalised to base units)
+  FY2021                41.8%  [F01390] 
+  FY2022                43.3%  [F01391] 
+  FY2023                44.1%  [F01392] 
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2022: 43.3% vs 41.8% (+153 bps) [F01391]
+   - FY2023: 44.1% vs 43.3% (+82 bps) [F01392]
+
+SERIES OperatingIncomeLoss - us-gaap:OperatingIncomeLoss
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a TOTAL line; its components (if listed under ATTRIBUTION) already roll up into it.
+  FY2021             $108.95B  [F00039] verified XBRL-tagged
+  FY2022             $119.44B  [F00038] verified XBRL-tagged
+  FY2023             $114.30B  [F00037] verified XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2022: +9.6% YoY ($108.95B -> $119.44B) [F00038]
+   - FY2023: -4.3% YoY ($119.44B -> $114.30B) [F00037]
+   - CAGR FY2021->FY2023: 2.4%
+   - TREND: stable (weak), +5% over the window
+
+SERIES OperatingMarginPct - Operating margin %
+  VIEW: DERIVED ratio/metric = OperatingIncome / Revenues x 100 (already computed; do not recompute); unit is PERCENT - differences are percentage points, not %
+  UNIT: percent (filing displayed in units; values below are normalised to base units)
+  FY2021                29.8%  [F01393] 
+  FY2022                30.3%  [F01394] 
+  FY2023                29.8%  [F01395] 
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2022: 30.3% vs 29.8% (+51 bps) [F01394]
+   - FY2023: 29.8% vs 30.3% (-47 bps) [F01395]
+
+SERIES NetIncomeLoss - us-gaap:NetIncomeLoss
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  FY2021              $94.68B  [F00051] verified XBRL-tagged
+  FY2022              $99.80B  [F00050] verified XBRL-tagged
+  FY2023              $97.00B  [F00049] verified XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2022: +5.4% YoY ($94.68B -> $99.80B) [F00050]
+   - FY2023: -2.8% YoY ($99.80B -> $97.00B) [F00049]
+   - CAGR FY2021->FY2023: 1.2%
+   - TREND: stable (weak), +2% over the window
+
+SERIES FreeCashFlow - Free cash flow (derived)
+  VIEW: DERIVED ratio/metric = CFO - Capex (already computed; do not recompute)
+  UNIT: USD (filing displayed in units; values below are normalised to base units)
+  FY2021              $92.95B  [F01387] 
+  FY2022             $111.44B  [F01388] 
+  FY2023              $99.58B  [F01389] 
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2022: +19.9% YoY ($92.95B -> $111.44B) [F01388]
+   - FY2023: -10.6% YoY ($111.44B -> $99.58B) [F01389]
+   - CAGR FY2021->FY2023: 3.5%
+   - TREND: stable (weak), +7% over the window
+
+SERIES TotalDebt - Total debt (derived)
+  VIEW: DERIVED ratio/metric = LT debt + current debt + commercial paper (already computed; do not recompute)
+  UNIT: USD (filing displayed in units; values below are normalised to base units)
+  @2022-09-24        $120.07B  [F01422] 
+  @2023-09-30        $111.09B  [F01423] 
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2023-09-30: -7.5% YoY ($120.07B -> $111.09B) [F01423]
+   - TREND: stable (weak), -7% over the window
+
+SERIES NetDebtToEbitda - Net debt / EBITDA
+  VIEW: DERIVED ratio/metric = NetDebt / EBITDA (already computed; do not recompute)
+  UNIT: multiple (filing displayed in units; values below are normalised to base units)
+  FY2022               -0.38x  [F01428] 
+  FY2023               -0.41x  [F01429] 
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: +7.9% YoY (-0.38x -> -0.41x) [F01429]
+   - TREND: stable (weak), -8% over the window
+
+SERIES CurrentRatio - Current ratio
+  VIEW: DERIVED ratio/metric = CurrentAssets / CurrentLiabilities (already computed; do not recompute)
+  UNIT: multiple (filing displayed in units; values below are normalised to base units)
+  @2022-09-24           0.88x  [F01420] 
+  @2023-09-30           0.99x  [F01421] 
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2023-09-30: +12.4% YoY (0.88x -> 0.99x) [F01421]
+   - TREND: increasing (weak), +12% over the window
+
+SERIES GrossProfit - us-gaap:GrossProfit
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a TOTAL line; its components (if listed under ATTRIBUTION) already roll up into it.
+  FY2021             $152.84B  [F00027] verified XBRL-tagged
+  FY2022             $170.78B  [F00026] verified XBRL-tagged
+  FY2023             $169.15B  [F00025] verified XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2022: +11.7% YoY ($152.84B -> $170.78B) [F00026]
+   - FY2023: -1.0% YoY ($170.78B -> $169.15B) [F00025]
+   - CAGR FY2021->FY2023: 5.2%
+   - TREND: increasing (weak), +11% over the window
+
+SERIES NetCashProvidedByUsedInOperatingActivities - us-gaap:NetCashProvidedByUsedInOperatingActivities
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a TOTAL line; its components (if listed under ATTRIBUTION) already roll up into it.
+  FY2021             $104.04B  [F00226] XBRL-tagged
+  FY2022             $122.15B  [F00225] XBRL-tagged
+  FY2023             $110.54B  [F00224] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2022: +17.4% YoY ($104.04B -> $122.15B) [F00225]
+   - FY2023: -9.5% YoY ($122.15B -> $110.54B) [F00224]
+   - CAGR FY2021->FY2023: 3.1%
+   - TREND: stable (weak), +6% over the window
+
+SERIES PaymentsToAcquirePropertyPlantAndEquipment - us-gaap:PaymentsToAcquirePropertyPlantAndEquipment
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  FY2021              $11.09B  [F00238] XBRL-tagged outflow shown as magnitude
+  FY2022              $10.71B  [F00237] XBRL-tagged outflow shown as magnitude
+  FY2023              $10.96B  [F00236] XBRL-tagged outflow shown as magnitude
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2022: -3.4% YoY ($11.09B -> $10.71B) [F00237]
+   - FY2023: +2.3% YoY ($10.71B -> $10.96B) [F00236]
+   - CAGR FY2021->FY2023: -0.6%
+   - TREND: stable (weak), -1% over the window
+
+ATTRIBUTION of Revenues FY2023 BY PRODUCTORSERVICE, total $383.29B [F00013]; change vs prior year -$11.04B (-2.8%) [F00014] (components sorted by size of their CHANGE vs prior year, biggest mover first):
+  - Mac: $29.36B = 7.7% of total [F00282]; prior year $40.18B [F00283], change -$10.82B (-26.9%), 98% of the total change  <- LARGEST CONTRIBUTOR TO THE CHANGE
+  - Services: $85.20B = 22.2% of total [F00010]; prior year $78.13B [F00011], change $7.07B (+9.1%), moves AGAINST the total change (offsets 64% of it)
+  - iPhone: $200.58B = 52.3% of total [F00279]; prior year $205.49B [F00280], change -$4.91B (-2.4%), 44% of the total change
+  - Wearables, Home and Accessories: $39.84B = 10.4% of total [F00288]; prior year $41.24B [F00289], change -$1.40B (-3.4%), 13% of the total change
+  - iPad: $28.30B = 7.4% of total [F00285]; prior year $29.29B [F00286], change -$992.00M (-3.4%), 9% of the total change
+  (A component's share of the total change can exceed 100% or be negative when other components offset it.)
+
+ATTRIBUTION of Revenues FY2023 BY STATEMENTBUSINESSSEGMENTS, total $383.29B [F00013]; change vs prior year -$11.04B (-2.8%) [F00014] (components sorted by size of their CHANGE vs prior year, biggest mover first):
+  - Americas: $162.56B = 42.4% of total [F00838]; prior year $169.66B [F00839], change -$7.10B (-4.2%), 64% of the total change  <- LARGEST CONTRIBUTOR TO THE CHANGE
+  - Japan: $24.26B = 6.3% of total [F00856]; prior year $25.98B [F00857], change -$1.72B (-6.6%), 16% of the total change
+  - Greater China: $72.56B = 18.9% of total [F00850]; prior year $74.20B [F00851], change -$1.64B (-2.2%), 15% of the total change
+  - Europe: $94.29B = 24.6% of total [F00844]; prior year $95.12B [F00845], change -$824.00M (-0.9%), 7% of the total change
+  - Rest of Asia Pacific: $29.61B = 7.7% of total [F00862]; prior year $29.38B [F00863], change $240.00M (+0.8%), moves AGAINST the total change (offsets 2% of it)
+  (A component's share of the total change can exceed 100% or be negative when other components offset it.)
+
+ATTRIBUTION of Revenues FY2023 BY STATEMENTGEOGRAPHICAL, total $383.29B [F00013]; change vs prior year -$11.04B (-2.8%) [F00014] (components sorted by size of their CHANGE vs prior year, biggest mover first):
+  - US: $138.57B = 36.2% of total [F00877]; prior year $147.86B [F00878], change -$9.29B (-6.3%), 84% of the total change  <- LARGEST CONTRIBUTOR TO THE CHANGE
+  - CN: $72.56B = 18.9% of total [F00880]; prior year $74.20B [F00881], change -$1.64B (-2.2%), 15% of the total change
+  - Other Countries: $172.15B = 44.9% of total [F00883]; prior year $172.27B [F00884], change -$116.00M (-0.1%), 1% of the total change
+  (A component's share of the total change can exceed 100% or be negative when other components offset it.)
+
+NARRATIVE EVIDENCE (management text; numbers inside were machine-checked against the tables):
+  [T00221] (Item 1A Risk Factors; number checks: none) The Company’s primary exposure to movements in foreign exchange rates relates to non–U.S. dollar–denominated sales, cost of sales and operating expenses worldwide. Gross margins on the Company’s products in foreign countries and on products that include components obtained from foreign suppliers have in the past been adversely affected and could in the future be materially adversely affected by foreign exchange rate fluctuations.
+  [T00200] (Item 1A Risk Factors; number checks: none) The Company’s global operations are subject to complex and changing laws and regulations on subjects, including antitrust; privacy, data security and data localization; consumer protection; advertising, sales, billing and e-commerce; financial services and technology; product liability; intellectual property ownership and infringement; digital platforms; machine learning and artificial intelligence; internet, telecommunications and mobile communications; media, television, film and digital content; availability of third-party software applications and services; labor and employment; anticorrup
+  [T00274] (Item 7 MD&A; number checks: unchecked, OK) The Company’s total net sales were $383.3 billion and net income was $97.0 billion during 2023.
+  [T00333] (Item 7 MD&A; number checks: none) Services gross margin increased during 2023 compared to 2022 due primarily to higher Services net sales, partially offset by the weakness in foreign currencies relative to the U.S. dollar and higher Services costs.
+
+RED-FLAG SCREEN (pre-computed across statements; MUST be considered):
+  - [MEDIUM] Liquidity: FY2022: current ratio 0.88 (<1). [F01420]
+  - [MEDIUM] Liquidity: FY2023: current ratio 0.99 (<1). [F01421]
+  - [MEDIUM] Inventory vs cost of sales: FY2023: inventory grew 28% vs CostOfRevenue -4% (collection / build-up risk). [F00099] [F00022]
+  - [MEDIUM] Operating cash flow decline: FY2023: operating cash flow fell 9.5% ($122.15B -> $110.54B). [F00224]
+  - [LOW] Shareholder payout vs free cash flow: FY2022: dividends+buybacks ($104.24B) are 94% of free cash flow ($111.44B); little room to absorb a downturn. [F01447] [F01388]
+  - [LOW] Shareholder payout vs free cash flow: FY2023: dividends+buybacks ($92.58B) are 93% of free cash flow ($99.58B); little room to absorb a downturn. [F01448] [F01389]
+  - [LOW] Revenue decline: FY2023: revenue fell 2.8% ($394.33B -> $383.29B). [F00013]
+  - [LOW] Operating income decline: FY2023: operating income fell 4.3% ($119.44B -> $114.30B). [F00037]
+  - [LOW] Interest coverage drop: FY2023: interest coverage fell 29% (40.7x -> 29.1x). [F01432]
+  - [LOW] Text differs from table: Text says '$ 8.2 billion' for Revenues FY2023 (Total net sales include $ 8.2 billion of revenue recognized in 2023 that was included in d...). The table shows $383.29B [F00013]. It may describe a narrower item than the statement line; verify before treating it as an error. [F01111] [F00013]
+
+DATA QUALITY: 12 accounting identities passed, 0 failed for the numbers above.
+NOTE: for the metrics above, 4 duplicate facts with conflicting values were set aside during parsing (the primary-statement value was kept).
+TEXT-vs-TABLE CONFLICTS: 

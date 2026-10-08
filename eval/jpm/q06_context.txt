@@ -1,0 +1,160 @@
+COMPANY: JPMORGAN CHASE & CO | Fiscal year end: month 12 day 31 | Latest fiscal year in filing: FY2023
+TIME CONTEXT: periods named FY#### are ACTUALS reported in this 10-K. Text facts with role 'guidance' are FORWARD-LOOKING management estimates, not actuals.
+
+SERIES Revenues - us-gaap:Revenues
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a TOTAL line; its components (if listed under ATTRIBUTION) already roll up into it.
+  FY2021             $121.65B  [F06823] verified XBRL-tagged
+  @2021-12-31         $23.34B  [F08356] verified (table 142: IS)
+  FY2022             $128.69B  [F06796] verified XBRL-tagged
+  @2022-12-31         $25.39B  [F08355] verified (table 142: IS)
+  FY2023             $158.10B  [F06769] verified XBRL-tagged
+  @2023-12-31          $3.28B  [F07783] (table 115: Segment information related to First Rep)
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2021-12-31: -80.8% YoY ($121.65B -> $23.34B) [F08356]
+   - FY2022: +451.3% YoY ($23.34B -> $128.69B) [F06796]
+   - @2022-12-31: -80.3% YoY ($128.69B -> $25.39B) [F08355]
+   - FY2023: +522.8% YoY ($25.39B -> $158.10B) [F06769]
+   - @2023-12-31: -97.9% YoY ($158.10B -> $3.28B) [F07783]
+   - INFLECTION FY2022: spike of 78% vs prior-2-period average [F06796]
+   - INFLECTION @2022-12-31: drop of 67% vs prior-2-period average [F08355]
+   - INFLECTION FY2023: spike of 105% vs prior-2-period average [F06769]
+
+SERIES Revenues {'segment': 'Corporate'} - Corporate
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in billions; values below are normalised to base units)
+  CONTEXT: this is a SEGMENT slice, one component of the consolidated total - not the company total.
+  FY2022              $69.90B  [F09089] (table 194: The following table presents the capital)
+  FY2023              $90.00B  [F09088] (table 194: The following table presents the capital)
+  FY2024              $98.50B  [F09087] (table 194: The following table presents the capital)
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: +28.8% YoY ($69.90B -> $90.00B) [F09088]
+   - FY2024: +9.4% YoY ($90.00B -> $98.50B) [F09087]
+   - CAGR FY2022->FY2024: 18.7%
+   - TREND: increasing (moderate), +41% over the window
+
+SERIES Revenues {'segment': 'Commercial Banking'} - Commercial Banking
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in billions; values below are normalised to base units)
+  CONTEXT: this is a SEGMENT slice, one component of the consolidated total - not the company total.
+  FY2023              $30.00B  [F09084] (table 194: The following table presents the capital)
+  FY2024              $30.00B  [F09083] (table 194: The following table presents the capital)
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2024: +0.0% YoY ($30.00B -> $30.00B) [F09083]
+   - TREND: stable (weak), +0% over the window
+
+SERIES Revenues {'segment': 'Asset & Wealth Management'} - Asset & Wealth Management
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in billions; values below are normalised to base units)
+  CONTEXT: this is a SEGMENT slice, one component of the consolidated total - not the company total.
+  FY2023              $17.00B  [F09086] (table 194: The following table presents the capital)
+  FY2024              $15.50B  [F09085] (table 194: The following table presents the capital)
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2024: -8.8% YoY ($17.00B -> $15.50B) [F09085]
+   - TREND: stable (weak), -9% over the window
+
+SERIES Revenues {'segment': 'Corporate & Investment Bank'} - Corporate & Investment Bank
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in billions; values below are normalised to base units)
+  CONTEXT: this is a SEGMENT slice, one component of the consolidated total - not the company total.
+  FY2024             $102.00B  [F09082] (table 194: The following table presents the capital)
+
+SERIES Revenues {'segment': 'Consumer & Community Banking'} - Consumer & Community Banking
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in billions; values below are normalised to base units)
+  CONTEXT: this is a SEGMENT slice, one component of the consolidated total - not the company total.
+  FY2023              $55.50B  [F09081] (table 194: The following table presents the capital)
+  FY2024              $54.50B  [F09080] (table 194: The following table presents the capital)
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2024: -1.8% YoY ($55.50B -> $54.50B) [F09080]
+   - TREND: stable (weak), -2% over the window
+
+SERIES Revenues {'ConsolidatedEntities': 'ParentCompany'} - us-gaap:Revenues
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a CONSOLIDATEDENTITIES slice, one component of the consolidated total - not the company total.
+  FY2021              $12.39B  [F07060] XBRL-tagged
+  FY2022              $43.11B  [F07059] XBRL-tagged
+  FY2023              $63.56B  [F07058] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2022: +247.8% YoY ($12.39B -> $43.11B) [F07059]
+   - FY2023: +47.5% YoY ($43.11B -> $63.56B) [F07058]
+   - INFLECTION FY2023: spike of 129% vs prior-2-period average [F07058]
+   - CAGR FY2021->FY2023: 126.5%
+   - TREND: increasing (strong), +413% over the window
+
+SERIES Revenues {'StatementGeographical': 'AsiaPacific'} - us-gaap:Revenues
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a STATEMENTGEOGRAPHICAL slice, one component of the consolidated total - not the company total.
+  FY2021               $9.65B  [F06803] XBRL-tagged
+  FY2022              $10.03B  [F06776] XBRL-tagged
+  FY2023              $10.61B  [F06749] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2022: +3.8% YoY ($9.65B -> $10.03B) [F06776]
+   - FY2023: +5.8% YoY ($10.03B -> $10.61B) [F06749]
+   - CAGR FY2021->FY2023: 4.8%
+   - TREND: stable (weak), +10% over the window
+
+SERIES Revenues {'StatementGeographical': 'EMEA'} - us-gaap:Revenues
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a STATEMENTGEOGRAPHICAL slice, one component of the consolidated total - not the company total.
+  FY2021              $16.56B  [F06798] XBRL-tagged
+  FY2022              $18.77B  [F06771] XBRL-tagged
+  FY2023              $20.97B  [F06744] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2022: +13.3% YoY ($16.56B -> $18.77B) [F06771]
+   - FY2023: +11.8% YoY ($18.77B -> $20.97B) [F06744]
+   - CAGR FY2021->FY2023: 12.5%
+   - TREND: increasing (moderate), +27% over the window
+
+SERIES Revenues {'StatementGeographical': 'LatinAmerica'} - us-gaap:Revenues
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a STATEMENTGEOGRAPHICAL slice, one component of the consolidated total - not the company total.
+  FY2021               $2.76B  [F06808] XBRL-tagged
+  FY2022               $3.18B  [F06781] XBRL-tagged
+  FY2023               $3.29B  [F06754] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2022: +15.3% YoY ($2.76B -> $3.18B) [F06781]
+   - FY2023: +3.7% YoY ($3.18B -> $3.29B) [F06754]
+   - CAGR FY2021->FY2023: 9.3%
+   - TREND: increasing (weak), +20% over the window
+
+SERIES Revenues {'StatementGeographical': 'NorthAmerica'} - us-gaap:Revenues
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a STATEMENTGEOGRAPHICAL slice, one component of the consolidated total - not the company total.
+  FY2021              $92.68B  [F06818] XBRL-tagged
+  FY2022              $96.73B  [F06791] XBRL-tagged
+  FY2023             $123.23B  [F06764] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2022: +4.4% YoY ($92.68B -> $96.73B) [F06791]
+   - FY2023: +27.4% YoY ($96.73B -> $123.23B) [F06764]
+   - INFLECTION FY2023: spike of 30% vs prior-2-period average [F06764]
+   - CAGR FY2021->FY2023: 15.3%
+   - TREND: increasing (moderate), +33% over the window
+
+SERIES Revenues {'StatementGeographical': 'TotalInternational'} - us-gaap:Revenues
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a STATEMENTGEOGRAPHICAL slice, one component of the consolidated total - not the company total.
+  FY2021              $28.97B  [F06813] XBRL-tagged
+  FY2022              $31.97B  [F06786] XBRL-tagged
+  FY2023              $34.87B  [F06759] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2022: +10.3% YoY ($28.97B -> $31.97B) [F06786]
+   - FY2023: +9.1% YoY ($31.97B -> $34.87B) [F06759]
+   - CAGR FY2021->FY2023: 9.7%
+   - TREND: increasing (moderate), +20% over the window
+
+NARRATIVE EVIDENCE (management text; numbers inside were machine-checked against the tables):
+  [T00038] (Item 1 Business; number checks: none) For management reporting purposes, JPMorgan Chase’s activities are organized into four major reportable business segments, as well as a Corporate segment. The Firm’s consumer business is the Consumer & Community Banking (“CCB”) segment. The Firm’s wholesale businesses are the Corporate & Investment Bank (“CIB”), Commercial Banking (“CB”), and Asset & Wealth Management (“AWM”) segments.
+  [T01218] (Item 15 Exhibits; number checks: none) The Firm is managed on an LOB basis. There are four major reportable business segments – Consumer & Community Banking, Corporate & Investment Bank, Commercial Banking and Asset & Wealth Management. In addition, there is a Corporate segment.
+  [T04361] (Item 15 Exhibits; number checks: none) The Firm is managed on an LOB basis. There are four major reportable business segments – Consumer & Community Banking, Corporate & Investment Bank, Commercial Banking and Asset & Wealth Management. In addition, there is a Corporate segment. The business segments are determined based on the products and services provided, or the type of customer served, and they reflect the manner in which financial information is evaluated by the Firm’s Operating Committee. Segment results are presented on a managed basis. Refer to Segment results of this footnote for a further discussion of JPMorgan Chase’s b
+  [T01225] (Item 15 Exhibits; number checks: none) When business segments join efforts to sell products and services to the Firm’s clients and customers, the participating business segments may agree to share revenue from those transactions. Revenue is generally recognized in the segment responsible for the related product or service, with allocations to the other segment(s) involved in the transaction. The segment results reflect these revenue-sharing agreements.
+
+DATA QUALITY: 0 accounting identities passed, 0 failed for the numbers above.
+NOTE: for the metrics above, 87 duplicate facts with conflicting values were set aside during parsing (the primary-statement value was kept).

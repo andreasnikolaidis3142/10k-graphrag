@@ -1,0 +1,9 @@
+{
+  "question": "What risks does Walmart highlight about tariffs, supply chain, foreign currency and international operations?",
+  "model": "google/lyria-3-pro-preview",
+  "ungrounded": [],
+  "coverage_gaps": [],
+  "uncited_claims": [],
+  "stripped_pseudo_citations": 0,
+  "answer": null
+}

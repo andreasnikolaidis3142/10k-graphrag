@@ -1,0 +1,50 @@
+COMPANY: JPMORGAN CHASE & CO | Fiscal year end: month 12 day 31 | Latest fiscal year in filing: FY2023
+TIME CONTEXT: periods named FY#### are ACTUALS reported in this 10-K. Text facts with role 'guidance' are FORWARD-LOOKING management estimates, not actuals.
+
+SERIES NetIncomeLoss - us-gaap:NetIncomeLoss
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  FY2021              $48.33B  [F00080] verified XBRL-tagged
+  @2021-12-31         -$3.71B  [F08877] CHECK-FAILED (table 167: IS)
+  FY2022              $37.68B  [F00079] verified XBRL-tagged
+  @2022-12-31       -$743.00M  [F08876] CHECK-FAILED (table 167: IS)
+  FY2023              $49.55B  [F00078] verified XBRL-tagged
+  @2023-12-31          $1.24B  [F07786] CHECK-FAILED (table 115: Segment information related to First Rep)
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2021-12-31: -107.7% YoY ($48.33B -> -$3.71B) [F08877]
+   - SIGN FLIP in @2021-12-31: $48.33B -> -$3.71B [F08877]
+   - FY2022: -1114.7% YoY (-$3.71B -> $37.68B) [F00079]
+   - SIGN FLIP in FY2022: -$3.71B -> $37.68B [F00079]
+   - @2022-12-31: -102.0% YoY ($37.68B -> -$743.00M) [F08876]
+   - SIGN FLIP in @2022-12-31: $37.68B -> -$743.00M [F08876]
+   - FY2023: -6769.2% YoY (-$743.00M -> $49.55B) [F00078]
+   - SIGN FLIP in FY2023: -$743.00M -> $49.55B [F00078]
+
+SERIES InvestmentIncomeInterest - us-gaap:InvestmentIncomeInterest
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a TOTAL line; its components (if listed under ATTRIBUTION) already roll up into it.
+  FY2021               $7.52B  [F03304] verified XBRL-tagged
+  @2021-12-31         -$3.55B  [F08860] (table 167: IS)
+  FY2022              $11.35B  [F03303] XBRL-tagged
+  @2022-12-31         $39.93B  [F12877] (table 636: Segment results and reconciliation (a))
+  FY2023              $18.73B  [F03302] verified XBRL-tagged
+  @2023-12-31          $2.40B  [F07782] (table 115: Segment information related to First Rep)
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2021-12-31: -147.2% YoY ($7.52B -> -$3.55B) [F08860]
+   - SIGN FLIP in @2021-12-31: $7.52B -> -$3.55B [F08860]
+   - FY2022: -419.5% YoY (-$3.55B -> $11.35B) [F03303]
+   - SIGN FLIP in FY2022: -$3.55B -> $11.35B [F03303]
+   - @2022-12-31: +251.9% YoY ($11.35B -> $39.93B) [F12877]
+   - FY2023: -53.1% YoY ($39.93B -> $18.73B) [F03302]
+   - @2023-12-31: -87.2% YoY ($18.73B -> $2.40B) [F07782]
+   - INFLECTION FY2022: spike of 471% vs prior-2-period average [F03303]
+
+NARRATIVE EVIDENCE (management text; numbers inside were machine-checked against the tables):
+  [T00958] (Item 15 Exhibits; number checks: unchecked, unchecked, unchecked, unchecked, unchecked) JPMorgan Chase reported net income of $49.6 billion for 2023, up 32%, earnings per share of $16.23, ROE of 17% and ROTCE of 21%.
+  [T01008] (Item 15 Exhibits; number checks: unchecked) • Management expects net interest income to be approximately $90 billion, market dependent.
+  [T00347] (Item 1A Risk Factors; number checks: none) When interest rates are high or increasing, JPMorgan Chase can generally be expected to earn higher net interest income. However, higher interest rates can also lead to:
+  [T01009] (Item 15 Exhibits; number checks: unchecked) • Management expects net interest income excluding Markets to be approximately $88 billion, market dependent.
+
+DATA QUALITY: 3 accounting identities passed, 3 failed for the numbers above. Failed: Net income = Pre-tax income - Taxes @2022-12-31 (off by -$47.14B); Net income = Pre-tax income - Taxes @2023-12-31 (off by -$60.92B); Net income = Pre-tax income - Taxes @2021-12-31 (off by -$64.93B)
+NOTE: for the metrics above, 52 duplicate facts with conflicting values were set aside during parsing (the primary-statement value was kept).

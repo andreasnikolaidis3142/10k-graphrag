@@ -1,0 +1,231 @@
+{
+  "question": "How much did JPMorgan return to shareholders through dividends and buybacks, and what happened to the share count and EPS?",
+  "model": "apodex/apodex-1.1-mini:free",
+  "ungrounded": [],
+  "coverage_gaps": [],
+  "uncited_claims": [],
+  "stripped_pseudo_citations": 0,
+  "answer": {
+    "summary": "JPMorgan returned $23.29B to shareholders in FY2023 through dividends and buybacks, up 39.2% YoY from $16.72B in FY2022 [F13545]. Dividends were essentially flat at $13.46B (-0.7% YoY) [F00404], while share repurchases drove the increase at $9.82B, up 210.7% YoY from $3.16B [F00401]. Diluted EPS rose 34.2% YoY to $16.23 in FY2023 [F00090], with basic EPS at $16.25 (+34.3% YoY) [F00087]. The share count declined modestly: diluted weighted average shares fell 0.9% to 2,943,100,000 [F00096], and basic shares fell 0.9% to 2,938,600,000 [F00093]. The basic share component accounted for 99.8% of the diluted share total [F00093].",
+    "status": "positive",
+    "key_numbers": [
+      {
+        "metric": "Total shareholder returns (dividends + buybacks)",
+        "period": "FY2023",
+        "value": "$23.29B",
+        "fact_id": "F13545"
+      },
+      {
+        "metric": "Dividends paid",
+        "period": "FY2023",
+        "value": "$13.46B",
+        "fact_id": "F00404"
+      },
+      {
+        "metric": "Share repurchases",
+        "period": "FY2023",
+        "value": "$9.82B",
+        "fact_id": "F00401"
+      },
+      {
+        "metric": "Diluted EPS",
+        "period": "FY2023",
+        "value": "$16.23",
+        "fact_id": "F00090"
+      },
+      {
+        "metric": "Basic EPS",
+        "period": "FY2023",
+        "value": "$16.25",
+        "fact_id": "F00087"
+      },
+      {
+        "metric": "Weighted average diluted shares outstanding",
+        "period": "FY2023",
+        "value": "2,943,100,000",
+        "fact_id": "F00096"
+      },
+      {
+        "metric": "Weighted average basic shares outstanding",
+        "period": "FY2023",
+        "value": "2,938,600,000",
+        "fact_id": "F00093"
+      }
+    ],
+    "drivers": [
+      "Share repurchases were the driver of the +39.2% increase in total shareholder returns, up 210.7% YoY to $9.82B [F00401], while dividends offset slightly at -0.7% YoY to $13.46B [F00404].",
+      "EPS growth of 34.2% YoY to $16.23 coincides with the 0.9% reduction in diluted share count to 2,943,100,000 [F00090][F00096].",
+      "The basic share component was the largest contributor to the diluted share count change, accounting for 99.8% of the total [F00093]."
+    ],
+    "risks_and_red_flags": [
+      "FY2022 diluted weighted average shares outstanding [F00097] is marked CHECK-FAILED and should be verified.",
+      "Operating cash flow dropped 87.9% YoY in FY2023 to $12.97B from $107.12B in FY2022 [F00341], a sharp inflection that coincides with the year of elevated buybacks.",
+      "Four duplicate facts with conflicting values were set aside during parsing for these metrics.",
+      "Buyback activity is discretionary and volatile; FY2022 repurchases were only $3.16B before jumping to $9.82B in FY2023 [F00402][F00401]."
+    ],
+    "data_quality_notes": [
+      "FY2022 diluted weighted average shares outstanding [F00097] failed an accounting identity check; FY2021 [F00098] and FY2023 [F00096] are verified.",
+      "4 duplicate facts with conflicting values were set aside during parsing (the primary-statement value was kept).",
+      "3 accounting identities passed, 0 failed for the numbers above."
+    ],
+    "outlook": {
+      "actuals_view": "FY2023 actuals show increased shareholder returns ($23.29B), rising EPS ($16.23 diluted), and a modestly declining share count (2,943,100,000 diluted).",
+      "forward_looking_guidance": "No forward-looking management guidance is present in the retrieved evidence; all figures are FY2021-FY2023 actuals."
+    },
+    "follow_up_checks": [
+      "Verify the CHECK-FAILED FY2022 diluted share count [F00097] against the primary financial statements.",
+      "Investigate the cause of the 87.9% YoY drop in operating cash flow to $12.97B in FY2023 [F00341].",
+      "Review the 4 duplicate facts with conflicting values that were set aside during parsing.",
+      "Confirm whether the elevated FY2023 buyback level of $9.82B [F00401] is sustainable given the operating cash flow decline."
+    ],
+    "sources": {
+      "F13545": {
+        "value": "$23.29B",
+        "concept": "ShareholderReturns",
+        "period": "FY2023",
+        "source": "computed",
+        "where": "Dividends + Repurchases",
+        "inputs": [
+          "F00404",
+          "F00401"
+        ],
+        "input_sources": {
+          "F00404": {
+            "value": "$13.46B",
+            "concept": "PaymentsOfDividends",
+            "period": "FY2023",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:PaymentsOfDividends",
+            "also_displayed_in": [
+              "table #345 \"Consolidated statements of cash flows\", row \"Dividends paid\", column \"2023\"",
+              "table #642 \"untitled\", row \"Dividends paid\", column \"2023\""
+            ]
+          },
+          "F00401": {
+            "value": "$9.82B",
+            "concept": "PaymentsForRepurchaseOfCommonStock",
+            "period": "FY2023",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:PaymentsForRepurchaseOfCommonStock",
+            "also_displayed_in": [
+              "table #345 \"Consolidated statements of cash flows\", row \"Treasury stock repurchased\", column \"2023\"",
+              "table #642 \"untitled\", row \"Treasury stock repurchased\", column \"2023\""
+            ]
+          }
+        }
+      },
+      "F00404": {
+        "value": "$13.46B",
+        "concept": "PaymentsOfDividends",
+        "period": "FY2023",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:PaymentsOfDividends",
+        "also_displayed_in": [
+          "table #345 \"Consolidated statements of cash flows\", row \"Dividends paid\", column \"2023\"",
+          "table #642 \"untitled\", row \"Dividends paid\", column \"2023\""
+        ]
+      },
+      "F00401": {
+        "value": "$9.82B",
+        "concept": "PaymentsForRepurchaseOfCommonStock",
+        "period": "FY2023",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:PaymentsForRepurchaseOfCommonStock",
+        "also_displayed_in": [
+          "table #345 \"Consolidated statements of cash flows\", row \"Treasury stock repurchased\", column \"2023\"",
+          "table #642 \"untitled\", row \"Treasury stock repurchased\", column \"2023\""
+        ]
+      },
+      "F00090": {
+        "value": "$16.23",
+        "concept": "EarningsPerShareDiluted",
+        "period": "FY2023",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:EarningsPerShareDiluted",
+        "also_displayed_in": [
+          "table #73 \"untitled\", row \"Diluted earnings per share\", column \"2023\"",
+          "table #336 \"Consolidated statements of income\", row \"Diluted earnings per share\", column \"2023\"",
+          "table #593 \"Note 23 – Earnings per share\", row \"Net income per share\", column \"2023\""
+        ]
+      },
+      "F00087": {
+        "value": "$16.25",
+        "concept": "EarningsPerShareBasic",
+        "period": "FY2023",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:EarningsPerShareBasic",
+        "also_displayed_in": [
+          "table #336 \"Consolidated statements of income\", row \"Basic earnings per share\", column \"2023\"",
+          "table #593 \"Note 23 – Earnings per share\", row \"Net income per share\", column \"2023\""
+        ]
+      },
+      "F00096": {
+        "value": "2,943,100,000",
+        "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+        "period": "FY2023",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "also_displayed_in": [
+          "table #336 \"Consolidated statements of income\", row \"Weighted-average diluted shares\", column \"2023\"",
+          "table #593 \"Note 23 – Earnings per share\", row \"Total weighted-average diluted shares outstanding\", column \"2023\""
+        ]
+      },
+      "F00093": {
+        "value": "2,938,600,000",
+        "concept": "WeightedAverageNumberOfSharesOutstandingBasic",
+        "period": "FY2023",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",
+        "also_displayed_in": [
+          "table #336 \"Consolidated statements of income\", row \"Weighted-average basic shares\", column \"2023\"",
+          "table #593 \"Note 23 – Earnings per share\", row \"Total weighted-average basic shares outstanding\", column \"2023\"",
+          "table #593 \"Note 23 – Earnings per share\", row \"Total weighted-average basic shares outstanding\", column \"2023\""
+        ]
+      },
+      "F00097": {
+        "value": "2,970,000,000",
+        "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+        "period": "FY2022",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "also_displayed_in": [
+          "table #336 \"Consolidated statements of income\", row \"Weighted-average diluted shares\", column \"2022\"",
+          "table #593 \"Note 23 – Earnings per share\", row \"Total weighted-average diluted shares outstanding\", column \"2022\""
+        ]
+      },
+      "F00341": {
+        "value": "$12.97B",
+        "concept": "NetCashProvidedByUsedInOperatingActivities",
+        "period": "FY2023",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:NetCashProvidedByUsedInOperatingActivities",
+        "also_displayed_in": [
+          "table #96 \"Consolidated cash flows analysis\", row \"Operating activities\", column \"2023\"",
+          "table #345 \"Consolidated statements of cash flows\", row \"Net cash provided by operating activities\", column \"2023\""
+        ]
+      },
+      "F00402": {
+        "value": "$3.16B",
+        "concept": "PaymentsForRepurchaseOfCommonStock",
+        "period": "FY2022",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:PaymentsForRepurchaseOfCommonStock",
+        "also_displayed_in": [
+          "table #345 \"Consolidated statements of cash flows\", row \"Treasury stock repurchased\", column \"2022\"",
+          "table #642 \"untitled\", row \"Treasury stock repurchased\", column \"2022\""
+        ]
+      },
+      "F00098": {
+        "value": "3,026,600,000",
+        "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+        "period": "FY2021",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "also_displayed_in": [
+          "table #336 \"Consolidated statements of income\", row \"Weighted-average diluted shares\", column \"2021\"",
+          "table #593 \"Note 23 – Earnings per share\", row \"Total weighted-average diluted shares outstanding\", column \"2021\""
+        ]
+      }
+    }
+  }
+}

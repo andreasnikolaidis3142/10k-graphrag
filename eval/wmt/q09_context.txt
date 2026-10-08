@@ -1,0 +1,23 @@
+COMPANY: Walmart Inc. | Fiscal year end: month 1 day 31 | Latest fiscal year in filing: FY2024
+TIME CONTEXT: periods named FY#### are ACTUALS reported in this 10-K. Text facts with role 'guidance' are FORWARD-LOOKING management estimates, not actuals.
+
+SERIES EffectOfExchangeRateOnCash - us-gaap:EffectOfExchangeRateOnCashCashEquivalentsRestrictedC
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  FY2022            -$140.00M  [F00373] XBRL-tagged
+  FY2023             -$73.00M  [F00372] XBRL-tagged
+  FY2024              $69.00M  [F00371] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: -47.9% YoY (-$140.00M -> -$73.00M) [F00372]
+   - FY2024: -194.5% YoY (-$73.00M -> $69.00M) [F00371]
+   - SIGN FLIP in FY2024: -$73.00M -> $69.00M [F00371]
+   - INFLECTION FY2024: spike of 165% vs prior-2-period average [F00371]
+   - TREND: increasing (strong), +149% over the window
+
+NARRATIVE EVIDENCE (management text; numbers inside were machine-checked against the tables):
+  [T00277] (n/a; number checks: none) Our international operations subject us to legislative, judicial, accounting, legal, regulatory, tax, political and economic risks and conditions specific to the countries or regions in which we operate, which could materially adversely affect our business or financial performance.
+  [T00280] (n/a; number checks: none) Changing our operations in accordance with new or changed restrictions on international trade or newly imposed sanctions can be expensive, time-consuming and disruptive to our operations, and such restrictions can be announced with little or no advance notice and we may not be able to effectively mitigate all adverse impacts from such measures. In addition, tensions between nation-state governments and conflicts of laws may lead to challenges for our operations. If disputes and conflicts further escalate in the future, actions by governments in response could be significantly more severe and r
+  [T00284] (n/a; number checks: unchecked) In fiscal 2024, our Walmart U.S. and Sam's Club operating segments generated approximately 82% of our consolidated net sales. Significant changes in tax and trade policies, including tariffs and government regulations affecting trade between the U.S. and other countries where we source many of the products we sell in our stores and clubs could have an adverse effect on our business and financial performance. A significant portion of the general merchandise we sell in our U.S. stores and clubs is manufactured in other countries. Any such actions including the imposition of further tariffs on im
+  [T00262] (n/a; number checks: none) Walmart Health clinical operations are also subject to numerous risks, including but not limited to: reductions in the third-party reimbursement rates for services; changes in our payer mix; changes in the health insurance market generally; our inability to retain and negotiate favorable contracts with private third-party payers, including managed care plans; competition for patients from other healthcare providers, including those that offer telehealth services; changes to healthcare provider utilization practices and treatment methodologies; trends toward value-based purchasing and price tra
+
+DATA QUALITY: 2 accounting identities passed, 0 failed for the numbers above.

@@ -1,0 +1,55 @@
+COMPANY: Apple Inc. | Fiscal year end: month 9 day 30 | Latest fiscal year in filing: FY2023
+TIME CONTEXT: periods named FY#### are ACTUALS reported in this 10-K. Text facts with role 'guidance' are FORWARD-LOOKING management estimates, not actuals.
+
+SERIES EffectiveIncomeTaxRate - us-gaap:EffectiveIncomeTaxRateContinuingOperations
+  VIEW: FLOW (12-month period; do NOT add annual values together); unit is PERCENT - differences are percentage points, not %
+  UNIT: percent (filing displayed in units; values below are normalised to base units)
+  FY2021                13.3%  [F00610] XBRL-tagged
+  FY2022                16.2%  [F00609] XBRL-tagged
+  FY2023                14.7%  [F00608] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2022: 16.2% vs 13.3% (+290 bps) [F00609]
+   - FY2023: 14.7% vs 16.2% (-150 bps) [F00608]
+
+SERIES EffectiveTaxRatePct - Effective tax rate % (derived)
+  VIEW: DERIVED ratio/metric = IncomeTax / PreTaxIncome x 100 (already computed; do not recompute); unit is PERCENT - differences are percentage points, not %
+  UNIT: percent (filing displayed in units; values below are normalised to base units)
+  FY2021                13.3%  [F01405] 
+  FY2022                16.2%  [F01406] 
+  FY2023                14.7%  [F01407] 
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2022: 16.2% vs 13.3% (+290 bps) [F01406]
+   - FY2023: 14.7% vs 16.2% (-149 bps) [F01407]
+
+SERIES IncomeTaxExpenseBenefit - us-gaap:IncomeTaxExpenseBenefit
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  FY2021              $14.53B  [F00048] XBRL-tagged
+  FY2022              $19.30B  [F00047] XBRL-tagged
+  FY2023              $16.74B  [F00046] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2022: +32.9% YoY ($14.53B -> $19.30B) [F00047]
+   - FY2023: -13.3% YoY ($19.30B -> $16.74B) [F00046]
+   - CAGR FY2021->FY2023: 7.4%
+   - TREND: increasing (weak), +15% over the window
+
+SERIES IncomeLossBeforeIncomeTaxes - us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesE
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  FY2021             $109.21B  [F00045] XBRL-tagged
+  FY2022             $119.10B  [F00044] XBRL-tagged
+  FY2023             $113.74B  [F00043] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2022: +9.1% YoY ($109.21B -> $119.10B) [F00044]
+   - FY2023: -4.5% YoY ($119.10B -> $113.74B) [F00043]
+   - CAGR FY2021->FY2023: 2.1%
+   - TREND: stable (weak), +4% over the window
+
+NARRATIVE EVIDENCE (management text; numbers inside were machine-checked against the tables):
+  [T00347] (Item 7 MD&A; number checks: none) The Company’s effective tax rate for 2023 and 2022 was lower than the statutory federal income tax rate due primarily to a lower effective tax rate on foreign earnings, the impact of the U.S. federal R&D credit, and tax benefits from share-based compensation, partially offset by state income taxes.
+  [T00345] (Item 7 MD&A; number checks: none) Provision for income taxes, effective tax rate and statutory federal income tax rate for 2023, 2022 and 2021 were as follows (dollars in millions):
+  [T00527] (Item 8 Financial Statements; number checks: unchecked, unchecked, unchecked, unchecked) As of September 30, 2023, the total amount of gross unrecognized tax benefits was $ 19.5 billion, of which $ 9.5 billion, if recognized, would impact the Company’s effective tax rate. As of September 24, 2022, the total amount of gross unrecognized tax benefits was $ 16.8 billion, of which $ 8.0 billion, if recognized, would have impacted the Company’s effective tax rate.
+  [T00348] (Item 7 MD&A; number checks: none) The Company’s effective tax rate for 2023 was lower compared to 2022 due primarily to a lower effective tax rate on foreign earnings and the impact of U.S. foreign tax credit regulations issued by the U.S. Department of the Treasury in 2022, partially offset by lower tax benefits from share-based compensation.
+
+DATA QUALITY: 3 accounting identities passed, 0 failed for the numbers above.
+TEXT-vs-TABLE CONFLICTS: 

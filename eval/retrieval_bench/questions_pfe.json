@@ -1,0 +1,1035 @@
+[
+ {
+  "q": "What was the company's total revenue for fiscal 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 58496000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "Revenues 2023-12-31",
+  "id": "pfe-001",
+  "split": "dev"
+ },
+ {
+  "q": "What was the top line in fiscal 2022?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 100330000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "Revenues 2022-12-31",
+  "id": "pfe-002",
+  "split": "dev"
+ },
+ {
+  "q": "How much did it cost to produce the goods and services sold in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 24954000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "CostOfGoodsAndServicesSold 2023-12-31",
+  "id": "pfe-003",
+  "split": "dev"
+ },
+ {
+  "q": "How much was spent on research and development in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 10679000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "ResearchAndDevelopmentExpenseExcludingAcquiredInProcessCost 2023-12-31",
+  "id": "pfe-004",
+  "split": "dev"
+ },
+ {
+  "q": "What was R&D spending in 2022?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 11428000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "ResearchAndDevelopmentExpenseExcludingAcquiredInProcessCost 2022-12-31",
+  "id": "pfe-005",
+  "split": "holdout"
+ },
+ {
+  "q": "What were selling, general and administrative costs in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 14771000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "SellingGeneralAndAdministrativeExpense 2023-12-31",
+  "id": "pfe-006",
+  "split": "dev"
+ },
+ {
+  "q": "How much interest expense did the company incur on its borrowings in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 2209000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "InterestExpense 2023-12-31",
+  "id": "pfe-007",
+  "split": "dev"
+ },
+ {
+  "q": "What was income before taxes in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 1058000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest 2023-12-31",
+  "id": "pfe-008",
+  "split": "dev"
+ },
+ {
+  "q": "What was the income tax charge for 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": -1115000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "IncomeTaxExpenseBenefit 2023-12-31",
+  "id": "pfe-009",
+  "split": "dev"
+ },
+ {
+  "q": "What was the effective tax rate in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": -105.4,
+    "kind": "percent"
+   }
+  ],
+  "source": "EffectiveIncomeTaxRateContinuingOperations 2023-12-31",
+  "id": "pfe-010",
+  "split": "holdout"
+ },
+ {
+  "q": "What tax rate did the company effectively pay in 2022?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 9.6,
+    "kind": "percent"
+   }
+  ],
+  "source": "EffectiveIncomeTaxRateContinuingOperations 2022-12-31",
+  "id": "pfe-011",
+  "split": "dev"
+ },
+ {
+  "q": "How much profit did the company make in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 2119000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "NetIncomeLoss 2023-12-31",
+  "id": "pfe-012",
+  "split": "dev"
+ },
+ {
+  "q": "What was the bottom line in 2022?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 31372000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "NetIncomeLoss 2022-12-31",
+  "id": "pfe-013",
+  "split": "dev"
+ },
+ {
+  "q": "What were diluted earnings per share for 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 0.37,
+    "kind": "per_share"
+   }
+  ],
+  "source": "EarningsPerShareDiluted 2023-12-31",
+  "id": "pfe-014",
+  "split": "dev"
+ },
+ {
+  "q": "What was diluted EPS in 2022?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 5.47,
+    "kind": "per_share"
+   }
+  ],
+  "source": "EarningsPerShareDiluted 2022-12-31",
+  "id": "pfe-015",
+  "split": "holdout"
+ },
+ {
+  "q": "How many diluted shares were used to compute EPS in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 5709000000.0,
+    "kind": "shares"
+   }
+  ],
+  "source": "WeightedAverageNumberOfDilutedSharesOutstanding 2023-12-31",
+  "id": "pfe-016",
+  "split": "dev"
+ },
+ {
+  "q": "How much stock-based compensation was expensed in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 525000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "ShareBasedCompensation 2023-12-31",
+  "id": "pfe-017",
+  "split": "dev"
+ },
+ {
+  "q": "What were depreciation and amortization charges in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 6290000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "DepreciationDepletionAndAmortization 2023-12-31",
+  "id": "pfe-018",
+  "split": "dev"
+ },
+ {
+  "q": "How large were asset impairment charges in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 3024000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "AssetImpairmentCharges 2023-12-31",
+  "id": "pfe-019",
+  "split": "dev"
+ },
+ {
+  "q": "How much were restructuring charges in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 1968000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "RestructuringCharges 2023-12-31",
+  "id": "pfe-020",
+  "split": "holdout"
+ },
+ {
+  "q": "How much cash and cash equivalents did the company hold at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 2853000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "CashAndCashEquivalentsAtCarryingValue 2023-12-31",
+  "id": "pfe-021",
+  "split": "dev"
+ },
+ {
+  "q": "What was the cash balance at the end of 2022?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 416000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "CashAndCashEquivalentsAtCarryingValue 2022-12-31",
+  "id": "pfe-022",
+  "split": "dev"
+ },
+ {
+  "q": "What were trade receivables at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 11177000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "AccountsReceivableNetCurrent 2023-12-31",
+  "id": "pfe-023",
+  "split": "dev"
+ },
+ {
+  "q": "How much inventory was on the balance sheet at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 10189000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "InventoryNet 2023-12-31",
+  "id": "pfe-024",
+  "split": "dev"
+ },
+ {
+  "q": "What were inventories at the end of 2022?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 8981000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "InventoryNet 2022-12-31",
+  "id": "pfe-025",
+  "split": "holdout"
+ },
+ {
+  "q": "What were total current assets at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 43333000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "AssetsCurrent 2023-12-31",
+  "id": "pfe-026",
+  "split": "dev"
+ },
+ {
+  "q": "What was the net book value of property, plant and equipment at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 18940000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "PropertyPlantAndEquipmentNet 2023-12-31",
+  "id": "pfe-027",
+  "split": "dev"
+ },
+ {
+  "q": "How much goodwill was carried on the balance sheet at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 67783000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "Goodwill 2023-12-31",
+  "id": "pfe-028",
+  "split": "dev"
+ },
+ {
+  "q": "What were intangible assets other than goodwill at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 64900000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "IntangibleAssetsNetExcludingGoodwill 2023-12-31",
+  "id": "pfe-029",
+  "split": "dev"
+ },
+ {
+  "q": "How large was the balance sheet, i.e. total assets, at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 226501000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "Assets 2023-12-31",
+  "id": "pfe-030",
+  "split": "holdout"
+ },
+ {
+  "q": "How much did the company owe its suppliers at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 6710000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "AccountsPayableCurrent 2023-12-31",
+  "id": "pfe-031",
+  "split": "dev"
+ },
+ {
+  "q": "What were total current liabilities at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 47794000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "LiabilitiesCurrent 2023-12-31",
+  "id": "pfe-032",
+  "split": "dev"
+ },
+ {
+  "q": "How much long-term debt was outstanding at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 61538000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "LongTermDebtNoncurrent 2023-12-31",
+  "id": "pfe-033",
+  "split": "dev"
+ },
+ {
+  "q": "What was long-term borrowing at the end of 2022?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 32884000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "LongTermDebtNoncurrent 2022-12-31",
+  "id": "pfe-034",
+  "split": "dev"
+ },
+ {
+  "q": "How much debt matures within the next year as of the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 2254000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "LongTermDebtCurrent 2023-12-31",
+  "id": "pfe-035",
+  "split": "holdout"
+ },
+ {
+  "q": "What short-term borrowings were outstanding at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 7965000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "CommercialPaper 2023-12-31",
+  "id": "pfe-036",
+  "split": "dev"
+ },
+ {
+  "q": "What were operating lease liabilities at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 3153000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "OperatingLeaseLiability 2023-12-31",
+  "id": "pfe-037",
+  "split": "dev"
+ },
+ {
+  "q": "What were total liabilities at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 137213000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "Liabilities 2023-12-31",
+  "id": "pfe-038",
+  "split": "dev"
+ },
+ {
+  "q": "What was shareholders' equity at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 89014000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "StockholdersEquity 2023-12-31",
+  "id": "pfe-039",
+  "split": "dev"
+ },
+ {
+  "q": "How much book equity did shareholders have at the end of 2022?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 95661000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "StockholdersEquity 2022-12-31",
+  "id": "pfe-040",
+  "split": "holdout"
+ },
+ {
+  "q": "What were retained earnings at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 118353000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "RetainedEarningsAccumulatedDeficit 2023-12-31",
+  "id": "pfe-041",
+  "split": "dev"
+ },
+ {
+  "q": "How much cash did operations generate in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 8700000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "NetCashProvidedByUsedInOperatingActivities 2023-12-31",
+  "id": "pfe-042",
+  "split": "dev"
+ },
+ {
+  "q": "What was operating cash flow in 2022?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 29267000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "NetCashProvidedByUsedInOperatingActivities 2022-12-31",
+  "id": "pfe-043",
+  "split": "dev"
+ },
+ {
+  "q": "How much was invested in capital expenditures in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 3907000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "PaymentsToAcquirePropertyPlantAndEquipment 2023-12-31",
+  "id": "pfe-044",
+  "split": "dev"
+ },
+ {
+  "q": "What was capex in 2022?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 3236000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "PaymentsToAcquirePropertyPlantAndEquipment 2022-12-31",
+  "id": "pfe-045",
+  "split": "holdout"
+ },
+ {
+  "q": "What were share buybacks in 2022?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 2000000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "PaymentsForRepurchaseOfCommonStock 2022-12-31",
+  "id": "pfe-046",
+  "split": "dev"
+ },
+ {
+  "q": "What was net cash used in investing activities in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": -32278000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "NetCashProvidedByUsedInInvestingActivities 2023-12-31",
+  "id": "pfe-047",
+  "split": "dev"
+ },
+ {
+  "q": "What was net cash from financing activities in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 26066000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "NetCashProvidedByUsedInFinancingActivities 2023-12-31",
+  "id": "pfe-048",
+  "split": "dev"
+ },
+ {
+  "q": "How much cash was spent on acquisitions in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 43430000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "PaymentsToAcquireBusinessesNetOfCashAcquired 2023-12-31",
+  "id": "pfe-049",
+  "split": "dev"
+ },
+ {
+  "q": "How much debt was repaid in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 2569000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "RepaymentsOfLongTermDebt 2023-12-31",
+  "id": "pfe-050",
+  "split": "holdout"
+ },
+ {
+  "q": "How much new long-term debt was raised in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 30831000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "ProceedsFromIssuanceOfLongTermDebt 2023-12-31",
+  "id": "pfe-051",
+  "split": "dev"
+ },
+ {
+  "q": "How much cash was paid for income taxes in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 3147000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "IncomeTaxesPaidNet 2023-12-31",
+  "id": "pfe-052",
+  "split": "dev"
+ },
+ {
+  "q": "What dividend per share was declared in 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 1.65,
+    "kind": "per_share"
+   }
+  ],
+  "source": "CommonStockDividendsPerShareDeclared 2023-12-31",
+  "id": "pfe-053",
+  "split": "dev"
+ },
+ {
+  "q": "How large were unrecognized tax benefits at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 4802000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "UnrecognizedTaxBenefits 2023-12-31",
+  "id": "pfe-054",
+  "split": "dev"
+ },
+ {
+  "q": "What were total future operating lease payments as of the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 3824000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "LesseeOperatingLeaseLiabilityPaymentsDue 2023-12-31",
+  "id": "pfe-055",
+  "split": "holdout"
+ },
+ {
+  "q": "How much deferred revenue was recorded at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 2700000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "ContractWithCustomerLiabilityCurrent 2023-12-31",
+  "id": "pfe-056",
+  "split": "dev"
+ },
+ {
+  "q": "What was accumulated other comprehensive income or loss at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": -7961000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "AccumulatedOtherComprehensiveIncomeLossNetOfTax 2023-12-31",
+  "id": "pfe-057",
+  "split": "dev"
+ },
+ {
+  "q": "What was the value of treasury stock at the end of 2023?",
+  "group": "numeric",
+  "keys": [
+   {
+    "value": 114487000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "TreasuryStockValue 2023-12-31",
+  "id": "pfe-058",
+  "split": "dev"
+ },
+ {
+  "q": "How much revenue did the Biopharma segment report in 2023?",
+  "group": "segment",
+  "keys": [
+   {
+    "value": 57186000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "Revenues BiopharmaSegmentMember 2023-12-31",
+  "id": "pfe-059",
+  "split": "dev"
+ },
+ {
+  "q": "How much revenue did the Business Innovation segment report in 2023?",
+  "group": "segment",
+  "keys": [
+   {
+    "value": 1310000000.0,
+    "kind": "usd"
+   }
+  ],
+  "source": "Revenues BusinessInnovationSegmentMember 2023-12-31",
+  "id": "pfe-060",
+  "split": "holdout"
+ },
+ {
+  "q": "What was the non-cash Paxlovid revenue reversal?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "non-cash revenue reversal"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "pfe-061",
+  "split": "dev"
+ },
+ {
+  "q": "What is the Cost Realignment Program and its expected savings?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "Cost Realignment Program"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "pfe-062",
+  "split": "dev"
+ },
+ {
+  "q": "How could Medicare drug price negotiation affect revenues?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "Inflation Reduction Act",
+     "price negotiation"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "pfe-063",
+  "split": "dev"
+ },
+ {
+  "q": "Which products face loss of exclusivity?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "loss of exclusivity"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "pfe-064",
+  "split": "dev"
+ },
+ {
+  "q": "What is the Zantac litigation?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "Zantac"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "pfe-065",
+  "split": "holdout"
+ },
+ {
+  "q": "How many people does the company employ?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "approximately 88,000"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "pfe-066",
+  "split": "dev"
+ },
+ {
+  "q": "What does Pfizer CentreOne do?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "Pfizer CentreOne"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "pfe-067",
+  "split": "dev"
+ },
+ {
+  "q": "What inventory write-offs were recorded for COVID products?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "inventory write-offs"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "pfe-068",
+  "split": "dev"
+ },
+ {
+  "q": "What happened to the company's stake in Haleon?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "Haleon"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "pfe-069",
+  "split": "dev"
+ },
+ {
+  "q": "When and how did the company acquire Seagen?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "acquired Seagen"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "pfe-070",
+  "split": "holdout"
+ },
+ {
+  "q": "How did the Vyndaqel family of products perform?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "Vyndaqel family"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "pfe-071",
+  "split": "dev"
+ },
+ {
+  "q": "How did the Prevnar family perform?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "Prevnar family"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "pfe-072",
+  "split": "dev"
+ },
+ {
+  "q": "What is the collaboration with Arvinas?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "collaboration with Arvinas"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "pfe-073",
+  "split": "dev"
+ },
+ {
+  "q": "What biosimilar competition does the company face?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "biosimilar competition"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "pfe-074",
+  "split": "dev"
+ },
+ {
+  "q": "How did Paxlovid revenues change?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "Paxlovid revenues"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "pfe-075",
+  "split": "holdout"
+ },
+ {
+  "q": "What product recall risks are described?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "product recalls"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "pfe-076",
+  "split": "dev"
+ },
+ {
+  "q": "Was there any goodwill impairment?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "goodwill impairment"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "pfe-077",
+  "split": "dev"
+ },
+ {
+  "q": "Does the company buy back its shares?",
+  "group": "text",
+  "keys": [
+   {
+    "phrases": [
+     "share repurchase"
+    ]
+   }
+  ],
+  "source": "text",
+  "id": "pfe-078",
+  "split": "dev"
+ }
+]

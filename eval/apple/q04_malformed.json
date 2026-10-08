@@ -1,0 +1,49 @@
+{
+  "question": "Are there any red flags in Apple's financial statements?",
+  "model": "inclusionai/ling-3.1-flash",
+  "ungrounded": [],
+  "coverage_gaps": [],
+  "uncited_claims": [],
+  "stripped_pseudo_citations": 0,
+  "answer": {
+    "metric": "Current ratio",
+    "period": "FY2022",
+    "value": "0.88 (below 1)",
+    "fact_id": "F01420",
+    "sources": {
+      "F01420": {
+        "value": "0.88x",
+        "concept": "CurrentRatio",
+        "period": "@2022-09-24",
+        "source": "computed",
+        "where": "CurrentAssets / CurrentLiabilities",
+        "inputs": [
+          "F00104",
+          "F00126"
+        ],
+        "input_sources": {
+          "F00104": {
+            "value": "$135.41B",
+            "concept": "AssetsCurrent",
+            "period": "@2022-09-24",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:AssetsCurrent",
+            "also_displayed_in": [
+              "table #17 \"CONSOLIDATED BALANCE SHEETS\", row \"Total current assets\", column \"September 24, 2022\""
+            ]
+          },
+          "F00126": {
+            "value": "$153.98B",
+            "concept": "LiabilitiesCurrent",
+            "period": "@2022-09-24",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:LiabilitiesCurrent",
+            "also_displayed_in": [
+              "table #17 \"CONSOLIDATED BALANCE SHEETS\", row \"Total current liabilities\", column \"September 24, 2022\""
+            ]
+          }
+        }
+      }
+    }
+  }
+}

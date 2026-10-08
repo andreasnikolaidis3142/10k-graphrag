@@ -1,0 +1,489 @@
+{
+  "question": "How have gross margin and operating margin changed over the last three years, and what drove the change?",
+  "model": "apodex/apodex-1.1-mini:free",
+  "ungrounded": [],
+  "coverage_gaps": [],
+  "uncited_claims": [],
+  "stripped_pseudo_citations": 0,
+  "answer": {
+    "summary": "Gross margin expanded over the three-year window, rising from 41.8% in FY2021 [F01390] to 43.3% in FY2022 [F01391] (+153 bps) and 44.1% in FY2023 [F01392] (+82 bps), even as gross profit peaked at $170.78B in FY2022 [F00026] and declined 1.0% to $169.15B in FY2023 [F00025]. The FY2023 gross margin gain occurred because cost of revenue fell 4.2% to $214.14B [F00022], outpacing the 2.8% revenue decline to $383.29B [F00013]. Services gross margin increased in 2023 versus 2022, driven by higher Services net sales and partially offset by foreign currency weakness and higher Services costs [T00333]. Operating margin rose from 29.8% in FY2021 [F01393] to 30.3% in FY2022 [F01394] (+51 bps), then fell back to 29.8% in FY2023 [F01395] (-47 bps) as operating income declined 4.3% to $114.30B [F00037] while operating expenses grew 6.8% to $54.85B [F00034].",
+    "status": "mixed",
+    "key_numbers": [
+      {
+        "metric": "Gross margin %",
+        "period": "FY2021",
+        "value": "41.8%",
+        "fact_id": "F01390"
+      },
+      {
+        "metric": "Gross margin %",
+        "period": "FY2022",
+        "value": "43.3%",
+        "fact_id": "F01391"
+      },
+      {
+        "metric": "Gross margin %",
+        "period": "FY2023",
+        "value": "44.1%",
+        "fact_id": "F01392"
+      },
+      {
+        "metric": "Operating margin %",
+        "period": "FY2021",
+        "value": "29.8%",
+        "fact_id": "F01393"
+      },
+      {
+        "metric": "Operating margin %",
+        "period": "FY2022",
+        "value": "30.3%",
+        "fact_id": "F01394"
+      },
+      {
+        "metric": "Operating margin %",
+        "period": "FY2023",
+        "value": "29.8%",
+        "fact_id": "F01395"
+      },
+      {
+        "metric": "Gross profit",
+        "period": "FY2023",
+        "value": "$169.15B (-1.0% YoY)",
+        "fact_id": "F00025"
+      },
+      {
+        "metric": "Operating income",
+        "period": "FY2023",
+        "value": "$114.30B (-4.3% YoY)",
+        "fact_id": "F00037"
+      },
+      {
+        "metric": "Revenues",
+        "period": "FY2023",
+        "value": "$383.29B (-2.8% YoY)",
+        "fact_id": "F00013"
+      },
+      {
+        "metric": "Cost of revenue",
+        "period": "FY2023",
+        "value": "$214.14B (-4.2% YoY)",
+        "fact_id": "F00022"
+      },
+      {
+        "metric": "Operating expenses",
+        "period": "FY2023",
+        "value": "$54.85B (+6.8% YoY)",
+        "fact_id": "F00034"
+      },
+      {
+        "metric": "R&D expense",
+        "period": "FY2023",
+        "value": "$29.91B (+14.0% YoY)",
+        "fact_id": "F00028"
+      }
+    ],
+    "drivers": [
+      "FY2022 gross margin expansion (+153 bps) driven by gross profit growing +11.7% [F00026] faster than revenues growing +7.8% [F00014], with cost of revenue rising only +5.0% [F00023].",
+      "FY2023 gross margin expansion (+82 bps) driven by cost of revenue declining -4.2% [F00022] faster than revenues declining -2.8% [F00013].",
+      "FY2023 gross profit decline of -$1.63B was driven by Products segment falling -$5.92B (-5.2%) [F01002], the LARGEST CONTRIBUTOR TO THE CHANGE, partially offset by Services segment rising $4.29B (+7.7%) [F01005].",
+      "FY2023 operating margin contraction (-47 bps) driven by operating expenses growing +6.8% [F00034] while revenue declined, with R&D the LARGEST CONTRIBUTOR TO THE CHANGE at +$3.66B (+14.0%) [F00028], partially offset by SG&A declining -$162.00M (-0.6%) [F00031].",
+      "Services gross margin increase in 2023 attributed to higher Services net sales, partially offset by foreign currency weakness and higher Services costs [T00333]."
+    ],
+    "risks_and_red_flags": [
+      "Foreign exchange rate fluctuations have in the past materially adversely affected product gross margins and could do so again [T00221].",
+      "Significant portion of net sales from a single product; a decline in demand for that product could significantly impact quarterly net sales [T00219].",
+      "FY2023 operating margin declined 47 bps to 29.8% [F01395] as operating expenses grew 6.8% [F00034] while revenue fell 2.8% [F00013].",
+      "Products segment gross profit declined 5.2% in FY2023 [F01002], the largest contributor to the gross profit decline."
+    ],
+    "data_quality_notes": [
+      "9 accounting identities passed, 0 failed for the numbers above.",
+      "4 duplicate facts with conflicting values were set aside during parsing (the primary-statement value was kept).",
+      "No text-vs-table conflicts reported."
+    ],
+    "outlook": {
+      "actuals_view": "Gross margin improved over the three-year window to 44.1% in FY2023 [F01392], while operating margin returned to FY2021 levels of 29.8% after peaking at 30.3% in FY2022 [F01394].",
+      "forward_looking_guidance": "No forward-looking management guidance is present in the retrieved evidence; all figures are FY2021-FY2023 actuals."
+    },
+    "follow_up_checks": [
+      "Verify segment-level gross margin percentages for Products and Services to quantify the Services margin expansion [T00333].",
+      "Quantify the foreign exchange impact on gross margin for FY2023 given the stated currency headwind [T00333][T00221].",
+      "Check whether the FY2023 R&D acceleration (+14.0%) [F00028] is tied to specific product or service initiatives and whether it is expected to persist.",
+      "Confirm whether the single-product concentration risk [T00219] relates to the Products segment decline of -$5.92B [F01002]."
+    ],
+    "sources": {
+      "F01390": {
+        "value": "41.8%",
+        "concept": "GrossMarginPct",
+        "period": "FY2021",
+        "source": "computed",
+        "where": "GrossProfit / Revenues x 100",
+        "inputs": [
+          "F00027",
+          "F00015"
+        ],
+        "input_sources": {
+          "F00027": {
+            "value": "$152.84B",
+            "concept": "GrossProfit",
+            "period": "FY2021",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:GrossProfit",
+            "also_displayed_in": [
+              "table #9 \"Gross Margin\", row \"Total gross margin\", column \"2021\"",
+              "table #15 \"CONSOLIDATED STATEMENTS OF OPERATIONS\", row \"Gross margin\", column \"September 25, 2021\""
+            ]
+          },
+          "F00015": {
+            "value": "$365.82B",
+            "concept": "Revenues",
+            "period": "FY2021",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+            "also_displayed_in": [
+              "table #7 \"The following table shows net sales by reportable segment for 2023, 2022 and 2021 (dollars in millions):\", row \"Total net sales\", column \"2021\"",
+              "table #8 \"The following table shows net sales by category for 2023, 2022 and 2021 (dollars in millions):\", row \"Total net sales\", column \"2021\"",
+              "table #15 \"CONSOLIDATED STATEMENTS OF OPERATIONS\", row \"Total net sales\", column \"September 25, 2021\""
+            ]
+          }
+        }
+      },
+      "F01391": {
+        "value": "43.3%",
+        "concept": "GrossMarginPct",
+        "period": "FY2022",
+        "source": "computed",
+        "where": "GrossProfit / Revenues x 100",
+        "inputs": [
+          "F00026",
+          "F00014"
+        ],
+        "input_sources": {
+          "F00026": {
+            "value": "$170.78B",
+            "concept": "GrossProfit",
+            "period": "FY2022",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:GrossProfit",
+            "also_displayed_in": [
+              "table #9 \"Gross Margin\", row \"Total gross margin\", column \"2022\"",
+              "table #15 \"CONSOLIDATED STATEMENTS OF OPERATIONS\", row \"Gross margin\", column \"September 24, 2022\""
+            ]
+          },
+          "F00014": {
+            "value": "$394.33B",
+            "concept": "Revenues",
+            "period": "FY2022",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+            "also_displayed_in": [
+              "table #7 \"The following table shows net sales by reportable segment for 2023, 2022 and 2021 (dollars in millions):\", row \"Total net sales\", column \"2022\"",
+              "table #8 \"The following table shows net sales by category for 2023, 2022 and 2021 (dollars in millions):\", row \"Total net sales\", column \"2022\"",
+              "table #15 \"CONSOLIDATED STATEMENTS OF OPERATIONS\", row \"Total net sales\", column \"September 24, 2022\""
+            ]
+          }
+        }
+      },
+      "F01392": {
+        "value": "44.1%",
+        "concept": "GrossMarginPct",
+        "period": "FY2023",
+        "source": "computed",
+        "where": "GrossProfit / Revenues x 100",
+        "inputs": [
+          "F00025",
+          "F00013"
+        ],
+        "input_sources": {
+          "F00025": {
+            "value": "$169.15B",
+            "concept": "GrossProfit",
+            "period": "FY2023",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:GrossProfit",
+            "also_displayed_in": [
+              "table #9 \"Gross Margin\", row \"Total gross margin\", column \"2023\"",
+              "table #15 \"CONSOLIDATED STATEMENTS OF OPERATIONS\", row \"Gross margin\", column \"September 30, 2023\""
+            ]
+          },
+          "F00013": {
+            "value": "$383.29B",
+            "concept": "Revenues",
+            "period": "FY2023",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+            "also_displayed_in": [
+              "table #7 \"The following table shows net sales by reportable segment for 2023, 2022 and 2021 (dollars in millions):\", row \"Total net sales\", column \"2023\"",
+              "table #8 \"The following table shows net sales by category for 2023, 2022 and 2021 (dollars in millions):\", row \"Total net sales\", column \"2023\"",
+              "table #15 \"CONSOLIDATED STATEMENTS OF OPERATIONS\", row \"Total net sales\", column \"September 30, 2023\""
+            ]
+          }
+        }
+      },
+      "F00026": {
+        "value": "$170.78B",
+        "concept": "GrossProfit",
+        "period": "FY2022",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:GrossProfit",
+        "also_displayed_in": [
+          "table #9 \"Gross Margin\", row \"Total gross margin\", column \"2022\"",
+          "table #15 \"CONSOLIDATED STATEMENTS OF OPERATIONS\", row \"Gross margin\", column \"September 24, 2022\""
+        ]
+      },
+      "F00025": {
+        "value": "$169.15B",
+        "concept": "GrossProfit",
+        "period": "FY2023",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:GrossProfit",
+        "also_displayed_in": [
+          "table #9 \"Gross Margin\", row \"Total gross margin\", column \"2023\"",
+          "table #15 \"CONSOLIDATED STATEMENTS OF OPERATIONS\", row \"Gross margin\", column \"September 30, 2023\""
+        ]
+      },
+      "F00022": {
+        "value": "$214.14B",
+        "concept": "CostOfRevenue",
+        "period": "FY2023",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:CostOfGoodsAndServicesSold",
+        "also_displayed_in": [
+          "table #15 \"CONSOLIDATED STATEMENTS OF OPERATIONS\", row \"Total cost of sales\", column \"September 30, 2023\""
+        ]
+      },
+      "F00013": {
+        "value": "$383.29B",
+        "concept": "Revenues",
+        "period": "FY2023",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "also_displayed_in": [
+          "table #7 \"The following table shows net sales by reportable segment for 2023, 2022 and 2021 (dollars in millions):\", row \"Total net sales\", column \"2023\"",
+          "table #8 \"The following table shows net sales by category for 2023, 2022 and 2021 (dollars in millions):\", row \"Total net sales\", column \"2023\"",
+          "table #15 \"CONSOLIDATED STATEMENTS OF OPERATIONS\", row \"Total net sales\", column \"September 30, 2023\""
+        ]
+      },
+      "T00333": {
+        "source": "prose",
+        "where": "paragraph in Item 7 MD&A: \"Services gross margin increased during 2023 compared to 2022 due primarily to higher Services net sales, partially offset by the weakness in foreign currencies \""
+      },
+      "F01393": {
+        "value": "29.8%",
+        "concept": "OperatingMarginPct",
+        "period": "FY2021",
+        "source": "computed",
+        "where": "OperatingIncome / Revenues x 100",
+        "inputs": [
+          "F00039",
+          "F00015"
+        ],
+        "input_sources": {
+          "F00039": {
+            "value": "$108.95B",
+            "concept": "OperatingIncomeLoss",
+            "period": "FY2021",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:OperatingIncomeLoss",
+            "also_displayed_in": [
+              "table #15 \"CONSOLIDATED STATEMENTS OF OPERATIONS\", row \"Operating income\", column \"September 25, 2021\"",
+              "table #47 \"untitled\", row \"Total operating income\", column \"2021\""
+            ]
+          },
+          "F00015": {
+            "value": "$365.82B",
+            "concept": "Revenues",
+            "period": "FY2021",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+            "also_displayed_in": [
+              "table #7 \"The following table shows net sales by reportable segment for 2023, 2022 and 2021 (dollars in millions):\", row \"Total net sales\", column \"2021\"",
+              "table #8 \"The following table shows net sales by category for 2023, 2022 and 2021 (dollars in millions):\", row \"Total net sales\", column \"2021\"",
+              "table #15 \"CONSOLIDATED STATEMENTS OF OPERATIONS\", row \"Total net sales\", column \"September 25, 2021\""
+            ]
+          }
+        }
+      },
+      "F01394": {
+        "value": "30.3%",
+        "concept": "OperatingMarginPct",
+        "period": "FY2022",
+        "source": "computed",
+        "where": "OperatingIncome / Revenues x 100",
+        "inputs": [
+          "F00038",
+          "F00014"
+        ],
+        "input_sources": {
+          "F00038": {
+            "value": "$119.44B",
+            "concept": "OperatingIncomeLoss",
+            "period": "FY2022",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:OperatingIncomeLoss",
+            "also_displayed_in": [
+              "table #15 \"CONSOLIDATED STATEMENTS OF OPERATIONS\", row \"Operating income\", column \"September 24, 2022\"",
+              "table #47 \"untitled\", row \"Total operating income\", column \"2022\""
+            ]
+          },
+          "F00014": {
+            "value": "$394.33B",
+            "concept": "Revenues",
+            "period": "FY2022",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+            "also_displayed_in": [
+              "table #7 \"The following table shows net sales by reportable segment for 2023, 2022 and 2021 (dollars in millions):\", row \"Total net sales\", column \"2022\"",
+              "table #8 \"The following table shows net sales by category for 2023, 2022 and 2021 (dollars in millions):\", row \"Total net sales\", column \"2022\"",
+              "table #15 \"CONSOLIDATED STATEMENTS OF OPERATIONS\", row \"Total net sales\", column \"September 24, 2022\""
+            ]
+          }
+        }
+      },
+      "F01395": {
+        "value": "29.8%",
+        "concept": "OperatingMarginPct",
+        "period": "FY2023",
+        "source": "computed",
+        "where": "OperatingIncome / Revenues x 100",
+        "inputs": [
+          "F00037",
+          "F00013"
+        ],
+        "input_sources": {
+          "F00037": {
+            "value": "$114.30B",
+            "concept": "OperatingIncomeLoss",
+            "period": "FY2023",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:OperatingIncomeLoss",
+            "also_displayed_in": [
+              "table #15 \"CONSOLIDATED STATEMENTS OF OPERATIONS\", row \"Operating income\", column \"September 30, 2023\"",
+              "table #47 \"untitled\", row \"Total operating income\", column \"2023\""
+            ]
+          },
+          "F00013": {
+            "value": "$383.29B",
+            "concept": "Revenues",
+            "period": "FY2023",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+            "also_displayed_in": [
+              "table #7 \"The following table shows net sales by reportable segment for 2023, 2022 and 2021 (dollars in millions):\", row \"Total net sales\", column \"2023\"",
+              "table #8 \"The following table shows net sales by category for 2023, 2022 and 2021 (dollars in millions):\", row \"Total net sales\", column \"2023\"",
+              "table #15 \"CONSOLIDATED STATEMENTS OF OPERATIONS\", row \"Total net sales\", column \"September 30, 2023\""
+            ]
+          }
+        }
+      },
+      "F00037": {
+        "value": "$114.30B",
+        "concept": "OperatingIncomeLoss",
+        "period": "FY2023",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:OperatingIncomeLoss",
+        "also_displayed_in": [
+          "table #15 \"CONSOLIDATED STATEMENTS OF OPERATIONS\", row \"Operating income\", column \"September 30, 2023\"",
+          "table #47 \"untitled\", row \"Total operating income\", column \"2023\""
+        ]
+      },
+      "F00034": {
+        "value": "$54.85B",
+        "concept": "OperatingExpenses",
+        "period": "FY2023",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:OperatingExpenses",
+        "also_displayed_in": [
+          "table #11 \"Operating expenses for 2023, 2022 and 2021 were as follows (dollars in millions):\", row \"Total operating expenses\", column \"2023\"",
+          "table #15 \"CONSOLIDATED STATEMENTS OF OPERATIONS\", row \"Total operating expenses\", column \"September 30, 2023\""
+        ]
+      },
+      "F00028": {
+        "value": "$29.91B",
+        "concept": "ResearchAndDevelopmentExpense",
+        "period": "FY2023",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:ResearchAndDevelopmentExpense",
+        "also_displayed_in": [
+          "table #11 \"Operating expenses for 2023, 2022 and 2021 were as follows (dollars in millions):\", row \"Research and development\", column \"2023\"",
+          "table #15 \"CONSOLIDATED STATEMENTS OF OPERATIONS\", row \"Research and development\", column \"September 30, 2023\"",
+          "table #47 \"untitled\", row \"Research and development expense\", column \"2023\""
+        ]
+      },
+      "F00014": {
+        "value": "$394.33B",
+        "concept": "Revenues",
+        "period": "FY2022",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "also_displayed_in": [
+          "table #7 \"The following table shows net sales by reportable segment for 2023, 2022 and 2021 (dollars in millions):\", row \"Total net sales\", column \"2022\"",
+          "table #8 \"The following table shows net sales by category for 2023, 2022 and 2021 (dollars in millions):\", row \"Total net sales\", column \"2022\"",
+          "table #15 \"CONSOLIDATED STATEMENTS OF OPERATIONS\", row \"Total net sales\", column \"September 24, 2022\""
+        ]
+      },
+      "F00023": {
+        "value": "$223.55B",
+        "concept": "CostOfRevenue",
+        "period": "FY2022",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:CostOfGoodsAndServicesSold",
+        "also_displayed_in": [
+          "table #15 \"CONSOLIDATED STATEMENTS OF OPERATIONS\", row \"Total cost of sales\", column \"September 24, 2022\""
+        ]
+      },
+      "F01002": {
+        "value": "$108.80B",
+        "concept": "custom:products",
+        "period": "FY2023",
+        "source": "table",
+        "where": "table #9 \"Gross Margin\", row \"Products\", column \"2023\"",
+        "section": "Item 7 MD&A"
+      },
+      "F01005": {
+        "value": "$60.34B",
+        "concept": "custom:services",
+        "period": "FY2023",
+        "source": "table",
+        "where": "table #9 \"Gross Margin\", row \"Services\", column \"2023\"",
+        "section": "Item 7 MD&A"
+      },
+      "F00031": {
+        "value": "$24.93B",
+        "concept": "SellingGeneralAndAdministrativeExpense",
+        "period": "FY2023",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:SellingGeneralAndAdministrativeExpense",
+        "also_displayed_in": [
+          "table #11 \"Operating expenses for 2023, 2022 and 2021 were as follows (dollars in millions):\", row \"Selling, general and administrative\", column \"2023\"",
+          "table #15 \"CONSOLIDATED STATEMENTS OF OPERATIONS\", row \"Selling, general and administrative\", column \"September 30, 2023\""
+        ]
+      },
+      "T00221": {
+        "source": "prose",
+        "where": "paragraph in Item 1A Risk Factors: \"The Company’s primary exposure to movements in foreign exchange rates relates to non–U.S. dollar–denominated sales, cost of sales and operating expenses worldwi\""
+      },
+      "T00219": {
+        "source": "prose",
+        "where": "paragraph in Item 1A Risk Factors: \"The Company has historically experienced higher net sales in its first quarter compared to other quarters in its fiscal year due in part to seasonal holiday dem\""
+      },
+      "F01003": {
+        "value": "$114.73B",
+        "concept": "custom:products",
+        "period": "FY2022",
+        "source": "table",
+        "where": "table #9 \"Gross Margin\", row \"Products\", column \"2022\"",
+        "section": "Item 7 MD&A",
+        "note": "prior-year value behind the change shown"
+      },
+      "F01006": {
+        "value": "$56.05B",
+        "concept": "custom:services",
+        "period": "FY2022",
+        "source": "table",
+        "where": "table #9 \"Gross Margin\", row \"Services\", column \"2022\"",
+        "section": "Item 7 MD&A",
+        "note": "prior-year value behind the change shown"
+      }
+    }
+  }
+}

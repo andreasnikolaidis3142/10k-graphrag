@@ -1,0 +1,58 @@
+COMPANY: Apple Inc. | Fiscal year end: month 9 day 30 | Latest fiscal year in filing: FY2023
+TIME CONTEXT: periods named FY#### are ACTUALS reported in this 10-K. Text facts with role 'guidance' are FORWARD-LOOKING management estimates, not actuals.
+
+SERIES FreeCashFlow - Free cash flow (derived)
+  VIEW: DERIVED ratio/metric = CFO - Capex (already computed; do not recompute)
+  UNIT: USD (filing displayed in units; values below are normalised to base units)
+  FY2021              $92.95B  [F01387] 
+  FY2022             $111.44B  [F01388] 
+  FY2023              $99.58B  [F01389] 
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2022: +19.9% YoY ($92.95B -> $111.44B) [F01388]
+   - FY2023: -10.6% YoY ($111.44B -> $99.58B) [F01389]
+   - CAGR FY2021->FY2023: 3.5%
+   - TREND: stable (weak), +7% over the window
+
+SERIES NetCashProvidedByUsedInOperatingActivities - us-gaap:NetCashProvidedByUsedInOperatingActivities
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a TOTAL line; its components (if listed under ATTRIBUTION) already roll up into it.
+  FY2021             $104.04B  [F00226] XBRL-tagged
+  FY2022             $122.15B  [F00225] XBRL-tagged
+  FY2023             $110.54B  [F00224] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2022: +17.4% YoY ($104.04B -> $122.15B) [F00225]
+   - FY2023: -9.5% YoY ($122.15B -> $110.54B) [F00224]
+   - CAGR FY2021->FY2023: 3.1%
+   - TREND: stable (weak), +6% over the window
+
+SERIES PaymentsToAcquirePropertyPlantAndEquipment - us-gaap:PaymentsToAcquirePropertyPlantAndEquipment
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  FY2021              $11.09B  [F00238] XBRL-tagged outflow shown as magnitude
+  FY2022              $10.71B  [F00237] XBRL-tagged outflow shown as magnitude
+  FY2023              $10.96B  [F00236] XBRL-tagged outflow shown as magnitude
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2022: -3.4% YoY ($11.09B -> $10.71B) [F00237]
+   - FY2023: +2.3% YoY ($10.71B -> $10.96B) [F00236]
+   - CAGR FY2021->FY2023: -0.6%
+   - TREND: stable (weak), -1% over the window
+
+NARRATIVE EVIDENCE (management text; numbers inside were machine-checked against the tables):
+  [T00046] (n/a; number checks: none) Unless otherwise stated, all information presented herein is based on the Company’s fiscal calendar, and references to particular years, quarters, months or periods refer to the Company’s fiscal years ended in September and the associated quarters, months and periods of those fiscal years. Each of the terms the “Company” and “Apple” as used herein refers collectively to Apple Inc. and its wholly owned subsidiaries, unless otherwise stated.
+  [T00627] (Item 8 Financial Statements; number checks: none) We also have audited, in accordance with the standards of the Public Company Accounting Oversight Board (United States) (the “PCAOB”), the consolidated balance sheets of Apple Inc. as of September 30, 2023 and September 24, 2022, the related consolidated statements of operations, comprehensive income, shareholders’ equity and cash flows for each of the three years in the period ended September 30, 2023, and the related notes and our report dated November 2, 2023 expressed an unqualified opinion thereon.
+  [T00611] (Item 8 Financial Statements; number checks: none) These financial statements are the responsibility of Apple Inc.’s management. Our responsibility is to express an opinion on Apple Inc.’s financial statements based on our audits. We are a public accounting firm registered with the PCAOB and are required to be independent with respect to Apple Inc. in accordance with the U.S. federal securities laws and the applicable rules and regulations of the U.S. Securities and Exchange Commission and the PCAOB.
+
+RED-FLAG SCREEN (pre-computed across statements; MUST be considered):
+  - [MEDIUM] Liquidity: FY2022: current ratio 0.88 (<1). [F01420]
+  - [MEDIUM] Liquidity: FY2023: current ratio 0.99 (<1). [F01421]
+  - [MEDIUM] Inventory vs cost of sales: FY2023: inventory grew 28% vs CostOfRevenue -4% (collection / build-up risk). [F00099] [F00022]
+  - [MEDIUM] Operating cash flow decline: FY2023: operating cash flow fell 9.5% ($122.15B -> $110.54B). [F00224]
+  - [LOW] Shareholder payout vs free cash flow: FY2022: dividends+buybacks ($104.24B) are 94% of free cash flow ($111.44B); little room to absorb a downturn. [F01447] [F01388]
+  - [LOW] Shareholder payout vs free cash flow: FY2023: dividends+buybacks ($92.58B) are 93% of free cash flow ($99.58B); little room to absorb a downturn. [F01448] [F01389]
+  - [LOW] Revenue decline: FY2023: revenue fell 2.8% ($394.33B -> $383.29B). [F00013]
+  - [LOW] Operating income decline: FY2023: operating income fell 4.3% ($119.44B -> $114.30B). [F00037]
+  - [LOW] Interest coverage drop: FY2023: interest coverage fell 29% (40.7x -> 29.1x). [F01432]
+
+DATA QUALITY: 3 accounting identities passed, 0 failed for the numbers above.
+TEXT-vs-TABLE CONFLICTS: 

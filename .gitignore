@@ -1,0 +1,31 @@
+# secrets
+.env
+.env.*
+!.env.example
+
+# environments / tooling
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.vscode/
+
+# downloaded SEC filings and model caches (re-fetched on demand)
+.tenk_cache/
+
+# built graphs and dense indexes (rebuild with `python -m tenk_graphrag build ...`);
+# the Apple FY2023 graph is kept so the demo runs without a download
+*.npy
+*.dense.json
+/aapl_2023.json
+eval/*.json
+!eval/aapl_2023.json
+
+# benchmark scratch
+eval/retrieval_bench/.rerank_cache.sqlite
+eval/retrieval_bench/results_new*.jsonl
+
+# local scratch notes
+verification.txt
+queries.md

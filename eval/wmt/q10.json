@@ -1,0 +1,72 @@
+{
+  "question": "What was Walmart's fiscal 2025 capital expenditure guidance, and how many stores will it open next year?",
+  "model": "apodex/apodex-1.1-mini:free",
+  "ungrounded": [],
+  "coverage_gaps": [],
+  "uncited_claims": [],
+  "stripped_pseudo_citations": 0,
+  "answer": {
+    "summary": "Walmart's fiscal 2025 capital expenditure guidance is approximately $20 billion to $24 billion, focused on technology, supply chain, and customer-facing initiatives; this is forward-looking management guidance, not an actual [T00499]. The filing does not state how many stores Walmart will open next year — that figure is not in the retrieved evidence. For context, fiscal 2024 actuals (year ended January 31, 2024) show total revenues of $648.1 billion and net sales of $642.6 billion [T00080], with Walmart U.S. net sales of $441.8 billion, or 69% of consolidated net sales [T00090].",
+    "status": "neutral",
+    "key_numbers": [
+      {
+        "metric": "Capital expenditures guidance (projected)",
+        "period": "FY2025 (year ending Jan 31, 2025)",
+        "value": "approximately $20 billion to $24 billion",
+        "fact_id": "T00499"
+      },
+      {
+        "metric": "Total revenues (actual)",
+        "period": "FY2024",
+        "value": "$648.1 billion",
+        "fact_id": "T00080"
+      },
+      {
+        "metric": "Net sales (actual)",
+        "period": "FY2024",
+        "value": "$642.6 billion",
+        "fact_id": "T00080"
+      },
+      {
+        "metric": "Walmart U.S. net sales / share of consolidated net sales",
+        "period": "FY2024",
+        "value": "$441.8 billion / 69%",
+        "fact_id": "T00090"
+      }
+    ],
+    "drivers": [
+      "The FY2025 capex guidance is directed at technology, supply chain, and customer-facing initiatives [T00499]. No ATTRIBUTION block is present in the evidence, so no component share of a change can be cited."
+    ],
+    "risks_and_red_flags": [
+      "The $20B–$24B figure is management guidance (forward-looking), not an actual; the number checks for T00499 are marked 'unchecked' against the tables [T00499].",
+      "The store-opening count for next year is not in the retrieved evidence; do not infer it."
+    ],
+    "data_quality_notes": [
+      "DATA QUALITY reports 0 accounting identities passed and 0 failed for the numbers above; the capex guidance numbers carry 'unchecked' table-verification status because they are forward-looking [T00499].",
+      "The requested store-opening number is absent from the evidence."
+    ],
+    "outlook": {
+      "actuals_view": "FY2024 actuals: total revenues $648.1B and net sales $642.6B [T00080]; Walmart U.S. was the largest segment at $441.8B net sales, 69% of consolidated net sales [T00090].",
+      "forward_looking_guidance": "For fiscal 2025 (ending January 31, 2025), management projects capital expenditures of approximately $20 billion to $24 billion, focused on technology, supply chain, and customer-facing initiatives [T00499]. No store-opening guidance is provided in the retrieved evidence."
+    },
+    "follow_up_checks": [
+      "Pull the 'Strategic Capital Allocation' section in Company Performance Metrics to obtain FY2024 and FY2023 actual capex for comparison against the FY2025 $20B–$24B guidance [T00499].",
+      "Search the filing and subsequent earnings calls for explicit new-store opening/remodel counts, since the store-opening number is not in the retrieved evidence.",
+      "Confirm whether the FY2025 capex guidance was reaffirmed, raised, or lowered in later quarterly filings."
+    ],
+    "sources": {
+      "T00499": {
+        "source": "prose",
+        "where": "paragraph in the filing: \"Refer to the \" Strategic Capital Allocation \" section in our Company Performance Metrics for capital expenditure detail for fiscal 2024 and 2023. For the fiscal\""
+      },
+      "T00080": {
+        "source": "prose",
+        "where": "paragraph in the filing: \"Our operations comprise three reportable segments: Walmart U.S., Walmart International and Sam's Club. Our fiscal year ends on January 31 for our United States \""
+      },
+      "T00090": {
+        "source": "prose",
+        "where": "paragraph in the filing: \"Walmart U.S. is our largest segment and operates in the U.S., including in all 50 states, Washington D.C. and Puerto Rico. Walmart U.S. is a mass merchandiser o\""
+      }
+    }
+  }
+}

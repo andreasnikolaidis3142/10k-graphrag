@@ -1,0 +1,241 @@
+{
+  "question": "Break down net sales by segment (Walmart U.S., Walmart International, Sam's Club) and say which segment grew fastest and which had the highest operating margin.",
+  "model": "apodex/apodex-1.1-mini:free",
+  "ungrounded": [],
+  "coverage_gaps": [],
+  "uncited_claims": [],
+  "stripped_pseudo_citations": 0,
+  "answer": {
+    "summary": "Walmart's FY2024 consolidated net sales were $642.64B [F00003], up 6.1% YoY [F00003]. By segment, Walmart U.S. generated $441.82B (68.8% of total) [F00958], Walmart International $114.64B (17.8%) [F00959], and Sam's Club $86.18B (13.4%) [F00960]. Walmart International grew fastest in FY2024 at +13.5% YoY ($100.98B -> $114.64B) [F00959], versus Walmart U.S. at +5.1% [F00958] and Sam's Club at +2.2% [F00960]. Walmart U.S. had the highest operating income at $22.15B [F00962] on $441.82B of net sales [F00958], versus Walmart International at $4.91B [F00963] and Sam's Club at $2.19B [F00964], so Walmart U.S. had the highest operating margin. This is consistent with management's statement that Walmart U.S. has historically had the highest gross profit as a percentage of net sales [T00090].",
+    "status": "positive",
+    "key_numbers": [
+      {
+        "metric": "Consolidated net sales FY2024",
+        "period": "FY2024",
+        "value": "$642.64B",
+        "fact_id": "F00003"
+      },
+      {
+        "metric": "Walmart U.S. net sales FY2024",
+        "period": "FY2024",
+        "value": "$441.82B (68.8% of total)",
+        "fact_id": "F00958"
+      },
+      {
+        "metric": "Walmart International net sales FY2024",
+        "period": "FY2024",
+        "value": "$114.64B (17.8% of total)",
+        "fact_id": "F00959"
+      },
+      {
+        "metric": "Sam's Club net sales FY2024",
+        "period": "FY2024",
+        "value": "$86.18B (13.4% of total)",
+        "fact_id": "F00960"
+      },
+      {
+        "metric": "Walmart International net sales growth FY2024",
+        "period": "FY2024",
+        "value": "+13.5% YoY",
+        "fact_id": "F00959"
+      },
+      {
+        "metric": "Walmart U.S. operating income FY2024",
+        "period": "FY2024",
+        "value": "$22.15B",
+        "fact_id": "F00962"
+      },
+      {
+        "metric": "Walmart International operating income FY2024",
+        "period": "FY2024",
+        "value": "$4.91B",
+        "fact_id": "F00963"
+      },
+      {
+        "metric": "Sam's Club operating income FY2024",
+        "period": "FY2024",
+        "value": "$2.19B",
+        "fact_id": "F00964"
+      }
+    ],
+    "drivers": [
+      "Walmart U.S. was the LARGEST CONTRIBUTOR TO THE CHANGE in FY2024 net sales, contributing $21.26B (+5.1%), 58% of the total change [F00958][F00979]",
+      "Walmart International contributed $13.66B (+13.5%), 37% of the total change [F00959][F00980]",
+      "Sam's Club contributed $1.83B (+2.2%), 5% of the total change [F00960][F00981]",
+      "Corporate And Support contributed $0.00, 0% of the total change [F00961][F00982]"
+    ],
+    "risks_and_red_flags": [
+      "Sam's Club growth decelerated sharply to +2.2% in FY2024 from +14.7% in FY2023 [F00960], with lower fuel sales due to deflation partially offsetting growth [T00478]",
+      "Walmart U.S. growth slowed to +5.1% in FY2024 from +6.9% in FY2023 [F00958]",
+      "Corporate And Support posted a negative operating income of -$2.24B in FY2024, down 56.2% YoY from -$5.12B [F00965]",
+      "Sam's Club has the lowest operating income ($2.19B) among the three reportable segments [F00964]"
+    ],
+    "data_quality_notes": [
+      "19 duplicate facts with conflicting values were set aside during parsing (primary-statement value kept)",
+      "Two NetIncomeLoss series exist with different FY2024 values: $16.27B (ProfitLoss) [F00045] vs $15.51B (NetIncomeLoss) [F00051]",
+      "Segment operating margins are derived from segment operating income and segment net sales (not pre-computed in the evidence)",
+      "Segment slices are components of the consolidated total, not the company total"
+    ],
+    "outlook": {
+      "actuals_view": "FY2024 consolidated net sales grew +6.1% YoY to $642.64B [F00003], with Walmart International the fastest-growing segment at +13.5% [F00959]",
+      "forward_looking_guidance": "No management guidance facts are present in the retrieved evidence; guidance would be labeled forward-looking and kept separate from actuals"
+    },
+    "follow_up_checks": [
+      "Verify the segment operating margins against the filing's segment note (operating income / net sales per segment)",
+      "Reconcile the two NetIncomeLoss series ($16.27B ProfitLoss vs $15.51B NetIncomeLoss) to determine which is the correct consolidated figure",
+      "Review the drivers of Corporate And Support's -$2.24B operating loss and its 56.2% YoY improvement [F00965]",
+      "Check whether FY2025 segment-level guidance is available in the filing or subsequent 10-Qs"
+    ],
+    "sources": {
+      "F00003": {
+        "value": "$642.64B",
+        "concept": "Revenues",
+        "period": "FY2024",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "also_displayed_in": [
+          "table #27 \"untitled\", row \"Net sales\", column \"2024\"",
+          "table #32 \"Consolidated Results of Operations\", row \"Net sales\", column \"2024\"",
+          "table #50 \"Consolidated Statements of Income\", row \"Net sales\", column \"2024\""
+        ]
+      },
+      "F00958": {
+        "value": "$441.82B",
+        "concept": "Revenues",
+        "period": "FY2024",
+        "slice": "StatementBusinessSegments=WalmartUS",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      "F00959": {
+        "value": "$114.64B",
+        "concept": "Revenues",
+        "period": "FY2024",
+        "slice": "StatementBusinessSegments=WalmartInternational",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      "F00960": {
+        "value": "$86.18B",
+        "concept": "Revenues",
+        "period": "FY2024",
+        "slice": "StatementBusinessSegments=SamsClub",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "also_displayed_in": [
+          "table #35 \"Sam's Club Segment\", row \"Net sales\", column \"2024\""
+        ]
+      },
+      "F00962": {
+        "value": "$22.15B",
+        "concept": "OperatingIncomeLoss",
+        "period": "FY2024",
+        "slice": "StatementBusinessSegments=WalmartUS",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:OperatingIncomeLoss"
+      },
+      "F00963": {
+        "value": "$4.91B",
+        "concept": "OperatingIncomeLoss",
+        "period": "FY2024",
+        "slice": "StatementBusinessSegments=WalmartInternational",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:OperatingIncomeLoss"
+      },
+      "F00964": {
+        "value": "$2.19B",
+        "concept": "OperatingIncomeLoss",
+        "period": "FY2024",
+        "slice": "StatementBusinessSegments=SamsClub",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:OperatingIncomeLoss",
+        "also_displayed_in": [
+          "table #35 \"Sam's Club Segment\", row \"Operating income\", column \"2024\""
+        ]
+      },
+      "T00090": {
+        "source": "prose",
+        "where": "paragraph in the filing: \"Walmart U.S. is our largest segment and operates in the U.S., including in all 50 states, Washington D.C. and Puerto Rico. Walmart U.S. is a mass merchandiser o\""
+      },
+      "F00979": {
+        "value": "$420.55B",
+        "concept": "Revenues",
+        "period": "FY2023",
+        "slice": "StatementBusinessSegments=WalmartUS",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      "F00980": {
+        "value": "$100.98B",
+        "concept": "Revenues",
+        "period": "FY2023",
+        "slice": "StatementBusinessSegments=WalmartInternational",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      "F00981": {
+        "value": "$84.34B",
+        "concept": "Revenues",
+        "period": "FY2023",
+        "slice": "StatementBusinessSegments=SamsClub",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "also_displayed_in": [
+          "table #35 \"Sam's Club Segment\", row \"Net sales\", column \"2023\""
+        ]
+      },
+      "F00961": {
+        "value": "$0.00",
+        "concept": "Revenues",
+        "period": "FY2024",
+        "slice": "StatementBusinessSegments=CorporateAndSupport",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      "F00982": {
+        "value": "$0.00",
+        "concept": "Revenues",
+        "period": "FY2023",
+        "slice": "StatementBusinessSegments=CorporateAndSupport",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      "T00478": {
+        "source": "prose",
+        "where": "paragraph in the filing: \"Net sales for the Sam's Club segment increased $1.8 billion or 2.2% and $10.8 billion or 14.7% for fiscal 2024 and 2023, respectively, when compared to the prev\""
+      },
+      "F00965": {
+        "value": "-$2.24B",
+        "concept": "OperatingIncomeLoss",
+        "period": "FY2024",
+        "slice": "StatementBusinessSegments=CorporateAndSupport",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:OperatingIncomeLoss"
+      },
+      "F00045": {
+        "value": "$16.27B",
+        "concept": "NetIncomeLoss",
+        "period": "FY2024",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:ProfitLoss",
+        "also_displayed_in": [
+          "table #28 \"Return on Assets and Return on Investment\", row \"Consolidated net income\", column \"2024\"",
+          "table #32 \"Consolidated Results of Operations\", row \"Consolidated net income\", column \"2024\"",
+          "table #50 \"Consolidated Statements of Income\", row \"Consolidated net income\", column \"2024\""
+        ]
+      },
+      "F00051": {
+        "value": "$15.51B",
+        "concept": "NetIncomeLoss",
+        "period": "FY2024",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:NetIncomeLoss",
+        "also_displayed_in": [
+          "table #50 \"Consolidated Statements of Income\", row \"Consolidated net income attributable to Walmart\", column \"2024\"",
+          "table #51 \"Consolidated Statements of Comprehensive Income\", row \"Consolidated net income attributable to Walmart\", column \"2024\"",
+          "table #57 \"Note 2. Net Income Per Common Share\", row \"Consolidated net income attributable to Walmart\", column \"2024\""
+        ]
+      }
+    }
+  }
+}

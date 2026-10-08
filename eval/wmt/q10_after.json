@@ -1,0 +1,9 @@
+{
+  "question": "What was Walmart's fiscal 2025 capital expenditure guidance, and how many stores will it open next year?",
+  "model": "google/lyria-3-pro-preview",
+  "ungrounded": [],
+  "coverage_gaps": [],
+  "uncited_claims": [],
+  "stripped_pseudo_citations": 0,
+  "answer": null
+}

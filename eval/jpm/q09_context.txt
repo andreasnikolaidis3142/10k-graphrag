@@ -1,0 +1,122 @@
+COMPANY: JPMORGAN CHASE & CO | Fiscal year end: month 12 day 31 | Latest fiscal year in filing: FY2023
+TIME CONTEXT: periods named FY#### are ACTUALS reported in this 10-K. Text facts with role 'guidance' are FORWARD-LOOKING management estimates, not actuals.
+
+SERIES ShareholderReturns - Dividends + buybacks
+  VIEW: DERIVED ratio/metric = Dividends + Repurchases (already computed; do not recompute)
+  UNIT: USD (filing displayed in units; values below are normalised to base units)
+  FY2021              $31.27B  [F13543] 
+  FY2022              $16.72B  [F13544] 
+  FY2023              $23.29B  [F13545] 
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2022: -46.5% YoY ($31.27B -> $16.72B) [F13544]
+   - FY2023: +39.2% YoY ($16.72B -> $23.29B) [F13545]
+   - CAGR FY2021->FY2023: -13.7%
+   - TREND: decreasing (moderate), -26% over the window
+
+SERIES PaymentsForRepurchaseOfCommonStock - us-gaap:PaymentsForRepurchaseOfCommonStock
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  FY2021              $18.41B  [F00403] XBRL-tagged outflow shown as magnitude
+  FY2022               $3.16B  [F00402] XBRL-tagged outflow shown as magnitude
+  FY2023               $9.82B  [F00401] XBRL-tagged outflow shown as magnitude
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2022: -82.8% YoY ($18.41B -> $3.16B) [F00402]
+   - FY2023: +210.7% YoY ($3.16B -> $9.82B) [F00401]
+   - CAGR FY2021->FY2023: -26.9%
+   - TREND: decreasing (moderate), -47% over the window
+
+SERIES EarningsPerShareDiluted - us-gaap:EarningsPerShareDiluted
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD/share (filing displayed in units; values below are normalised to base units)
+  FY2021               $15.36  [F00092] XBRL-tagged
+  @2021-12-31          $15.36  [F07375] (table 66: THREE-YEAR SUMMARY OF CONSOLIDATED FINAN)
+  FY2022               $12.09  [F00091] XBRL-tagged
+  @2022-12-31          $12.09  [F07374] (table 66: THREE-YEAR SUMMARY OF CONSOLIDATED FINAN)
+  FY2023               $16.23  [F00090] XBRL-tagged
+  @2023-12-31          $16.23  [F07373] (table 66: THREE-YEAR SUMMARY OF CONSOLIDATED FINAN)
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2021-12-31: +0.0% YoY ($15.36 -> $15.36) [F07375]
+   - FY2022: -21.3% YoY ($15.36 -> $12.09) [F00091]
+   - @2022-12-31: +0.0% YoY ($12.09 -> $12.09) [F07374]
+   - FY2023: +34.2% YoY ($12.09 -> $16.23) [F00090]
+   - @2023-12-31: +0.0% YoY ($16.23 -> $16.23) [F07373]
+   - INFLECTION FY2023: spike of 34% vs prior-2-period average [F00090]
+   - CAGR FY2021->@2023-12-31: 1.1%
+   - TREND: stable (weak), +6% over the window
+
+SERIES EarningsPerShareBasic - us-gaap:EarningsPerShareBasic
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD/share (filing displayed in units; values below are normalised to base units)
+  FY2021               $15.39  [F00089] XBRL-tagged
+  FY2022               $12.10  [F00088] XBRL-tagged
+  FY2023               $16.25  [F00087] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2022: -21.4% YoY ($15.39 -> $12.10) [F00088]
+   - FY2023: +34.3% YoY ($12.10 -> $16.25) [F00087]
+   - CAGR FY2021->FY2023: 2.8%
+   - TREND: stable (weak), +6% over the window
+
+SERIES WeightedAverageNumberOfDilutedSharesOutstanding - us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: shares (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a TOTAL line; its components (if listed under ATTRIBUTION) already roll up into it.
+  FY2021        3,026,600,000  [F00098] verified XBRL-tagged
+  FY2022        2,970,000,000  [F00097] CHECK-FAILED XBRL-tagged
+  FY2023        2,943,100,000  [F00096] verified XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2022: -1.9% YoY (3,026,600,000 -> 2,970,000,000) [F00097]
+   - FY2023: -0.9% YoY (2,970,000,000 -> 2,943,100,000) [F00096]
+   - CAGR FY2021->FY2023: -1.4%
+   - TREND: stable (weak), -3% over the window
+
+SERIES WeightedAverageNumberOfSharesOutstandingBasic - us-gaap:WeightedAverageNumberOfSharesOutstandingBasic
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: shares (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a TOTAL line; its components (if listed under ATTRIBUTION) already roll up into it.
+  FY2021        3,021,500,000  [F00095] XBRL-tagged
+  FY2022        2,965,800,000  [F00094] XBRL-tagged
+  FY2023        2,938,600,000  [F00093] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2022: -1.8% YoY (3,021,500,000 -> 2,965,800,000) [F00094]
+   - FY2023: -0.9% YoY (2,965,800,000 -> 2,938,600,000) [F00093]
+   - CAGR FY2021->FY2023: -1.4%
+   - TREND: stable (weak), -3% over the window
+
+SERIES PaymentsOfDividends - us-gaap:PaymentsOfDividends
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  FY2021              $12.86B  [F00406] XBRL-tagged outflow shown as magnitude
+  FY2022              $13.56B  [F00405] XBRL-tagged outflow shown as magnitude
+  FY2023              $13.46B  [F00404] XBRL-tagged outflow shown as magnitude
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2022: +5.5% YoY ($12.86B -> $13.56B) [F00405]
+   - FY2023: -0.7% YoY ($13.56B -> $13.46B) [F00404]
+   - CAGR FY2021->FY2023: 2.3%
+   - TREND: stable (weak), +5% over the window
+
+SERIES NetCashProvidedByUsedInOperatingActivities - us-gaap:NetCashProvidedByUsedInOperatingActivities
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a TOTAL line; its components (if listed under ATTRIBUTION) already roll up into it.
+  FY2021              $78.08B  [F00343] XBRL-tagged
+  FY2022             $107.12B  [F00342] XBRL-tagged
+  FY2023              $12.97B  [F00341] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2022: +37.2% YoY ($78.08B -> $107.12B) [F00342]
+   - FY2023: -87.9% YoY ($107.12B -> $12.97B) [F00341]
+   - INFLECTION FY2023: drop of 86% vs prior-2-period average [F00341]
+   - CAGR FY2021->FY2023: -59.2%
+   - TREND: decreasing (strong), -83% over the window
+
+ATTRIBUTION of WeightedAverageNumberOfDilutedSharesOutstanding FY2023 BY COMPONENT, total 2,943,100,000 [F00096]; change vs prior year -26,900,000 (-0.9%) [F00097] (components sorted by size of their CHANGE vs prior year, biggest mover first):
+  - us-gaap:WeightedAverageNumberOfSharesOutstandingBasic: 2,938,600,000 = 99.8% of total [F00093]; prior year 2,965,800,000 [F00094], change -27,200,000 (-0.9%), a swing of -27,200,000 against a NET total change of only -26,900,000 (other components offset it; no percentage share is meaningful)  <- LARGEST CONTRIBUTOR TO THE CHANGE
+  (A component's share of the total change can exceed 100% or be negative when other components offset it.)
+
+NARRATIVE EVIDENCE (management text; numbers inside were machine-checked against the tables):
+  [T04100] (Item 15 Exhibits; number checks: none) Basic earnings per share (“EPS”) is calculated using the two-class method. Under the two-class method, all earnings (distributed and undistributed) are allocated to common stock and participating securities. JPMorgan Chase grants RSUs under its share-based compensation programs, predominantly all of which entitle recipients to receive nonforfeitable dividends during the vesting period on a basis equivalent to dividends paid to holders of the Firm’s common stock. These unvested RSUs meet the definition of participating securities based on their respective rights to receive nonforfeitable divide
+  [T00034] (Item 1 Business; number checks: unchecked, unchecked) JPMorgan Chase & Co. (“JPMorgan Chase” or the “Firm”, NYSE: JPM), a financial holding company incorporated under Delaware law in 1968, is a leading financial services firm based in the United States of America (“U.S.”), with operations worldwide. JPMorgan Chase had $3.9 trillion in assets and $327.9 billion in stockholders’ equity as of December 31, 2023. The Firm is a leader in investment banking, financial services for consumers and small businesses, commercial banking, financial transaction processing and asset management. Under the J.P. Morgan and Chase brands, the Firm serves millions of 
+  [T00944] (Item 15 Exhibits; number checks: unchecked, unchecked) JPMorgan Chase & Co. (NYSE: JPM), a financial holding company incorporated under Delaware law in 1968, is a leading financial services firm based in the United States of America (“U.S.”), with operations worldwide. JPMorgan Chase had $3.9 trillion in assets and $327.9 billion in stockholders’ equity as of December 31, 2023. The Firm is a leader in investment banking, financial services for consumers and small businesses, commercial banking, financial transaction processing and asset management. Under the J.P. Morgan and Chase brands, the Firm serves millions of customers, predominantly in the 
+  [T04065] (Item 15 Exhibits; number checks: unchecked) At December 31, 2023 and 2022, JPMorgan Chase was authorized to issue 200 million shares of preferred stock, in one or more series, with a par value of $ 1 per share. In the event of a liquidation or dissolution of the Firm, JPMorgan Chase’s preferred stock then outstanding takes precedence over the Firm’s common stock with respect to the payment of dividends and the distribution of assets.
+
+DATA QUALITY: 3 accounting identities passed, 0 failed for the numbers above.
+NOTE: for the metrics above, 4 duplicate facts with conflicting values were set aside during parsing (the primary-statement value was kept).

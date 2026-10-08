@@ -1,0 +1,135 @@
+COMPANY: Walmart Inc. | Fiscal year end: month 1 day 31 | Latest fiscal year in filing: FY2024
+TIME CONTEXT: periods named FY#### are ACTUALS reported in this 10-K. Text facts with role 'guidance' are FORWARD-LOOKING management estimates, not actuals.
+
+SERIES EffectiveIncomeTaxRate - us-gaap:EffectiveIncomeTaxRateContinuingOperations
+  VIEW: FLOW (12-month period; do NOT add annual values together); unit is PERCENT - differences are percentage points, not %
+  UNIT: percent (filing displayed in units; values below are normalised to base units)
+  FY2022                25.4%  [F00874] XBRL-tagged
+  FY2023                33.6%  [F00873] XBRL-tagged
+  FY2024                25.5%  [F00872] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: 33.6% vs 25.4% (+820 bps) [F00873]
+   - FY2024: 25.5% vs 33.6% (-810 bps) [F00872]
+
+SERIES EffectiveTaxRatePct - Effective tax rate % (derived)
+  VIEW: DERIVED ratio/metric = IncomeTax / PreTaxIncome x 100 (already computed; do not recompute); unit is PERCENT - differences are percentage points, not %
+  UNIT: percent (filing displayed in units; values below are normalised to base units)
+  FY2022                25.4%  [F01848] 
+  FY2023                33.6%  [F01849] 
+  FY2024                25.5%  [F01850] 
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: 33.6% vs 25.4% (+820 bps) [F01849]
+   - FY2024: 25.5% vs 33.6% (-811 bps) [F01850]
+
+SERIES IncomeTaxExpenseBenefit - us-gaap:IncomeTaxExpenseBenefit
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a TOTAL line; its components (if listed under ATTRIBUTION) already roll up into it.
+  FY2022               $4.76B  [F00044] verified XBRL-tagged
+  FY2023               $5.72B  [F00043] verified XBRL-tagged
+  FY2024               $5.58B  [F00042] verified XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: +20.4% YoY ($4.76B -> $5.72B) [F00043]
+   - FY2024: -2.6% YoY ($5.72B -> $5.58B) [F00042]
+   - CAGR FY2022->FY2024: 8.3%
+   - TREND: increasing (weak), +17% over the window
+
+SERIES EffectiveIncomeTaxRateReconciliationAtFederalStatutoryIncomeTaxRate - us-gaap:EffectiveIncomeTaxRateReconciliationAtFederalStatuto
+  VIEW: FLOW (12-month period; do NOT add annual values together); unit is PERCENT - differences are percentage points, not %
+  UNIT: percent (filing displayed in units; values below are normalised to base units)
+  FY2022                21.0%  [F00847] XBRL-tagged
+  FY2023                21.0%  [F00846] XBRL-tagged
+  FY2024                21.0%  [F00845] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: 21.0% vs 21.0% (+0 bps) [F00846]
+   - FY2024: 21.0% vs 21.0% (+0 bps) [F00845]
+
+SERIES EffectiveIncomeTaxRateReconciliationStateAndLocalIncomeTaxes - us-gaap:EffectiveIncomeTaxRateReconciliationStateAndLocalInc
+  VIEW: FLOW (12-month period; do NOT add annual values together); unit is PERCENT - differences are percentage points, not %
+  UNIT: percent (filing displayed in units; values below are normalised to base units)
+  FY2022                 2.8%  [F00850] XBRL-tagged
+  FY2023                 3.1%  [F00849] XBRL-tagged
+  FY2024                 3.0%  [F00848] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: 3.1% vs 2.8% (+30 bps) [F00849]
+   - FY2024: 3.0% vs 3.1% (-10 bps) [F00848]
+
+SERIES EffectiveIncomeTaxRateReconciliationForeignIncomeTaxRateDifferential - us-gaap:EffectiveIncomeTaxRateReconciliationForeignIncomeTax
+  VIEW: FLOW (12-month period; do NOT add annual values together); unit is PERCENT - differences are percentage points, not %
+  UNIT: percent (filing displayed in units; values below are normalised to base units)
+  FY2022                -1.5%  [F00853] XBRL-tagged
+  FY2023                 1.1%  [F00852] XBRL-tagged
+  FY2024                 0.1%  [F00851] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: 1.1% vs -1.5% (+260 bps) [F00852]
+   - SIGN FLIP in FY2023: -1.5% -> 1.1% [F00852]
+   - FY2024: 0.1% vs 1.1% (-100 bps) [F00851]
+
+SERIES EffectiveIncomeTaxRateReconciliationTaxCredits - us-gaap:EffectiveIncomeTaxRateReconciliationTaxCredits
+  VIEW: FLOW (12-month period; do NOT add annual values together); unit is PERCENT - differences are percentage points, not %
+  UNIT: percent (filing displayed in units; values below are normalised to base units)
+  FY2022                 1.1%  [F00865] XBRL-tagged
+  FY2023                 1.3%  [F00864] XBRL-tagged
+  FY2024                 1.5%  [F00863] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: 1.3% vs 1.1% (+20 bps) [F00864]
+   - FY2024: 1.5% vs 1.3% (+20 bps) [F00863]
+
+SERIES EffectiveIncomeTaxRateReconciliationChangeInDeferredTaxAssetsValuationAllowance - us-gaap:EffectiveIncomeTaxRateReconciliationChangeInDeferred
+  VIEW: FLOW (12-month period; do NOT add annual values together); unit is PERCENT - differences are percentage points, not %
+  UNIT: percent (filing displayed in units; values below are normalised to base units)
+  FY2022                 4.4%  [F00859] XBRL-tagged
+  FY2023                 1.7%  [F00858] XBRL-tagged
+  FY2024                 1.2%  [F00857] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: 1.7% vs 4.4% (-270 bps) [F00858]
+   - FY2024: 1.2% vs 1.7% (-50 bps) [F00857]
+
+SERIES EffectiveIncomeTaxRateReconciliationOtherAdjustments - us-gaap:EffectiveIncomeTaxRateReconciliationOtherAdjustments
+  VIEW: FLOW (12-month period; do NOT add annual values together); unit is PERCENT - differences are percentage points, not %
+  UNIT: percent (filing displayed in units; values below are normalised to base units)
+  FY2022                -0.6%  [F00871] XBRL-tagged
+  FY2023                 1.8%  [F00870] XBRL-tagged
+  FY2024                 1.5%  [F00869] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: 1.8% vs -0.6% (+240 bps) [F00870]
+   - SIGN FLIP in FY2023: -0.6% -> 1.8% [F00870]
+   - FY2024: 1.5% vs 1.8% (-30 bps) [F00869]
+
+SERIES IncomeLossBeforeIncomeTaxes - us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesE
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a TOTAL line; its components (if listed under ATTRIBUTION) already roll up into it.
+  FY2022              $18.70B  [F00041] verified XBRL-tagged
+  FY2023              $17.02B  [F00040] verified XBRL-tagged
+  FY2024              $21.85B  [F00039] verified XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: -9.0% YoY ($18.70B -> $17.02B) [F00040]
+   - FY2024: +28.4% YoY ($17.02B -> $21.85B) [F00039]
+   - CAGR FY2022->FY2024: 8.1%
+   - TREND: increasing (weak), +17% over the window
+
+SERIES IncomeLossBeforeIncomeTaxes {'segment': 'Fiscal Year Ended January 31, 2022'} - Income before income taxes
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a SEGMENT slice, one component of the consolidated total - not the company total.
+  FY2024              $18.70B  [F01794] (table 85: Segments)
+
+SERIES IncomeLossBeforeIncomeTaxes {'segment': 'Fiscal Year Ended January 31, 2023'} - Income before income taxes
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a SEGMENT slice, one component of the consolidated total - not the company total.
+  FY2024              $17.02B  [F01785] (table 85: Segments)
+
+ATTRIBUTION of IncomeTaxExpenseBenefit FY2024 BY COMPONENT, total $5.58B [F00042]; change vs prior year -$146.00M (-2.6%) [F00043] (components sorted by size of their CHANGE vs prior year, biggest mover first):
+  - Total deferred tax expense (benefit): -$171.00M = -3.1% of total [F00842]; prior year $430.00M [F00843], change -$601.00M (-139.8%), a swing of -$601.00M against a NET total change of only -$146.00M (other components offset it; no percentage share is meaningful)  <- LARGEST CONTRIBUTOR TO THE CHANGE
+  - Total current tax provision: $5.75B = 103.1% of total [F00830]; prior year $5.29B [F00831], change $455.00M (+8.6%), a swing of $455.00M against a NET total change of only -$146.00M (other components offset it; no percentage share is meaningful)
+  (A component's share of the total change can exceed 100% or be negative when other components offset it.)
+
+NARRATIVE EVIDENCE (management text; numbers inside were machine-checked against the tables):
+  [T00836] (n/a; number checks: none) A reconciliation of the significant differences between the U.S. statutory tax rate and the effective income tax rate on pre-tax income from continuing operations is as follows:
+  [T00460] (n/a; number checks: unchecked, unchecked, unchecked) Our effective income tax rate was 25.5%, 33.6%, and 25.4% for fiscal 2024, 2023 and 2022, respectively. The higher effective tax rate in fiscal 2023 as compared to both fiscal 2024 and fiscal 2022 is primarily due to the tax impact of the business reorganization resulting in the full separation of PhonePe from Flipkart in fiscal 2023. Our effective income tax rate may also fluctuate as a result of various factors, including changes in our assessment of unrecognized tax benefits, valuation allowances, changes in tax law, outcomes of administrative audits, the impact of discrete items and the mi
+  [T00701] (n/a; number checks: none) In determining the provision for income taxes, an annual effective income tax rate is used based on annual income, permanent differences between book and tax income, and statutory income tax rates. Discrete events such as audit settlements or changes in tax laws are recognized in the period in which they occur.
+  [T00067] (n/a; number checks: none) • our effective tax rate for certain periods and the realization of certain net deferred tax assets and the effects of resolutions of tax-related matters;
+
+DATA QUALITY: 3 accounting identities passed, 0 failed for the numbers above.

@@ -1,0 +1,400 @@
+{
+  "question": "How dependent is Apple on China, and what happened to its sales there?",
+  "model": "inclusionai/ling-3.1-flash",
+  "ungrounded": [],
+  "coverage_gaps": [],
+  "uncited_claims": [],
+  "stripped_pseudo_citations": 0,
+  "answer": {
+    "summary": "Apple's dependence on China is material but secondary to the U.S.: Greater China generated $72.56B, or 18.9% of FY2023 net sales [F00850][F00880], and the U.S. and China were the only countries accounting for more than 10% of net sales in FY2023, FY2022 and FY2021 [T00600]. China sales fell 2.2% year-over-year, from $74.20B in FY2022 [F00851][F00881] to $72.56B in FY2023, a -$1.64B change equal to 15% of the company's total -$11.04B (-2.8%) revenue decline [F00014]. In the business-segment view, Americas was the LARGEST CONTRIBUTOR TO THE CHANGE at -$7.10B (-4.2%), 64% of the total change [F00838][F00839]; in the geographical view the U.S. led with -$9.29B (-6.3%), 84% of the change [F00877]. By product, Mac was the largest contributor (-$10.82B, -26.9%, 98% of the change) [F00282] and iPhone also declined (-$4.91B, -2.4%, 44%) [F00279], while Services grew +$7.07B (+9.1%), offsetting 64% of the decline [F00010]. Management states that foreign currency weakness relative to the U.S. dollar accounted for more than the entire year-over-year decrease in total net sales [T00275].",
+    "status": "negative",
+    "key_numbers": [
+      {
+        "metric": "Greater China net sales FY2023",
+        "period": "FY2023",
+        "value": "$72.56B (18.9% of total)",
+        "fact_id": "[F00850][F00880]"
+      },
+      {
+        "metric": "Greater China net sales FY2022",
+        "period": "FY2022",
+        "value": "$74.20B",
+        "fact_id": "[F00851][F00881]"
+      },
+      {
+        "metric": "Greater China YoY change",
+        "period": "FY2023 vs FY2022",
+        "value": "-$1.64B (-2.2%), 15% of total change",
+        "fact_id": "[F00850][F00880]"
+      },
+      {
+        "metric": "Americas net sales FY2023 (largest segment contributor)",
+        "period": "FY2023",
+        "value": "$162.56B (42.4% of total); change -$7.10B (-4.2%), 64% of total change",
+        "fact_id": "[F00838][F00839]"
+      },
+      {
+        "metric": "U.S. net sales FY2023 (largest geographical contributor)",
+        "period": "FY2023",
+        "value": "$138.57B (36.2% of total); change -$9.29B (-6.3%), 84% of total change",
+        "fact_id": "[F00877]"
+      },
+      {
+        "metric": "Total net sales FY2023",
+        "period": "FY2023",
+        "value": "$383.29B (-2.8% YoY, -$11.04B)",
+        "fact_id": "[F00013][F00014]"
+      },
+      {
+        "metric": "Mac revenue FY2023 (largest product contributor)",
+        "period": "FY2023",
+        "value": "$29.36B (7.7% of total); change -$10.82B (-26.9%), 98% of total change",
+        "fact_id": "[F00282][F00283]"
+      }
+    ],
+    "drivers": [
+      "Americas was the LARGEST CONTRIBUTOR TO THE CHANGE in the StatementBusinessSegments view: -$7.10B (-4.2%), 64% of the total -$11.04B change [F00838][F00839]; Japan followed at -$1.72B (-6.6%, 16%) [F00856], Greater China at -$1.64B (-2.2%, 15%) [F00850], Europe at -$824.00M (-0.9%, 7%) [F00844], and Rest of Asia Pacific grew +$240.00M (+0.8%), moving AGAINST the total change (offsets 2%) [F00862].",
+      "In the StatementGeographical view, the U.S. was the largest contributor at -$9.29B (-6.3%), 84% of the total change [F00877]; China (CN) contributed -$1.64B (-2.2%), 15% [F00880]; Other Countries -$116.00M (-0.1%), 1% [F00883]. Note: Americas (segment, $162.56B) is a broader cut than the U.S. (geographical, $138.57B).",
+      "By product, Mac drove the decline (-$10.82B, -26.9%, 98% of the total change) [F00282], with iPhone (-$4.91B, -2.4%, 44%) [F00279], Wearables/Home/Accessories (-$1.40B, -3.4%, 13%) [F00288] and iPad (-$992.00M, -3.4%, 9%) [F00285] also down; Services rose +$7.07B (+9.1%), offsetting 64% of the total change [F00010].",
+      "Management attributes more than the entire year-over-year decrease in total net sales to foreign currency weakness, with the decline consisting primarily of lower Mac and iPhone sales partially offset by higher Services [T00275]."
+    ],
+    "risks_and_red_flags": [
+      "Apple has international operations with sales outside the U.S. representing a majority of total net sales, and a majority of its supplier facilities, including manufacturing and assembly sites, are located outside the U.S., so operations depend significantly on global and regional economic conditions [T00118].",
+      "Primary exposure to foreign exchange rate movements relates to non-U.S. dollar-denominated sales, cost of sales and operating expenses worldwide; gross margins on products in foreign countries and on products with foreign-sourced components have been and could be materially adversely affected by FX fluctuations [T00221].",
+      "Greater China's 18.9% revenue share [F00850] leaves a meaningful portion of the top line exposed to China-specific conditions, though the U.S. remains the largest market at 36.2% [F00877]."
+    ],
+    "data_quality_notes": [
+      "3 accounting identities passed, 0 failed for the numbers above; no TEXT-vs-TABLE CONFLICTS were reported.",
+      "No forward-looking guidance was present in the retrieved evidence; all figures are FY2023/FY2022 actuals from the 10-K.",
+      "Americas (segment, $162.56B [F00838]) and U.S. (geographical, $138.57B [F00877]) are different breakdowns of the same total and should not be added together."
+    ],
+    "outlook": {
+      "actuals_view": "FY2023 Greater China revenue of $72.56B declined 2.2% YoY (-$1.64B), contributing 15% of the company-wide -$11.04B (-2.8%) decline, amid Mac/iPhone weakness and FX headwinds [F00850][F00014][T00275]; Americas was the largest segment contributor to the decline at 64% of the change [F00838].",
+      "forward_looking_guidance": "Not in the retrieved evidence; no management guidance figures were provided in the 10-K evidence."
+    },
+    "follow_up_checks": [
+      "Verify whether the China decline was concentrated in specific products (iPhone vs. Mac vs. Services) within Greater China, since company-wide Mac weakness drove most of the total decline [F00282].",
+      "Quantify the FX impact specifically on Greater China sales versus the company-wide FX effect described in MD&A [T00275].",
+      "Assess supply chain concentration risk, given a majority of manufacturing and assembly sites are outside the U.S. [T00118].",
+      "Check subsequent quarters or FY2024 data for whether China revenue stabilized or continued to decline after the FY2023 -2.2% [F00850].",
+      "Confirm whether long-lived assets in China (referenced in the geographic disclosure [T00600]) indicate significant fixed-asset exposure in the region."
+    ],
+    "sources": {
+      "F00850": {
+        "value": "$72.56B",
+        "concept": "Revenues",
+        "period": "FY2023",
+        "slice": "StatementBusinessSegments=GreaterChinaSegment",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "also_displayed_in": [
+          "table #7 \"The following table shows net sales by reportable segment for 2023, 2022 and 2021 (dollars in millions):\", row \"Greater China\", column \"2023\"",
+          "table #46 \"Note 13 – Segment Information and Geographic Data\", row \"Net sales\", column \"2023\""
+        ]
+      },
+      "F00880": {
+        "value": "$72.56B",
+        "concept": "Revenues",
+        "period": "FY2023",
+        "slice": "StatementGeographical=CN",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      "T00600": {
+        "source": "prose",
+        "where": "paragraph in Item 8 Financial Statements: \"The U.S. and China were the only countries that accounted for more than 10% of the Company’s net sales in 2023, 2022 and 2021. Net sales for 2023, 2022 and 2021\""
+      },
+      "F00851": {
+        "value": "$74.20B",
+        "concept": "Revenues",
+        "period": "FY2022",
+        "slice": "StatementBusinessSegments=GreaterChinaSegment",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "also_displayed_in": [
+          "table #7 \"The following table shows net sales by reportable segment for 2023, 2022 and 2021 (dollars in millions):\", row \"Greater China\", column \"2022\"",
+          "table #46 \"Note 13 – Segment Information and Geographic Data\", row \"Net sales\", column \"2022\""
+        ]
+      },
+      "F00881": {
+        "value": "$74.20B",
+        "concept": "Revenues",
+        "period": "FY2022",
+        "slice": "StatementGeographical=CN",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      "F00014": {
+        "value": "$394.33B",
+        "concept": "Revenues",
+        "period": "FY2022",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "also_displayed_in": [
+          "table #7 \"The following table shows net sales by reportable segment for 2023, 2022 and 2021 (dollars in millions):\", row \"Total net sales\", column \"2022\"",
+          "table #8 \"The following table shows net sales by category for 2023, 2022 and 2021 (dollars in millions):\", row \"Total net sales\", column \"2022\"",
+          "table #15 \"CONSOLIDATED STATEMENTS OF OPERATIONS\", row \"Total net sales\", column \"September 24, 2022\""
+        ]
+      },
+      "F00838": {
+        "value": "$162.56B",
+        "concept": "Revenues",
+        "period": "FY2023",
+        "slice": "StatementBusinessSegments=AmericasSegment",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "also_displayed_in": [
+          "table #7 \"The following table shows net sales by reportable segment for 2023, 2022 and 2021 (dollars in millions):\", row \"Americas\", column \"2023\"",
+          "table #46 \"Note 13 – Segment Information and Geographic Data\", row \"Net sales\", column \"2023\""
+        ]
+      },
+      "F00839": {
+        "value": "$169.66B",
+        "concept": "Revenues",
+        "period": "FY2022",
+        "slice": "StatementBusinessSegments=AmericasSegment",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "also_displayed_in": [
+          "table #7 \"The following table shows net sales by reportable segment for 2023, 2022 and 2021 (dollars in millions):\", row \"Americas\", column \"2022\"",
+          "table #46 \"Note 13 – Segment Information and Geographic Data\", row \"Net sales\", column \"2022\""
+        ]
+      },
+      "F00877": {
+        "value": "$138.57B",
+        "concept": "Revenues",
+        "period": "FY2023",
+        "slice": "StatementGeographical=US",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      "F00282": {
+        "value": "$29.36B",
+        "concept": "Revenues",
+        "period": "FY2023",
+        "slice": "ProductOrService=Mac",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "also_displayed_in": [
+          "table #8 \"The following table shows net sales by category for 2023, 2022 and 2021 (dollars in millions):\", row \"Mac (1)\", column \"2023\"",
+          "table #20 \"untitled\", row \"Mac (1)\", column \"2023\""
+        ]
+      },
+      "F00279": {
+        "value": "$200.58B",
+        "concept": "Revenues",
+        "period": "FY2023",
+        "slice": "ProductOrService=IPhone",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "also_displayed_in": [
+          "table #8 \"The following table shows net sales by category for 2023, 2022 and 2021 (dollars in millions):\", row \"iPhone (1)\", column \"2023\"",
+          "table #20 \"untitled\", row \"iPhone (1)\", column \"2023\""
+        ]
+      },
+      "F00010": {
+        "value": "$85.20B",
+        "concept": "Revenues",
+        "period": "FY2023",
+        "slice": "ProductOrService=Service",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "also_displayed_in": [
+          "table #8 \"The following table shows net sales by category for 2023, 2022 and 2021 (dollars in millions):\", row \"Services (2)\", column \"2023\"",
+          "table #20 \"untitled\", row \"Services (2)\", column \"2023\""
+        ]
+      },
+      "T00275": {
+        "source": "prose",
+        "where": "paragraph in Item 7 MD&A: \"The Company’s total net sales decreased 3% or $11.0 billion during 2023 compared to 2022. The weakness in foreign currencies relative to the U.S. dollar account\""
+      },
+      "F00013": {
+        "value": "$383.29B",
+        "concept": "Revenues",
+        "period": "FY2023",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "also_displayed_in": [
+          "table #7 \"The following table shows net sales by reportable segment for 2023, 2022 and 2021 (dollars in millions):\", row \"Total net sales\", column \"2023\"",
+          "table #8 \"The following table shows net sales by category for 2023, 2022 and 2021 (dollars in millions):\", row \"Total net sales\", column \"2023\"",
+          "table #15 \"CONSOLIDATED STATEMENTS OF OPERATIONS\", row \"Total net sales\", column \"September 30, 2023\""
+        ]
+      },
+      "F00283": {
+        "value": "$40.18B",
+        "concept": "Revenues",
+        "period": "FY2022",
+        "slice": "ProductOrService=Mac",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "also_displayed_in": [
+          "table #8 \"The following table shows net sales by category for 2023, 2022 and 2021 (dollars in millions):\", row \"Mac (1)\", column \"2022\"",
+          "table #20 \"untitled\", row \"Mac (1)\", column \"2022\""
+        ]
+      },
+      "F00856": {
+        "value": "$24.26B",
+        "concept": "Revenues",
+        "period": "FY2023",
+        "slice": "StatementBusinessSegments=JapanSegment",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "also_displayed_in": [
+          "table #7 \"The following table shows net sales by reportable segment for 2023, 2022 and 2021 (dollars in millions):\", row \"Japan\", column \"2023\"",
+          "table #46 \"Note 13 – Segment Information and Geographic Data\", row \"Net sales\", column \"2023\""
+        ]
+      },
+      "F00844": {
+        "value": "$94.29B",
+        "concept": "Revenues",
+        "period": "FY2023",
+        "slice": "StatementBusinessSegments=EuropeSegment",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "also_displayed_in": [
+          "table #7 \"The following table shows net sales by reportable segment for 2023, 2022 and 2021 (dollars in millions):\", row \"Europe\", column \"2023\"",
+          "table #46 \"Note 13 – Segment Information and Geographic Data\", row \"Net sales\", column \"2023\""
+        ]
+      },
+      "F00862": {
+        "value": "$29.61B",
+        "concept": "Revenues",
+        "period": "FY2023",
+        "slice": "StatementBusinessSegments=RestOfAsiaPacificSegment",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "also_displayed_in": [
+          "table #7 \"The following table shows net sales by reportable segment for 2023, 2022 and 2021 (dollars in millions):\", row \"Rest of Asia Pacific\", column \"2023\"",
+          "table #46 \"Note 13 – Segment Information and Geographic Data\", row \"Net sales\", column \"2023\""
+        ]
+      },
+      "F00883": {
+        "value": "$172.15B",
+        "concept": "Revenues",
+        "period": "FY2023",
+        "slice": "StatementGeographical=OtherCountries",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      "F00288": {
+        "value": "$39.84B",
+        "concept": "Revenues",
+        "period": "FY2023",
+        "slice": "ProductOrService=WearablesHomeandAccessories",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "also_displayed_in": [
+          "table #8 \"The following table shows net sales by category for 2023, 2022 and 2021 (dollars in millions):\", row \"Wearables, Home and Accessories (1)\", column \"2023\"",
+          "table #20 \"untitled\", row \"Wearables, Home and Accessories (1)\", column \"2023\""
+        ]
+      },
+      "F00285": {
+        "value": "$28.30B",
+        "concept": "Revenues",
+        "period": "FY2023",
+        "slice": "ProductOrService=IPad",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "also_displayed_in": [
+          "table #8 \"The following table shows net sales by category for 2023, 2022 and 2021 (dollars in millions):\", row \"iPad (1)\", column \"2023\"",
+          "table #20 \"untitled\", row \"iPad (1)\", column \"2023\""
+        ]
+      },
+      "T00118": {
+        "source": "prose",
+        "where": "paragraph in Item 1A Risk Factors: \"The Company has international operations with sales outside the U.S. representing a majority of the Company’s total net sales. In addition, the Company’s global\""
+      },
+      "T00221": {
+        "source": "prose",
+        "where": "paragraph in Item 1A Risk Factors: \"The Company’s primary exposure to movements in foreign exchange rates relates to non–U.S. dollar–denominated sales, cost of sales and operating expenses worldwi\""
+      },
+      "F00011": {
+        "value": "$78.13B",
+        "concept": "Revenues",
+        "period": "FY2022",
+        "slice": "ProductOrService=Service",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "also_displayed_in": [
+          "table #8 \"The following table shows net sales by category for 2023, 2022 and 2021 (dollars in millions):\", row \"Services (2)\", column \"2022\"",
+          "table #20 \"untitled\", row \"Services (2)\", column \"2022\""
+        ],
+        "note": "prior-year value behind the change shown"
+      },
+      "F00280": {
+        "value": "$205.49B",
+        "concept": "Revenues",
+        "period": "FY2022",
+        "slice": "ProductOrService=IPhone",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "also_displayed_in": [
+          "table #8 \"The following table shows net sales by category for 2023, 2022 and 2021 (dollars in millions):\", row \"iPhone (1)\", column \"2022\"",
+          "table #20 \"untitled\", row \"iPhone (1)\", column \"2022\""
+        ],
+        "note": "prior-year value behind the change shown"
+      },
+      "F00286": {
+        "value": "$29.29B",
+        "concept": "Revenues",
+        "period": "FY2022",
+        "slice": "ProductOrService=IPad",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "also_displayed_in": [
+          "table #8 \"The following table shows net sales by category for 2023, 2022 and 2021 (dollars in millions):\", row \"iPad (1)\", column \"2022\"",
+          "table #20 \"untitled\", row \"iPad (1)\", column \"2022\""
+        ],
+        "note": "prior-year value behind the change shown"
+      },
+      "F00857": {
+        "value": "$25.98B",
+        "concept": "Revenues",
+        "period": "FY2022",
+        "slice": "StatementBusinessSegments=JapanSegment",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "also_displayed_in": [
+          "table #7 \"The following table shows net sales by reportable segment for 2023, 2022 and 2021 (dollars in millions):\", row \"Japan\", column \"2022\"",
+          "table #46 \"Note 13 – Segment Information and Geographic Data\", row \"Net sales\", column \"2022\""
+        ],
+        "note": "prior-year value behind the change shown"
+      },
+      "F00845": {
+        "value": "$95.12B",
+        "concept": "Revenues",
+        "period": "FY2022",
+        "slice": "StatementBusinessSegments=EuropeSegment",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "also_displayed_in": [
+          "table #7 \"The following table shows net sales by reportable segment for 2023, 2022 and 2021 (dollars in millions):\", row \"Europe\", column \"2022\"",
+          "table #46 \"Note 13 – Segment Information and Geographic Data\", row \"Net sales\", column \"2022\""
+        ],
+        "note": "prior-year value behind the change shown"
+      },
+      "F00863": {
+        "value": "$29.38B",
+        "concept": "Revenues",
+        "period": "FY2022",
+        "slice": "StatementBusinessSegments=RestOfAsiaPacificSegment",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "also_displayed_in": [
+          "table #7 \"The following table shows net sales by reportable segment for 2023, 2022 and 2021 (dollars in millions):\", row \"Rest of Asia Pacific\", column \"2022\"",
+          "table #46 \"Note 13 – Segment Information and Geographic Data\", row \"Net sales\", column \"2022\""
+        ],
+        "note": "prior-year value behind the change shown"
+      },
+      "F00884": {
+        "value": "$172.27B",
+        "concept": "Revenues",
+        "period": "FY2022",
+        "slice": "StatementGeographical=OtherCountries",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "note": "prior-year value behind the change shown"
+      }
+    }
+  }
+}

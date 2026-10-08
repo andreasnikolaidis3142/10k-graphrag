@@ -1,0 +1,27 @@
+COMPANY: JPMORGAN CHASE & CO | Fiscal year end: month 12 day 31 | Latest fiscal year in filing: FY2023
+TIME CONTEXT: periods named FY#### are ACTUALS reported in this 10-K. Text facts with role 'guidance' are FORWARD-LOOKING management estimates, not actuals.
+
+SERIES ShareBasedCompensation - us-gaap:ShareBasedCompensation
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a TOTAL line; its components (if listed under ATTRIBUTION) already roll up into it.
+  FY2021               $2.93B  [F03453] verified XBRL-tagged
+  FY2022               $2.79B  [F03452] verified XBRL-tagged
+  FY2023               $3.12B  [F03451] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2022: -4.6% YoY ($2.93B -> $2.79B) [F03452]
+   - FY2023: +11.6% YoY ($2.79B -> $3.12B) [F03451]
+   - CAGR FY2021->FY2023: 3.2%
+   - TREND: stable (weak), +6% over the window
+
+NARRATIVE EVIDENCE (management text; numbers inside were machine-checked against the tables):
+  [T00962] (Item 15 Exhibits; number checks: unchecked, unchecked, unchecked) • Noninterest expense was $87.2 billion, up 14%, predominantly driven by higher compensation expense, reflecting an increase in employees, primarily in technology and front office, as well as wage inflation. The increase in expense also includes the $2.9 billion FDIC special assessment and costs associated with the First Republic acquisition.
+  [T01421] (Item 15 Exhibits; number checks: unchecked, unchecked) Noninterest expense was $5.4 billion, up 14%, driven by higher compensation expense, reflecting an increase in employees including front office and technology, as well as higher volume-related expense, including the impact of new client acquisitions.
+  [T01362] (Item 15 Exhibits; number checks: unchecked, unchecked) Noninterest expense was $28.6 billion, up 5%, driven by higher legal expense, compensation expense, including the impact of wage inflation, and higher indirect tax expense.
+  [T03192] (Item 15 Exhibits; number checks: none) (b) Primarily consists of hedges of the foreign currency risk of non-U.S. dollar-denominated revenue and expense. The income statement classification of gains and losses follows the hedged item – primarily noninterest revenue and compensation expense.
+  [T01465] (Item 15 Exhibits; number checks: unchecked, unchecked) Noninterest expense was $12.8 billion, up 8%, predominantly driven by higher compensation, including continued growth in private banking advisor teams, revenue-related compensation and the impacts of closing the Global Shares and J.P. Morgan Asset Management China acquisitions.
+  [T04670] (Item 15 Exhibits; number checks: none) Participating securities: Represents unvested share-based compensation awards containing nonforfeitable rights to dividends or dividend equivalents (collectively, “dividends”), which are included in the earnings per share calculation using the two-class method. JPMorgan Chase grants RSUs to certain employees under its share-based compensation programs, which entitle the recipients to receive nonforfeitable dividends during the vesting period on a basis equivalent to the dividends paid to holders of common stock. These unvested awards meet the definition of participating securities. Under the t
+  [T01272] (Item 15 Exhibits; number checks: unchecked, unchecked, unchecked) (b) Included depreciation expense on leased assets of $1.7 billion, $2.4 billion and $3.3 billion for the years ended December 31, 2023, 2022 and 2021, respectively.
+  [T03100] (Item 15 Exhibits; number checks: none) Commodities derivatives are used to manage the price risk of certain commodities inventories. Gains or losses on these derivative instruments are expected to substantially offset the depreciation or appreciation of the related inventory.
+
+DATA QUALITY: 0 accounting identities passed, 0 failed for the numbers above.

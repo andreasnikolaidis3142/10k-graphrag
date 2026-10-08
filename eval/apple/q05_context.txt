@@ -1,0 +1,46 @@
+COMPANY: Apple Inc. | Fiscal year end: month 9 day 30 | Latest fiscal year in filing: FY2023
+TIME CONTEXT: periods named FY#### are ACTUALS reported in this 10-K. Text facts with role 'guidance' are FORWARD-LOOKING management estimates, not actuals.
+
+SERIES Revenues - us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a TOTAL line; its components (if listed under ATTRIBUTION) already roll up into it.
+  FY2021             $365.82B  [F00015] verified XBRL-tagged
+  FY2022             $394.33B  [F00014] verified XBRL-tagged
+  FY2023             $383.29B  [F00013] verified XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2022: +7.8% YoY ($365.82B -> $394.33B) [F00014]
+   - FY2023: -2.8% YoY ($394.33B -> $383.29B) [F00013]
+   - CAGR FY2021->FY2023: 2.4%
+   - TREND: stable (weak), +5% over the window
+
+ATTRIBUTION of Revenues FY2023 BY PRODUCTORSERVICE, total $383.29B [F00013]; change vs prior year -$11.04B (-2.8%) [F00014] (components sorted by size of their CHANGE vs prior year, biggest mover first):
+  - Mac: $29.36B = 7.7% of total [F00282]; prior year $40.18B [F00283], change -$10.82B (-26.9%), 98% of the total change  <- LARGEST CONTRIBUTOR TO THE CHANGE
+  - Services: $85.20B = 22.2% of total [F00010]; prior year $78.13B [F00011], change $7.07B (+9.1%), moves AGAINST the total change (offsets 64% of it)
+  - iPhone: $200.58B = 52.3% of total [F00279]; prior year $205.49B [F00280], change -$4.91B (-2.4%), 44% of the total change
+  - Wearables, Home and Accessories: $39.84B = 10.4% of total [F00288]; prior year $41.24B [F00289], change -$1.40B (-3.4%), 13% of the total change
+  - iPad: $28.30B = 7.4% of total [F00285]; prior year $29.29B [F00286], change -$992.00M (-3.4%), 9% of the total change
+  (A component's share of the total change can exceed 100% or be negative when other components offset it.)
+
+ATTRIBUTION of Revenues FY2023 BY STATEMENTBUSINESSSEGMENTS, total $383.29B [F00013]; change vs prior year -$11.04B (-2.8%) [F00014] (components sorted by size of their CHANGE vs prior year, biggest mover first):
+  - Americas: $162.56B = 42.4% of total [F00838]; prior year $169.66B [F00839], change -$7.10B (-4.2%), 64% of the total change  <- LARGEST CONTRIBUTOR TO THE CHANGE
+  - Japan: $24.26B = 6.3% of total [F00856]; prior year $25.98B [F00857], change -$1.72B (-6.6%), 16% of the total change
+  - Greater China: $72.56B = 18.9% of total [F00850]; prior year $74.20B [F00851], change -$1.64B (-2.2%), 15% of the total change
+  - Europe: $94.29B = 24.6% of total [F00844]; prior year $95.12B [F00845], change -$824.00M (-0.9%), 7% of the total change
+  - Rest of Asia Pacific: $29.61B = 7.7% of total [F00862]; prior year $29.38B [F00863], change $240.00M (+0.8%), moves AGAINST the total change (offsets 2% of it)
+  (A component's share of the total change can exceed 100% or be negative when other components offset it.)
+
+ATTRIBUTION of Revenues FY2023 BY STATEMENTGEOGRAPHICAL, total $383.29B [F00013]; change vs prior year -$11.04B (-2.8%) [F00014] (components sorted by size of their CHANGE vs prior year, biggest mover first):
+  - US: $138.57B = 36.2% of total [F00877]; prior year $147.86B [F00878], change -$9.29B (-6.3%), 84% of the total change  <- LARGEST CONTRIBUTOR TO THE CHANGE
+  - CN: $72.56B = 18.9% of total [F00880]; prior year $74.20B [F00881], change -$1.64B (-2.2%), 15% of the total change
+  - Other Countries: $172.15B = 44.9% of total [F00883]; prior year $172.27B [F00884], change -$116.00M (-0.1%), 1% of the total change
+  (A component's share of the total change can exceed 100% or be negative when other components offset it.)
+
+NARRATIVE EVIDENCE (management text; numbers inside were machine-checked against the tables):
+  [T00275] (Item 7 MD&A; number checks: unchecked, unchecked) The Company’s total net sales decreased 3% or $11.0 billion during 2023 compared to 2022. The weakness in foreign currencies relative to the U.S. dollar accounted for more than the entire year-over-year decrease in total net sales, which consisted primarily of lower net sales of Mac and iPhone, partially offset by higher net sales of Services.
+  [T00096] (Item 1 Business; number checks: none) The Company has historically experienced higher net sales in its first quarter compared to other quarters in its fiscal year due in part to seasonal holiday demand. Additionally, new product and service introductions can significantly impact net sales, cost of sales and operating expenses. The timing of product introductions can also impact the Company’s net sales to its indirect distribution channels as these channels are filled with new inventory following a product launch, and channel inventory of an older product often declines as the launch of a newer product approaches. Net sales can als
+  [T00159] (Item 1A Risk Factors; number checks: none) The Company believes the availability of third-party software applications and services for its products depends in part on the developers’ perception and analysis of the relative benefits of developing, maintaining and upgrading such software and services for the Company’s products compared to competitors’ platforms, such as Android for smartphones and tablets, Windows for personal computers and tablets, and PlayStation, Nintendo and Xbox for gaming platforms. This analysis may be based on factors such as the market position of the Company and its products, the anticipated revenue that may be
+  [T00219] (Item 1A Risk Factors; number checks: none) The Company has historically experienced higher net sales in its first quarter compared to other quarters in its fiscal year due in part to seasonal holiday demand. Additionally, new product and service introductions can significantly impact net sales, cost of sales and operating expenses. Further, the Company generates a significant portion of its net sales from a single product and a decline in demand for that product could significantly impact quarterly net sales. The Company could also be subject to unexpected developments, such as lower-than-anticipated demand for the Company’s products o
+
+DATA QUALITY: 3 accounting identities passed, 0 failed for the numbers above.
+TEXT-vs-TABLE CONFLICTS: 

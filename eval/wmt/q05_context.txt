@@ -1,0 +1,90 @@
+COMPANY: Walmart Inc. | Fiscal year end: month 1 day 31 | Latest fiscal year in filing: FY2024
+TIME CONTEXT: periods named FY#### are ACTUALS reported in this 10-K. Text facts with role 'guidance' are FORWARD-LOOKING management estimates, not actuals.
+
+SERIES NetDebt - Net debt (derived; NEGATIVE = net cash)
+  VIEW: DERIVED ratio/metric = TotalDebt - Cash - ShortTermInvestments - NonCurrentMarketableSecurities (already computed; do not recompute)
+  UNIT: USD (filing displayed in units; values below are normalised to base units)
+  @2023-01-31         $26.40B  [F01864] 
+  @2024-01-31         $27.14B  [F01865] 
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2024-01-31: +2.8% YoY ($26.40B -> $27.14B) [F01865]
+   - TREND: stable (weak), +3% over the window
+
+SERIES TotalDebt - Total debt (derived)
+  VIEW: DERIVED ratio/metric = LT debt + current debt + commercial paper (already computed; do not recompute)
+  UNIT: USD (filing displayed in units; values below are normalised to base units)
+  @2023-01-31         $35.02B  [F01862] 
+  @2024-01-31         $37.01B  [F01863] 
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2024-01-31: +5.7% YoY ($35.02B -> $37.01B) [F01863]
+   - TREND: stable (weak), +6% over the window
+
+SERIES DebtToEquity - Debt / equity
+  VIEW: DERIVED ratio/metric = TotalDebt / Equity (already computed; do not recompute)
+  UNIT: multiple (filing displayed in units; values below are normalised to base units)
+  @2023-01-31           0.46x  [F01866] 
+  @2024-01-31           0.44x  [F01867] 
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2024-01-31: -3.4% YoY (0.46x -> 0.44x) [F01867]
+   - TREND: stable (weak), -3% over the window
+
+SERIES CashAndCashEquivalentsAtCarryingValue - us-gaap:CashAndCashEquivalentsAtCarryingValue
+  VIEW: STOCK (point-in-time balance; do NOT sum across dates)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  @2023-01-31          $8.62B  [F00100] XBRL-tagged
+  @2024-01-31          $9.87B  [F00099] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2024-01-31: +14.4% YoY ($8.62B -> $9.87B) [F00099]
+   - TREND: increasing (weak), +14% over the window
+
+SERIES OperatingIncomeLoss - us-gaap:OperatingIncomeLoss
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a TOTAL line; its components (if listed under ATTRIBUTION) already roll up into it.
+  FY2022              $25.94B  [F00020] verified XBRL-tagged
+  FY2023              $20.43B  [F00019] verified XBRL-tagged
+  FY2024              $27.01B  [F00018] verified XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: -21.3% YoY ($25.94B -> $20.43B) [F00019]
+   - FY2024: +32.2% YoY ($20.43B -> $27.01B) [F00018]
+   - CAGR FY2022->FY2024: 2.0%
+   - TREND: stable (weak), +4% over the window
+
+SERIES OperatingIncomeLoss {'segment': ''} - 2025
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a SEGMENT slice, one component of the consolidated total - not the company total.
+  FY2024               $2.02B  [F01685] (table 74: The aggregate annual lease obligations a)
+
+SERIES LongTermDebtNoncurrent - us-gaap:LongTermDebtNoncurrent
+  VIEW: STOCK (point-in-time balance; do NOT sum across dates)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  @2023-01-31         $34.65B  [F00138] XBRL-tagged
+  @2024-01-31         $36.13B  [F00137] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2024-01-31: +4.3% YoY ($34.65B -> $36.13B) [F00137]
+   - TREND: stable (weak), +4% over the window
+
+SERIES LongTermDebtCurrent - us-gaap:ShortTermBorrowings
+  VIEW: STOCK (point-in-time balance; do NOT sum across dates)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  @2023-01-31        $372.00M  [F00122] XBRL-tagged
+  @2024-01-31        $878.00M  [F00121] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2024-01-31: +136.0% YoY ($372.00M -> $878.00M) [F00121]
+   - TREND: increasing (strong), +136% over the window
+
+NARRATIVE EVIDENCE (management text; numbers inside were machine-checked against the tables):
+  [T00502] (n/a; number checks: unchecked, unchecked) Net cash from financing activities generally consists of debt transactions, dividends paid, repurchases of Company stock and transactions with noncontrolling interest shareholders. Fiscal 2024 net cash used in financing activities decreased $3.6 billion when compared to the previous fiscal year. The decrease is primarily due to fewer repurchases of Company stock, partially offset by the purchase of certain noncontrolling interests. Fiscal 2023 net cash used in financing activities decreased $5.8 billion when compared to the previous fiscal year. The decrease was primarily due to repayments of 
+  [T00510] (n/a; number checks: unchecked, unchecked, unchecked, unchecked, unchecked) Short-term borrowings as of January 31, 2024 and 2023 were $0.9 billion and $0.4 billion, respectively, with weighted-average interest rates of 7.7% and 6.6%, respectively. We also have $15.0 billion of various undrawn committed lines of credit in the U.S. as of January 31, 2024 that provide additional liquidity, if needed. Additionally, we maintain access to various credit facilities outside of the U.S. to further support our Walmart International segment operations, as needed.
+  [T00856] (n/a; number checks: none) The Company classifies interest and penalties related to uncertain tax benefits as interest expense and as operating, selling, general and administrative expenses, respectively. Interest expense and penalties related to these positions were immaterial for fiscal 2024, 2023 and 2022. During the next twelve months, it is reasonably possible that tax audit resolutions could reduce unrecognized tax benefits by an immaterial amount, either because the tax positions are sustained on audit or because the Company agrees to their disallowance. The Company does not expect any change to have a material i
+  [T00916] (n/a; number checks: unchecked, unchecked, unchecked) Of Walmart U.S.'s total net sales, approximately $ 65.4 billion, $ 53.4 billion and $ 47.8 billion related to eCommerce for fiscal 2024, 2023 and 2022, respectively.
+
+RED-FLAG SCREEN (pre-computed across statements; MUST be considered):
+  - [LOW] Text differs from table: Text says '$3.5 billion' for CashAndCashEquivalentsAtCarryingValue @2024-01-31 (As of January 31, 2024 and 2023, cash and cash equivalents of $3.5 billion and $2.9 billio...). The table shows $9.87B [F00099]. It may describe a narrower item than the statement line; verify before treating it as an error. [F01402] [F00099]
+  - [LOW] Text differs from table: Text says '$2.9 billion' for CashAndCashEquivalentsAtCarryingValue @2023-01-31 (As of January 31, 2024 and 2023, cash and cash equivalents of $3.5 billion and $2.9 billio...). The table shows $8.62B [F00100]. It may describe a narrower item than the statement line; verify before treating it as an error. [F01403] [F00100]
+  - [LOW] Text differs from table: Text says '$ 2.1 billion' for CashAndCashEquivalentsAtCarryingValue @2024-01-31 (The amounts due from banks for these transactions classified as cash and cash equivalents ...). The table shows $9.87B [F00099]. It may describe a narrower item than the statement line; verify before treating it as an error. [F01544] [F00099]
+  - [LOW] Text differs from table: Text says '$ 2.0 billion' for CashAndCashEquivalentsAtCarryingValue @2023-01-31 (The amounts due from banks for these transactions classified as cash and cash equivalents ...). The table shows $8.62B [F00100]. It may describe a narrower item than the statement line; verify before treating it as an error. [F01545] [F00100]
+
+DATA QUALITY: 0 accounting identities passed, 0 failed for the numbers above.
+NOTE: for the metrics above, 9 duplicate facts with conflicting values were set aside during parsing (the primary-statement value was kept).

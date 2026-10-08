@@ -1,0 +1,49 @@
+{
+  "question": "What is Walmart's total debt (short and long term, including finance leases) and its net debt or net cash, and how are interest expense and interest coverage trending?",
+  "model": "inclusionai/ling-3.1-flash",
+  "ungrounded": [],
+  "coverage_gaps": [],
+  "uncited_claims": [],
+  "stripped_pseudo_citations": 0,
+  "answer": {
+    "metric": "Total debt (LT debt + current debt + commercial paper)",
+    "period": "FY2024 (Jan 31, 2024)",
+    "value": "$37.01B",
+    "fact_id": "F01863",
+    "sources": {
+      "F01863": {
+        "value": "$37.01B",
+        "concept": "TotalDebt",
+        "period": "@2024-01-31",
+        "source": "computed",
+        "where": "LT debt + current debt + commercial paper",
+        "inputs": [
+          "F00137",
+          "F00121"
+        ],
+        "input_sources": {
+          "F00137": {
+            "value": "$36.13B",
+            "concept": "LongTermDebtNoncurrent",
+            "period": "@2024-01-31",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:LongTermDebtNoncurrent",
+            "also_displayed_in": [
+              "table #52 \"Consolidated Balance Sheets\", row \"Long-term debt\", column \"2024\""
+            ]
+          },
+          "F00121": {
+            "value": "$878.00M",
+            "concept": "LongTermDebtCurrent",
+            "period": "@2024-01-31",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:ShortTermBorrowings",
+            "also_displayed_in": [
+              "table #52 \"Consolidated Balance Sheets\", row \"Short-term borrowings\", column \"2024\""
+            ]
+          }
+        }
+      }
+    }
+  }
+}

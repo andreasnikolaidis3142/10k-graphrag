@@ -1,0 +1,476 @@
+{
+  "question": "What is Walmart's total debt (short and long term, including finance leases) and its net debt or net cash, and how are interest expense and interest coverage trending?",
+  "model": "apodex/apodex-1.1-mini:free",
+  "ungrounded": [],
+  "coverage_gaps": [],
+  "uncited_claims": [],
+  "stripped_pseudo_citations": 0,
+  "answer": {
+    "summary": "Walmart's total debt was $40.46B as of January 31, 2024, up 3.2% from $39.21B a year earlier [F01863][F01862]. Net debt was $30.59B at both FY2023 and FY2024, meaning the company carries net debt (not net cash) and it remained flat YoY [F01864][F01865]. Interest expense rose sharply to $2.26B in FY2024, up 26.4% YoY from $1.79B [F00021][F00022], following a 6.8% increase in FY2023 [F00022]. Interest coverage declined from 15.50x in FY2022 to 11.43x in FY2023 (-26.2%), then improved modestly to 11.96x in FY2024 (+4.6%) [F01870][F01871][F01872]. Debt-to-equity improved to 0.48x from 0.51x [F01866][F01867], while finance lease liabilities grew 17.9-27.9% YoY to $6.43B total [F00789][F00141][F00133].",
+    "status": "mixed",
+    "key_numbers": [
+      {
+        "metric": "Total debt",
+        "period": "@2024-01-31",
+        "value": "$40.46B",
+        "fact_id": "[F01863]"
+      },
+      {
+        "metric": "Total debt",
+        "period": "@2023-01-31",
+        "value": "$39.21B",
+        "fact_id": "[F01862]"
+      },
+      {
+        "metric": "Net debt",
+        "period": "@2024-01-31",
+        "value": "$30.59B",
+        "fact_id": "[F01865]"
+      },
+      {
+        "metric": "Interest expense",
+        "period": "FY2024",
+        "value": "$2.26B",
+        "fact_id": "[F00021]"
+      },
+      {
+        "metric": "Interest expense",
+        "period": "FY2023",
+        "value": "$1.79B",
+        "fact_id": "[F00022]"
+      },
+      {
+        "metric": "Interest coverage",
+        "period": "FY2024",
+        "value": "11.96x",
+        "fact_id": "[F01872]"
+      },
+      {
+        "metric": "Interest coverage",
+        "period": "FY2022",
+        "value": "15.50x",
+        "fact_id": "[F01870]"
+      },
+      {
+        "metric": "Finance lease liability",
+        "period": "@2024-01-31",
+        "value": "$6.43B",
+        "fact_id": "[F00789]"
+      },
+      {
+        "metric": "Debt-to-equity",
+        "period": "@2024-01-31",
+        "value": "0.48x",
+        "fact_id": "[F01867]"
+      }
+    ],
+    "drivers": [
+      "Interest expense growth of 26.4% in FY2024, with short-term borrowings' weighted-average interest rate rising from 6.6% to 7.7% [T00510]",
+      "Net debt flat at $30.59B as total debt growth was offset by cash and investments [F01865]",
+      "Interest coverage improved +4.6% in FY2024 after a -26.2% decline in FY2023 [F01872][F01871]",
+      "Debt-to-equity improved -5.6% YoY to 0.48x as equity grew faster than debt [F01867]"
+    ],
+    "risks_and_red_flags": [
+      "Interest expense spiked 26.4% YoY in FY2024 to $2.26B, a 31% inflection vs the prior-2-period average [F00021]",
+      "Interest coverage down 23% over the FY2022-FY2024 window, from 15.50x to 11.96x [F01870][F01872]",
+      "Finance lease liabilities growing 17.9-27.9% YoY, with noncurrent rising from $4.84B to $5.71B [F00141][F00133]",
+      "Short-term borrowings doubled from $0.4B to $0.9B, with the weighted-average rate climbing from 6.6% to 7.7% [T00510]"
+    ],
+    "data_quality_notes": [
+      "Net debt is positive $30.59B, so it represents net debt rather than net cash [F01865]",
+      "0 accounting identities passed or failed for the numbers above"
+    ],
+    "outlook": {
+      "actuals_view": "Debt and net debt are stable while interest expense is rising sharply, compressing coverage; leverage ratio (debt-to-equity) improved modestly",
+      "forward_looking_guidance": "not in the retrieved evidence"
+    },
+    "follow_up_checks": [
+      "Verify the composition of total debt (commercial paper, long-term debt, short-term borrowings) and whether finance leases are included in the $40.46B figure",
+      "Check cash, short-term investments and non-current marketable securities balances to understand the net debt derivation",
+      "Confirm whether the FY2024 interest expense increase is driven by higher rates versus increased borrowing volume",
+      "Review undrawn committed credit lines of $15.0B for liquidity coverage [T00510]"
+    ],
+    "sources": {
+      "F01863": {
+        "value": "$40.46B",
+        "concept": "TotalDebt",
+        "period": "@2024-01-31",
+        "source": "computed",
+        "where": "LT debt + current debt + short-term borrowings + commercial paper",
+        "inputs": [
+          "F00137",
+          "F00129",
+          "F00121"
+        ],
+        "input_sources": {
+          "F00137": {
+            "value": "$36.13B",
+            "concept": "LongTermDebtNoncurrent",
+            "period": "@2024-01-31",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:LongTermDebtNoncurrent",
+            "also_displayed_in": [
+              "table #52 \"Consolidated Balance Sheets\", row \"Long-term debt\", column \"2024\""
+            ]
+          },
+          "F00129": {
+            "value": "$3.45B",
+            "concept": "LongTermDebtCurrent",
+            "period": "@2024-01-31",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:LongTermDebtCurrent",
+            "also_displayed_in": [
+              "table #52 \"Consolidated Balance Sheets\", row \"Long-term debt due within one year\", column \"2024\""
+            ]
+          },
+          "F00121": {
+            "value": "$878.00M",
+            "concept": "ShortTermBorrowings",
+            "period": "@2024-01-31",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:ShortTermBorrowings",
+            "also_displayed_in": [
+              "table #52 \"Consolidated Balance Sheets\", row \"Short-term borrowings\", column \"2024\""
+            ]
+          }
+        }
+      },
+      "F01862": {
+        "value": "$39.21B",
+        "concept": "TotalDebt",
+        "period": "@2023-01-31",
+        "source": "computed",
+        "where": "LT debt + current debt + short-term borrowings + commercial paper",
+        "inputs": [
+          "F00138",
+          "F00130",
+          "F00122"
+        ],
+        "input_sources": {
+          "F00138": {
+            "value": "$34.65B",
+            "concept": "LongTermDebtNoncurrent",
+            "period": "@2023-01-31",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:LongTermDebtNoncurrent",
+            "also_displayed_in": [
+              "table #52 \"Consolidated Balance Sheets\", row \"Long-term debt\", column \"2023\""
+            ]
+          },
+          "F00130": {
+            "value": "$4.19B",
+            "concept": "LongTermDebtCurrent",
+            "period": "@2023-01-31",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:LongTermDebtCurrent",
+            "also_displayed_in": [
+              "table #52 \"Consolidated Balance Sheets\", row \"Long-term debt due within one year\", column \"2023\""
+            ]
+          },
+          "F00122": {
+            "value": "$372.00M",
+            "concept": "ShortTermBorrowings",
+            "period": "@2023-01-31",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:ShortTermBorrowings",
+            "also_displayed_in": [
+              "table #52 \"Consolidated Balance Sheets\", row \"Short-term borrowings\", column \"2023\""
+            ]
+          }
+        }
+      },
+      "F01864": {
+        "value": "$30.59B",
+        "concept": "NetDebt",
+        "period": "@2023-01-31",
+        "source": "computed",
+        "where": "TotalDebt - Cash - ShortTermInvestments - NonCurrentMarketableSecurities",
+        "inputs": [
+          "F01862",
+          "F00100"
+        ],
+        "input_sources": {
+          "F01862": {
+            "value": "$39.21B",
+            "concept": "TotalDebt",
+            "period": "@2023-01-31",
+            "source": "computed",
+            "where": "LT debt + current debt + short-term borrowings + commercial paper",
+            "inputs": [
+              "F00138",
+              "F00130",
+              "F00122"
+            ]
+          },
+          "F00100": {
+            "value": "$8.62B",
+            "concept": "CashAndCashEquivalentsAtCarryingValue",
+            "period": "@2023-01-31",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:CashAndCashEquivalentsAtCarryingValue",
+            "also_displayed_in": [
+              "table #52 \"Consolidated Balance Sheets\", row \"Cash and cash equivalents\", column \"2023\""
+            ]
+          }
+        }
+      },
+      "F01865": {
+        "value": "$30.59B",
+        "concept": "NetDebt",
+        "period": "@2024-01-31",
+        "source": "computed",
+        "where": "TotalDebt - Cash - ShortTermInvestments - NonCurrentMarketableSecurities",
+        "inputs": [
+          "F01863",
+          "F00099"
+        ],
+        "input_sources": {
+          "F01863": {
+            "value": "$40.46B",
+            "concept": "TotalDebt",
+            "period": "@2024-01-31",
+            "source": "computed",
+            "where": "LT debt + current debt + short-term borrowings + commercial paper",
+            "inputs": [
+              "F00137",
+              "F00129",
+              "F00121"
+            ]
+          },
+          "F00099": {
+            "value": "$9.87B",
+            "concept": "CashAndCashEquivalentsAtCarryingValue",
+            "period": "@2024-01-31",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:CashAndCashEquivalentsAtCarryingValue",
+            "also_displayed_in": [
+              "table #52 \"Consolidated Balance Sheets\", row \"Cash and cash equivalents\", column \"2024\""
+            ]
+          }
+        }
+      },
+      "F00021": {
+        "value": "$2.26B",
+        "concept": "InterestExpense",
+        "period": "FY2024",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:InterestExpenseDebt",
+        "also_displayed_in": [
+          "table #50 \"Consolidated Statements of Income\", row \"Debt\", column \"2024\""
+        ]
+      },
+      "F00022": {
+        "value": "$1.79B",
+        "concept": "InterestExpense",
+        "period": "FY2023",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:InterestExpenseDebt",
+        "also_displayed_in": [
+          "table #50 \"Consolidated Statements of Income\", row \"Debt\", column \"2023\""
+        ]
+      },
+      "F01870": {
+        "value": "15.50x",
+        "concept": "InterestCoverage",
+        "period": "FY2022",
+        "source": "computed",
+        "where": "OperatingIncome / InterestExpense",
+        "inputs": [
+          "F00020",
+          "F00023"
+        ],
+        "input_sources": {
+          "F00020": {
+            "value": "$25.94B",
+            "concept": "OperatingIncomeLoss",
+            "period": "FY2022",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:OperatingIncomeLoss",
+            "also_displayed_in": [
+              "table #32 \"Consolidated Results of Operations\", row \"Operating income\", column \"2022\"",
+              "table #50 \"Consolidated Statements of Income\", row \"Operating income\", column \"2022\""
+            ]
+          },
+          "F00023": {
+            "value": "$1.67B",
+            "concept": "InterestExpense",
+            "period": "FY2022",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:InterestExpenseDebt",
+            "also_displayed_in": [
+              "table #50 \"Consolidated Statements of Income\", row \"Debt\", column \"2022\""
+            ]
+          }
+        }
+      },
+      "F01871": {
+        "value": "11.43x",
+        "concept": "InterestCoverage",
+        "period": "FY2023",
+        "source": "computed",
+        "where": "OperatingIncome / InterestExpense",
+        "inputs": [
+          "F00019",
+          "F00022"
+        ],
+        "input_sources": {
+          "F00019": {
+            "value": "$20.43B",
+            "concept": "OperatingIncomeLoss",
+            "period": "FY2023",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:OperatingIncomeLoss",
+            "also_displayed_in": [
+              "table #27 \"untitled\", row \"Operating income\", column \"2023\"",
+              "table #28 \"Return on Assets and Return on Investment\", row \"Operating income\", column \"2023\"",
+              "table #32 \"Consolidated Results of Operations\", row \"Operating income\", column \"2023\""
+            ]
+          },
+          "F00022": {
+            "value": "$1.79B",
+            "concept": "InterestExpense",
+            "period": "FY2023",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:InterestExpenseDebt",
+            "also_displayed_in": [
+              "table #50 \"Consolidated Statements of Income\", row \"Debt\", column \"2023\""
+            ]
+          }
+        }
+      },
+      "F01872": {
+        "value": "11.96x",
+        "concept": "InterestCoverage",
+        "period": "FY2024",
+        "source": "computed",
+        "where": "OperatingIncome / InterestExpense",
+        "inputs": [
+          "F00018",
+          "F00021"
+        ],
+        "input_sources": {
+          "F00018": {
+            "value": "$27.01B",
+            "concept": "OperatingIncomeLoss",
+            "period": "FY2024",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:OperatingIncomeLoss",
+            "also_displayed_in": [
+              "table #27 \"untitled\", row \"Operating income\", column \"2024\"",
+              "table #28 \"Return on Assets and Return on Investment\", row \"Operating income\", column \"2024\"",
+              "table #32 \"Consolidated Results of Operations\", row \"Operating income\", column \"2024\""
+            ]
+          },
+          "F00021": {
+            "value": "$2.26B",
+            "concept": "InterestExpense",
+            "period": "FY2024",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:InterestExpenseDebt",
+            "also_displayed_in": [
+              "table #50 \"Consolidated Statements of Income\", row \"Debt\", column \"2024\""
+            ]
+          }
+        }
+      },
+      "F01866": {
+        "value": "0.51x",
+        "concept": "DebtToEquity",
+        "period": "@2023-01-31",
+        "source": "computed",
+        "where": "TotalDebt / Equity",
+        "inputs": [
+          "F01862",
+          "F00156"
+        ],
+        "input_sources": {
+          "F01862": {
+            "value": "$39.21B",
+            "concept": "TotalDebt",
+            "period": "@2023-01-31",
+            "source": "computed",
+            "where": "LT debt + current debt + short-term borrowings + commercial paper",
+            "inputs": [
+              "F00138",
+              "F00130",
+              "F00122"
+            ]
+          },
+          "F00156": {
+            "value": "$76.69B",
+            "concept": "StockholdersEquity",
+            "period": "@2023-01-31",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:StockholdersEquity",
+            "also_displayed_in": [
+              "table #52 \"Consolidated Balance Sheets\", row \"Total Walmart shareholders' equity\", column \"2023\""
+            ]
+          }
+        }
+      },
+      "F01867": {
+        "value": "0.48x",
+        "concept": "DebtToEquity",
+        "period": "@2024-01-31",
+        "source": "computed",
+        "where": "TotalDebt / Equity",
+        "inputs": [
+          "F01863",
+          "F00155"
+        ],
+        "input_sources": {
+          "F01863": {
+            "value": "$40.46B",
+            "concept": "TotalDebt",
+            "period": "@2024-01-31",
+            "source": "computed",
+            "where": "LT debt + current debt + short-term borrowings + commercial paper",
+            "inputs": [
+              "F00137",
+              "F00129",
+              "F00121"
+            ]
+          },
+          "F00155": {
+            "value": "$83.86B",
+            "concept": "StockholdersEquity",
+            "period": "@2024-01-31",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:StockholdersEquity",
+            "also_displayed_in": [
+              "table #52 \"Consolidated Balance Sheets\", row \"Total Walmart shareholders' equity\", column \"2024\""
+            ]
+          }
+        }
+      },
+      "F00789": {
+        "value": "$6.43B",
+        "concept": "FinanceLeaseLiability",
+        "period": "@2024-01-31",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:FinanceLeaseLiability"
+      },
+      "F00141": {
+        "value": "$5.71B",
+        "concept": "FinanceLeaseLiabilityNoncurrent",
+        "period": "@2024-01-31",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:FinanceLeaseLiabilityNoncurrent",
+        "also_displayed_in": [
+          "table #52 \"Consolidated Balance Sheets\", row \"Long-term finance lease obligations\", column \"2024\""
+        ]
+      },
+      "F00133": {
+        "value": "$725.00M",
+        "concept": "FinanceLeaseLiabilityCurrent",
+        "period": "@2024-01-31",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:FinanceLeaseLiabilityCurrent"
+      },
+      "T00510": {
+        "source": "prose",
+        "where": "paragraph in the filing: \"Short-term borrowings as of January 31, 2024 and 2023 were $0.9 billion and $0.4 billion, respectively, with weighted-average interest rates of 7.7% and 6.6%, r\""
+      }
+    }
+  }
+}

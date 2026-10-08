@@ -1,0 +1,11 @@
+networkx>=3.0
+numpy>=1.24
+beautifulsoup4>=4.12
+lxml>=5.0
+requests>=2.31
+python-dotenv>=1.0
+# optional, for real dense / hybrid / rerank narrative retrieval:
+sentence-transformers>=2.7
+# pulled in by sentence-transformers. Version 1.9.x is blocked by Windows Application Control on this machine.
+# Tighten the upper bound to the newest version that imports cleanly: python -c "import sklearn"
+scikit-learn>=1.5,<1.9

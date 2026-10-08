@@ -1,0 +1,87 @@
+COMPANY: JPMORGAN CHASE & CO | Fiscal year end: month 12 day 31 | Latest fiscal year in filing: FY2023
+TIME CONTEXT: periods named FY#### are ACTUALS reported in this 10-K. Text facts with role 'guidance' are FORWARD-LOOKING management estimates, not actuals.
+
+SERIES Assets - us-gaap:Assets
+  VIEW: STOCK (point-in-time balance; do NOT sum across dates)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a TOTAL line; its components (if listed under ATTRIBUTION) already roll up into it.
+  @2021-12-31          $3.74T  [F06825] XBRL-tagged
+  @2022-12-31          $3.67T  [F00170] verified XBRL-tagged
+  @2023-12-31          $3.88T  [F00169] verified XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2022-12-31: -2.1% YoY ($3.74T -> $3.67T) [F00170]
+   - @2023-12-31: +5.7% YoY ($3.67T -> $3.88T) [F00169]
+   - CAGR @2021-12-31->@2023-12-31: 1.7%
+   - TREND: stable (weak), +4% over the window
+
+SERIES TotalDebt - Total debt (derived)
+  VIEW: DERIVED ratio/metric = LT debt + current debt + short-term borrowings + commercial paper (already computed; do not recompute)
+  UNIT: USD (filing displayed in units; values below are normalised to base units)
+  @2021-12-31        $303.43B  [F13525] 
+  @2022-12-31        $284.20B  [F13526] 
+  @2023-12-31        $363.35B  [F13527] 
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2022-12-31: -6.3% YoY ($303.43B -> $284.20B) [F13526]
+   - @2023-12-31: +27.8% YoY ($284.20B -> $363.35B) [F13527]
+   - CAGR @2021-12-31->@2023-12-31: 9.4%
+   - TREND: increasing (weak), +20% over the window
+
+SERIES LongTermDebtNoncurrent - Long-term debt
+  VIEW: STOCK (point-in-time balance; do NOT sum across dates)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  @2021-01-01        $369.00M  [F10655] (table 374: BS)
+  @2021-12-31        $301.00B  [F07436] (table 66: THREE-YEAR SUMMARY OF CONSOLIDATED FINAN)
+  @2022-01-01         -$3.87B  [F10542] (table 372: Notes to consolidated financial statemen)
+  @2022-12-31        $227.62B  [F13103] (table 641: BS)
+  @2023-01-01          $3.01B  [F10437] (table 370: BS)
+  @2023-12-31        $303.90B  [F10720] (table 386: Certain financial instruments that are n)
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2021-12-31: +81473.2% YoY ($369.00M -> $301.00B) [F07436]
+   - @2022-01-01: -101.3% YoY ($301.00B -> -$3.87B) [F10542]
+   - SIGN FLIP in @2022-01-01: $301.00B -> -$3.87B [F10542]
+   - @2022-12-31: -5983.2% YoY (-$3.87B -> $227.62B) [F13103]
+   - SIGN FLIP in @2022-12-31: -$3.87B -> $227.62B [F13103]
+   - @2023-01-01: -98.7% YoY ($227.62B -> $3.01B) [F10437]
+   - @2023-12-31: +9996.3% YoY ($3.01B -> $303.90B) [F10720]
+   - INFLECTION @2022-01-01: drop of 103% vs prior-2-period average [F10542]
+
+SERIES ShortTermBorrowings - Short-term borrowings
+  VIEW: STOCK (point-in-time balance; do NOT sum across dates)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  @2021-01-01         -$1.39B  [F10644] (table 374: BS)
+  @2021-12-31          $2.42B  [F10643] (table 374: BS)
+  @2022-01-01       -$358.00M  [F10532] (table 372: Notes to consolidated financial statemen)
+  @2022-12-31         $44.03B  [F00182] XBRL-tagged
+  @2023-01-01        $201.00M  [F10429] (table 370: BS)
+  @2023-12-31         $44.71B  [F00181] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2021-12-31: -274.0% YoY (-$1.39B -> $2.42B) [F10643]
+   - SIGN FLIP in @2021-12-31: -$1.39B -> $2.42B [F10643]
+   - @2022-01-01: -114.8% YoY ($2.42B -> -$358.00M) [F10532]
+   - SIGN FLIP in @2022-01-01: $2.42B -> -$358.00M [F10532]
+   - @2022-12-31: -12398.0% YoY (-$358.00M -> $44.03B) [F00182]
+   - SIGN FLIP in @2022-12-31: -$358.00M -> $44.03B [F00182]
+   - @2023-01-01: -99.5% YoY ($44.03B -> $201.00M) [F10429]
+   - @2023-12-31: +22144.8% YoY ($201.00M -> $44.71B) [F00181]
+
+SERIES CommercialPaper - Commercial paper
+  VIEW: STOCK (point-in-time balance; do NOT sum across dates)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  @2022-12-31         $12.56B  [F09269] (table 216: BS)
+  @2023-12-31         $14.74B  [F09268] (table 216: BS)
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2023-12-31: +17.4% YoY ($12.56B -> $14.74B) [F09268]
+   - TREND: increasing (weak), +17% over the window
+
+NARRATIVE EVIDENCE (management text; numbers inside were machine-checked against the tables):
+  [T01897] (Item 15 Exhibits; number checks: none) The table below shows the loan and deposit balances, the loans-to-deposits ratios, and deposits as a percentage of total liabilities, as of December 31, 2023 and 2022.
+  [T01436] (Item 15 Exhibits; number checks: unchecked, unchecked, unchecked, unchecked, unchecked, unchecked) (a) As of December 31, 2023, 2022 and 2021, total loans included $36 million, $132 million, and $1.2 billion of loans, respectively, under the PPP, of which $32 million, $123 million and $1.1 billion were in Middle Market Banking, respectively.
+  [T04165] (Item 15 Exhibits; number checks: unchecked, unchecked, unchecked) (a) Comprises $ 18.2 billion and $ 25.4 billion in deposits with banks, and $ 1.4 billion and $ 1.4 billion in cash and due from banks on the Consolidated balance sheets as of December 31, 2023 and 2022, respectively.
+  [T03267] (Item 15 Exhibits; number checks: none) The following table presents the components of lending- and deposit-related fees.
+  [T02935] (Item 15 Exhibits; number checks: unchecked) • $ 1.1 billion of total debt and equity instruments, partially due to trading loans, driven by an increase in observability.
+  [T00090] (Item 1 Business; number checks: unchecked) In August 2023, the FDIC released a proposal to revise the IDI Resolution Rule. For FDIC-insured depository institutions with $100 billion or more in total assets, such as JPMorgan Chase Bank, N.A., the proposal would revise the content requirements for resolution plan submissions, increase the frequency of resolution plan submissions to every two years (instead of the current three-year cycle) and require the filing of interim supplements in non-submission years. The proposal would also enhance how the FDIC assesses the credibility of resolution plan submissions, expand the FDIC’s expectation
+  [T04358] (Item 15 Exhibits; number checks: unchecked, unchecked, unchecked) (e) Total assets for the U.K. were approximately $ 352 billion, $ 357 billion and $ 365 billion at December 31, 2023, 2022 and 2021, respectively.
+  [T04416] (Item 15 Exhibits; number checks: none) assets, which represent the fair value of the CSLA and SFSLA on the acquisition date, are reflected in the total assets acquired.
+
+DATA QUALITY: 4 accounting identities passed, 0 failed for the numbers above.
+NOTE: for the metrics above, 53 duplicate facts with conflicting values were set aside during parsing (the primary-statement value was kept).

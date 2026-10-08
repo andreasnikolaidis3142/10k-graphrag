@@ -1,0 +1,161 @@
+COMPANY: Apple Inc. | Fiscal year end: month 9 day 30 | Latest fiscal year in filing: FY2023
+TIME CONTEXT: periods named FY#### are ACTUALS reported in this 10-K. Text facts with role 'guidance' are FORWARD-LOOKING management estimates, not actuals.
+
+SERIES CurrentRatio - Current ratio
+  VIEW: DERIVED ratio/metric = CurrentAssets / CurrentLiabilities (already computed; do not recompute)
+  UNIT: multiple (filing displayed in units; values below are normalised to base units)
+  @2022-09-24           0.88x  [F01420] 
+  @2023-09-30           0.99x  [F01421] 
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2023-09-30: +12.4% YoY (0.88x -> 0.99x) [F01421]
+   - TREND: increasing (weak), +12% over the window
+
+SERIES CashAndCashEquivalentsAtCarryingValue - us-gaap:CashAndCashEquivalentsAtCarryingValue
+  VIEW: STOCK (point-in-time balance; do NOT sum across dates)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  @2022-09-24         $23.65B  [F00092] XBRL-tagged
+  @2023-09-30         $29.96B  [F00091] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2023-09-30: +26.7% YoY ($23.65B -> $29.96B) [F00091]
+   - TREND: increasing (moderate), +27% over the window
+
+SERIES CashAndCashEquivalentsAtCarryingValue {'FinancialInstrument': 'Cash'} - us-gaap:CashAndCashEquivalentsAtCarryingValue
+  VIEW: STOCK (point-in-time balance; do NOT sum across dates)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a FINANCIALINSTRUMENT slice, one component of the consolidated total - not the company total.
+  @2022-09-24         $18.55B  [F00393] XBRL-tagged
+  @2023-09-30         $28.36B  [F00301] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2023-09-30: +52.9% YoY ($18.55B -> $28.36B) [F00301]
+   - TREND: increasing (strong), +53% over the window
+
+SERIES NetDebt - Net debt (derived; NEGATIVE = net cash)
+  VIEW: DERIVED ratio/metric = TotalDebt - Cash - ShortTermInvestments - NonCurrentMarketableSecurities (already computed; do not recompute)
+  UNIT: USD (filing displayed in units; values below are normalised to base units)
+  @2022-09-24        -$49.04B  [F01424] 
+  @2023-09-30        -$51.01B  [F01425] 
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2023-09-30: +4.0% YoY (-$49.04B -> -$51.01B) [F01425]
+   - TREND: stable (weak), -4% over the window
+
+SERIES TotalDebt - Total debt (derived)
+  VIEW: DERIVED ratio/metric = LT debt + current debt + commercial paper (already computed; do not recompute)
+  UNIT: USD (filing displayed in units; values below are normalised to base units)
+  @2022-09-24        $120.07B  [F01422] 
+  @2023-09-30        $111.09B  [F01423] 
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2023-09-30: -7.5% YoY ($120.07B -> $111.09B) [F01423]
+   - TREND: stable (weak), -7% over the window
+
+SERIES DebtToEquity - Debt / equity
+  VIEW: DERIVED ratio/metric = TotalDebt / Equity (already computed; do not recompute)
+  UNIT: multiple (filing displayed in units; values below are normalised to base units)
+  @2022-09-24           2.37x  [F01426] 
+  @2023-09-30           1.79x  [F01427] 
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2023-09-30: -24.6% YoY (2.37x -> 1.79x) [F01427]
+   - TREND: decreasing (moderate), -25% over the window
+
+SERIES InterestCoverage - Interest coverage (EBIT / interest)
+  VIEW: DERIVED ratio/metric = OperatingIncome / InterestExpense (already computed; do not recompute)
+  UNIT: multiple (filing displayed in units; values below are normalised to base units)
+  FY2021               41.19x  [F01430] 
+  FY2022               40.75x  [F01431] 
+  FY2023               29.06x  [F01432] 
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2022: -1.1% YoY (41.19x -> 40.75x) [F01431]
+   - FY2023: -28.7% YoY (40.75x -> 29.06x) [F01432]
+   - INFLECTION FY2023: drop of 29% vs prior-2-period average [F01432]
+   - CAGR FY2021->FY2023: -16.0%
+   - TREND: decreasing (moderate), -29% over the window
+
+SERIES AssetsCurrent - us-gaap:AssetsCurrent
+  VIEW: STOCK (point-in-time balance; do NOT sum across dates)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a TOTAL line; its components (if listed under ATTRIBUTION) already roll up into it.
+  @2022-09-24        $135.41B  [F00104] verified XBRL-tagged
+  @2023-09-30        $143.57B  [F00103] verified XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2023-09-30: +6.0% YoY ($135.41B -> $143.57B) [F00103]
+   - TREND: stable (weak), +6% over the window
+
+SERIES LiabilitiesCurrent - us-gaap:LiabilitiesCurrent
+  VIEW: STOCK (point-in-time balance; do NOT sum across dates)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a TOTAL line; its components (if listed under ATTRIBUTION) already roll up into it.
+  @2022-09-24        $153.98B  [F00126] verified XBRL-tagged
+  @2023-09-30        $145.31B  [F00125] verified XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2023-09-30: -5.6% YoY ($153.98B -> $145.31B) [F00125]
+   - TREND: stable (weak), -6% over the window
+
+SERIES ShortTermInvestments - us-gaap:MarketableSecuritiesCurrent
+  VIEW: STOCK (point-in-time balance; do NOT sum across dates)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  @2022-09-24         $24.66B  [F00094] verified XBRL-tagged
+  @2023-09-30         $31.59B  [F00093] verified XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2023-09-30: +28.1% YoY ($24.66B -> $31.59B) [F00093]
+   - TREND: increasing (moderate), +28% over the window
+
+SERIES ShortTermInvestments {'FinancialInstrument': 'Cash'} - us-gaap:MarketableSecuritiesCurrent
+  VIEW: STOCK (point-in-time balance; do NOT sum across dates)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a FINANCIALINSTRUMENT slice, one component of the consolidated total - not the company total.
+  @2022-09-24           $0.00  [F00394] XBRL-tagged
+  @2023-09-30           $0.00  [F00302] XBRL-tagged
+
+SERIES MarketableSecuritiesNoncurrent - us-gaap:MarketableSecuritiesNoncurrent
+  VIEW: STOCK (point-in-time balance; do NOT sum across dates)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  @2022-09-24        $120.81B  [F00106] verified XBRL-tagged
+  @2023-09-30        $100.54B  [F00105] verified XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2023-09-30: -16.8% YoY ($120.81B -> $100.54B) [F00105]
+   - TREND: decreasing (weak), -17% over the window
+
+SERIES MarketableSecuritiesNoncurrent {'FinancialInstrument': 'Cash'} - us-gaap:MarketableSecuritiesNoncurrent
+  VIEW: STOCK (point-in-time balance; do NOT sum across dates)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a FINANCIALINSTRUMENT slice, one component of the consolidated total - not the company total.
+  @2022-09-24           $0.00  [F00395] XBRL-tagged
+  @2023-09-30           $0.00  [F00303] XBRL-tagged
+
+SERIES LongTermDebtNoncurrent - us-gaap:LongTermDebtNoncurrent
+  VIEW: STOCK (point-in-time balance; do NOT sum across dates)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  @2022-09-24         $98.96B  [F00128] XBRL-tagged
+  @2023-09-30         $95.28B  [F00127] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2023-09-30: -3.7% YoY ($98.96B -> $95.28B) [F00127]
+   - TREND: stable (weak), -4% over the window
+
+SERIES LongTermDebtCurrent - us-gaap:LongTermDebtCurrent
+  VIEW: STOCK (point-in-time balance; do NOT sum across dates)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  @2022-09-24         $11.13B  [F00124] XBRL-tagged
+  @2023-09-30          $9.82B  [F00123] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2023-09-30: -11.7% YoY ($11.13B -> $9.82B) [F00123]
+   - TREND: decreasing (weak), -12% over the window
+
+NARRATIVE EVIDENCE (management text; numbers inside were machine-checked against the tables):
+  [T00225] (Item 1A Risk Factors; number checks: none) The Company is exposed to credit risk and fluctuations in the values of its investment portfolio.
+  [T00350] (Item 7 MD&A; number checks: unchecked) The Company believes its balances of cash, cash equivalents and unrestricted marketable securities, which totaled $148.3 billion as of September 30, 2023, along with cash generated by ongoing operations and continued access to debt markets, will be sufficient to satisfy its cash requirements and capital return program over the next 12 months and beyond.
+  [T00608] (Item 8 Financial Statements; number checks: none) We have audited the accompanying consolidated balance sheets of Apple Inc. as of September 30, 2023 and September 24, 2022, the related consolidated statements of operations, comprehensive income, shareholders’ equity and cash flows for each of the three years in the period ended September 30, 2023, and the related notes (collectively referred to as the “financial statements”). In our opinion, the financial statements present fairly, in all material respects, the financial position of Apple Inc. at September 30, 2023 and September 24, 2022, and the results of its operations and its cash flows 
+  [T00275] (Item 7 MD&A; number checks: unchecked, unchecked) The Company’s total net sales decreased 3% or $11.0 billion during 2023 compared to 2022. The weakness in foreign currencies relative to the U.S. dollar accounted for more than the entire year-over-year decrease in total net sales, which consisted primarily of lower net sales of Mac and iPhone, partially offset by higher net sales of Services.
+
+RED-FLAG SCREEN (pre-computed across statements; MUST be considered):
+  - [MEDIUM] Liquidity: FY2022: current ratio 0.88 (<1). [F01420]
+  - [MEDIUM] Liquidity: FY2023: current ratio 0.99 (<1). [F01421]
+  - [MEDIUM] Inventory vs cost of sales: FY2023: inventory grew 28% vs CostOfRevenue -4% (collection / build-up risk). [F00099] [F00022]
+  - [MEDIUM] Operating cash flow decline: FY2023: operating cash flow fell 9.5% ($122.15B -> $110.54B). [F00224]
+  - [LOW] Shareholder payout vs free cash flow: FY2022: dividends+buybacks ($104.24B) are 94% of free cash flow ($111.44B); little room to absorb a downturn. [F01447] [F01388]
+  - [LOW] Shareholder payout vs free cash flow: FY2023: dividends+buybacks ($92.58B) are 93% of free cash flow ($99.58B); little room to absorb a downturn. [F01448] [F01389]
+  - [LOW] Revenue decline: FY2023: revenue fell 2.8% ($394.33B -> $383.29B). [F00013]
+  - [LOW] Operating income decline: FY2023: operating income fell 4.3% ($119.44B -> $114.30B). [F00037]
+  - [LOW] Interest coverage drop: FY2023: interest coverage fell 29% (40.7x -> 29.1x). [F01432]
+
+DATA QUALITY: 0 accounting identities passed, 0 failed for the numbers above.
+NOTE: for the metrics above, 5 duplicate facts with conflicting values were set aside during parsing (the primary-statement value was kept).
+TEXT-vs-TABLE CONFLICTS: 

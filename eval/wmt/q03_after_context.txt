@@ -1,0 +1,64 @@
+COMPANY: Walmart Inc. | Fiscal year end: month 1 day 31 | Latest fiscal year in filing: FY2024
+TIME CONTEXT: periods named FY#### are ACTUALS reported in this 10-K. Text facts with role 'guidance' are FORWARD-LOOKING management estimates, not actuals.
+
+SERIES InventoryNet - us-gaap:InventoryNet
+  VIEW: STOCK (point-in-time balance; do NOT sum across dates)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  @2023-01-31         $56.58B  [F00104] XBRL-tagged
+  @2024-01-31         $54.89B  [F00103] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2024-01-31: -3.0% YoY ($56.58B -> $54.89B) [F00103]
+   - TREND: stable (weak), -3% over the window
+
+SERIES CostOfRevenue - us-gaap:CostOfRevenue
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  FY2022             $429.00B  [F00014] XBRL-tagged
+  FY2023             $463.72B  [F00013] XBRL-tagged
+  FY2024             $490.14B  [F00012] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2023: +8.1% YoY ($429.00B -> $463.72B) [F00013]
+   - FY2024: +5.7% YoY ($463.72B -> $490.14B) [F00012]
+   - CAGR FY2022->FY2024: 6.9%
+   - TREND: increasing (weak), +14% over the window
+
+SERIES CurrentRatio - Current ratio
+  VIEW: DERIVED ratio/metric = CurrentAssets / CurrentLiabilities (already computed; do not recompute)
+  UNIT: multiple (filing displayed in units; values below are normalised to base units)
+  @2023-01-31           0.82x  [F01860] 
+  @2024-01-31           0.83x  [F01861] 
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2024-01-31: +1.4% YoY (0.82x -> 0.83x) [F01861]
+   - TREND: stable (weak), +1% over the window
+
+SERIES AssetsCurrent - us-gaap:AssetsCurrent
+  VIEW: STOCK (point-in-time balance; do NOT sum across dates)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a TOTAL line; its components (if listed under ATTRIBUTION) already roll up into it.
+  @2023-01-31         $75.66B  [F00108] verified XBRL-tagged
+  @2024-01-31         $76.88B  [F00107] verified XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2024-01-31: +1.6% YoY ($75.66B -> $76.88B) [F00107]
+   - TREND: stable (weak), +2% over the window
+
+SERIES LiabilitiesCurrent - us-gaap:LiabilitiesCurrent
+  VIEW: STOCK (point-in-time balance; do NOT sum across dates)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a TOTAL line; its components (if listed under ATTRIBUTION) already roll up into it.
+  @2023-01-31         $92.20B  [F00136] verified XBRL-tagged
+  @2024-01-31         $92.42B  [F00135] verified XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2024-01-31: +0.2% YoY ($92.20B -> $92.42B) [F00135]
+   - TREND: stable (weak), +0% over the window
+
+NARRATIVE EVIDENCE (management text; numbers inside were machine-checked against the tables):
+  [T00716] (n/a; number checks: none) Cost of sales includes actual product cost, the cost of transportation to the Company's distribution facilities, stores and clubs from suppliers, the cost of transportation from the Company's distribution facilities to the stores, clubs and customers and the cost of warehousing for the Sam's Club segment and import distribution centers. Cost of sales is reduced by supplier payments that are not a reimbursement of specific, incremental and identifiable costs.
+  [T00653] (n/a; number checks: none) • Walmart U.S. Segment - Inventories are primarily accounted for under the retail inventory method of accounting ("RIM") to determine inventory cost, using the last-in, first-out ("LIFO") valuation method. RIM generally results in inventory being valued at the lower of cost or market as permanent markdowns are immediately recorded as a reduction of the retail value of inventory.
+  [T00058] (n/a; number checks: none) • the amount, number, growth, increase, reduction or decrease in or over certain periods, of or in certain financial items or measures or operating measures, including our earnings per share, net sales, growth rates, comparable store and club sales, our eCommerce sales, liabilities, expenses of certain categories, expense leverage, operating income, returns, capital and operating investments or expenditures of particular types and new store and club openings, inventory levels and associated costs, product mix and demand for certain merchandise, consumer confidence, disposable income, credit av
+  [T00652] (n/a; number checks: none) The Company utilizes various inventory methods to account for and value its inventories depending upon the nature of the store formats and businesses in each of its segments, resulting in inventories that are recorded at the lower of cost or market or net realizable value, as appropriate.
+
+RED-FLAG SCREEN (pre-computed across statements; MUST be considered):
+  - [LOW] Text differs from table: Text says '$15.5 billion' for LiabilitiesCurrent @2024-01-31 (Our working capital deficit, defined as total current assets less total current liabilitie...). The table shows $92.42B [F00135]. It may describe a narrower item than the statement line; verify before treating it as an error. [F01400] [F00135]
+  - [LOW] Text differs from table: Text says '$16.5 billion' for LiabilitiesCurrent @2023-01-31 (Our working capital deficit, defined as total current assets less total current liabilitie...). The table shows $92.20B [F00136]. It may describe a narrower item than the statement line; verify before treating it as an error. [F01401] [F00136]
+
+DATA QUALITY: 0 accounting identities passed, 0 failed for the numbers above.

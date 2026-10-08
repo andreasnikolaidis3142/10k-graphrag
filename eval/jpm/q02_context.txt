@@ -1,0 +1,80 @@
+COMPANY: JPMORGAN CHASE & CO | Fiscal year end: month 12 day 31 | Latest fiscal year in filing: FY2023
+TIME CONTEXT: periods named FY#### are ACTUALS reported in this 10-K. Text facts with role 'guidance' are FORWARD-LOOKING management estimates, not actuals.
+
+SERIES InvestmentIncomeInterest - us-gaap:InvestmentIncomeInterest
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a TOTAL line; its components (if listed under ATTRIBUTION) already roll up into it.
+  FY2021               $7.52B  [F03304] verified XBRL-tagged
+  @2021-12-31         -$3.55B  [F08860] (table 167: IS)
+  FY2022              $11.35B  [F03303] XBRL-tagged
+  @2022-12-31         $39.93B  [F12877] (table 636: Segment results and reconciliation (a))
+  FY2023              $18.73B  [F03302] verified XBRL-tagged
+  @2023-12-31          $2.40B  [F07782] (table 115: Segment information related to First Rep)
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2021-12-31: -147.2% YoY ($7.52B -> -$3.55B) [F08860]
+   - SIGN FLIP in @2021-12-31: $7.52B -> -$3.55B [F08860]
+   - FY2022: -419.5% YoY (-$3.55B -> $11.35B) [F03303]
+   - SIGN FLIP in FY2022: -$3.55B -> $11.35B [F03303]
+   - @2022-12-31: +251.9% YoY ($11.35B -> $39.93B) [F12877]
+   - FY2023: -53.1% YoY ($39.93B -> $18.73B) [F03302]
+   - @2023-12-31: -87.2% YoY ($18.73B -> $2.40B) [F07782]
+   - INFLECTION FY2022: spike of 471% vs prior-2-period average [F03303]
+
+SERIES NetMarginPct - Net margin %
+  VIEW: DERIVED ratio/metric = NetIncome / Revenues x 100 (already computed; do not recompute); unit is PERCENT - differences are percentage points, not %
+  UNIT: percent (filing displayed in units; values below are normalised to base units)
+  FY2021                39.7%  [F13513] 
+  FY2022                29.3%  [F13514] 
+  FY2023                31.3%  [F13515] 
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - FY2022: 29.3% vs 39.7% (-1046 bps) [F13514]
+   - FY2023: 31.3% vs 29.3% (+207 bps) [F13515]
+
+SERIES Revenues - us-gaap:Revenues
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a TOTAL line; its components (if listed under ATTRIBUTION) already roll up into it.
+  FY2021             $121.65B  [F06823] verified XBRL-tagged
+  @2021-12-31         $23.34B  [F08356] verified (table 142: IS)
+  FY2022             $128.69B  [F06796] verified XBRL-tagged
+  @2022-12-31         $25.39B  [F08355] verified (table 142: IS)
+  FY2023             $158.10B  [F06769] verified XBRL-tagged
+  @2023-12-31          $3.28B  [F07783] (table 115: Segment information related to First Rep)
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2021-12-31: -80.8% YoY ($121.65B -> $23.34B) [F08356]
+   - FY2022: +451.3% YoY ($23.34B -> $128.69B) [F06796]
+   - @2022-12-31: -80.3% YoY ($128.69B -> $25.39B) [F08355]
+   - FY2023: +522.8% YoY ($25.39B -> $158.10B) [F06769]
+   - @2023-12-31: -97.9% YoY ($158.10B -> $3.28B) [F07783]
+   - INFLECTION FY2022: spike of 78% vs prior-2-period average [F06796]
+   - INFLECTION @2022-12-31: drop of 67% vs prior-2-period average [F08355]
+   - INFLECTION FY2023: spike of 105% vs prior-2-period average [F06769]
+
+SERIES NetIncomeLoss - us-gaap:NetIncomeLoss
+  VIEW: FLOW (12-month period; do NOT add annual values together)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  FY2021              $48.33B  [F00080] verified XBRL-tagged
+  @2021-12-31         -$3.71B  [F08877] CHECK-FAILED (table 167: IS)
+  FY2022              $37.68B  [F00079] verified XBRL-tagged
+  @2022-12-31       -$743.00M  [F08876] CHECK-FAILED (table 167: IS)
+  FY2023              $49.55B  [F00078] verified XBRL-tagged
+  @2023-12-31          $1.24B  [F07786] CHECK-FAILED (table 115: Segment information related to First Rep)
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2021-12-31: -107.7% YoY ($48.33B -> -$3.71B) [F08877]
+   - SIGN FLIP in @2021-12-31: $48.33B -> -$3.71B [F08877]
+   - FY2022: -1114.7% YoY (-$3.71B -> $37.68B) [F00079]
+   - SIGN FLIP in FY2022: -$3.71B -> $37.68B [F00079]
+   - @2022-12-31: -102.0% YoY ($37.68B -> -$743.00M) [F08876]
+   - SIGN FLIP in @2022-12-31: $37.68B -> -$743.00M [F08876]
+   - FY2023: -6769.2% YoY (-$743.00M -> $49.55B) [F00078]
+   - SIGN FLIP in FY2023: -$743.00M -> $49.55B [F00078]
+
+NARRATIVE EVIDENCE (management text; numbers inside were machine-checked against the tables):
+  [T00960] (Item 15 Exhibits; number checks: unchecked, unchecked, unchecked, unchecked) – Net interest income (“NII”) of $89.3 billion, up 34%, driven by higher rates, the impact of First Republic, and higher revolving balances in Card Services, partially offset by lower Markets net interest income and lower average deposit balances. NII excluding Markets was $90.0 billion, up 44%.
+  [T01239] (Item 15 Exhibits; number checks: none) The allocated cost of unsecured long-term debt is included in a business segment’s net interest income, and net income is reduced by preferred stock dividends, to arrive at a business segment’s net income applicable to common equity.
+  [T04535] (Item 15 Exhibits; number checks: none) Deposit margin: Represents net interest income expressed as a percentage of average deposits.
+  [T03173] (Item 15 Exhibits; number checks: none) (c) Primarily consists of hedges of the foreign currency risk of long-term debt and AFS securities for changes in spot foreign currency rates. Gains and losses related to the derivatives and the hedged items due to changes in foreign currency rates and the income statement impact of excluded components were recorded primarily in principal transactions revenue and net interest income.
+
+DATA QUALITY: 3 accounting identities passed, 3 failed for the numbers above. Failed: Net income = Pre-tax income - Taxes @2022-12-31 (off by -$47.14B); Net income = Pre-tax income - Taxes @2023-12-31 (off by -$60.92B); Net income = Pre-tax income - Taxes @2021-12-31 (off by -$64.93B)
+NOTE: for the metrics above, 139 duplicate facts with conflicting values were set aside during parsing (the primary-statement value was kept).

@@ -1,0 +1,355 @@
+{
+  "question": "What are the main credit, market and liquidity risks the filing highlights?",
+  "model": "inclusionai/ling-3.1-flash",
+  "ungrounded": [],
+  "coverage_gaps": [],
+  "uncited_claims": [],
+  "stripped_pseudo_citations": 0,
+  "answer": {
+    "summary": "JPMorgan Chase's 10-K identifies credit, market, and liquidity risks, noting that deterioration in counterparty credit quality could exacerbate all three risk types [T00389]. Total client assets grew 23.8% YoY to $5.01T at 2023-12-31 [F08738], while total debt rose 27.8% YoY to $363.35B at the same date [F13527]. Commercial paper outstanding increased 17.4% YoY to $14.74B at 2023-12-31 [F09268]. The filing describes liquidity risk as the inability to meet cash and collateral needs as they arise [T01800], including market-wide illiquidity, inability to sell assets, and default by significant market participants [T00144]. Credit rating downgrades could adversely affect liquidity and cost of funding [T00144]. However, operating cash flow fell 87.9% in FY2023 to $12.97B from $107.12B [F00341].",
+    "status": "mixed",
+    "key_numbers": [
+      {
+        "metric": "Total client assets",
+        "period": "@2023-12-31",
+        "value": "$5.01T",
+        "fact_id": "F08738"
+      },
+      {
+        "metric": "Total client assets",
+        "period": "@2022-12-31",
+        "value": "$4.05T",
+        "fact_id": "F08739"
+      },
+      {
+        "metric": "Total debt",
+        "period": "@2023-12-31",
+        "value": "$363.35B",
+        "fact_id": "F13527"
+      },
+      {
+        "metric": "Total debt",
+        "period": "@2022-12-31",
+        "value": "$284.20B",
+        "fact_id": "F13526"
+      },
+      {
+        "metric": "Commercial paper",
+        "period": "@2023-12-31",
+        "value": "$14.74B",
+        "fact_id": "F09268"
+      },
+      {
+        "metric": "Operating cash flow",
+        "period": "FY2023",
+        "value": "$12.97B",
+        "fact_id": "F00341"
+      },
+      {
+        "metric": "Operating cash flow",
+        "period": "FY2022",
+        "value": "$107.12B",
+        "fact_id": "F00341"
+      }
+    ],
+    "drivers": [
+      "Total debt growth (+27.8% YoY to $363.35B at 2023-12-31) [F13527] increases funding and liquidity risk exposure",
+      "Total client assets growth (+23.8% YoY to $5.01T at 2023-12-31) [F08738] increases market risk exposure",
+      "Operating cash flow decline (-87.9% to $12.97B in FY2023) [F00341] reduces liquidity buffer"
+    ],
+    "risks_and_red_flags": [
+      "Credit risk: significant deterioration in credit quality of a counterparty, borrower or obligor could exacerbate JPMorgan Chase's credit, liquidity and market risk exposure [T00389]",
+      "Liquidity risk: market-wide illiquidity or disruption, unforeseen liquidity or capital requirements, inability to sell assets, default by a significant market participant, unanticipated outflows of cash or collateral [T00144]",
+      "Liquidity risk: dependence of JPMorgan Chase & Co. on the cash flows of its subsidiaries [T00144]",
+      "Credit rating downgrade could have adverse effects on liquidity and cost of funding [T00144]",
+      "Operating cash flow fell 87.9% in FY2023 to $12.97B from $107.12B [F00341]",
+      "Accounting identity check 'Net income = Pre-tax income - Taxes' failed for 2021, 2022, 2023 [F08877] [F08876] [F07786]",
+      "Earnings quality: FY2023 operating cash flow is only 0.26x net income [F13521]"
+    ],
+    "data_quality_notes": [
+      "Accounting identity check 'Net income = Pre-tax income - Taxes' failed by -$64.93B (2021), -$47.14B (2022), -$60.92B (2023) with tolerance $1.51M [F08877] [F08876] [F07786]",
+      "Long-term debt values show sign flips and conflicting values across periods (e.g., -$3.87B at 2022-01-01) [F10542]",
+      "Text differs from table for various long-term debt items (e.g., '$100 billion' vs $1.00, '$ 793 million' vs $1.00) [F08950] [F10669] [F10672] [F10674] [F10675] [F10677] [F10992] [F10993]",
+      "21 duplicate facts with conflicting values were set aside during parsing"
+    ],
+    "outlook": {
+      "actuals_view": "Total debt increased 27.8% YoY to $363.35B at 2023-12-31 [F13527], while client assets grew 23.8% to $5.01T [F08738]. Operating cash flow declined 87.9% to $12.97B in FY2023 [F00341].",
+      "forward_looking_guidance": "No forward-looking guidance found in the retrieved evidence."
+    },
+    "follow_up_checks": [
+      "Verify the accounting identity failures for net income [F08876] [F07786] [F08877]",
+      "Verify the long-term debt values with conflicting signs [F10542]",
+      "Verify the text vs table discrepancies for long-term debt items [F08950]",
+      "Assess the impact of the 87.9% operating cash flow decline on liquidity [F00341]"
+    ],
+    "sources": {
+      "T00389": {
+        "source": "prose",
+        "where": "paragraph in Item 1A Risk Factors: \"For example, a significant deterioration in the credit quality of a counterparty, borrower or other obligor could lead to concerns about the creditworthiness of\""
+      },
+      "F08738": {
+        "value": "$5.01T",
+        "concept": "AssetsCurrent",
+        "period": "@2023-12-31",
+        "source": "table",
+        "where": "table #161 \"2023 compared with 2022\", row \"Total client assets (a)\", column \"2023\"",
+        "section": "Item 15 Exhibits",
+        "also_in": [
+          "table #161 \"2023 compared with 2022\", row \"Total client assets (a)\""
+        ]
+      },
+      "F13527": {
+        "value": "$363.35B",
+        "concept": "TotalDebt",
+        "period": "@2023-12-31",
+        "source": "computed",
+        "where": "LT debt + current debt + short-term borrowings + commercial paper",
+        "inputs": [
+          "F10720",
+          "F00181",
+          "F09268"
+        ],
+        "input_sources": {
+          "F10720": {
+            "value": "$303.90B",
+            "concept": "LongTermDebtNoncurrent",
+            "period": "@2023-12-31",
+            "source": "table",
+            "where": "table #386 \"Certain financial instruments that are not carried at fair value on the Consolidated balance sheets are carried at\", row \"Long-term debt (b)\", column \"December 31, 2023\"",
+            "section": "Item 15 Exhibits"
+          },
+          "F00181": {
+            "value": "$44.71B",
+            "concept": "ShortTermBorrowings",
+            "period": "@2023-12-31",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:ShortTermBorrowings",
+            "also_displayed_in": [
+              "table #93 \"Refer to Note 15 and 34 for additional information.\", row \"Short-term borrowings\", column \"2023\"",
+              "table #340 \"Consolidated balance sheets\", row \"Short-term borrowings (included $ 20,042 and $ 15,792 at fair value)\", column \"2023\""
+            ]
+          },
+          "F09268": {
+            "value": "$14.74B",
+            "concept": "CommercialPaper",
+            "period": "@2023-12-31",
+            "source": "table",
+            "where": "table #216 \"BS\", row \"Commercial paper\", column \"2023\"",
+            "section": "Item 15 Exhibits"
+          }
+        }
+      },
+      "F09268": {
+        "value": "$14.74B",
+        "concept": "CommercialPaper",
+        "period": "@2023-12-31",
+        "source": "table",
+        "where": "table #216 \"BS\", row \"Commercial paper\", column \"2023\"",
+        "section": "Item 15 Exhibits"
+      },
+      "T01800": {
+        "source": "prose",
+        "where": "paragraph in Item 15 Exhibits: \"Liquidity risk is the risk that the Firm will be unable to meet its cash and collateral needs as they arise or that it does not have the appropriate amount, com\""
+      },
+      "T00144": {
+        "source": "prose",
+        "where": "paragraph in Item 1A Risk Factors: \"• Liquidity risks, including the risk that JPMorgan Chase’s liquidity could be impaired by market-wide illiquidity or disruption, unforeseen liquidity or capita\""
+      },
+      "F00341": {
+        "value": "$12.97B",
+        "concept": "NetCashProvidedByUsedInOperatingActivities",
+        "period": "FY2023",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:NetCashProvidedByUsedInOperatingActivities",
+        "also_displayed_in": [
+          "table #96 \"Consolidated cash flows analysis\", row \"Operating activities\", column \"2023\"",
+          "table #345 \"Consolidated statements of cash flows\", row \"Net cash provided by operating activities\", column \"2023\""
+        ]
+      },
+      "F08739": {
+        "value": "$4.05T",
+        "concept": "AssetsCurrent",
+        "period": "@2022-12-31",
+        "source": "table",
+        "where": "table #161 \"2023 compared with 2022\", row \"Total client assets (a)\", column \"2022\"",
+        "section": "Item 15 Exhibits",
+        "also_in": [
+          "table #161 \"2023 compared with 2022\", row \"Total client assets (a)\""
+        ]
+      },
+      "F13526": {
+        "value": "$284.20B",
+        "concept": "TotalDebt",
+        "period": "@2022-12-31",
+        "source": "computed",
+        "where": "LT debt + current debt + short-term borrowings + commercial paper",
+        "inputs": [
+          "F13103",
+          "F00182",
+          "F09269"
+        ],
+        "input_sources": {
+          "F13103": {
+            "value": "$227.62B",
+            "concept": "LongTermDebtNoncurrent",
+            "period": "@2022-12-31",
+            "source": "table",
+            "where": "table #641 \"BS\", row \"Long-term debt (b)(c)\", column \"2022\"",
+            "section": "Item 15 Exhibits"
+          },
+          "F00182": {
+            "value": "$44.03B",
+            "concept": "ShortTermBorrowings",
+            "period": "@2022-12-31",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:ShortTermBorrowings",
+            "also_displayed_in": [
+              "table #93 \"Refer to Note 15 and 34 for additional information.\", row \"Short-term borrowings\", column \"2022\"",
+              "table #340 \"Consolidated balance sheets\", row \"Short-term borrowings (included $ 20,042 and $ 15,792 at fair value)\", column \"2022\""
+            ]
+          },
+          "F09269": {
+            "value": "$12.56B",
+            "concept": "CommercialPaper",
+            "period": "@2022-12-31",
+            "source": "table",
+            "where": "table #216 \"BS\", row \"Commercial paper\", column \"2022\"",
+            "section": "Item 15 Exhibits"
+          }
+        }
+      },
+      "F08877": {
+        "value": "-$3.71B",
+        "concept": "NetIncomeLoss",
+        "period": "@2021-12-31",
+        "source": "table",
+        "where": "table #167 \"IS\", row \"Net income/(loss)\", column \"2021\"",
+        "section": "Item 15 Exhibits",
+        "also_in": [
+          "table #167 \"untitled\", row \"Total net income/(loss)\"",
+          "table #638 \"untitled\", row \"Net income/(loss)\""
+        ]
+      },
+      "F08876": {
+        "value": "-$743.00M",
+        "concept": "NetIncomeLoss",
+        "period": "@2022-12-31",
+        "source": "table",
+        "where": "table #167 \"IS\", row \"Net income/(loss)\", column \"2022\"",
+        "section": "Item 15 Exhibits",
+        "also_in": [
+          "table #167 \"untitled\", row \"Total net income/(loss)\"",
+          "table #638 \"untitled\", row \"Net income/(loss)\""
+        ]
+      },
+      "F07786": {
+        "value": "$1.24B",
+        "concept": "NetIncomeLoss",
+        "period": "@2023-12-31",
+        "source": "table",
+        "where": "table #115 \"Segment information related to First Republic\", row \"Net income\", column \"As of or for the year ended December 31, 2023\"",
+        "section": "Item 15 Exhibits"
+      },
+      "F13521": {
+        "value": "0.26x",
+        "concept": "CashConversion",
+        "period": "FY2023",
+        "source": "computed",
+        "where": "CFO / NetIncome",
+        "inputs": [
+          "F00341",
+          "F00078"
+        ],
+        "input_sources": {
+          "F00341": {
+            "value": "$12.97B",
+            "concept": "NetCashProvidedByUsedInOperatingActivities",
+            "period": "FY2023",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "also_displayed_in": [
+              "table #96 \"Consolidated cash flows analysis\", row \"Operating activities\", column \"2023\"",
+              "table #345 \"Consolidated statements of cash flows\", row \"Net cash provided by operating activities\", column \"2023\""
+            ]
+          },
+          "F00078": {
+            "value": "$49.55B",
+            "concept": "NetIncomeLoss",
+            "period": "FY2023",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:NetIncomeLoss",
+            "also_displayed_in": [
+              "table #73 \"untitled\", row \"Net income\", column \"2023\"",
+              "table #99 \"The following summary table provides a reconciliation from the Firm’s reported U.S. GAAP results to managed basis.\", row \"Net income\", column \"2023\"",
+              "table #111 \"untitled\", row \"Net income/(loss)\", column \"2023\""
+            ]
+          }
+        }
+      },
+      "F10542": {
+        "value": "-$3.87B",
+        "concept": "LongTermDebtNoncurrent",
+        "period": "@2022-01-01",
+        "source": "table",
+        "where": "table #372 \"Notes to consolidated financial statements\", row \"Long-term debt\", column \"Fair value at January 1, 2022\"",
+        "section": "Item 15 Exhibits"
+      },
+      "F08950": {
+        "value": "$100.00B",
+        "concept": "LongTermDebtNoncurrent",
+        "period": "FY2023",
+        "source": "prose",
+        "where": "sentence in Item 15 Exhibits: \"In August 2023, the Federal Reserve, the FDIC and the OCC released a proposal to expand the eligible long-term debt (\"eligible LTD\") and clean holding company r\""
+      },
+      "F10669": {
+        "value": "$793.00M",
+        "concept": "LongTermDebtNoncurrent",
+        "period": "FY2023",
+        "source": "prose",
+        "where": "sentence in Item 15 Exhibits: \"• $ 793 million of long-term debt driven by a decrease in observability and an increase in the significance of unobservable inputs for structured notes.\""
+      },
+      "F10672": {
+        "value": "$1.00B",
+        "concept": "LongTermDebtNoncurrent",
+        "period": "FY2023",
+        "source": "prose",
+        "where": "sentence in Item 15 Exhibits: \"• $ 1.0 billion of long-term debt driven by an increase in observability and a decrease in the significance of unobservable inputs for structured notes.\""
+      },
+      "F10674": {
+        "value": "$809.00M",
+        "concept": "LongTermDebtNoncurrent",
+        "period": "FY2023",
+        "source": "prose",
+        "where": "sentence in Item 15 Exhibits: \"• $ 809 million of long-term debt driven by an increase in observability and a decrease in the significance of unobservable inputs for structured notes.\""
+      },
+      "F10675": {
+        "value": "$3.30B",
+        "concept": "LongTermDebtNoncurrent",
+        "period": "FY2023",
+        "source": "prose",
+        "where": "sentence in Item 15 Exhibits: \"• $ 3.3 billion of net losses on liabilities, predominantly driven by losses in long-term debt due to market movements.\""
+      },
+      "F10677": {
+        "value": "$4.60B",
+        "concept": "LongTermDebtNoncurrent",
+        "period": "FY2023",
+        "source": "prose",
+        "where": "sentence in Item 15 Exhibits: \"• $ 4.6 billion of net gains on liabilities, predominantly driven by a decline in the fair value of long-term debt due to market movements.\""
+      },
+      "F10992": {
+        "value": "$19.30B",
+        "concept": "LongTermDebtNoncurrent",
+        "period": "FY2022",
+        "source": "prose",
+        "where": "sentence in Item 15 Exhibits: \"At December 31, 2023 and 2022, the carrying amount excluded for AFS securities is $ 19.3 billion and $ 20.3 billion, respectively, and for long-term debt is zer\""
+      },
+      "F10993": {
+        "value": "$20.30B",
+        "concept": "LongTermDebtNoncurrent",
+        "period": "FY2023",
+        "source": "prose",
+        "where": "sentence in Item 15 Exhibits: \"At December 31, 2023 and 2022, the carrying amount excluded for AFS securities is $ 19.3 billion and $ 20.3 billion, respectively, and for long-term debt is zer\""
+      }
+    }
+  }
+}

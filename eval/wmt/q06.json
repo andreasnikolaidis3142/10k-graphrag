@@ -1,0 +1,241 @@
+{
+  "question": "What are Walmart's lease obligations (operating and finance) and how big are they relative to total assets?",
+  "model": "inclusionai/ling-3.1-flash",
+  "ungrounded": [],
+  "coverage_gaps": [],
+  "uncited_claims": [],
+  "stripped_pseudo_citations": 0,
+  "answer": {
+    "summary": "Walmart's total assets as of FY2024 (January 31, 2024) were $252.40B [F00119], up 3.8% YoY [F00120]. The retrieved evidence contains the right-of-use (ROU) ASSET side of leases but does not contain the lease OBLIGATIONS (liabilities) figures. Operating lease ROU assets were $13.67B, equal to 5.4% of total assets [F00111], up from $13.55B in the prior year [F00112]. Finance lease ROU assets were $5.86B, equal to 2.3% of total assets [F00113], up from $4.92B in the prior year [F00114]. By segment, Walmart US was the largest contributor to the asset increase at $137.78B (54.6% of total assets) [F00966], up $7.12B (+5.5%) from $130.66B [F00987], accounting for 77% of the total change. Because the evidence lacks the operating and finance lease liability line items, the ratio of lease obligations to total assets cannot be determined from this evidence.",
+    "status": "neutral",
+    "key_numbers": [
+      {
+        "metric": "Total assets",
+        "period": "@2024-01-31",
+        "value": "$252.40B",
+        "fact_id": "[F00119]"
+      },
+      {
+        "metric": "Operating lease right-of-use asset",
+        "period": "@2024-01-31",
+        "value": "$13.67B (5.4% of total assets)",
+        "fact_id": "[F00111]"
+      },
+      {
+        "metric": "Finance lease right-of-use asset",
+        "period": "@2024-01-31",
+        "value": "$5.86B (2.3% of total assets)",
+        "fact_id": "[F00113]"
+      },
+      {
+        "metric": "Operating lease right-of-use asset",
+        "period": "@2023-01-31",
+        "value": "$13.55B",
+        "fact_id": "[F00112]"
+      },
+      {
+        "metric": "Finance lease right-of-use asset",
+        "period": "@2023-01-31",
+        "value": "$4.92B",
+        "fact_id": "[F00114]"
+      },
+      {
+        "metric": "Walmart US assets (segment)",
+        "period": "@2024-01-31",
+        "value": "$137.78B (54.6% of total assets)",
+        "fact_id": "[F00966]"
+      },
+      {
+        "metric": "Walmart US assets (segment)",
+        "period": "@2023-01-31",
+        "value": "$130.66B",
+        "fact_id": "[F00987]"
+      }
+    ],
+    "drivers": [
+      "By segment, Walmart US assets of $137.78B (54.6% of total) [F00966] rose $7.12B (+5.5%) from $130.66B [F00987], the LARGEST CONTRIBUTOR TO THE CHANGE at 77% of the total asset change.",
+      "Corporate And Support assets of $12.80B (5.1% of total) [F00969] rose $2.52B (+24.5%) from $10.28B [F00990], 27% of the total change.",
+      "Walmart International assets of $86.14B (34.1% of total) [F00967] fell $630.00M (-0.7%) from $86.77B [F00988], moving AGAINST the total change (offsets 7%).",
+      "Sams Club assets of $15.68B (6.2% of total) [F00968] rose $192.00M (+1.2%) from $15.49B [F00989], 2% of the total change.",
+      "By component, net property, plant and equipment of $110.81B (43.9% of total) [F00109] rose $10.05B (+10.0%) from $100.76B [F00110], the LARGEST CONTRIBUTOR TO THE CHANGE; its $10.05B swing exceeded the net total change of $9.20B [F00120], so other components offset it (no percentage share is meaningful).",
+      "Operating lease ROU assets rose $118.00M (+0.9%) to $13.67B (5.4% of total) [F00111] from $13.55B [F00112], 1% of the total change.",
+      "Finance lease ROU assets rose $936.00M (+19.0%) to $5.86B (2.3% of total) [F00113] from $4.92B [F00114], 10% of the total change."
+    ],
+    "risks_and_red_flags": [
+      "The lease OBLIGATIONS (operating and finance lease liabilities) are not present in the retrieved evidence, so the requested ratio of lease obligations to total assets cannot be computed.",
+      "ROU assets are asset-side balances and are not a substitute for lease liability/obligation figures; they can move differently from the corresponding obligations.",
+      "Purchase obligations of $34.3B (of which $14.6B due within one year) are reported separately [T00528] and are not lease obligations."
+    ],
+    "data_quality_notes": [
+      "The evidence provides right-of-use ASSET values, not lease OBLIGATIONS (liabilities); the lease liability line items are absent from the retrieved evidence.",
+      "Duplicate facts with conflicting values were set aside during parsing, with the primary-statement value kept.",
+      "Management lease accounting policy is described in prose [T00662] but contains no obligation amounts."
+    ],
+    "outlook": {
+      "actuals_view": "FY2024 actuals show total assets of $252.40B [F00119] with operating lease ROU assets of $13.67B [F00111] and finance lease ROU assets of $5.86B [F00113]; Walmart US was the largest segment contributor to the asset change at 77% [F00966].",
+      "forward_looking_guidance": "No forward-looking lease obligation guidance is present in the retrieved evidence."
+    },
+    "follow_up_checks": [
+      "Locate the Leases note in the 10-K to extract operating lease liabilities and finance lease liabilities (the obligation side, not ROU assets).",
+      "Verify the maturity schedule of undiscounted lease payments for both operating and finance leases.",
+      "Check the balance sheet for 'Operating lease liabilities' and 'Finance lease liabilities' line items and reconcile to the lease note.",
+      "Confirm whether the $34.3B purchase obligations [T00528] include any lease commitments."
+    ],
+    "sources": {
+      "F00119": {
+        "value": "$252.40B",
+        "concept": "Assets",
+        "period": "@2024-01-31",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:Assets",
+        "also_displayed_in": [
+          "table #52 \"Consolidated Balance Sheets\", row \"Total assets\", column \"2024\""
+        ]
+      },
+      "F00120": {
+        "value": "$243.20B",
+        "concept": "Assets",
+        "period": "@2023-01-31",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:Assets",
+        "also_displayed_in": [
+          "table #52 \"Consolidated Balance Sheets\", row \"Total assets\", column \"2023\""
+        ]
+      },
+      "F00111": {
+        "value": "$13.67B",
+        "concept": "OperatingLeaseRightOfUseAsset",
+        "period": "@2024-01-31",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:OperatingLeaseRightOfUseAsset",
+        "also_displayed_in": [
+          "table #52 \"Consolidated Balance Sheets\", row \"Operating lease right-of-use assets\", column \"2024\""
+        ]
+      },
+      "F00112": {
+        "value": "$13.55B",
+        "concept": "OperatingLeaseRightOfUseAsset",
+        "period": "@2023-01-31",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:OperatingLeaseRightOfUseAsset",
+        "also_displayed_in": [
+          "table #52 \"Consolidated Balance Sheets\", row \"Operating lease right-of-use assets\", column \"2023\""
+        ]
+      },
+      "F00113": {
+        "value": "$5.86B",
+        "concept": "FinanceLeaseRightOfUseAsset",
+        "period": "@2024-01-31",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:FinanceLeaseRightOfUseAsset",
+        "also_displayed_in": [
+          "table #52 \"Consolidated Balance Sheets\", row \"Finance lease right-of-use assets, net\", column \"2024\""
+        ]
+      },
+      "F00114": {
+        "value": "$4.92B",
+        "concept": "FinanceLeaseRightOfUseAsset",
+        "period": "@2023-01-31",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:FinanceLeaseRightOfUseAsset",
+        "also_displayed_in": [
+          "table #52 \"Consolidated Balance Sheets\", row \"Finance lease right-of-use assets, net\", column \"2023\""
+        ]
+      },
+      "F00966": {
+        "value": "$137.78B",
+        "concept": "Assets",
+        "period": "@2024-01-31",
+        "slice": "StatementBusinessSegments=WalmartUS",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:Assets"
+      },
+      "F00987": {
+        "value": "$130.66B",
+        "concept": "Assets",
+        "period": "@2023-01-31",
+        "slice": "StatementBusinessSegments=WalmartUS",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:Assets"
+      },
+      "F00969": {
+        "value": "$12.80B",
+        "concept": "Assets",
+        "period": "@2024-01-31",
+        "slice": "StatementBusinessSegments=CorporateAndSupport",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:Assets"
+      },
+      "F00990": {
+        "value": "$10.28B",
+        "concept": "Assets",
+        "period": "@2023-01-31",
+        "slice": "StatementBusinessSegments=CorporateAndSupport",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:Assets"
+      },
+      "F00967": {
+        "value": "$86.14B",
+        "concept": "Assets",
+        "period": "@2024-01-31",
+        "slice": "StatementBusinessSegments=WalmartInternational",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:Assets"
+      },
+      "F00988": {
+        "value": "$86.77B",
+        "concept": "Assets",
+        "period": "@2023-01-31",
+        "slice": "StatementBusinessSegments=WalmartInternational",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:Assets"
+      },
+      "F00968": {
+        "value": "$15.68B",
+        "concept": "Assets",
+        "period": "@2024-01-31",
+        "slice": "StatementBusinessSegments=SamsClub",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:Assets"
+      },
+      "F00989": {
+        "value": "$15.49B",
+        "concept": "Assets",
+        "period": "@2023-01-31",
+        "slice": "StatementBusinessSegments=SamsClub",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:Assets"
+      },
+      "F00109": {
+        "value": "$110.81B",
+        "concept": "PropertyPlantAndEquipmentNet",
+        "period": "@2024-01-31",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:PropertyPlantAndEquipmentNet",
+        "also_displayed_in": [
+          "table #52 \"Consolidated Balance Sheets\", row \"Property and equipment, net\", column \"2024\"",
+          "table #55 \"Property and Equipment\", row \"Property and equipment, net\", column \"2024\""
+        ]
+      },
+      "F00110": {
+        "value": "$100.76B",
+        "concept": "PropertyPlantAndEquipmentNet",
+        "period": "@2023-01-31",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:PropertyPlantAndEquipmentNet",
+        "also_displayed_in": [
+          "table #52 \"Consolidated Balance Sheets\", row \"Property and equipment, net\", column \"2023\"",
+          "table #55 \"Property and Equipment\", row \"Property and equipment, net\", column \"2023\""
+        ]
+      },
+      "T00528": {
+        "source": "prose",
+        "where": "paragraph in the filing: \"As of January 31, 2024, the Company has $34.3 billion of unrecorded purchase obligations outstanding, of which $14.6 billion is due within one year. Purchase ob\""
+      },
+      "T00662": {
+        "source": "prose",
+        "where": "paragraph in the filing: \"For any new or modified lease, the Company, at the inception of the contract, determines whether a contract is or contains a lease. The Company records right-of\""
+      }
+    }
+  }
+}

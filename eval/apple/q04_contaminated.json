@@ -1,0 +1,320 @@
+{
+  "question": "Are there any red flags in Apple's financial statements?",
+  "model": "apodex/apodex-1.1-mini:free",
+  "ungrounded": [],
+  "coverage_gaps": [],
+  "uncited_claims": [],
+  "stripped_pseudo_citations": 0,
+  "answer": {
+    "summary": "Apple's FY2023 financial statements received an unqualified audit opinion [T00627], but the year showed broad-based slowdowns. Revenue fell 2.8% to $383.29B [F00013], and operating income declined 4.3% to $114.30B [F00037]. Operating cash flow dropped 9.5% to $110.54B [F00224], dragging free cash flow down 10.6% to $99.58B [F01389]. Liquidity remains tight with a current ratio of 0.99 in FY2023 [F01421], below the 1.0 threshold. Inventory grew 28% while cost of revenue fell 4% [F00099] [F00022], suggesting potential build-up risk. Shareholder payouts consumed 93% of FY2023 free cash flow [F01448] [F01389], limiting downside absorption.",
+    "status": "mixed",
+    "key_numbers": [
+      {
+        "metric": "Revenue",
+        "period": "FY2023",
+        "value": "$383.29B",
+        "fact_id": "F00013"
+      },
+      {
+        "metric": "Operating Income",
+        "period": "FY2023",
+        "value": "$114.30B",
+        "fact_id": "F00037"
+      },
+      {
+        "metric": "Operating Cash Flow",
+        "period": "FY2023",
+        "value": "$110.54B",
+        "fact_id": "F00224"
+      },
+      {
+        "metric": "Free Cash Flow",
+        "period": "FY2023",
+        "value": "$99.58B",
+        "fact_id": "F01389"
+      },
+      {
+        "metric": "Current Ratio",
+        "period": "FY2023",
+        "value": "0.99",
+        "fact_id": "F01421"
+      },
+      {
+        "metric": "Inventory Growth",
+        "period": "FY2023",
+        "value": "28%",
+        "fact_id": "F00099"
+      },
+      {
+        "metric": "Interest Coverage",
+        "period": "FY2023",
+        "value": "29.1x",
+        "fact_id": "F01432"
+      }
+    ],
+    "drivers": [
+      "Revenue contraction [F00013] coincides with operating income decline [F00037].",
+      "Free cash flow decline [F01389] tracks operating cash flow decline [F00224] as capex remained stable [F00236].",
+      "High shareholder payout ratio [F01448] reduces retained cash buffer."
+    ],
+    "risks_and_red_flags": [
+      "Current ratio below 1.0 in FY2023 (0.99) [F01421] and FY2022 (0.88) [F01420].",
+      "Inventory grew 28% in FY2023 while cost of revenue fell 4% [F00099] [F00022].",
+      "Shareholder payouts consumed 93% of FY2023 free cash flow [F01448] [F01389].",
+      "Interest coverage fell 29% to 29.1x in FY2023 [F01432].",
+      "Revenue and operating income declined in FY2023 [F00013] [F00037].",
+      "Operating cash flow fell 9.5% in FY2023 [F00224]."
+    ],
+    "data_quality_notes": [
+      "3 accounting identities passed, 0 failed for the numbers above.",
+      "No text-vs-table conflicts identified.",
+      "Audit opinion unqualified [T00627].",
+      "Operating cash flow and capex figures are XBRL-tagged [F00224] [F00236]."
+    ],
+    "outlook": {
+      "actuals_view": "FY2023 showed a slowdown with revenue down 2.8% [F00013] and free cash flow down 10.6% [F01389] compared to FY2022.",
+      "forward_looking_guidance": "not in the retrieved evidence"
+    },
+    "follow_up_checks": [
+      "Verify inventory aging and obsolescence reserves given 28% growth vs -4% cost of revenue [F00099] [F00022].",
+      "Review segment revenue mix to identify drivers of the 2.8% revenue decline [F00013].",
+      "Check debt maturity schedule given the 29% interest coverage drop [F01432].",
+      "Assess sustainability of the 93% payout ratio against free cash flow volatility [F01448] [F01389]."
+    ],
+    "sources": {
+      "T00627": {
+        "source": "prose",
+        "where": "paragraph in Item 8 Financial Statements: \"We also have audited, in accordance with the standards of the Public Company Accounting Oversight Board (United States) (the “PCAOB”), the consolidated balance \""
+      },
+      "F00013": {
+        "value": "$383.29B",
+        "concept": "Revenues",
+        "period": "FY2023",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "also_displayed_in": [
+          "table #7 \"The following table shows net sales by reportable segment for 2023, 2022 and 2021 (dollars in millions):\", row \"Total net sales\", column \"2023\"",
+          "table #8 \"The following table shows net sales by category for 2023, 2022 and 2021 (dollars in millions):\", row \"Total net sales\", column \"2023\"",
+          "table #15 \"CONSOLIDATED STATEMENTS OF OPERATIONS\", row \"Total net sales\", column \"September 30, 2023\""
+        ]
+      },
+      "F00037": {
+        "value": "$114.30B",
+        "concept": "OperatingIncomeLoss",
+        "period": "FY2023",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:OperatingIncomeLoss",
+        "also_displayed_in": [
+          "table #15 \"CONSOLIDATED STATEMENTS OF OPERATIONS\", row \"Operating income\", column \"September 30, 2023\"",
+          "table #47 \"untitled\", row \"Total operating income\", column \"2023\""
+        ]
+      },
+      "F00224": {
+        "value": "$110.54B",
+        "concept": "NetCashProvidedByUsedInOperatingActivities",
+        "period": "FY2023",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:NetCashProvidedByUsedInOperatingActivities",
+        "also_displayed_in": [
+          "table #19 \"CONSOLIDATED STATEMENTS OF CASH FLOWS\", row \"Cash generated by operating activities\", column \"September 30, 2023\""
+        ]
+      },
+      "F01389": {
+        "value": "$99.58B",
+        "concept": "FreeCashFlow",
+        "period": "FY2023",
+        "source": "computed",
+        "where": "CFO - Capex",
+        "inputs": [
+          "F00224",
+          "F00236"
+        ],
+        "input_sources": {
+          "F00224": {
+            "value": "$110.54B",
+            "concept": "NetCashProvidedByUsedInOperatingActivities",
+            "period": "FY2023",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "also_displayed_in": [
+              "table #19 \"CONSOLIDATED STATEMENTS OF CASH FLOWS\", row \"Cash generated by operating activities\", column \"September 30, 2023\""
+            ]
+          },
+          "F00236": {
+            "value": "$10.96B",
+            "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "period": "FY2023",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+            "also_displayed_in": [
+              "table #19 \"CONSOLIDATED STATEMENTS OF CASH FLOWS\", row \"Payments for acquisition of property, plant and equipment\", column \"September 30, 2023\""
+            ]
+          }
+        }
+      },
+      "F01421": {
+        "value": "0.99x",
+        "concept": "CurrentRatio",
+        "period": "@2023-09-30",
+        "source": "computed",
+        "where": "CurrentAssets / CurrentLiabilities",
+        "inputs": [
+          "F00103",
+          "F00125"
+        ],
+        "input_sources": {
+          "F00103": {
+            "value": "$143.57B",
+            "concept": "AssetsCurrent",
+            "period": "@2023-09-30",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:AssetsCurrent",
+            "also_displayed_in": [
+              "table #17 \"CONSOLIDATED BALANCE SHEETS\", row \"Total current assets\", column \"September 30, 2023\""
+            ]
+          },
+          "F00125": {
+            "value": "$145.31B",
+            "concept": "LiabilitiesCurrent",
+            "period": "@2023-09-30",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:LiabilitiesCurrent",
+            "also_displayed_in": [
+              "table #17 \"CONSOLIDATED BALANCE SHEETS\", row \"Total current liabilities\", column \"September 30, 2023\""
+            ]
+          }
+        }
+      },
+      "F00099": {
+        "value": "$6.33B",
+        "concept": "InventoryNet",
+        "period": "@2023-09-30",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:InventoryNet",
+        "also_displayed_in": [
+          "table #17 \"CONSOLIDATED BALANCE SHEETS\", row \"Inventories\", column \"September 30, 2023\""
+        ]
+      },
+      "F00022": {
+        "value": "$214.14B",
+        "concept": "CostOfRevenue",
+        "period": "FY2023",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:CostOfGoodsAndServicesSold",
+        "also_displayed_in": [
+          "table #15 \"CONSOLIDATED STATEMENTS OF OPERATIONS\", row \"Total cost of sales\", column \"September 30, 2023\""
+        ]
+      },
+      "F01448": {
+        "value": "$92.58B",
+        "concept": "ShareholderReturns",
+        "period": "FY2023",
+        "source": "computed",
+        "where": "Dividends + Repurchases",
+        "inputs": [
+          "F00248",
+          "F00251"
+        ],
+        "input_sources": {
+          "F00248": {
+            "value": "$15.03B",
+            "concept": "PaymentsOfDividends",
+            "period": "FY2023",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:PaymentsOfDividends",
+            "also_displayed_in": [
+              "table #19 \"CONSOLIDATED STATEMENTS OF CASH FLOWS\", row \"Payments for dividends and dividend equivalents\", column \"September 30, 2023\""
+            ]
+          },
+          "F00251": {
+            "value": "$77.55B",
+            "concept": "PaymentsForRepurchaseOfCommonStock",
+            "period": "FY2023",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:PaymentsForRepurchaseOfCommonStock",
+            "also_displayed_in": [
+              "table #19 \"CONSOLIDATED STATEMENTS OF CASH FLOWS\", row \"Repurchases of common stock\", column \"September 30, 2023\""
+            ]
+          }
+        }
+      },
+      "F01432": {
+        "value": "29.06x",
+        "concept": "InterestCoverage",
+        "period": "FY2023",
+        "source": "computed",
+        "where": "OperatingIncome / InterestExpense",
+        "inputs": [
+          "F00037",
+          "F00548"
+        ],
+        "input_sources": {
+          "F00037": {
+            "value": "$114.30B",
+            "concept": "OperatingIncomeLoss",
+            "period": "FY2023",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:OperatingIncomeLoss",
+            "also_displayed_in": [
+              "table #15 \"CONSOLIDATED STATEMENTS OF OPERATIONS\", row \"Operating income\", column \"September 30, 2023\"",
+              "table #47 \"untitled\", row \"Total operating income\", column \"2023\""
+            ]
+          },
+          "F00548": {
+            "value": "$3.93B",
+            "concept": "InterestExpense",
+            "period": "FY2023",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:InterestExpense",
+            "also_displayed_in": [
+              "table #32 \"Other Income/(Expense), Net\", row \"Interest expense\", column \"2023\""
+            ]
+          }
+        }
+      },
+      "F00236": {
+        "value": "$10.96B",
+        "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+        "period": "FY2023",
+        "source": "XBRL",
+        "where": "inline XBRL tag us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+        "also_displayed_in": [
+          "table #19 \"CONSOLIDATED STATEMENTS OF CASH FLOWS\", row \"Payments for acquisition of property, plant and equipment\", column \"September 30, 2023\""
+        ]
+      },
+      "F01420": {
+        "value": "0.88x",
+        "concept": "CurrentRatio",
+        "period": "@2022-09-24",
+        "source": "computed",
+        "where": "CurrentAssets / CurrentLiabilities",
+        "inputs": [
+          "F00104",
+          "F00126"
+        ],
+        "input_sources": {
+          "F00104": {
+            "value": "$135.41B",
+            "concept": "AssetsCurrent",
+            "period": "@2022-09-24",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:AssetsCurrent",
+            "also_displayed_in": [
+              "table #17 \"CONSOLIDATED BALANCE SHEETS\", row \"Total current assets\", column \"September 24, 2022\""
+            ]
+          },
+          "F00126": {
+            "value": "$153.98B",
+            "concept": "LiabilitiesCurrent",
+            "period": "@2022-09-24",
+            "source": "XBRL",
+            "where": "inline XBRL tag us-gaap:LiabilitiesCurrent",
+            "also_displayed_in": [
+              "table #17 \"CONSOLIDATED BALANCE SHEETS\", row \"Total current liabilities\", column \"September 24, 2022\""
+            ]
+          }
+        }
+      }
+    }
+  }
+}

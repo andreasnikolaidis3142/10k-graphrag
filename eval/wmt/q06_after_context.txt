@@ -1,0 +1,104 @@
+COMPANY: Walmart Inc. | Fiscal year end: month 1 day 31 | Latest fiscal year in filing: FY2024
+TIME CONTEXT: periods named FY#### are ACTUALS reported in this 10-K. Text facts with role 'guidance' are FORWARD-LOOKING management estimates, not actuals.
+
+SERIES Assets - us-gaap:Assets
+  VIEW: STOCK (point-in-time balance; do NOT sum across dates)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  CONTEXT: this is a TOTAL line; its components (if listed under ATTRIBUTION) already roll up into it.
+  @2022-01-31        $244.86B  [F01012] verified XBRL-tagged
+  @2023-01-31        $243.20B  [F00120] verified XBRL-tagged
+  @2024-01-31        $252.40B  [F00119] verified XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2023-01-31: -0.7% YoY ($244.86B -> $243.20B) [F00120]
+   - @2024-01-31: +3.8% YoY ($243.20B -> $252.40B) [F00119]
+   - CAGR @2022-01-31->@2024-01-31: 1.5%
+   - TREND: stable (weak), +3% over the window
+
+SERIES OperatingLeaseLiability - us-gaap:OperatingLeaseLiability
+  VIEW: STOCK (point-in-time balance; do NOT sum across dates)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  @2024-01-31         $14.43B  [F00788] XBRL-tagged
+
+SERIES FinanceLeaseLiability - us-gaap:FinanceLeaseLiability
+  VIEW: STOCK (point-in-time balance; do NOT sum across dates)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  @2024-01-31          $6.43B  [F00789] XBRL-tagged
+
+SERIES OperatingLeaseLiabilityCurrent - us-gaap:OperatingLeaseLiabilityCurrent
+  VIEW: STOCK (point-in-time balance; do NOT sum across dates)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  @2023-01-31          $1.47B  [F00132] XBRL-tagged
+  @2024-01-31          $1.49B  [F00131] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2024-01-31: +1.0% YoY ($1.47B -> $1.49B) [F00131]
+   - TREND: stable (weak), +1% over the window
+
+SERIES OperatingLeaseLiabilityNoncurrent - us-gaap:OperatingLeaseLiabilityNoncurrent
+  VIEW: STOCK (point-in-time balance; do NOT sum across dates)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  @2023-01-31         $12.83B  [F00140] XBRL-tagged
+  @2024-01-31         $12.94B  [F00139] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2024-01-31: +0.9% YoY ($12.83B -> $12.94B) [F00139]
+   - TREND: stable (weak), +1% over the window
+
+SERIES FinanceLeaseLiabilityCurrent - us-gaap:FinanceLeaseLiabilityCurrent
+  VIEW: STOCK (point-in-time balance; do NOT sum across dates)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  @2023-01-31        $567.00M  [F00134] XBRL-tagged
+  @2024-01-31        $725.00M  [F00133] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2024-01-31: +27.9% YoY ($567.00M -> $725.00M) [F00133]
+   - TREND: increasing (moderate), +28% over the window
+
+SERIES FinanceLeaseLiabilityNoncurrent - us-gaap:FinanceLeaseLiabilityNoncurrent
+  VIEW: STOCK (point-in-time balance; do NOT sum across dates)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  @2023-01-31          $4.84B  [F00142] XBRL-tagged
+  @2024-01-31          $5.71B  [F00141] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2024-01-31: +17.9% YoY ($4.84B -> $5.71B) [F00141]
+   - TREND: increasing (weak), +18% over the window
+
+SERIES OperatingLeaseRightOfUseAsset - us-gaap:OperatingLeaseRightOfUseAsset
+  VIEW: STOCK (point-in-time balance; do NOT sum across dates)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  @2023-01-31         $13.55B  [F00112] XBRL-tagged
+  @2024-01-31         $13.67B  [F00111] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2024-01-31: +0.9% YoY ($13.55B -> $13.67B) [F00111]
+   - TREND: stable (weak), +1% over the window
+
+SERIES FinanceLeaseRightOfUseAsset - us-gaap:FinanceLeaseRightOfUseAsset
+  VIEW: STOCK (point-in-time balance; do NOT sum across dates)
+  UNIT: USD (filing displayed in millions; values below are normalised to base units)
+  @2023-01-31          $4.92B  [F00114] XBRL-tagged
+  @2024-01-31          $5.86B  [F00113] XBRL-tagged
+  PRE-COMPUTED FINDINGS (treat as facts):
+   - @2024-01-31: +19.0% YoY ($4.92B -> $5.86B) [F00113]
+   - TREND: increasing (weak), +19% over the window
+
+ATTRIBUTION of Assets @2024-01-31 BY COMPONENT, total $252.40B [F00119]; change vs prior year $9.20B (+3.8%) [F00120] (components sorted by size of their CHANGE vs prior year, biggest mover first):
+  - us-gaap:PropertyPlantAndEquipmentNet: $110.81B = 43.9% of total [F00109]; prior year $100.76B [F00110], change $10.05B (+10.0%), a swing of $10.05B against a NET total change of only $9.20B (other components offset it; no percentage share is meaningful)  <- LARGEST CONTRIBUTOR TO THE CHANGE
+  - Other long-term assets: $17.07B = 6.8% of total [F00117]; prior year $20.13B [F00118], change -$3.06B (-15.2%), moves AGAINST the total change (offsets 33% of it)
+  - us-gaap:AssetsCurrent: $76.88B = 30.5% of total [F00107]; prior year $75.66B [F00108], change $1.22B (+1.6%), 13% of the total change
+  - Finance lease right-of-use assets, net: $5.86B = 2.3% of total [F00113]; prior year $4.92B [F00114], change $936.00M (+19.0%), 10% of the total change
+  - us-gaap:OperatingLeaseRightOfUseAsset: $13.67B = 5.4% of total [F00111]; prior year $13.55B [F00112], change $118.00M (+0.9%), 1% of the total change
+  - us-gaap:Goodwill: $28.11B = 11.1% of total [F00115]; prior year $28.17B [F00116], change -$61.00M (-0.2%), moves AGAINST the total change (offsets 1% of it)
+  (A component's share of the total change can exceed 100% or be negative when other components offset it.)
+
+ATTRIBUTION of Assets @2024-01-31 BY STATEMENTBUSINESSSEGMENTS, total $252.40B [F00119]; change vs prior year $9.20B (+3.8%) [F00120] (components sorted by size of their CHANGE vs prior year, biggest mover first):
+  - Walmart US: $137.78B = 54.6% of total [F00966]; prior year $130.66B [F00987], change $7.12B (+5.5%), 77% of the total change  <- LARGEST CONTRIBUTOR TO THE CHANGE
+  - Corporate And Support: $12.80B = 5.1% of total [F00969]; prior year $10.28B [F00990], change $2.52B (+24.5%), 27% of the total change
+  - Walmart International: $86.14B = 34.1% of total [F00967]; prior year $86.77B [F00988], change -$630.00M (-0.7%), moves AGAINST the total change (offsets 7% of it)
+  - Sams Club: $15.68B = 6.2% of total [F00968]; prior year $15.49B [F00989], change $192.00M (+1.2%), 2% of the total change
+  (A component's share of the total change can exceed 100% or be negative when other components offset it.)
+
+NARRATIVE EVIDENCE (management text; numbers inside were machine-checked against the tables):
+  [T00909] (n/a; number checks: none) Total revenues, consisting of net sales and membership and other income, and long-lived assets, consisting primarily of net property and equipment and lease right-of-use assets, aggregated by the Company's U.S. and non-U.S. operations for fiscal 2024, 2023 and 2022, are as follows:
+  [T00916] (n/a; number checks: unchecked, unchecked, unchecked) Of Walmart U.S.'s total net sales, approximately $ 65.4 billion, $ 53.4 billion and $ 47.8 billion related to eCommerce for fiscal 2024, 2023 and 2022, respectively.
+  [T00918] (n/a; number checks: unchecked, unchecked, unchecked) Of Walmart International's total net sales, approximately $ 24.8 billion, $ 20.3 billion and $ 18.5 billion related to eCommerce for fiscal 2024, 2023 and 2022, respectively.
+  [T00528] (n/a; number checks: unchecked, unchecked) As of January 31, 2024, the Company has $34.3 billion of unrecorded purchase obligations outstanding, of which $14.6 billion is due within one year. Purchase obligations include legally binding contracts, such as firm commitments for inventory and
+
+DATA QUALITY: 2 accounting identities passed, 0 failed for the numbers above.
+NOTE: for the metrics above, 2 duplicate facts with conflicting values were set aside during parsing (the primary-statement value was kept).
