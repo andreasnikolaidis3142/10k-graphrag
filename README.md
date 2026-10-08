@@ -1,8 +1,8 @@
-# tenk-graphrag
+# 10k-graphrag
 
 **Ask questions about SEC 10-K filings and get answers where every number is traceable to the filing, computed in code, and checked before you see it.**
 
-[![tests](https://github.com/OWNER/REPO/actions/workflows/tests.yml/badge.svg)](https://github.com/OWNER/REPO/actions/workflows/tests.yml)
+[![tests](https://github.com/andreasnikolaidis3142/10k-graphrag/actions/workflows/tests.yml/badge.svg)](https://github.com/andreasnikolaidis3142/10k-graphrag/actions/workflows/tests.yml)
 ![python](https://img.shields.io/badge/python-3.11%2B-blue)
 ![tests](https://img.shields.io/badge/tests-162%20passing-brightgreen)
 ![retrieval](https://img.shields.io/badge/retrieval%20hit%20rate-96%25-brightgreen)
@@ -130,7 +130,7 @@ This one idea, plus heading context and finance vocabulary (*capex → payments 
 ## Quick start
 
 ```bash
-git clone https://github.com/OWNER/REPO.git && cd REPO
+git clone https://github.com/andreasnikolaidis3142/10k-graphrag.git && cd 10k-graphrag
 pip install -r requirements.txt
 
 # 1. Inspect the evidence the model would get. No API key and no download needed (Apple FY2023 graph is included)
